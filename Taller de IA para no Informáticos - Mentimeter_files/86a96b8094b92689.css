@@ -1,2 +1,0 @@
-@keyframes participant-feedback-sparkle-drift{0%{transform:translate(0) scale(1);opacity:1;visibility:visible}to{transform:translate(var(--sparkle-tx),var(--sparkle-ty)) scale(var(--sparkle-end-scale));opacity:0}}@keyframes participant-feedback-rating-bar-grow{0%{width:0}to{width:var(--rating-bar-target-width)}}
-/*# sourceMappingURL=86a96b8094b92689.css.map*/
