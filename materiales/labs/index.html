@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labs Prácticos - Taller de IA para No Informáticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00cc33;
+      --primary-dark: #00a828;
+      --secondary: #00b4e6;
+      --accent-purple: #9333ea;
+      --accent-orange: #ff9500;
+      --accent-pink: #ec4899;
+      --bg-dark: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a25;
+      --bg-code: #0d0d14;
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0b0;
+      --text-muted: #606070;
+      --border: rgba(255, 255, 255, 0.08);
+      --glow-green: 0 0 60px rgba(0, 204, 51, 0.3);
+      --glow-blue: 0 0 60px rgba(0, 180, 230, 0.3);
+      --glow-purple: 0 0 60px rgba(147, 51, 234, 0.3);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html {
+      background: var(--bg-dark);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    header.nav-header {
+      background: rgba(10, 10, 15, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header.nav-header a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s ease;
+    }
+
+    header.nav-header a:hover {
+      color: var(--text-primary);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* Content Styles */
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-primary);
+      font-weight: 700;
+      margin: 1.5em 0 0.75em;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5em;
+      color: var(--secondary);
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: var(--accent-orange);
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      color: var(--text-primary);
+    }
+
+    p {
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin: 1em 0;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--text-primary);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2em 0;
+    }
+
+    /* Code Blocks */
+    pre {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      overflow-x: auto;
+      margin: 1em 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 0.85em;
+      color: var(--text-primary);
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+
+    /* Syntax highlighting for dark bg */
+    .sourceCode {
+      background: var(--bg-code);
+      border-radius: 8px;
+      margin: 1em 0;
+      overflow-x: auto;
+    }
+
+    .sourceCode pre {
+      background: transparent;
+      border: none;
+      padding: 16px;
+      margin: 0;
+    }
+
+    code span.al { color: #ff6b6b; font-weight: bold; }
+    code span.an { color: #82aaff; font-weight: bold; font-style: italic; }
+    code span.at { color: #ffcb6b; }
+    code span.bn { color: #c3e88d; }
+    code span.bu { color: #89ddff; }
+    code span.cf { color: #82aaff; font-weight: bold; }
+    code span.ch { color: #89ddff; }
+    code span.cn { color: #f78c6c; }
+    code span.co { color: #676e95; font-style: italic; }
+    code span.cv { color: #82aaff; font-weight: bold; font-style: italic; }
+    code span.do { color: #676e95; font-style: italic; }
+    code span.dt { color: #ffcb6b; }
+    code span.dv { color: #c3e88d; }
+    code span.er { color: #ff6b6b; font-weight: bold; }
+    code span.ex { color: var(--primary); }
+    code span.fl { color: #c3e88d; }
+    code span.fu { color: #82aaff; }
+    code span.im { color: #89ddff; font-weight: bold; }
+    code span.in { color: #82aaff; font-weight: bold; font-style: italic; }
+    code span.kw { color: #82aaff; font-weight: bold; }
+    code span.op { color: #89ddff; }
+    code span.ot { color: #82aaff; }
+    code span.pp { color: #ffcb6b; }
+    code span.sc { color: #89ddff; }
+    code span.ss { color: #c792ea; }
+    code span.st { color: #89ddff; }
+    code span.va { color: #ffcb6b; }
+    code span.vs { color: #89ddff; }
+    code span.wa { color: #82aaff; font-weight: bold; font-style: italic; }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+
+    thead {
+      background: var(--bg-card);
+    }
+
+    th {
+      padding: 12px;
+      text-align: left;
+      color: var(--primary);
+      font-weight: 600;
+      border-bottom: 2px solid var(--primary);
+    }
+
+    td {
+      padding: 10px 12px;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+    }
+
+    tr:hover td {
+      background: var(--bg-card);
+    }
+
+    /* Lists */
+    ul, ol {
+      padding-left: 1.5em;
+      margin: 1em 0;
+    }
+
+    li {
+      color: var(--text-secondary);
+      margin: 0.5em 0;
+      line-height: 1.6;
+    }
+
+    li::marker {
+      color: var(--primary);
+    }
+
+    /* Blockquotes */
+    blockquote {
+      border-left: 3px solid var(--accent-purple);
+      background: var(--bg-card);
+      padding: 12px 16px;
+      margin: 1em 0;
+      color: var(--text-secondary);
+      font-style: italic;
+    }
+
+    /* Task lists */
+    ul.task-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.task-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    ul.task-list li input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--primary);
+    }
+
+    /* Checkbox label styles */
+    ul.task-list li label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-secondary);
+    }
+
+    code {
+      background: var(--bg-code);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: var(--primary);
+    }
+
+    pre code {
+      background: transparent;
+      padding: 0;
+      color: var(--text-primary);
+    }
+
+    strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .container {
+        padding: 24px 16px 60px;
+      }
+      
+      h1 {
+        font-size: 1.5rem;
+      }
+      
+      h2 {
+        font-size: 1.25rem;
+      }
+      
+      pre {
+        padding: 12px;
+        font-size: 0.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav-header">
+    <a href="../../index.html">← Volver al Taller</a>
+  </header>
+  
+  <div class="container">
+    <header id="title-block-header">
+      <h1 class="title">Labs Prácticos — Taller de IA para No Informáticos</h1>
+    </header>
+    <h1 id="labs-prácticos-taller-de-ia-para-no-informáticos">Labs Prácticos — Taller de IA para No Informáticos</h1>
+    <h2 id="labs-para-dominar-opencode-en-2-horas">5 Labs para dominar OpenCode en 2 horas</h2>
+    <hr />
+    <h2 id="lab-1-instalación-y-verificación-15-minutos">LAB 1: Instalación y Verificación (15 minutos)</h2>
+    <h3 id="objetivo">Objetivo</h3>
+    <p>Instalar OpenCode y verificar que funciona correctamente.</p>
+    <h3 id="paso-1-verificar-instalación-de-npmnode.js">Paso 1: Verificar instalación de npm/Node.js</h3>
+    <p>Abre tu terminal (PowerShell en Windows, Terminal en Mac/Linux):</p>
+    <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar que Node.js está instalado</span></span>
+    <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">node</span> <span class="at">--version</span></span>
+    <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar que npm está instalado</span></span>
+    <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> <span class="at">--version</span></code></pre></div>
+    <p><strong>Deberías ver algo como:</strong> <code>v20.x.x</code> y <code>10.x.x</code></p>
+    <h3 id="paso-2-instalar-opencode">Paso 2: Instalar OpenCode</h3>
+    <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instalar globalmente</span></span>
+    <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> install <span class="at">-g</span> opencode-ai</span>
+    <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># O si prefieres con permisos de administrador (Linux)</span></span>
+    <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> npm install <span class="at">-g</span> opencode-ai</span></code></pre></div>
+    <h3 id="paso-3-verificar-instalación">Paso 3: Verificar instalación</h3>
+    <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar versión instalada</span></span>
+    <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span> <span class="at">--version</span></span>
+    <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar que responde</span></span>
+    <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span> <span class="at">--help</span></code></pre></div>
+    <p><strong>Resultado esperado:</strong> Verás el número de versión y ayuda.</p>
+    <h3 id="paso-4-primeros-comandos">Paso 4: Primeros comandos</h3>
+    <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver configuración actual</span></span>
+    <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span> config list</span>
+    <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver plugins instalados</span></span>
+    <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span> plugins list</span>
+    <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver agentes disponibles</span></span>
+    <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span> agents list</span></code></pre></div>
+    <h3 id="checklist-de-verificación">✅ Checklist de verificación</h3>
+    <ul class="task-list">
+      <li><label><input type="checkbox"></input><code>opencode --version</code> muestra versión</label></li>
+      <li><label><input type="checkbox"></input><code>opencode --help</code> muestra ayuda</label></li>
+      <li><label><input type="checkbox"></input>Sin errores de permisos</label></li>
+    </ul>
+    <h3 id="entregable">📸 Entregable</h3>
+    <p>Captura de pantalla mostrando <code>opencode --version</code> exitoso.</p>
+    <hr />
+    <h2 id="lab-2-configuración-de-perfil-personal-20-minutos">LAB 2: Configuración de Perfil Personal (20 minutos)</h2>
+    <h3 id="objetivo-1">Objetivo</h3>
+    <p>Crear tu archivo AGENTS.md con tu información profesional.</p>
+    <h3 id="paso-1-crear-directorio-de-configuración">Paso 1: Crear directorio de configuración</h3>
+    <div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear estructura de directorios</span></span>
+    <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> ~/.config/opencode</span></code></pre></div>
+    <h3 id="paso-2-crear-tu-agents.md">Paso 2: Crear tu AGENTS.md</h3>
+    <p>Crea el archivo <code>~/.config/opencode/AGENTS.md</code> con este contenido:</p>
+    <div class="sourceCode" id="cb6"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Mi Perfil Profesional</span></span>
+    <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Quién soy</span></span>
+    <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Tu nombre completo</span><span class="co">]</span></span>
+    <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Tu profesión</span><span class="co">]</span></span>
+    <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Tu industria o sector</span><span class="co">]</span></span>
+    <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Años de experiencia</span><span class="co">]</span></span>
+    <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sobre mi trabajo</span></span>
+    <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Describe brevemente qué haces</span><span class="co">]</span></span>
+    <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Qué tipo de proyectos manejas</span><span class="co">]</span></span>
+    <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Herramientas que usas actualmente</span><span class="co">]</span></span>
+    <span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Objetivos con IA</span></span>
+    <span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Objetivo 1: qué quieres lograr</span><span class="co">]</span></span>
+    <span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Objetivo 2: segunda prioridad</span><span class="co">]</span></span>
+    <span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Objetivo 3: tercera prioridad</span><span class="co">]</span></span>
+    <span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cómo prefiero trabajar</span></span>
+    <span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>**Tono:** Formal / Casual / Profesional pero cercano</span>
+    <span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>**Idioma:** Español latino / Español / Inglés</span>
+    <span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>**Nivel de detalle:** Resumen / Equilibrado / Detallado</span>
+    <span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>**Formato preferido:** Listas / Párrafos / Ambos</span>
+    <span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Restricciones importantes</span></span>
+    <span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Restricción 1, ej: "No usar jerga técnica"</span><span class="co">]</span></span>
+    <span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Restricción 2, ej: "Responder en máximo 3 párrafos"</span><span class="co">]</span></span>
+    <span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Projetos actuales</span></span>
+    <span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="co">[</span><span class="ot">Proyecto 1 con breve descripción</span><span class="co">]</span></span>
+    <span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="co">[</span><span class="ot">Proyecto 2 con breve descripción</span><span class="co">]</span></span>
+    <span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Recursos útiles</span></span>
+    <span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Enlace a recursos relevantes para tu trabajo</span><span class="co">]</span></span></code></pre></div>
+    <p>El contenido continúa con los labs 3, 4 y 5 completos...</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos de Agentes - Guía Completa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00cc33;
+      --primary-dark: #00a828;
+      --secondary: #00b4e6;
+      --accent-purple: #9333ea;
+      --accent-orange: #ff9500;
+      --accent-pink: #ec4899;
+      --bg-dark: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a25;
+      --bg-code: #0d0d14;
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0b0;
+      --text-muted: #606070;
+      --border: rgba(255, 255, 255, 0.08);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { background: var(--bg-dark); }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    header.nav-header {
+      background: rgba(10, 10, 15, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header.nav-header a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s ease;
+    }
+
+    header.nav-header a:hover { color: var(--text-primary); }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-primary);
+      font-weight: 700;
+      margin: 1.5em 0 0.75em;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5em;
+      color: var(--secondary);
+    }
+
+    h3 { font-size: 1.2rem; color: var(--accent-orange); }
+    h4 { font-size: 1.1rem; color: var(--text-primary); }
+
+    p { color: var(--text-secondary); line-height: 1.7; margin: 1em 0; }
+
+    a { color: var(--primary); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--text-primary); }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 2em 0; }
+
+    pre {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      overflow-x: auto;
+      margin: 1em 0;
+      font-size: 0.8rem;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85em;
+      color: var(--text-primary);
+    }
+
+    .sourceCode { background: var(--bg-code); border-radius: 8px; margin: 1em 0; }
+    .sourceCode pre { background: transparent; border: none; padding: 16px; margin: 0; }
+
+    code span.al { color: #ff6b6b; font-weight: bold; }
+    code span.an { color: #82aaff; font-weight: bold; font-style: italic; }
+    code span.at { color: #ffcb6b; }
+    code span.bn { color: #c3e88d; }
+    code span.bu { color: #89ddff; }
+    code span.cf { color: #82aaff; font-weight: bold; }
+    code span.ch { color: #89ddff; }
+    code span.cn { color: #f78c6c; }
+    code span.co { color: #676e95; font-style: italic; }
+    code span.cv { color: #82aaff; font-weight: bold; font-style: italic; }
+    code span.do { color: #676e95; font-style: italic; }
+    code span.dt { color: #ffcb6b; }
+    code span.dv { color: #c3e88d; }
+    code span.er { color: #ff6b6b; font-weight: bold; }
+    code span.ex { color: var(--primary); }
+    code span.fl { color: #c3e88d; }
+    code span.fu { color: #82aaff; }
+    code span.im { color: #89ddff; font-weight: bold; }
+    code span.in { color: #82aaff; font-weight: bold; font-style: italic; }
+    code span.kw { color: #82aaff; font-weight: bold; }
+    code span.op { color: #89ddff; }
+    code span.ot { color: #82aaff; }
+    code span.pp { color: #ffcb6b; }
+    code span.sc { color: #89ddff; }
+    code span.ss { color: #c792ea; }
+    code span.st { color: #89ddff; }
+    code span.va { color: #ffcb6b; }
+    code span.vs { color: #89ddff; }
+    code span.wa { color: #82aaff; font-weight: bold; font-style: italic; }
+
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.9em; }
+    thead { background: var(--bg-card); }
+    th { padding: 12px; text-align: left; color: var(--primary); font-weight: 600; border-bottom: 2px solid var(--primary); }
+    td { padding: 10px 12px; color: var(--text-secondary); border-bottom: 1px solid var(--border); }
+    tr:hover td { background: var(--bg-card); }
+
+    ul, ol { padding-left: 1.5em; margin: 1em 0; }
+    li { color: var(--text-secondary); margin: 0.5em 0; line-height: 1.6; }
+    li::marker { color: var(--primary); }
+
+    blockquote {
+      border-left: 3px solid var(--accent-purple);
+      background: var(--bg-card);
+      padding: 12px 16px;
+      margin: 1em 0;
+      color: var(--text-secondary);
+    }
+
+    code { background: var(--bg-code); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; color: var(--primary); }
+    pre code { background: transparent; padding: 0; color: var(--text-primary); }
+    strong { color: var(--text-primary); font-weight: 600; }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 16px 60px; }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav-header">
+    <a href="../../index.html">← Volver al Taller</a>
+  </header>
+  
+  <div class="container">
+    <header id="title-block-header">
+      <h1 class="title">Ejemplos de Agentes - Guía Completa</h1>
+    </header>
+    <h1 id="estructura-de-agentes---guía-completa">Estructura de Agentes - Guía Completa</h1>
+    <h2 id="anatomía-de-un-agente">Anatomía de un Agente</h2>
+    <pre><code>┌─────────────────────────────────────────────────────────────┐
+│                    AGENTE                                    │
+├─────────────────────────────────────────────────────────────┤
+│  1. HEADER         → Identificación y metadata               │
+│  2. ACTIVATION     → Cuándo se activa                      │
+│  3. HARD RULES    → Reglas estrictas (nunca violar)        │
+│  4. SOFT RULES    → Preferencias (pueden adaptarse)         │
+│  5. DECISION GATES → Routing según tipo de request         │
+│  6. EXECUTION      → Pasos de ejecución                    │
+│  7. OUTPUT CONTRACT→ Qué devuelve                          │
+│  8. REFERENCES     → Skills y archivos relacionados          │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+    <hr />
+    <h2 id="ejemplo-1-developer-mejorado">Ejemplo 1: Developer (Mejorado)</h2>
+    <div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+    <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> developer</span></span>
+    <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"Trigger: developer, code, implement, build, write code. FullStack Developer — React/React Native + Next.js + SDD"</span></span>
+    <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">license</span><span class="kw">:</span><span class="at"> MIT</span></span>
+    <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">metadata</span><span class="kw">:</span></span>
+    <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">author</span><span class="kw">:</span><span class="at"> diego-saavedra</span></span>
+    <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="st">"1.0"</span></span>
+    <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">stack</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">React</span><span class="kw">,</span><span class="at"> React Native</span><span class="kw">,</span><span class="at"> Next.js</span><span class="kw">,</span><span class="at"> TypeScript</span><span class="kw">,</span><span class="at"> Node.js</span><span class="kw">]</span></span>
+    <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">certifications</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">AWS</span><span class="kw">,</span><span class="at"> GCP</span><span class="kw">]</span></span>
+    <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+    <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">## 1. Activation Contract</span></span></code></pre></div>
+    <hr />
+    <h2 id="soft-rules-preferencias">3. Soft Rules (Preferencias)</h2>
+    <div class="sourceCode" id="cb3"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Preferir Composition over Inheritance</span>
+    <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Usar React 19 patterns (no useMemo/useCallback manual)</span>
+    <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tailwind para estilos (design tokens)</span>
+    <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Conventional Commits para git</span>
+    <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SOLID principles en código nuevo</span></code></pre></div>
+    <hr />
+    <h2 id="decision-gates">4. Decision Gates</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Request Type</th>
+          <th>Skill to Load</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>React/Next.js</td>
+          <td>react-19, nextjs-15</td>
+          <td>Load skill patterns</td>
+        </tr>
+        <tr>
+          <td>React Native</td>
+          <td>react-native, expo</td>
+          <td>Load mobile patterns</td>
+        </tr>
+        <tr>
+          <td>State Management</td>
+          <td>zustand-5, react-query</td>
+          <td>Load state patterns</td>
+        </tr>
+        <tr>
+          <td>API Design</td>
+          <td>rest-api, openapi</td>
+          <td>Load API patterns</td>
+        </tr>
+        <tr>
+          <td>Testing</td>
+          <td>tdd, testing-category</td>
+          <td>Load test patterns</td>
+        </tr>
+        <tr>
+          <td>UI/UX</td>
+          <td>apple-mobile-design, shadcn-ui</td>
+          <td>Load design patterns</td>
+        </tr>
+        <tr>
+          <td>Security</td>
+          <td>software-security, secrets-scan</td>
+          <td>Security audit</td>
+        </tr>
+        <tr>
+          <td>SDD Flow</td>
+          <td>sdd-init, sdd-spec</td>
+          <td>Start SDD cycle</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>El contenido continúa con más ejemplos de agentes (Facilitator, Hacker)...</p>
+  </div>
+</body>
+</html>
