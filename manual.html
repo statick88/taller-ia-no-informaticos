@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual del Participante - Taller de IA para No Informáticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00cc33;
+      --secondary: #00b4e6;
+      --bg-dark: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a25;
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0b0;
+      --border: rgba(255, 255, 255, 0.08);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background: var(--bg-dark);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      z-index: 100;
+    }
+
+    .header a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header a:hover {
+      color: var(--text-primary);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; color: var(--text-primary); }
+    h2 { font-size: 1.75rem; font-weight: 700; margin: 40px 0 20px; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+    h3 { font-size: 1.35rem; font-weight: 600; margin: 28px 0 16px; color: var(--text-primary); }
+    h4 { font-size: 1.1rem; font-weight: 600; margin: 20px 0 12px; color: var(--text-primary); }
+
+    p { margin-bottom: 16px; line-height: 1.7; color: var(--text-secondary); }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    ul, ol { margin: 16px 0 16px 24px; line-height: 1.8; color: var(--text-secondary); }
+    li { margin-bottom: 8px; }
+
+    strong { color: var(--text-primary); font-weight: 600; }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      background: #0d0d14;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    pre {
+      background: #0d0d14;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 20px 0;
+      border: 1px solid var(--border);
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--primary);
+      background: rgba(0, 204, 51, 0.1);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+      color: var(--text-secondary);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    th {
+      background: var(--bg-card);
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    td { color: var(--text-secondary); }
+
+    tr:hover td { background: var(--bg-card-hover); }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgba(0, 204, 51, 0.1);
+      border: 1px solid rgba(0, 204, 51, 0.3);
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--primary);
+      margin-bottom: 24px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html">← Volver al Inicio</a>
+  </header>
+
+  <main class="container">
+    <h1>Taller de IA para No Informáticos</h1>
+    <p class="badge">Manual del Participante</p>
+    <p><strong>Duración:</strong> 2 Horas | <strong>Modalidad:</strong> Virtual | <strong>Costo:</strong> Gratis</p>
+
+    <hr>
+
+    <h2>¿Qué aprenderás?</h2>
+    <p>Al finalizar este taller podrás usar herramientas de inteligencia artificial para aumentar tu productividad profesional sin necesidad de saber programar. Configurarás tu propio asistente personalizado y entenderás qué herramienta usar según tu trabajo.</p>
+
+    <p><strong>Al terminar serás capaz de:</strong></p>
+    <ul>
+      <li>Usar Opencode para tareas profesionales</li>
+      <li>Personalizar tu asistente con tu perfil</li>
+      <li>Instalar habilidades adicionales</li>
+      <li>Conectar extensiones</li>
+      <li>Elegir la mejor herramienta para tu trabajo</li>
+    </ul>
+
+    <hr>
+
+    <h2>Requisitos Previos</h2>
+    <p>Antes del taller prepara:</p>
+    <ol>
+      <li>Cuenta de Google (para NotebookLM, gratis)</li>
+      <li>Editor de texto (Bloc de notas o TextEdit)</li>
+      <li>Navegador actualizado (Chrome, Firefox o Edge)</li>
+      <li>Conexión a internet estable</li>
+    </ol>
+
+    <hr>
+
+    <h2>Estructura del Taller</h2>
+
+    <h3>Hora 1: Fundamentos y Configuración</h3>
+    <table>
+      <tr><th>Tiempo</th><th>Tema</th></tr>
+      <tr><td>0:00 - 0:15</td><td>Bienvenida e introducción</td></tr>
+      <tr><td>0:15 - 0:30</td><td>El ecosistema de IA en 2026</td></tr>
+      <tr><td>0:30 - 0:45</td><td>Instalación de Opencode</td></tr>
+      <tr><td>0:45 - 1:00</td><td>Primera conversación con la IA</td></tr>
+    </table>
+
+    <h3>Hora 2: Personalización y Análisis</h3>
+    <table>
+      <tr><th>Tiempo</th><th>Tema</th></tr>
+      <tr><td>1:00 - 1:20</td><td>Perfiles personalizados (agents.md)</td></tr>
+      <tr><td>1:20 - 1:40</td><td>Skills y extensiones</td></tr>
+      <tr><td>1:40 - 1:55</td><td>Comparativa de herramientas</td></tr>
+      <tr><td>1:55 - 2:00</td><td>Cierre y siguientes pasos</td></tr>
+    </table>
+
+    <hr>
+
+    <h2>1. Fundamentos: ¿Por qué usar asistentes de IA?</h2>
+
+    <h3>Evidencia científica</h3>
+    <p>La investigación científica demuestra beneficios significativos:</p>
+
+    <h4>Estudio de Repsol (2024)</h4>
+    <p>La multienergética española, en colaboración con MIT Technology Review, evaluó Microsoft 365 Copilot durante 4 meses con 300 empleados:</p>
+    <ul>
+      <li><strong>Ahorro de tiempo:</strong> 121 minutos brutos por semana por empleado (96.8 horas/año)</li>
+      <li><strong>Mejora en calidad:</strong> 16% increase en la calidad de entregables</li>
+      <li><strong>Satisfacción:</strong> 61.9% declaró que preferiría no volver a trabajar sin la herramienta</li>
+      <li><strong>Perfil más benefici:</strong> Técnicos cualificados y profesionales sénior</li>
+    </ul>
+
+    <h4>Estudio en Ecuador (El Oro, 2025)</h4>
+    <p>Investigación en 900 empleados de empresas comerciales:</p>
+    <ul>
+      <li><strong>Productividad:</strong> El uso frecuente de IA incrementa la productividad (odds ratio de 2.34)</li>
+      <li><strong>Eficiencia:</strong> 40% de reducción en duración de tareas administrativas</li>
+      <li><strong>Precisión:</strong> 72% de reducción en incidencia de errores</li>
+    </ul>
+
+    <h4>Estudio en México (2025)</h4>
+    <p>Encuesta a 327 usuarios mexicanos:</p>
+    <ul>
+      <li><strong>Productividad:</strong> 62% usa IA para incrementar productividad</li>
+      <li><strong>Ahorro:</strong> 7.02 horas semanales en promedio</li>
+      <li><strong>Creatividad:</strong> 31.5% usa IA para generar nuevas ideas</li>
+      <li><strong>Motivación:</strong> Cerca de un tercio busca innovación</li>
+    </ul>
+
+    <h4>Estudio en Universidades Latinoamericanas (2024)</h4>
+    <p>Implementación de asistentes virtuales en universidades de Ecuador, Perú y Colombia:</p>
+    <ul>
+      <li><strong>Satisfacción:</strong> Más del 75% reportó altos niveles de satisfacción</li>
+      <li><strong>Docentes:</strong> Reducción de carga administrativa</li>
+      <li><strong>Estudiantes:</strong> Retroalimentación inmediata y adaptación de contenidos</li>
+    </ul>
+
+    <h3>Conclusión científica</h3>
+    <p>Los estudios demuestran consistentemente que los asistentes de IA:</p>
+    <ol>
+      <li><strong>Ahorran tiempo significativo</strong> (2+ horas/semana)</li>
+      <li><strong>Mejoran la calidad</strong> del trabajo realizado</li>
+      <li><strong>Aumentan la satisfacción</strong> laboral</li>
+      <li><strong>Reducen errores</strong> en tareas repetitivas</li>
+    </ol>
+    <p>La IA no reemplaza al profesional, pero amplifica su capacidad.</p>
+
+    <hr>
+
+    <h2>2. El Ecosistema de IA en 2026</h2>
+
+    <h3>¿Qué es un asistente de IA?</h3>
+    <p>Es como un compañero virtual que te ayuda con tareas intelectuales: escribir, investigar, analizar, resumir. A diferencia de los motores de búsqueda, entiende el contexto y puede mantener una conversación.</p>
+
+    <h3>Las principales herramientas</h3>
+    <table>
+      <tr><th>Herramienta</th><th>Para qué sirve</th><th>Ventaja principal</th></tr>
+      <tr><td><strong>Opencode</strong></td><td>Asistencia versatile</td><td>Memoria persistente y personalización</td></tr>
+      <tr><td><strong>Copilot</strong></td><td>Programación</td><td>Integrado en VS Code</td></tr>
+      <tr><td><strong>Gemini</strong></td><td>Ecosistema Google</td><td>Integrado con Sheets, Docs, Drive</td></tr>
+      <tr><td><strong>Ollama</strong></td><td>Modelos locales</td><td>Trabaja sin internet</td></tr>
+      <tr><td><strong>NotebookLM</strong></td><td>Análisis de documentos</td><td>Generación de contenido desde fuentes</td></tr>
+    </table>
+
+    <h3>¿Cuál elegir?</h3>
+    <table>
+      <tr><th>Si necesitas...</th><th>Elige...</th></tr>
+      <tr><td>Flexibilidad sin programar</td><td>Opencode</td></tr>
+      <tr><td>Programar en VS Code</td><td>Copilot</td></tr>
+      <tr><td>Usar el ecosistema Google</td><td>Gemini</td></tr>
+      <tr><td>Privacidad total de datos</td><td>Ollama</td></tr>
+      <tr><td>Solo analizar documentos</td><td>NotebookLM</td></tr>
+    </table>
+
+    <hr>
+
+    <h2>3. Instalación de Opencode</h2>
+
+    <h3>¿Por qué Opencode?</h3>
+    <p>Framework de asistencia versatile con:</p>
+    <ul>
+      <li><strong>Memoria persistente</strong> (recuerda conversaciones anteriores)</li>
+      <li><strong>Sistema de perfiles</strong> (se adapta a tu trabajo)</li>
+      <li><strong>Skills modulares</strong> (extiende capacidades)</li>
+      <li><strong>MCPs</strong> (se conecta con servicios externos)</li>
+    </ul>
+
+    <h3>Instalación</h3>
+    <p><strong>Windows:</strong> Abre PowerShell y escribe:</p>
+    <pre><code>npm install -g opencode-cli</code></pre>
+
+    <p><strong>Mac:</strong> Abre Terminal:</p>
+    <pre><code>npm install -g opencode-cli</code></pre>
+
+    <p><strong>Linux:</strong></p>
+    <pre><code>sudo npm install -g opencode-cli</code></pre>
+
+    <h3>Verifica instalación</h3>
+    <pre><code>opencode --version</code></pre>
+
+    <hr>
+
+    <h2>4. Tu Primer Contacto con la IA</h2>
+
+    <h3>Iniciar conversación</h3>
+    <pre><code>opencode</code></pre>
+
+    <h3>Ejemplos de conversación</h3>
+    <p><strong>Presenter:</strong></p>
+    <pre><code>Hola, me llamo [tu nombre] y trabajo en [tu industria]. Ayúdame con [tu tarea].</code></pre>
+
+    <p><strong>Pedir ayuda:</strong></p>
+    <pre><code>Tengo que escribir un proyecto sobre [tema]. ¿Puedes ayudarme a estructurarlo?</code></pre>
+
+    <p><strong>Investigar:</strong></p>
+    <pre><code>Busca información sobre [tu tema de interés]</code></pre>
+
+    <hr>
+
+    <h2>5. Perfiles Personalizados (agents.md)</h2>
+
+    <h3>¿Qué es agents.md?</h3>
+    <p>Es una tarjeta de presentación para tu asistente. Le dice quién eres, qué necesitas y cómo prefieres trabajar.</p>
+
+    <h3>Estructura básica</h3>
+    <pre><code># Mi Perfil Profesional
+
+## Quién soy
+[Nombre]
+[Profesión/Rol]
+[Industria]
+
+## Qué hago
+[Descripción]
+
+## Mis objetivos
+- Objetivo 1
+- Objetivo 2
+
+## Cómo prefiero que me ayudes
+[Estilo preferido]
+[Nivel de detalle]</code></pre>
+
+    <h3>Ejemplo: Educator</h3>
+    <pre><code># Mi Perfil Profesional
+
+## Quién soy
+María García
+Profesora de matemáticas
+Educación secundaria
+
+## Qué hago
+Clases de bachillerato.
+Evaluaciones.
+Tutorías.
+
+## Mis objetivos
+- Crear planes de clase efectivos
+- Generar evaluaciones equilibradas</code></pre>
+
+    <h3>Ejemplo: Administrador</h3>
+    <pre><code># Mi Perfil Profesional
+
+## Quién soy
+Juan Pérez
+Gerente de operaciones
+Sector: Retail
+
+## Qué hago
+Coordinación logística.
+Gestión de inventario.
+Reportes semanales.
+
+## Mis objetivos
+- Automatizar reportes
+- Mejorar análisis</code></pre>
+
+    <hr>
+
+    <h2>6. Casos de Uso Detallados por Profesión</h2>
+
+    <h3>Caso 1: Educator / Docente</h3>
+    <p><strong>Perfil:</strong> Profesora de historia enbachillerato</p>
+    <p><strong>Necesidad:</strong> Crear plan de unidad sobre la Edad Media</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura tu perfil de educator</li>
+      <li>Escribe: "Crea un plan de unidad sobre la Edad Media para 3er año"</li>
+      <li>Recibes estructura con objetivos, contenidos, actividades</li>
+      <li>Pide: "Genera una evaluación con 10 preguntas"</li>
+      <li>Recibes preguntas con rúbrica de corrección</li>
+      <li>Pide: "Busca fuentes actualizadas sobre [tema específico]"</li>
+    </ol>
+    <p><strong>Resultado:</strong> Plan de unidad completo en 15 minutos vs 3 horas manual</p>
+    <p><strong>Herramientas útiles:</strong></p>
+    <ul>
+      <li>Opencode para generación de contenido</li>
+      <li>NotebookLM para analizar recursos educativos</li>
+    </ul>
+
+    <h3>Caso 2: Administrador de Empresas</h3>
+    <p><strong>Perfil:</strong> Gerente de recursos humanos</p>
+    <p><strong>Necesidad:</strong> Elaborar informe de rotación de personal</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura tu perfil de RRHH</li>
+      <li>Escribe: "Ayúdame a estructurar un informe de rotación de personal"</li>
+      <li>Recibes plantilla con métricas clave</li>
+      <li>Proporciona tus datos</li>
+      <li>Pide: "Análisis de las causas principales"</li>
+      <li>Recibes recomendaciones basadas en datos</li>
+    </ol>
+    <p><strong>Resultado:</strong> informe profesional con insights accionables</p>
+    <p><strong>Herramientas:</strong></p>
+    <ul>
+      <li>Opencode para estructuración</li>
+      <li>Gemini para análisis de hojas de cálculo</li>
+    </ul>
+
+    <h3>Caso 3: Profesional de Marketing</h3>
+    <p><strong>Perfil:</strong> Coordinador de marketing digital</p>
+    <p><strong>Necesidad:</strong> Calendario de contenido para redes sociales</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura perfil de marketing</li>
+      <li>Escribe: "Crea un calendario de contenido para Instagram para el próximo mes"</li>
+      <li>Recibes 30 publicaciones con temas, horarios, hashtags</li>
+      <li>Pide: "Analiza las redes de [competidor]"</li>
+      <li>Recibes análisis de competidores</li>
+      <li>Pide: "Genera captions para 5 publicaciones"</li>
+    </ol>
+    <p><strong>Resultado:</strong> Contenido para un mes en 30 minutos</p>
+    <p><strong>Herramientas:</strong></p>
+    <ul>
+      <li>Opencode para generación</li>
+      <li>Amp para automatización</li>
+    </ul>
+
+    <h3>Caso 4: Profesional de Salud</h3>
+    <p><strong>Perfil:</strong> Médico general en centro de salud</p>
+    <p><strong>Necesidad:</strong> Mantenerse actualizado en protocolos</p>
+    <p><strong>Con Ollama + NotebookLM:</strong></p>
+    <ol>
+      <li>Configura Ollama (trabajo offline)</li>
+      <li>Busca: "Protocolos actualizados diabetes tipo 2 2025"</li>
+      <li>En NotebookLM: Agrega artículos de revistas médicas</li>
+      <li>Pide: "Resume los hallazgos principales"</li>
+      <li>Verifica siempre con fuentes primarias</li>
+    </ol>
+    <p><strong>Privacidad:</strong> Datos de pacientes nunca dejan la institución</p>
+    <p><strong>Herramientas:</strong></p>
+    <ul>
+      <li>Ollama (privacidad)</li>
+      <li>NotebookLM (análisis de papers)</li>
+    </ul>
+
+    <h3>Caso 5: Abogado / Legal</h3>
+    <p><strong>Perfil:</strong> Lawyer en bufete median</p>
+    <p><strong>Necesidad:</strong> Investigar precedentes judiciales</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura perfil legal</li>
+      <li>Escribe: "Busca precedentes sobre [tema jurídico]"</li>
+      <li>Recibes casos relevantes con citas</li>
+      <li>Pide: "Resume los argumentos principales"</li>
+      <li>Verifica siempre con fuentes oficiales</li>
+    </ol>
+    <p><strong>Herramientas:</strong></p>
+    <ul>
+      <li>Opencode para búsqueda</li>
+      <li>Normas de citación profesional</li>
+    </ul>
+
+    <h3>Caso 6: Contador / Contador Público</h3>
+    <p><strong>Perfil:</strong> Contador en empresa comercial</p>
+    <p><strong>Necesidad:</strong> Entender nuevas regulaciones fiscales</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura perfil contable</li>
+      <li>Escribe: "Explica las reformas tributarias 2025"</li>
+      <li>Recibes resumen en lenguaje claro</li>
+      <li>Pide: "¿Cómo afecta a empresas del sector retail?"</li>
+      <li>Recibes análisis específico</li>
+    </ol>
+    <p><strong>Herramientas:</strong></p>
+    <ul>
+      <li>Opencode para explicación</li>
+      <li>Gemini para hojas de cálculo</li>
+    </ul>
+
+    <h3>Caso 7: Periodista / Comunicador</h3>
+    <p><strong>Perfil:</strong> Journalist de investigación</p>
+    <p><strong>Necedad:</strong> Investigar tema complejo</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura perfil de periodista</li>
+      <li>Escribe: "Investiga sobre [tema]"</li>
+      <li>Recibes fontes confiables</li>
+      <li>Pide: "Resume en 5 oraciones"</li>
+      <li>Pide: "¿Qué ángulos no han sido explorados?"</li>
+    </ol>
+    <p><strong>Herramientas:</strong></p>
+    <ul>
+      <li>Opencode para investigación</li>
+      <li>NotebookLM para analizar documentos</li>
+    </ul>
+
+    <h3>Caso 8: Ingeniero (No de Software)</h3>
+    <p><strong>Perfil:</strong> Civil engineer en constructora</p>
+    <p><strong>Necesidad:</strong> Revisar normativas de construcción</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura perfil de ingeniería civil</li>
+      <li>Escribe: "¿Cuáles son los requisitos sísmicos para跳水 de concreto?"</li>
+      <li>Recibes norma con parámetros</li>
+      <li>Pide: "Busca ejemplos de aplicación"</li>
+      <li>Recibes casos de estudio</li>
+    </ol>
+    <p><strong>Herramientas:</strong></p>
+    <ul>
+      <li>Opencode para normativa</li>
+      <li>Búsqueda de estándares</li>
+    </ul>
+
+    <h3>Caso 9: Arquitecto</h3>
+    <p><strong>Perfil:</strong> Arquitecto en estudio de diseño</p>
+    <p><strong>Necesidad:</strong> Investigar tendencias sostenibles</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura perfil de arquitectura</li>
+      <li>Escribe: "Tendencias en materiales sostenibles 2025"</li>
+      <li>Recibes lista de materiales con propiedades</li>
+      <li>Pide: "Proyectos Beispiel que los usen"</li>
+      <li>Recibes casos reales con fotos</li>
+    </ol>
+
+    <h3>Caso 10: Investigador Académico</h3>
+    <p><strong>Perfil:</strong> Profesor investigador universitario</p>
+    <p><strong>Necesidad:</strong> Revisión bibliográfica para artículo</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura perfil de investigador</li>
+      <li>Escribe: "/busqueda_cientifica [tu tema]"</li>
+      <li>Recibes 20+ fuentes Q1/Q2</li>
+      <li>Verifica en NotebookLM</li>
+      <li>Pide: "Resume el estado del arte"</li>
+      <li>Solicita: "Genera debate entre autores"</li>
+    </ol>
+    <p><strong>Resultado:</strong> Revisión de literatura completa en horas vs semanas</p>
+
+    <h3>Caso 11: Estudiante Universitario</h3>
+    <p><strong>Perfil:</strong> Estudiante de maestría</p>
+    <p><strong>Necesidad:</strong> Completar trabajo de investigación</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura tu perfil de estudiante</li>
+      <li>Escribe: "Ayúdame a estructurar mi TFM sobre [tema]"</li>
+      <li>Recibes estructura IMRAD</li>
+      <li>Proporciona avances</li>
+      <li>Pide: "Revisa mi redacción"</li>
+      <li>Recibes correcciones</li>
+    </ol>
+    <p><strong>Herramientas:</strong></p>
+    <ul>
+      <li>Opencode para estructura</li>
+      <li>NotebookLM para estudiar</li>
+    </ul>
+
+    <h3>Caso 12: Emprendedor / Pequeño empresario</h3>
+    <p><strong>Perfil:</strong> Owner de tienda online</p>
+    <p><strong>Necedad:</strong> Mejorar rentabilidad</p>
+    <p><strong>Con Opencode:</strong></p>
+    <ol>
+      <li>Configura perfil de negocio</li>
+      <li>Escribe: "Analiza mis ventas del último mes [comparte datos]"</li>
+      <li>Recibes análisis de patrones</li>
+      <li>Pide: "Recomienda productos a ordenar"</li>
+      <li>Pide: "Estrategia de precios"</li>
+    </ol>
+
+    <hr>
+
+    <h2>7. Skills y Extensiones</h2>
+
+    <h3>¿Qué son las skills?</h3>
+    <p>Aplicaciones adicionales queextienden las capacidades de Opencode.</p>
+
+    <table>
+      <tr><th>Skill</th><th>Para qué sirve</th></tr>
+      <tr><td>Escritura académica</td><td>Informes, documentos</td></tr>
+      <tr><td>Marketing digital</td><td>Estrategias, contenido</td></tr>
+      <tr><td>Investigación</td><td>Fuentes confiables</td></tr>
+      <tr><td>Análisis de datos</td><td>Hojas de cálculo</td></tr>
+      <tr><td>Presentaciones</td><td>Diapositivas</td></tr>
+      <tr><td>NotebookLM</td><td>Análisis profundo</td></tr>
+    </table>
+
+    <h3>Cómo usar</h3>
+    <p>Simplemente indícale qué necesitas:</p>
+    <pre><code>Necesito ayuda con [tu tarea]</code></pre>
+
+    <hr>
+
+    <h2>8. MCP y Extensiones</h2>
+
+    <h3>¿Qué es MCP?</h3>
+    <p>Protocolo que permite conexiones con herramientas externas.</p>
+    <p><strong>MCPs esenciales:</strong></p>
+
+    <table>
+      <tr><th>MCP</th><th>Función</th></tr>
+      <tr><td>NotebookLM</td><td>Análisis de documentos</td></tr>
+      <tr><td>Context7</td><td>Documentación</td></tr>
+      <tr><td>Engram</td><td>Memoria persistente</td></tr>
+    </table>
+
+    <hr>
+
+    <h2>9. Análisis Comparativo</h2>
+
+    <h3>Comparativa principal</h3>
+    <table>
+      <tr><th>Característica</th><th>Copilot</th><th>Opencode</th><th>Ollama</th></tr>
+      <tr><td><strong>Costo</strong></td><td>Freemium</td><td>Freemium</td><td>Gratis</td></tr>
+      <tr><td><strong>Curva</strong></td><td>Media</td><td>Baja</td><td>Media</td></tr>
+      <tr><td><strong>Memoria</strong></td><td>No</td><td>Sí</td><td>Sí</td></tr>
+      <tr><td><strong>Personalización</strong></td><td>Limitada</td><td>Profunda</td><td>Media</td></tr>
+      <tr><td><strong>Internet</strong></td><td>Sí</td><td>Sí</td><td>No</td></tr>
+      <tr><td><strong>Datos locales</strong></td><td>No</td><td>No</td><td>Sí</td></tr>
+    </table>
+
+    <h3>Por profesión</h3>
+    <table>
+      <tr><th>Profesión</th><th>Recomendación</th></tr>
+      <tr><td>Educator</td><td>Opencode + NotebookLM</td></tr>
+      <tr><td>Administrador</td><td>Opencode</td></tr>
+      <tr><td>Marketing</td><td>Opencode + Amp</td></tr>
+      <tr><td>Salud</td><td>Ollama (privacidad)</td></tr>
+      <tr><td>Legal</td><td>Opencode</td></tr>
+      <tr><td>Contador</td><td>Opencode + Gemini</td></tr>
+    </table>
+
+    <hr>
+
+    <h2>10. Resumen y Próximos Pasos</h2>
+
+    <h3>Lo que aprendiste</h3>
+    <ol>
+      <li><strong>Evidencia científica:</strong> Los estudios demuestran beneficios reales</li>
+      <li><strong>Ecosistema IA:</strong> Herramientas disponibles</li>
+      <li><strong>Opencode:</strong> Instalación básica</li>
+      <li><strong>Perfiles:</strong> Personalización con agents.md</li>
+      <li><strong>Skills:</strong> Extensiones de capacidades</li>
+      <li><strong>Casos de uso:</strong> 12 profesiones cubiertas</li>
+    </ol>
+
+    <h3>Plan post-taller</h3>
+    <table>
+      <tr><th>Semana</th><th>Acción</th></tr>
+      <tr><td><strong>1ra</strong></td><td>Personaliza tu agents.md</td></tr>
+      <tr><td><strong>2da</strong></td><td>Explora 2-3 skills</td></tr>
+      <tr><td><strong>3ra</strong></td><td>Integra en tu flujo</td></tr>
+      <tr><td><strong>4ta</strong></td><td>Comparte con colegas</td></tr>
+    </table>
+
+    <hr>
+
+    <h2>Referencias Científicas</h2>
+    <ol>
+      <li><strong>Repsol (2024)</strong>. Estudio sobre Microsoft 365 Copilot. MIT Technology Review España.</li>
+      <li>Márquez-Romero et al. (2025). Impacto de asistentes de IA en productividad. Revista de Finanzas (Ecuador).</li>
+      <li>Yaranga & Olortiga (2025). IA y productividad empresarial. Estudio bibliométrico.</li>
+      <li>López et al. (2025). Asistentes virtuales en educación superior. Revista EDU-INNOVA.</li>
+      <li>Jardón et al. (2024). Asistentes IA en universidades latinoamericanas.</li>
+      <li>Hidalgo Toledo (2025). Productividad y creatividad con IA en México. SciELO.</li>
+    </ol>
+
+    <hr>
+
+    <h2>Preguntas Frecuentes</h2>
+    <p><strong>¿Necesito saber programar?</strong> No, el taller es para profesionales sin conocimientos técnicos.</p>
+    <p><strong>¿Cuánto cuesta?</strong> Opencode tiene nivel gratuito. Ollama y NotebookLM son gratuitos.</p>
+    <p><strong>¿Es seguro?</strong> Para datos sensibles usa Ollama (offline). Para datos generales, las herramientas estándar son seguras.</p>
+
+    <hr>
+
+    <h2>Cheatsheet</h2>
+    <pre><code># Instalación
+npm install -g opencode-cli
+
+# Verificar
+opencode --version
+
+# Iniciar
+opencode
+
+# Skills
+/skills
+
+# Ayuda
+ayúdame con [tarea]</code></pre>
+
+    <hr>
+
+    <footer class="footer">
+      <p>Material preparado para el Taller de IA para No Informáticos</p>
+      <p>2 Horas — Virtual — Gratis</p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta - Taller de IA para No Informáticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00cc33;
+      --secondary: #00b4e6;
+      --bg-dark: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a25;
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0b0;
+      --border: rgba(255, 255, 255, 0.08);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background: var(--bg-dark);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      z-index: 100;
+    }
+
+    .header a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header a:hover {
+      color: var(--text-primary);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; color: var(--text-primary); }
+    h2 { font-size: 1.75rem; font-weight: 700; margin: 40px 0 20px; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+    h3 { font-size: 1.35rem; font-weight: 600; margin: 28px 0 16px; color: var(--text-primary); }
+    h4 { font-size: 1.1rem; font-weight: 600; margin: 20px 0 12px; color: var(--text-primary); }
+
+    p { margin-bottom: 16px; line-height: 1.7; color: var(--text-secondary); }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    ul, ol { margin: 16px 0 16px 24px; line-height: 1.8; color: var(--text-secondary); }
+    li { margin-bottom: 8px; }
+
+    strong { color: var(--text-primary); font-weight: 600; }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      background: #0d0d14;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    pre {
+      background: #0d0d14;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 20px 0;
+      border: 1px solid var(--border);
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--primary);
+      background: rgba(0, 204, 51, 0.1);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+      color: var(--text-secondary);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    th {
+      background: var(--bg-card);
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    td { color: var(--text-secondary); }
+
+    tr:hover td { background: var(--bg-card-hover); }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgba(0, 204, 51, 0.1);
+      border: 1px solid rgba(0, 204, 51, 0.3);
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--primary);
+      margin-bottom: 24px;
+    }
+
+    .meta-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    .meta-item strong {
+      color: var(--text-primary);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html">← Volver al Inicio</a>
+  </header>
+
+  <main class="container">
+    <h1>Inteligencia Artificial para No Informáticos</h1>
+    <p class="badge">Propuesta del Taller</p>
+
+    <h2>Domina Opencode y NotebookLM — Taller Virtual Gratuito</h2>
+
+    <hr>
+
+    <h3>¿Qué es este taller?</h3>
+    <p>Este taller gratuito de 2 horas te enseñará a usar <strong>Opencode</strong> y <strong>NotebookLM</strong>, dos herramientas de inteligencia artificial fundamentales para aumentar tu productividad profesional, sin necesidad de saber programar.</p>
+
+    <p><strong>Estos son los objetivos principales del taller:</strong></p>
+    <ul>
+      <li>Configurar y usar Opencode como asistente personalizado</li>
+      <li>Utilizar NotebookLM para análisis de documentos</li>
+      <li>Crear perfiles personalizados con el archivo agents.md</li>
+      <li>Instalar skills y extensiones</li>
+      <li>Integrar ambas herramientas en tu flujo de trabajo</li>
+    </ul>
+
+    <div class="meta-info">
+      <div class="meta-item"><strong>Duración:</strong> 2 horas</div>
+      <div class="meta-item"><strong>Modalidad:</strong> Virtual (en vivo)</div>
+      <div class="meta-item"><strong>Costo:</strong> Totalmente gratuito</div>
+      <div class="meta-item"><strong>Dirigido a:</strong> Profesionales de todas las áreas (no informáticos)</div>
+    </div>
+
+    <hr>
+
+    <h3>¿Por qué aprender a usar IA?</h3>
+    <p>La evidencia científica demuestra beneficios significativos:</p>
+    <ul>
+      <li><strong>Estudio de Repsol (2024):</strong> 121 minutos/semana ahorrados, 61.9% no volvería sin IA</li>
+      <li><strong>Estudio en México (2025):</strong> 62% usa IA para productividad, 7.02 horas/semana ahorradas</li>
+      <li><strong>Estudio en Ecuador (2025):</strong> 2.34x más productividad, 72% menos errores</li>
+    </ul>
+    <p>La IA no reemplaza al profesional, pero amplifica su capacidad.</p>
+
+    <hr>
+
+    <h3>Objetivos del Taller</h3>
+    <p>El objetivo principal es aprender a usar <strong>Opencode</strong> y <strong>NotebookLM</strong> de manera práctica. Al finalizar serás capaz de:</p>
+    <ul>
+      <li>Instalar y configurar <strong>Opencode</strong> en tu computadora</li>
+      <li>Personalizar tu asistente con archivos <strong>agents.md</strong></li>
+      <li>Usar <strong>NotebookLM</strong> para analizar documentos y generar contenido</li>
+      <li>Instalar habilidades adicionales (skills)</li>
+      <li>Conectar extensiones (MCP)</li>
+      <li>Aplicar ambas herramientas a tu trabajo profesional</li>
+    </ul>
+
+    <hr>
+
+    <h3>Estructura del Taller</h3>
+
+    <h4>Hora 1: Fundamentos y Configuración</h4>
+    <table>
+      <tr><th>Tiempo</th><th>Tema</th></tr>
+      <tr><td>0:00 - 0:15</td><td>Bienvenida e introducción</td></tr>
+      <tr><td>0:15 - 0:30</td><td>El ecosistema de IA en 2026</td></tr>
+      <tr><td>0:30 - 0:45</td><td>Instalación de Opencode</td></tr>
+      <tr><td>0:45 - 1:00</td><td>Primera conversación con la IA</td></tr>
+    </table>
+
+    <h4>Hora 2: Personalización y Análisis</h4>
+    <table>
+      <tr><th>Tiempo</th><th>Tema</th></tr>
+      <tr><td>1:00 - 1:20</td><td>Perfiles personalizados (agents.md)</td></tr>
+      <tr><td>1:20 - 1:40</td><td>Skills y extensiones</td></tr>
+      <tr><td>1:40 - 1:55</td><td>Comparativa de herramientas</td></tr>
+      <tr><td>1:55 - 2:00</td><td>Cierre y siguientes pasos</td></tr>
+    </table>
+
+    <hr>
+
+    <h3>Temas Cubiertos</h3>
+    <ol>
+      <li><strong>Fundamentos con evidencia científica</strong> — Estudios que demuestran beneficios reales</li>
+      <li><strong>Ecosistema de IA</strong> — Opencode, Copilot, Gemini, Ollama, NotebookLM</li>
+      <li><strong>Instalación de Opencode</strong> — Windows, Mac, Linux</li>
+      <li><strong>Primera interacción</strong> — Cómo conversar con tu asistente</li>
+      <li><strong>Perfiles personalizados</strong> — El archivo agents.md</li>
+      <li><strong>Casos de uso</strong> — 12 profesiones detalladas</li>
+      <li><strong>Skills y extensiones</strong> — Ampliar capacidades</li>
+      <li><strong>Análisis comparativo</strong> — Cuándo elegir cada herramienta</li>
+    </ol>
+
+    <hr>
+
+    <h3>Casos de Uso por Profesión</h3>
+    <table>
+      <tr><th>#</th><th>Profesión</th><th>Caso de Uso</th></tr>
+      <tr><td>1</td><td>Educator/Docente</td><td>Planes de clase, evaluaciones</td></tr>
+      <tr><td>2</td><td>Administrador</td><td>Informes, análisis de personal</td></tr>
+      <tr><td>3</td><td>Marketing</td><td>Contenido, estrategia</td></tr>
+      <tr><td>4</td><td>Salud</td><td>Protocolos (privacidad)</td></tr>
+      <tr><td>5</td><td>Abogado</td><td>Precedentes judiciales</td></tr>
+      <tr><td>6</td><td>Contador</td><td>Reformas tributarias</td></tr>
+      <tr><td>7</td><td>Periodista</td><td>Investigación</td></tr>
+      <tr><td>8</td><td>Ingeniero</td><td>Normativas</td></tr>
+      <tr><td>9</td><td>Arquitecto</td><td>Materiales sostenibles</td></tr>
+      <tr><td>10</td><td>Investigador</td><td>Revisión bibliográfica</td></tr>
+      <tr><td>11</td><td>Estudiante</td><td>Estructura de TFM</td></tr>
+      <tr><td>12</td><td>Emprendedor</td><td>Análisis de negocio</td></tr>
+    </table>
+
+    <hr>
+
+    <h3>Requisitos Técnicos</h3>
+    <p>Antes del taller, prepara en tu computadora:</p>
+    <ol>
+      <li><strong>Cuenta de Google</strong> — Para NotebookLM (gratis)</li>
+      <li><strong>Editor de texto</strong> — Bloc de notas o TextEdit</li>
+      <li><strong>Navegador actualizado</strong> — Chrome, Firefox o Edge</li>
+      <li><strong>Conexión a internet</strong> — Estable</li>
+    </ol>
+    <p>No necesitas instalar nada antes. Lo haremos juntos.</p>
+
+    <hr>
+
+    <h3>El Instructor</h3>
+    <p><strong>Diego Medardo Saavedra García</strong></p>
+    <ul>
+      <li>Software Developer FullStack, Móvil e IA (+10 años)</li>
+      <li>Docente universitario (ESPE, UIDE, Abacom, IST JM, Codings Academy)</li>
+      <li>MSc(c) Ciberseguridad — Universidad Complutense de Madrid</li>
+      <li>Especializado en Ethical Hacking y Seguridad Ofensiva</li>
+      <li>Creador de cursos, eBooks y contenido práctico</li>
+    </ul>
+
+    <p><strong>Contacto:</strong></p>
+    <ul>
+      <li>Email: dsaavedra88@gmail.com</li>
+      <li>Telefono: +593 980192790</li>
+      <li>LinkedIn: linkedin.com/in/diego-saavedra-developer</li>
+      <li>Web: statick88.github.io</li>
+    </ul>
+
+    <hr>
+
+    <h3>Materiales Entregables</h3>
+    <ul>
+      <li>Manual del participante (PDF)</li>
+      <li>Presentación del taller</li>
+      <li>Acceso a NotebookLM con artículos científicos</li>
+      <li>Plan de acción post-taller</li>
+    </ul>
+
+    <hr>
+
+    <h3>Referencias Científicas</h3>
+    <ol>
+      <li>MIT Technology Review España (2024). Estudio sobre Microsoft 365 Copilot. Repsol.</li>
+      <li>Márquez-Romero et al. (2025). Impacto de asistentes de IA en productividad. Revista de Finanzas.</li>
+      <li>Yaranga & Olortiga (2025). IA y productividad empresarial. Estudio bibliométrico.</li>
+      <li>López et al. (2025). Asistentes virtuales en educación superior. Revista EDU-INNOVA.</li>
+      <li>Jardón et al. (2024). Asistentes IA en universidades latinoamericanas.</li>
+    </ol>
+
+    <hr>
+
+    <h3>Inscripción</h3>
+    <p><strong>Inscripción gratuita:</strong> Envía un correo a <a href="mailto:dsaavedra88@gmail.com">correo del instructor</a> con:</p>
+    <ul>
+      <li>Nombre completo</li>
+      <li>Profesión/Área de trabajo</li>
+      <li>Por qué te interesa este taller</li>
+    </ul>
+
+    <hr>
+
+    <h3>Información de Contacto</h3>
+    <p><strong>Docente:</strong> Diego Medardo Saavedra García<br>
+    <strong>Correo:</strong> dsaavedra88@gmail.com<br>
+    <strong>Teléfono:</strong> +593 980192790<br>
+    <strong>LinkedIn:</strong> linkedin.com/in/diego-saavedra-developer<br>
+    <strong>Web:</strong> statick88.github.io</p>
+
+    <hr>
+
+    <footer class="footer">
+      <p>Taller de IA para No Informáticos — Aprende Opencode y NotebookLM</p>
+      <p>2 Horas — Virtual — Gratis</p>
+    </footer>
+  </main>
+</body>
+</html>
