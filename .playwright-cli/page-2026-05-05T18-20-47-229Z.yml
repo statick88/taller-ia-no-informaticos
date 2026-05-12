@@ -1,0 +1,199 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link "OpenCode" [ref=e7] [cursor=pointer]:
+        - /url: /es
+        - img "OpenCode" [ref=e8]
+      - navigation [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "GitHub [150K]" [ref=e12] [cursor=pointer]:
+              - /url: https://github.com/anomalyco/opencode
+              - text: GitHub
+              - generic [ref=e13]: "[150K]"
+          - listitem [ref=e14]:
+            - link "Documentación" [ref=e15] [cursor=pointer]:
+              - /url: /docs/es
+          - listitem [ref=e16]:
+            - link "Zen" [ref=e17] [cursor=pointer]:
+              - /url: /es/zen
+          - listitem [ref=e18]:
+            - link "Go" [ref=e19] [cursor=pointer]:
+              - /url: /es/go
+          - listitem [ref=e20]:
+            - link "Enterprise" [ref=e21] [cursor=pointer]:
+              - /url: /es/enterprise
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: "[1] OpenCode Terminal"
+        - generic [ref=e25]:
+          - button "curl -fsSL https://opencode.ai/install | bash" [ref=e26] [cursor=pointer]:
+            - code [ref=e27]:
+              - text: curl -fsSL https://
+              - strong [ref=e28]: opencode.ai/install
+              - text: "| bash"
+            - img [ref=e30]
+          - button "npm i -g opencode-ai" [ref=e32] [cursor=pointer]:
+            - code [ref=e33]:
+              - text: npm i -g
+              - strong [ref=e34]: opencode-ai
+            - img [ref=e36]
+          - button "bun add -g opencode-ai" [ref=e38] [cursor=pointer]:
+            - code [ref=e39]:
+              - text: bun add -g
+              - strong [ref=e40]: opencode-ai
+            - img [ref=e42]
+          - button "brew install anomalyco/tap/opencode" [ref=e44] [cursor=pointer]:
+            - code [ref=e45]:
+              - text: brew install
+              - strong [ref=e46]: anomalyco/tap/opencode
+            - img [ref=e48]
+          - button "paru -S opencode" [ref=e50] [cursor=pointer]:
+            - code [ref=e51]:
+              - text: paru -S
+              - strong [ref=e52]: opencode
+            - img [ref=e54]
+      - generic [ref=e56]:
+        - generic [ref=e57]: "[2] OpenCode Desktop (Beta)"
+        - generic [ref=e58]:
+          - button "brew install --cask opencode-desktop" [ref=e59] [cursor=pointer]:
+            - code [ref=e60]:
+              - text: brew install --cask
+              - strong [ref=e61]: opencode-desktop
+            - img [ref=e63]
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - img [ref=e68]
+              - generic [ref=e70]: macOS (Apple Silicon)
+            - link "Descargar" [ref=e71] [cursor=pointer]:
+              - /url: /es/download/stable/darwin-aarch64-dmg
+          - generic [ref=e72]:
+            - generic [ref=e73]:
+              - img [ref=e75]
+              - generic [ref=e77]: macOS (Intel)
+            - link "Descargar" [ref=e78] [cursor=pointer]:
+              - /url: /es/download/stable/darwin-x64-dmg
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - img [ref=e82]
+              - generic [ref=e85]: Windows (x64)
+            - link "Descargar" [ref=e86] [cursor=pointer]:
+              - /url: /es/download/stable/windows-x64-nsis
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - img [ref=e90]
+              - generic [ref=e92]: Linux (.deb)
+            - link "Descargar" [ref=e93] [cursor=pointer]:
+              - /url: /es/download/stable/linux-x64-deb
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - img [ref=e97]
+              - generic [ref=e99]: Linux (.rpm)
+            - link "Descargar" [ref=e100] [cursor=pointer]:
+              - /url: /es/download/stable/linux-x64-rpm
+      - generic [ref=e101]:
+        - generic [ref=e102]: "[3] Extensiones OpenCode"
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - img [ref=e107]
+              - generic [ref=e110]: VS Code
+            - link "Instalar" [ref=e111] [cursor=pointer]:
+              - /url: /docs/es/ide/
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - img [ref=e115]
+              - generic [ref=e118]: Cursor
+            - link "Instalar" [ref=e119] [cursor=pointer]:
+              - /url: /docs/es/ide/
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - img [ref=e123]
+              - generic [ref=e125]: Zed
+            - link "Instalar" [ref=e126] [cursor=pointer]:
+              - /url: /docs/es/ide/
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - img [ref=e130]
+              - generic [ref=e132]: Windsurf
+            - link "Instalar" [ref=e133] [cursor=pointer]:
+              - /url: /docs/es/ide/
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - img [ref=e137]
+              - generic [ref=e139]: VSCodium
+            - link "Instalar" [ref=e140] [cursor=pointer]:
+              - /url: /docs/es/ide/
+      - generic [ref=e141]:
+        - generic [ref=e142]: "[4] Integraciones OpenCode"
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - img [ref=e147]
+              - generic [ref=e149]: GitHub
+            - link "Instalar" [ref=e150] [cursor=pointer]:
+              - /url: /docs/es/github/
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - img [ref=e154]
+              - generic [ref=e156]: GitLab
+            - link "Instalar" [ref=e157] [cursor=pointer]:
+              - /url: /docs/es/gitlab/
+    - generic [ref=e158]:
+      - heading "FAQ" [level=3] [ref=e160]
+      - list [ref=e161]:
+        - listitem [ref=e162]:
+          - button "¿Qué es OpenCode?" [ref=e164] [cursor=pointer]:
+            - img [ref=e165]
+            - generic [ref=e167]: ¿Qué es OpenCode?
+        - listitem [ref=e168]:
+          - button "¿Cómo uso OpenCode?" [ref=e170] [cursor=pointer]:
+            - img [ref=e171]
+            - generic [ref=e173]: ¿Cómo uso OpenCode?
+        - listitem [ref=e174]:
+          - button "¿Necesito suscripciones extra de IA para usar OpenCode?" [ref=e176] [cursor=pointer]:
+            - img [ref=e177]
+            - generic [ref=e179]: ¿Necesito suscripciones extra de IA para usar OpenCode?
+        - listitem [ref=e180]:
+          - button "¿Solo puedo usar OpenCode en la terminal?" [ref=e182] [cursor=pointer]:
+            - img [ref=e183]
+            - generic [ref=e185]: ¿Solo puedo usar OpenCode en la terminal?
+        - listitem [ref=e186]:
+          - button "¿Cuánto cuesta OpenCode?" [ref=e188] [cursor=pointer]:
+            - img [ref=e189]
+            - generic [ref=e191]: ¿Cuánto cuesta OpenCode?
+        - listitem [ref=e192]:
+          - button "¿Qué hay sobre datos y privacidad?" [ref=e194] [cursor=pointer]:
+            - img [ref=e195]
+            - generic [ref=e197]: ¿Qué hay sobre datos y privacidad?
+        - listitem [ref=e198]:
+          - button "¿Es OpenCode de código abierto?" [ref=e200] [cursor=pointer]:
+            - img [ref=e201]
+            - generic [ref=e203]: ¿Es OpenCode de código abierto?
+    - generic [ref=e204]:
+      - link "GitHub [150K]" [ref=e206] [cursor=pointer]:
+        - /url: https://github.com/anomalyco/opencode
+        - text: GitHub
+        - generic [ref=e207]: "[150K]"
+      - link "Documentación" [ref=e209] [cursor=pointer]:
+        - /url: /docs/es
+      - link "Registro de cambios" [ref=e211] [cursor=pointer]:
+        - /url: /es/changelog
+      - link "Discord" [ref=e213] [cursor=pointer]:
+        - /url: /es/discord
+      - link "X" [ref=e215] [cursor=pointer]:
+        - /url: https://x.com/opencode
+  - generic [ref=e216]:
+    - generic [ref=e217]:
+      - text: ©2026
+      - link "Anomaly" [ref=e218] [cursor=pointer]:
+        - /url: https://anoma.ly
+    - link "Marca" [ref=e220] [cursor=pointer]:
+      - /url: /es/brand
+    - link "Privacidad" [ref=e222] [cursor=pointer]:
+      - /url: /es/legal/privacy-policy
+    - link "Términos" [ref=e224] [cursor=pointer]:
+      - /url: /es/legal/terms-of-service
+    - button "Español" [ref=e228] [cursor=pointer]:
+      - generic [ref=e229]: Español
+      - img [ref=e230]

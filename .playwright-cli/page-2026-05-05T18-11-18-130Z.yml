@@ -1,0 +1,230 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#main"
+      - navigation [ref=e5]:
+        - generic [ref=e6]:
+          - link "Home" [ref=e8] [cursor=pointer]:
+            - /url: /en
+            - img "Node.js logo" [ref=e9]
+          - checkbox "Toggle navigation menu" [ref=e20]
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - link "Learn" [ref=e23] [cursor=pointer]:
+                - /url: https://nodejs.org/learn
+                - generic [ref=e24]: Learn
+              - link "About" [ref=e25] [cursor=pointer]:
+                - /url: /en/about
+                - generic [ref=e26]: About
+              - link "Download" [ref=e27] [cursor=pointer]:
+                - /url: /en/download
+                - generic [ref=e28]: Download
+              - link "Blog" [ref=e29] [cursor=pointer]:
+                - /url: /en/blog
+                - generic [ref=e30]: Blog
+              - link "Docs" [ref=e31] [cursor=pointer]:
+                - /url: https://nodejs.org/docs/latest/api/
+                - generic [ref=e32]: Docs
+              - link "Contribute" [ref=e33] [cursor=pointer]:
+                - /url: https://github.com/nodejs/node/blob/main/CONTRIBUTING.md
+                - generic [ref=e34]: Contribute
+                - img [ref=e35]
+              - link "Courses" [ref=e37] [cursor=pointer]:
+                - /url: https://training.linuxfoundation.org/openjs/
+                - generic [ref=e38]: Courses
+                - img [ref=e39]
+            - generic [ref=e41]:
+              - button "Start typing... ⌘ K" [ref=e43] [cursor=pointer]:
+                - generic [ref=e44]:
+                  - img [ref=e45]
+                  - text: Start typing...
+                - generic [ref=e47]: ⌘ K
+              - button "Choose Language" [ref=e48] [cursor=pointer]:
+                - img [ref=e49]
+              - link "Node.js Github" [ref=e51] [cursor=pointer]:
+                - /url: https://github.com/nodejs/node
+                - img [ref=e52]
+    - generic [ref=e54]:
+      - img [ref=e56]
+      - main [ref=e333]:
+        - generic [ref=e334]:
+          - generic [ref=e335]:
+            - heading "Run JavaScript Everywhere" [level=1] [ref=e336]
+            - paragraph [ref=e337]: Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
+          - generic [ref=e339]:
+            - button "Get Node.js®" [ref=e340] [cursor=pointer]
+            - button "Get security support for EOL Node.js versions" [ref=e341] [cursor=pointer]:
+              - text: Get security support
+              - text: for EOL Node.js versions
+            - generic [ref=e343]:
+              - button "NodeSource" [ref=e344] [cursor=pointer]:
+                - img [ref=e345]
+                - text: NodeSource
+              - button "DigitalOcean" [ref=e347] [cursor=pointer]:
+                - img [ref=e348]
+                - text: DigitalOcean
+              - button "Codemod" [ref=e359] [cursor=pointer]:
+                - img [ref=e360]
+                - text: Codemod
+              - button "Microsoft Azure" [ref=e367] [cursor=pointer]:
+                - img [ref=e368]
+                - text: Microsoft Azure
+              - button "HeroDevs" [ref=e374] [cursor=pointer]:
+                - img [ref=e375]
+                - text: HeroDevs
+              - button "Cloudflare" [ref=e378] [cursor=pointer]:
+                - img [ref=e379]
+                - text: Cloudflare
+            - generic [ref=e382]:
+              - text: Node.js is proudly supported by the partners above
+              - link "and more" [ref=e383] [cursor=pointer]:
+                - /url: /en/about/partners
+              - text: .
+        - generic [ref=e384]:
+          - generic [ref=e386]:
+            - tablist [ref=e387]:
+              - tab "Create an HTTP Server" [selected] [ref=e388] [cursor=pointer]
+              - tab "Write Tests" [ref=e389] [cursor=pointer]
+              - tab "Read and Hash a File" [ref=e390] [cursor=pointer]
+              - tab "Streams Pipeline" [ref=e391] [cursor=pointer]
+              - tab "Work with Threads" [ref=e392] [cursor=pointer]
+            - tabpanel "Create an HTTP Server" [ref=e393]:
+              - generic [ref=e394]:
+                - code [ref=e396]:
+                  - generic [ref=e397]: // server.mjs
+                  - generic [ref=e398]:
+                    - text: "import {"
+                    - button "createServer" [ref=e400]
+                    - text: "} from 'node:http';"
+                  - generic [ref=e402]:
+                    - text: const
+                    - button "server" [ref=e404]
+                    - text: =
+                    - button "createServer" [ref=e406]
+                    - text: ((
+                    - button "req" [ref=e408]
+                    - text: ","
+                    - button "res" [ref=e410]
+                    - text: ") => {"
+                  - generic [ref=e411]:
+                    - button "res" [ref=e413]
+                    - text: .
+                    - button "writeHead" [ref=e415]
+                    - text: "(200, { 'Content-Type': 'text/plain' });"
+                  - generic [ref=e416]:
+                    - button "res" [ref=e418]
+                    - text: .
+                    - button "end" [ref=e420]
+                    - text: ('Hello World!\n');
+                  - generic [ref=e421]: "});"
+                  - generic [ref=e423]: // starts a simple http server locally on port 3000
+                  - generic [ref=e424]:
+                    - button "server" [ref=e426]
+                    - text: .
+                    - button "listen" [ref=e428]
+                    - text: "(3000, '127.0.0.1', () => {"
+                  - generic [ref=e429]:
+                    - button "console" [ref=e431]
+                    - text: .
+                    - button "log" [ref=e433]
+                    - text: ('Listening on 127.0.0.1:3000');
+                  - generic [ref=e434]: "});"
+                  - generic [ref=e436]: "// run with `node server.mjs`"
+                - generic [ref=e437]:
+                  - generic [ref=e438]: JavaScript
+                  - button "Copy to clipboard" [ref=e439] [cursor=pointer]:
+                    - img [ref=e440]
+                    - text: Copy to clipboard
+          - paragraph [ref=e442]:
+            - text: Learn more what Node.js is able to offer with our
+            - link "Learning materials" [ref=e443] [cursor=pointer]:
+              - /url: /en/learn
+            - text: .
+    - contentinfo [ref=e444]:
+      - generic [ref=e445]:
+        - generic [ref=e446]:
+          - generic [ref=e448]:
+            - link "v24.15.0 Latest LTS" [ref=e449] [cursor=pointer]:
+              - /url: /blog/release/v24.15.0
+              - generic [ref=e450]: v24.15.0
+              - generic [ref=e451]: Latest LTS
+            - link "v26.0.0 Latest Release" [ref=e452] [cursor=pointer]:
+              - /url: /blog/release/v26.0.0
+              - generic [ref=e453]: v26.0.0
+              - generic [ref=e454]: Latest Release
+          - generic [ref=e456]:
+            - link "https://github.com/nodejs/node" [ref=e457] [cursor=pointer]:
+              - /url: https://github.com/nodejs/node
+              - img "https://github.com/nodejs/node" [ref=e459]
+            - link "https://discord.gg/nodejs" [ref=e461] [cursor=pointer]:
+              - /url: https://discord.gg/nodejs
+              - img "https://discord.gg/nodejs" [ref=e463]
+            - link "https://social.lfx.dev/@nodejs" [ref=e465] [cursor=pointer]:
+              - /url: https://social.lfx.dev/@nodejs
+              - img "https://social.lfx.dev/@nodejs" [ref=e467]
+            - link "https://bsky.app/profile/nodejs.org" [ref=e470] [cursor=pointer]:
+              - /url: https://bsky.app/profile/nodejs.org
+              - img "https://bsky.app/profile/nodejs.org" [ref=e472]
+            - link "https://twitter.com/nodejs" [ref=e474] [cursor=pointer]:
+              - /url: https://twitter.com/nodejs
+              - img "https://twitter.com/nodejs" [ref=e476]
+            - link "https://slack-invite.openjsf.org/" [ref=e478] [cursor=pointer]:
+              - /url: https://slack-invite.openjsf.org/
+              - img "https://slack-invite.openjsf.org/" [ref=e480]
+            - link "https://www.linkedin.com/company/node-js" [ref=e485] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/node-js
+              - img "https://www.linkedin.com/company/node-js" [ref=e487]
+        - generic [ref=e489]:
+          - paragraph [ref=e490]:
+            - text: Copyright
+            - link "OpenJS Foundation" [ref=e491] [cursor=pointer]:
+              - /url: https://openjsf.org/
+            - text: and Node.js contributors. All rights reserved. The
+            - link "OpenJS Foundation" [ref=e492] [cursor=pointer]:
+              - /url: https://openjsf.org/
+            - text: has registered trademarks and uses trademarks. For a list of trademarks of the
+            - link "OpenJS Foundation" [ref=e493] [cursor=pointer]:
+              - /url: https://openjsf.org/
+            - text: ", please see our"
+            - link "Trademark Policy" [ref=e494] [cursor=pointer]:
+              - /url: https://trademark-policy.openjsf.org/
+            - text: and
+            - link "Trademark List" [ref=e495] [cursor=pointer]:
+              - /url: https://trademark-list.openjsf.org/
+            - text: . Trademarks and logos not indicated on the
+            - link "list of OpenJS Foundation trademarks" [ref=e496] [cursor=pointer]:
+              - /url: https://trademark-list.openjsf.org/
+            - text: are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
+          - paragraph [ref=e497]:
+            - link "OpenJS Foundation" [ref=e498] [cursor=pointer]:
+              - /url: https://openjsf.org/
+              - generic [ref=e499]: OpenJS Foundation
+            - link "AI Coding Assistants Policy" [ref=e500] [cursor=pointer]:
+              - /url: https://ai-coding-assistants-policy.openjsf.org/
+              - generic [ref=e501]: AI Coding Assistants Policy
+            - link "Bylaws" [ref=e502] [cursor=pointer]:
+              - /url: https://bylaws.openjsf.org/
+              - generic [ref=e503]: Bylaws
+            - link "Code of Conduct" [ref=e504] [cursor=pointer]:
+              - /url: https://code-of-conduct.openjsf.org/
+              - generic [ref=e505]: Code of Conduct
+            - link "Cookie Policy" [ref=e506] [cursor=pointer]:
+              - /url: https://www.linuxfoundation.org/cookies/
+              - generic [ref=e507]: Cookie Policy
+            - link "Privacy Policy" [ref=e508] [cursor=pointer]:
+              - /url: https://privacy-policy.openjsf.org/
+              - generic [ref=e509]: Privacy Policy
+            - link "Security Policy" [ref=e510] [cursor=pointer]:
+              - /url: https://github.com/nodejs/node/security/policy
+              - generic [ref=e511]: Security Policy
+            - link "Terms of Use" [ref=e512] [cursor=pointer]:
+              - /url: https://terms-of-use.openjsf.org/
+              - generic [ref=e513]: Terms of Use
+            - link "Trademark List" [ref=e514] [cursor=pointer]:
+              - /url: https://trademark-list.openjsf.org/
+              - generic [ref=e515]: Trademark List
+            - link "Trademark Policy" [ref=e516] [cursor=pointer]:
+              - /url: https://trademark-policy.openjsf.org/
+              - generic [ref=e517]: Trademark Policy
+  - alert [ref=e518]

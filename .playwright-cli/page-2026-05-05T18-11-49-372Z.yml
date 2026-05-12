@@ -1,0 +1,1639 @@
+- generic [ref=e2]:
+  - region
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FOpenCoworkAI%2Fopen-cowork
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=OpenCoworkAI%2Fopen-cowork
+            - button "Appearance settings" [disabled] [ref=e58]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "OpenCoworkAI" [ref=e70] [cursor=pointer]:
+            - /url: /OpenCoworkAI
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "open-cowork" [ref=e73] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                - /url: /login?return_to=%2FOpenCoworkAI%2Fopen-cowork
+                - img [ref=e78]
+                - text: Notifications
+            - listitem [ref=e80]:
+              - link "Fork 152" [ref=e81] [cursor=pointer]:
+                - /url: /login?return_to=%2FOpenCoworkAI%2Fopen-cowork
+                - img [ref=e82]
+                - text: Fork
+                - generic "152" [ref=e84]
+            - listitem [ref=e85]:
+              - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2FOpenCoworkAI%2Fopen-cowork
+                - img [ref=e88]
+                - text: Star
+                - generic "1175 users starred this repository" [ref=e90]: 1.2k
+      - navigation "Repository" [ref=e91]:
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link "Code" [ref=e94] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork
+              - img [ref=e95]
+              - generic [ref=e97]: Code
+          - listitem [ref=e98]:
+            - link "Issues 10" [ref=e99] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/issues
+              - img [ref=e100]
+              - generic [ref=e103]: Issues
+              - generic "10" [ref=e104]
+          - listitem [ref=e105]:
+            - link "Pull requests 25" [ref=e106] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/pulls
+              - img [ref=e107]
+              - generic [ref=e109]: Pull requests
+              - generic "25" [ref=e110]
+          - listitem [ref=e111]:
+            - link "Discussions" [ref=e112] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/discussions
+              - img [ref=e113]
+              - generic [ref=e115]: Discussions
+          - listitem [ref=e116]:
+            - link "Actions" [ref=e117] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/actions
+              - img [ref=e118]
+              - generic [ref=e120]: Actions
+          - listitem [ref=e121]:
+            - link "Projects" [ref=e122] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/projects
+              - img [ref=e123]
+              - generic [ref=e125]: Projects
+          - listitem [ref=e126]:
+            - link "Security and quality" [ref=e127] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/security
+              - img [ref=e128]
+              - generic [ref=e130]: Security and quality
+          - listitem [ref=e131]:
+            - link "Insights" [ref=e132] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/pulse
+              - img [ref=e133]
+              - generic [ref=e135]: Insights
+    - generic [ref=e148]:
+      - heading "OpenCoworkAI/open-cowork" [level=1] [ref=e150]
+      - generic [ref=e151]:
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - button "main branch" [ref=e158] [cursor=pointer]:
+                - generic [ref=e159]:
+                  - generic [ref=e161]:
+                    - img [ref=e163]
+                    - generic [ref=e166]: main
+                  - generic:
+                    - img
+              - generic [ref=e167]:
+                - link "26 Branches" [ref=e168] [cursor=pointer]:
+                  - /url: /OpenCoworkAI/open-cowork/branches
+                  - generic [ref=e169]:
+                    - generic:
+                      - img
+                    - generic [ref=e171]:
+                      - strong [ref=e172]: "26"
+                      - text: Branches
+                - link "15 Tags" [ref=e173] [cursor=pointer]:
+                  - /url: /OpenCoworkAI/open-cowork/tags
+                  - generic [ref=e174]:
+                    - generic:
+                      - img
+                    - generic [ref=e176]:
+                      - strong [ref=e177]: "15"
+                      - text: Tags
+            - generic [ref=e178]:
+              - generic [ref=e182]:
+                - img [ref=e184]
+                - combobox "Go to file" [ref=e186]
+              - button "Code" [ref=e187] [cursor=pointer]:
+                - generic [ref=e188]:
+                  - generic:
+                    - img
+                  - generic [ref=e189]: Code
+                  - generic:
+                    - img
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - heading "Folders and files" [level=2] [ref=e192]
+              - table "Folders and files" [ref=e193]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e194]:
+                  - 'row "Latest commit hqhq1025 commits by hqhq1025 Merge pull request #180 from OpenCoworkAI/dependabot/npm_and_yarn/dev… Open commit details success Commit 35f0fc7 · May 5, 20265 hours ago History 649 Commits" [ref=e195]':
+                    - 'cell "Latest commit hqhq1025 commits by hqhq1025 Merge pull request #180 from OpenCoworkAI/dependabot/npm_and_yarn/dev… Open commit details success Commit 35f0fc7 · May 5, 20265 hours ago History 649 Commits" [ref=e196]':
+                      - generic [ref=e197]:
+                        - heading "Latest commit" [level=2] [ref=e198]
+                        - generic [ref=e199]:
+                          - generic [ref=e201]:
+                            - link "hqhq1025" [ref=e202] [cursor=pointer]:
+                              - /url: /hqhq1025
+                              - img "hqhq1025" [ref=e203]
+                            - link "commits by hqhq1025" [ref=e204] [cursor=pointer]:
+                              - /url: /OpenCoworkAI/open-cowork/commits?author=hqhq1025
+                              - text: hqhq1025
+                          - generic [ref=e205]:
+                            - generic [ref=e207]:
+                              - link "Merge pull request" [ref=e208] [cursor=pointer]:
+                                - /url: /OpenCoworkAI/open-cowork/commit/35f0fc740076c580b248a7ee7e7f49da7eceab76
+                              - link "#180" [ref=e209] [cursor=pointer]:
+                                - /url: https://github.com/OpenCoworkAI/open-cowork/pull/180
+                              - link "from OpenCoworkAI/dependabot/npm_and_yarn/dev…" [ref=e210] [cursor=pointer]:
+                                - /url: /OpenCoworkAI/open-cowork/commit/35f0fc740076c580b248a7ee7e7f49da7eceab76
+                            - button "Open commit details" [ref=e211] [cursor=pointer]:
+                              - img [ref=e212]
+                            - button "success" [ref=e214] [cursor=pointer]:
+                              - img [ref=e215]
+                        - generic [ref=e217]:
+                          - generic [ref=e219]:
+                            - link "Commit 35f0fc7" [ref=e220] [cursor=pointer]:
+                              - /url: /OpenCoworkAI/open-cowork/commit/35f0fc740076c580b248a7ee7e7f49da7eceab76
+                              - text: 35f0fc7
+                            - text: ·
+                            - generic "May 5, 2026, 8:09 AM GMT-5" [ref=e221]: May 5, 20265 hours ago
+                          - generic [ref=e222]:
+                            - heading "History" [level=2] [ref=e223]
+                            - link "649 Commits" [ref=e224] [cursor=pointer]:
+                              - /url: /OpenCoworkAI/open-cowork/commits/main/
+                              - generic [ref=e225]:
+                                - generic:
+                                  - img
+                                - generic [ref=e226]: 649 Commits
+                  - 'row ".claude/skills, (Directory) fix(security): 2 improvements across 2 files (#139) Apr 18, 20262 weeks ago" [ref=e227]':
+                    - cell ".claude/skills, (Directory)" [ref=e228]:
+                      - generic [ref=e229]:
+                        - img [ref=e230]
+                        - link ".claude/skills, (Directory)" [ref=e235] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/.claude/skills
+                          - text: .claude/skills
+                    - 'cell "fix(security): 2 improvements across 2 files (#139)" [ref=e236]':
+                      - generic [ref=e238]:
+                        - 'link "fix(security): 2 improvements across 2 files (" [ref=e239] [cursor=pointer]':
+                          - /url: /OpenCoworkAI/open-cowork/commit/fbd2ef8977aca358ae8b792a3ab554f0e69fed8b
+                        - link "#139" [ref=e240] [cursor=pointer]:
+                          - /url: https://github.com/OpenCoworkAI/open-cowork/pull/139
+                        - link ")" [ref=e241] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/commit/fbd2ef8977aca358ae8b792a3ab554f0e69fed8b
+                    - cell "Apr 18, 20262 weeks ago" [ref=e242]:
+                      - generic [ref=e243]: Apr 18, 20262 weeks ago
+                  - 'row ".github, (Directory) ci: apply patches before running tests May 1, 20264 days ago" [ref=e244]':
+                    - cell ".github, (Directory)" [ref=e245]:
+                      - generic [ref=e246]:
+                        - img [ref=e247]
+                        - link ".github, (Directory)" [ref=e252] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/.github
+                          - text: .github
+                    - 'cell "ci: apply patches before running tests" [ref=e253]':
+                      - 'link "ci: apply patches before running tests" [ref=e256] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/a83b3cce6322ae3bb91ae2188cae4944ef1317b9
+                    - cell "May 1, 20264 days ago" [ref=e257]:
+                      - generic [ref=e258]: May 1, 20264 days ago
+                  - 'row ".husky, (Directory) chore: add lint-staged, auto release notes, and Dependabot Mar 21, 20262 months ago" [ref=e259]':
+                    - cell ".husky, (Directory)" [ref=e260]:
+                      - generic [ref=e261]:
+                        - img [ref=e262]
+                        - link ".husky, (Directory)" [ref=e267] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/.husky
+                          - text: .husky
+                    - 'cell "chore: add lint-staged, auto release notes, and Dependabot" [ref=e268]':
+                      - 'link "chore: add lint-staged, auto release notes, and Dependabot" [ref=e271] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/1bb1fb766f861fcb5f401c3fb2ce557c061f6453
+                    - cell "Mar 21, 20262 months ago" [ref=e272]:
+                      - generic [ref=e273]: Mar 21, 20262 months ago
+                  - 'row ".vscode, (Directory) chore: improve open-source project maturity (P1 items) Mar 29, 20262 months ago" [ref=e274]':
+                    - cell ".vscode, (Directory)" [ref=e275]:
+                      - generic [ref=e276]:
+                        - img [ref=e277]
+                        - link ".vscode, (Directory)" [ref=e282] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/.vscode
+                          - text: .vscode
+                    - 'cell "chore: improve open-source project maturity (P1 items)" [ref=e283]':
+                      - 'link "chore: improve open-source project maturity (P1 items)" [ref=e286] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/bde5a70edd38676f858a4282f2f363bf161bab5a
+                    - cell "Mar 29, 20262 months ago" [ref=e287]:
+                      - generic [ref=e288]: Mar 29, 20262 months ago
+                  - 'row "docs, (Directory) feat: unify memory storage and improve memory retrieval workflow (#138) May 1, 20264 days ago" [ref=e289]':
+                    - cell "docs, (Directory)" [ref=e290]:
+                      - generic [ref=e291]:
+                        - img [ref=e292]
+                        - link "docs, (Directory)" [ref=e297] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/docs
+                          - text: docs
+                    - 'cell "feat: unify memory storage and improve memory retrieval workflow (#138)" [ref=e298]':
+                      - generic [ref=e300]:
+                        - 'link "feat: unify memory storage and improve memory retrieval workflow (" [ref=e301] [cursor=pointer]':
+                          - /url: /OpenCoworkAI/open-cowork/commit/8014dda76140b354c0fc740ed240de9dcceb2490
+                        - link "#138" [ref=e302] [cursor=pointer]:
+                          - /url: https://github.com/OpenCoworkAI/open-cowork/pull/138
+                        - link ")" [ref=e303] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/commit/8014dda76140b354c0fc740ed240de9dcceb2490
+                    - cell "May 1, 20264 days ago" [ref=e304]:
+                      - generic [ref=e305]: May 1, 20264 days ago
+                  - 'row "patches, (Directory) fix: narrow DeepSeek V4 thinking compat May 1, 20264 days ago" [ref=e306]':
+                    - cell "patches, (Directory)" [ref=e307]:
+                      - generic [ref=e308]:
+                        - img [ref=e309]
+                        - link "patches, (Directory)" [ref=e314] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/patches
+                          - text: patches
+                    - 'cell "fix: narrow DeepSeek V4 thinking compat" [ref=e315]':
+                      - 'link "fix: narrow DeepSeek V4 thinking compat" [ref=e318] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/6f128c9dff7a2728efa9328c38a2a638246c1c87
+                    - cell "May 1, 20264 days ago" [ref=e319]:
+                      - generic [ref=e320]: May 1, 20264 days ago
+                  - 'row "public, (Directory) fix: remove dead code + fix cascading unused params from cwd removal Mar 24, 20262 months ago" [ref=e321]':
+                    - cell "public, (Directory)" [ref=e322]:
+                      - generic [ref=e323]:
+                        - img [ref=e324]
+                        - link "public, (Directory)" [ref=e329] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/public
+                          - text: public
+                    - 'cell "fix: remove dead code + fix cascading unused params from cwd removal" [ref=e330]':
+                      - 'link "fix: remove dead code + fix cascading unused params from cwd removal" [ref=e333] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/ab7503717d226d1514d2b0dae98cc98c31665aa4
+                    - cell "Mar 24, 20262 months ago" [ref=e334]:
+                      - generic [ref=e335]: Mar 24, 20262 months ago
+                  - 'row "resources, (Directory) docs: update WeChat group QR code May 4, 2026yesterday" [ref=e336]':
+                    - cell "resources, (Directory)" [ref=e337]:
+                      - generic [ref=e338]:
+                        - img [ref=e339]
+                        - link "resources, (Directory)" [ref=e344] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/resources
+                          - text: resources
+                    - 'cell "docs: update WeChat group QR code" [ref=e345]':
+                      - 'link "docs: update WeChat group QR code" [ref=e348] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/89c593b66fd4afe847939213c72a15aedc391ded
+                    - cell "May 4, 2026yesterday" [ref=e349]:
+                      - generic [ref=e350]: May 4, 2026yesterday
+                  - 'row "scripts, (Directory) feat(build): add build verification and post-install reliability Mar 29, 20262 months ago" [ref=e351]':
+                    - cell "scripts, (Directory)" [ref=e352]:
+                      - generic [ref=e353]:
+                        - img [ref=e354]
+                        - link "scripts, (Directory)" [ref=e359] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/scripts
+                          - text: scripts
+                    - 'cell "feat(build): add build verification and post-install reliability" [ref=e360]':
+                      - 'link "feat(build): add build verification and post-install reliability" [ref=e363] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/5cbd9736016b563ad6231c9dd3a9173dbe6287ea
+                    - cell "Mar 29, 20262 months ago" [ref=e364]:
+                      - generic [ref=e365]: Mar 29, 20262 months ago
+                  - 'row "src, (Directory) Merge pull request #188 from ciwei21520/fix/sandbox-settings-status May 5, 20265 hours ago" [ref=e366]':
+                    - cell "src, (Directory)" [ref=e367]:
+                      - generic [ref=e368]:
+                        - img [ref=e369]
+                        - link "src, (Directory)" [ref=e374] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/src
+                          - text: src
+                    - 'cell "Merge pull request #188 from ciwei21520/fix/sandbox-settings-status" [ref=e375]':
+                      - generic [ref=e377]:
+                        - link "Merge pull request" [ref=e378] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/commit/c82270928306761fa83fc0baeb67d04f38bd76da
+                        - link "#188" [ref=e379] [cursor=pointer]:
+                          - /url: https://github.com/OpenCoworkAI/open-cowork/pull/188
+                        - link "from ciwei21520/fix/sandbox-settings-status" [ref=e380] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/commit/c82270928306761fa83fc0baeb67d04f38bd76da
+                    - cell "May 5, 20265 hours ago" [ref=e381]:
+                      - generic [ref=e382]: May 5, 20265 hours ago
+                  - 'row "tests, (Directory) Merge pull request #188 from ciwei21520/fix/sandbox-settings-status May 5, 20265 hours ago" [ref=e383]':
+                    - cell "tests, (Directory)" [ref=e384]:
+                      - generic [ref=e385]:
+                        - img [ref=e386]
+                        - link "tests, (Directory)" [ref=e391] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/tests
+                          - text: tests
+                    - 'cell "Merge pull request #188 from ciwei21520/fix/sandbox-settings-status" [ref=e392]':
+                      - generic [ref=e394]:
+                        - link "Merge pull request" [ref=e395] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/commit/c82270928306761fa83fc0baeb67d04f38bd76da
+                        - link "#188" [ref=e396] [cursor=pointer]:
+                          - /url: https://github.com/OpenCoworkAI/open-cowork/pull/188
+                        - link "from ciwei21520/fix/sandbox-settings-status" [ref=e397] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/commit/c82270928306761fa83fc0baeb67d04f38bd76da
+                    - cell "May 5, 20265 hours ago" [ref=e398]:
+                      - generic [ref=e399]: May 5, 20265 hours ago
+                  - 'row "website, (Directory) docs: improve website AI visibility May 1, 20264 days ago" [ref=e400]':
+                    - cell "website, (Directory)" [ref=e401]:
+                      - generic [ref=e402]:
+                        - img [ref=e403]
+                        - link "website, (Directory)" [ref=e408] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/tree/main/website
+                          - text: website
+                    - 'cell "docs: improve website AI visibility" [ref=e409]':
+                      - 'link "docs: improve website AI visibility" [ref=e412] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/f136279830ac93b604997e350b9294e481468e12
+                    - cell "May 1, 20264 days ago" [ref=e413]:
+                      - generic [ref=e414]: May 1, 20264 days ago
+                  - 'row ".editorconfig, (File) chore: improve open-source project maturity (P0 items) Mar 29, 20262 months ago" [ref=e415]':
+                    - cell ".editorconfig, (File)" [ref=e416]:
+                      - generic [ref=e417]:
+                        - img [ref=e418]
+                        - link ".editorconfig, (File)" [ref=e423] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/.editorconfig
+                          - text: .editorconfig
+                    - 'cell "chore: improve open-source project maturity (P0 items)" [ref=e424]':
+                      - 'link "chore: improve open-source project maturity (P0 items)" [ref=e427] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/d2856b803fe6a5d6df8d7cc8b0c3810d7f9bc8f7
+                    - cell "Mar 29, 20262 months ago" [ref=e428]:
+                      - generic [ref=e429]: Mar 29, 20262 months ago
+                  - row ".env.example, (File) tmp Jan 15, 20264 months ago" [ref=e430]:
+                    - cell ".env.example, (File)" [ref=e431]:
+                      - generic [ref=e432]:
+                        - img [ref=e433]
+                        - link ".env.example, (File)" [ref=e438] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/.env.example
+                          - text: .env.example
+                    - cell "tmp" [ref=e439]:
+                      - link "tmp" [ref=e442] [cursor=pointer]:
+                        - /url: /OpenCoworkAI/open-cowork/commit/e392befd06a1206b36bff078f78e86adc52251a4
+                    - cell "Jan 15, 20264 months ago" [ref=e443]:
+                      - generic [ref=e444]: Jan 15, 20264 months ago
+                  - 'row ".eslintrc.cjs, (File) refactor: remove dead code, unused components, and deprecated IPC cha… Mar 17, 20262 months ago" [ref=e445]':
+                    - cell ".eslintrc.cjs, (File)" [ref=e446]:
+                      - generic [ref=e447]:
+                        - img [ref=e448]
+                        - link ".eslintrc.cjs, (File)" [ref=e453] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/.eslintrc.cjs
+                          - text: .eslintrc.cjs
+                    - 'cell "refactor: remove dead code, unused components, and deprecated IPC cha…" [ref=e454]':
+                      - 'link "refactor: remove dead code, unused components, and deprecated IPC cha…" [ref=e457] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/7c203155a6e81ee144c61ec2eac6aec14c588770
+                    - cell "Mar 17, 20262 months ago" [ref=e458]:
+                      - generic [ref=e459]: Mar 17, 20262 months ago
+                  - 'row ".gitattributes, (File) chore: add cross-platform collaboration safeguards Mar 18, 20262 months ago" [ref=e460]':
+                    - cell ".gitattributes, (File)" [ref=e461]:
+                      - generic [ref=e462]:
+                        - img [ref=e463]
+                        - link ".gitattributes, (File)" [ref=e468] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/.gitattributes
+                          - text: .gitattributes
+                    - 'cell "chore: add cross-platform collaboration safeguards" [ref=e469]':
+                      - 'link "chore: add cross-platform collaboration safeguards" [ref=e472] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/71529f2d414afdcbfdc758b8083a7f5edf8f5ede
+                    - cell "Mar 18, 20262 months ago" [ref=e473]:
+                      - generic [ref=e474]: Mar 18, 20262 months ago
+                  - 'row ".gitignore, (File) feat: add official website with VitePress (#122) Apr 16, 20263 weeks ago" [ref=e475]':
+                    - cell ".gitignore, (File)" [ref=e476]:
+                      - generic [ref=e477]:
+                        - img [ref=e478]
+                        - link ".gitignore, (File)" [ref=e483] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/.gitignore
+                          - text: .gitignore
+                    - 'cell "feat: add official website with VitePress (#122)" [ref=e484]':
+                      - generic [ref=e486]:
+                        - 'link "feat: add official website with VitePress (" [ref=e487] [cursor=pointer]':
+                          - /url: /OpenCoworkAI/open-cowork/commit/ef612fd3e074b86f41b51becb5f93500b600da8e
+                        - link "#122" [ref=e488] [cursor=pointer]:
+                          - /url: https://github.com/OpenCoworkAI/open-cowork/pull/122
+                        - link ")" [ref=e489] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/commit/ef612fd3e074b86f41b51becb5f93500b600da8e
+                    - cell "Apr 16, 20263 weeks ago" [ref=e490]:
+                      - generic [ref=e491]: Apr 16, 20263 weeks ago
+                  - 'row ".npmrc, (File) chore: remove deprecated optional config from .npmrc Mar 18, 20262 months ago" [ref=e492]':
+                    - cell ".npmrc, (File)" [ref=e493]:
+                      - generic [ref=e494]:
+                        - img [ref=e495]
+                        - link ".npmrc, (File)" [ref=e500] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/.npmrc
+                          - text: .npmrc
+                    - 'cell "chore: remove deprecated optional config from .npmrc" [ref=e501]':
+                      - 'link "chore: remove deprecated optional config from .npmrc" [ref=e504] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/c2f13837eb07877c0655e4bdaaa5a618a5100df9
+                    - cell "Mar 18, 20262 months ago" [ref=e505]:
+                      - generic [ref=e506]: Mar 18, 20262 months ago
+                  - 'row ".nvmrc, (File) chore: add deploy:local script, typecheck/clean commands, and .nvmrc Mar 21, 20262 months ago" [ref=e507]':
+                    - cell ".nvmrc, (File)" [ref=e508]:
+                      - generic [ref=e509]:
+                        - img [ref=e510]
+                        - link ".nvmrc, (File)" [ref=e515] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/.nvmrc
+                          - text: .nvmrc
+                    - 'cell "chore: add deploy:local script, typecheck/clean commands, and .nvmrc" [ref=e516]':
+                      - 'link "chore: add deploy:local script, typecheck/clean commands, and .nvmrc" [ref=e519] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/e1b9c715c7da2f8cca3fd61ddd3751965decfbeb
+                    - cell "Mar 21, 20262 months ago" [ref=e520]:
+                      - generic [ref=e521]: Mar 21, 20262 months ago
+                  - 'row ".prettierrc, (File) feat: initial implementation of Open Cowork desktop agent app Jan 14, 20264 months ago" [ref=e522]':
+                    - cell ".prettierrc, (File)" [ref=e523]:
+                      - generic [ref=e524]:
+                        - img [ref=e525]
+                        - link ".prettierrc, (File)" [ref=e530] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/.prettierrc
+                          - text: .prettierrc
+                    - 'cell "feat: initial implementation of Open Cowork desktop agent app" [ref=e531]':
+                      - 'link "feat: initial implementation of Open Cowork desktop agent app" [ref=e534] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/5bed2df1dc4a79d36cf84c5d9a1c2bd09ebfdd23
+                    - cell "Jan 14, 20264 months ago" [ref=e535]:
+                      - generic [ref=e536]: Jan 14, 20264 months ago
+                  - 'row "CHANGELOG.md, (File) release: v3.3.0 stable Apr 18, 20262 weeks ago" [ref=e537]':
+                    - cell "CHANGELOG.md, (File)" [ref=e538]:
+                      - generic [ref=e539]:
+                        - img [ref=e540]
+                        - link "CHANGELOG.md, (File)" [ref=e545] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/CHANGELOG.md
+                          - text: CHANGELOG.md
+                    - 'cell "release: v3.3.0 stable" [ref=e546]':
+                      - 'link "release: v3.3.0 stable" [ref=e549] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/2a282b156cf59d1b10dedfd531c0c39715d059e5
+                    - cell "Apr 18, 20262 weeks ago" [ref=e550]:
+                      - generic [ref=e551]: Apr 18, 20262 weeks ago
+                  - 'row "CODE_OF_CONDUCT.md, (File) docs: add SECURITY.md, CODE_OF_CONDUCT, issue/PR templates Mar 20, 20262 months ago" [ref=e552]':
+                    - cell "CODE_OF_CONDUCT.md, (File)" [ref=e553]:
+                      - generic [ref=e554]:
+                        - img [ref=e555]
+                        - link "CODE_OF_CONDUCT.md, (File)" [ref=e560] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/CODE_OF_CONDUCT.md
+                          - text: CODE_OF_CONDUCT.md
+                    - 'cell "docs: add SECURITY.md, CODE_OF_CONDUCT, issue/PR templates" [ref=e561]':
+                      - 'link "docs: add SECURITY.md, CODE_OF_CONDUCT, issue/PR templates" [ref=e564] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/ad375fe9624a76ba6d6593093dbaf1761319b50d
+                    - cell "Mar 20, 20262 months ago" [ref=e565]:
+                      - generic [ref=e566]: Mar 20, 20262 months ago
+                  - 'row "CONTRIBUTING.md, (File) chore(deps): add dependency management policy and improve Dependabot … Apr 18, 20262 weeks ago" [ref=e567]':
+                    - cell "CONTRIBUTING.md, (File)" [ref=e568]:
+                      - generic [ref=e569]:
+                        - img [ref=e570]
+                        - link "CONTRIBUTING.md, (File)" [ref=e575] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/CONTRIBUTING.md
+                          - text: CONTRIBUTING.md
+                    - 'cell "chore(deps): add dependency management policy and improve Dependabot …" [ref=e576]':
+                      - 'link "chore(deps): add dependency management policy and improve Dependabot …" [ref=e579] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/8dfa16c6e172237da2392e589e624386b5e5ddd8
+                    - cell "Apr 18, 20262 weeks ago" [ref=e580]:
+                      - generic [ref=e581]: Apr 18, 20262 weeks ago
+                  - row "LICENSE, (File) Initial commit Jan 13, 20264 months ago" [ref=e582]:
+                    - cell "LICENSE, (File)" [ref=e583]:
+                      - generic [ref=e584]:
+                        - img [ref=e585]
+                        - link "LICENSE, (File)" [ref=e590] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/LICENSE
+                          - text: LICENSE
+                    - cell "Initial commit" [ref=e591]:
+                      - link "Initial commit" [ref=e594] [cursor=pointer]:
+                        - /url: /OpenCoworkAI/open-cowork/commit/6143f2269c8d84cbd80596e1412f5131c97e0ecb
+                    - cell "Jan 13, 20264 months ago" [ref=e595]:
+                      - generic [ref=e596]: Jan 13, 20264 months ago
+                  - 'row "README_zh.md, (File) docs: add ROADMAP.md and link from READMEs Apr 16, 20263 weeks ago" [ref=e597]':
+                    - cell "README_zh.md, (File)" [ref=e598]:
+                      - generic [ref=e599]:
+                        - img [ref=e600]
+                        - link "README_zh.md, (File)" [ref=e605] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/README_zh.md
+                          - text: README_zh.md
+                    - 'cell "docs: add ROADMAP.md and link from READMEs" [ref=e606]':
+                      - 'link "docs: add ROADMAP.md and link from READMEs" [ref=e609] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/ee92062fd24afb229de126d9c3043be85f766ab5
+                    - cell "Apr 16, 20263 weeks ago" [ref=e610]:
+                      - generic [ref=e611]: Apr 16, 20263 weeks ago
+                  - 'row "ROADMAP.md, (File) docs: update roadmap for memory follow-ups May 1, 20264 days ago" [ref=e612]':
+                    - cell "ROADMAP.md, (File)" [ref=e613]:
+                      - generic [ref=e614]:
+                        - img [ref=e615]
+                        - link "ROADMAP.md, (File)" [ref=e620] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/ROADMAP.md
+                          - text: ROADMAP.md
+                    - 'cell "docs: update roadmap for memory follow-ups" [ref=e621]':
+                      - 'link "docs: update roadmap for memory follow-ups" [ref=e624] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/13449fc5d92043ba3650a50a2c206858ea3d5032
+                    - cell "May 1, 20264 days ago" [ref=e625]:
+                      - generic [ref=e626]: May 1, 20264 days ago
+                  - 'row "SECURITY.md, (File) docs: add SECURITY.md, CODE_OF_CONDUCT, issue/PR templates Mar 20, 20262 months ago" [ref=e627]':
+                    - cell "SECURITY.md, (File)" [ref=e628]:
+                      - generic [ref=e629]:
+                        - img [ref=e630]
+                        - link "SECURITY.md, (File)" [ref=e635] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/SECURITY.md
+                          - text: SECURITY.md
+                    - 'cell "docs: add SECURITY.md, CODE_OF_CONDUCT, issue/PR templates" [ref=e636]':
+                      - 'link "docs: add SECURITY.md, CODE_OF_CONDUCT, issue/PR templates" [ref=e639] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/ad375fe9624a76ba6d6593093dbaf1761319b50d
+                    - cell "Mar 20, 20262 months ago" [ref=e640]:
+                      - generic [ref=e641]: Mar 20, 20262 months ago
+                  - 'row "commitlint.config.cjs, (File) chore: refine settings flow and logger stability Mar 8, 20262 months ago" [ref=e642]':
+                    - cell "commitlint.config.cjs, (File)" [ref=e643]:
+                      - generic [ref=e644]:
+                        - img [ref=e645]
+                        - link "commitlint.config.cjs, (File)" [ref=e650] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/commitlint.config.cjs
+                          - text: commitlint.config.cjs
+                    - 'cell "chore: refine settings flow and logger stability" [ref=e651]':
+                      - 'link "chore: refine settings flow and logger stability" [ref=e654] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/77b973ce3edc1e1f42dd4e464d004b10375730a1
+                    - cell "Mar 8, 20262 months ago" [ref=e655]:
+                      - generic [ref=e656]: Mar 8, 20262 months ago
+                  - 'row "electron-builder.yml, (File) feat(build): add build verification and post-install reliability Mar 29, 20262 months ago" [ref=e657]':
+                    - cell "electron-builder.yml, (File)" [ref=e658]:
+                      - generic [ref=e659]:
+                        - img [ref=e660]
+                        - link "electron-builder.yml, (File)" [ref=e665] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/electron-builder.yml
+                          - text: electron-builder.yml
+                    - 'cell "feat(build): add build verification and post-install reliability" [ref=e666]':
+                      - 'link "feat(build): add build verification and post-install reliability" [ref=e669] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/5cbd9736016b563ad6231c9dd3a9173dbe6287ea
+                    - cell "Mar 29, 20262 months ago" [ref=e670]:
+                      - generic [ref=e671]: Mar 29, 20262 months ago
+                  - 'row "index.html, (File) fix: resolve multiple missing icon issues Mar 18, 20262 months ago" [ref=e672]':
+                    - cell "index.html, (File)" [ref=e673]:
+                      - generic [ref=e674]:
+                        - img [ref=e675]
+                        - link "index.html, (File)" [ref=e680] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/index.html
+                          - text: index.html
+                    - 'cell "fix: resolve multiple missing icon issues" [ref=e681]':
+                      - 'link "fix: resolve multiple missing icon issues" [ref=e684] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/ba87e86b84c31064229874e45f83aa24d1c5a775
+                    - cell "Mar 18, 20262 months ago" [ref=e685]:
+                      - generic [ref=e686]: Mar 18, 20262 months ago
+                  - 'row "llms.txt, (File) docs: add SEO/AISEO optimizations — FAQ, plain-text summary, keywords… Apr 15, 20263 weeks ago" [ref=e687]':
+                    - cell "llms.txt, (File)" [ref=e688]:
+                      - generic [ref=e689]:
+                        - img [ref=e690]
+                        - link "llms.txt, (File)" [ref=e695] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/llms.txt
+                          - text: llms.txt
+                    - 'cell "docs: add SEO/AISEO optimizations — FAQ, plain-text summary, keywords…" [ref=e696]':
+                      - 'link "docs: add SEO/AISEO optimizations — FAQ, plain-text summary, keywords…" [ref=e699] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/3c56d3c14877be881e70da45bee5a40227753f87
+                    - cell "Apr 15, 20263 weeks ago" [ref=e700]:
+                      - generic [ref=e701]: Apr 15, 20263 weeks ago
+                  - 'row "package-lock.json, (File) chore(deps-dev): bump the dev-dependencies group across 1 directory w… May 4, 202620 hours ago" [ref=e702]':
+                    - cell "package-lock.json, (File)" [ref=e703]:
+                      - generic [ref=e704]:
+                        - img [ref=e705]
+                        - link "package-lock.json, (File)" [ref=e710] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/package-lock.json
+                          - text: package-lock.json
+                    - 'cell "chore(deps-dev): bump the dev-dependencies group across 1 directory w…" [ref=e711]':
+                      - 'link "chore(deps-dev): bump the dev-dependencies group across 1 directory w…" [ref=e714] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/b81e89fde075911a21ae2259bad85283a525ad0f
+                    - cell "May 4, 202620 hours ago" [ref=e715]:
+                      - generic [ref=e716]: May 4, 202620 hours ago
+                  - 'row "package.json, (File) chore(deps-dev): bump the dev-dependencies group across 1 directory w… May 4, 202620 hours ago" [ref=e717]':
+                    - cell "package.json, (File)" [ref=e718]:
+                      - generic [ref=e719]:
+                        - img [ref=e720]
+                        - link "package.json, (File)" [ref=e725] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/package.json
+                          - text: package.json
+                    - 'cell "chore(deps-dev): bump the dev-dependencies group across 1 directory w…" [ref=e726]':
+                      - 'link "chore(deps-dev): bump the dev-dependencies group across 1 directory w…" [ref=e729] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/b81e89fde075911a21ae2259bad85283a525ad0f
+                    - cell "May 4, 202620 hours ago" [ref=e730]:
+                      - generic [ref=e731]: May 4, 202620 hours ago
+                  - 'row "postcss.config.js, (File) feat: initial implementation of Open Cowork desktop agent app Jan 14, 20264 months ago" [ref=e732]':
+                    - cell "postcss.config.js, (File)" [ref=e733]:
+                      - generic [ref=e734]:
+                        - img [ref=e735]
+                        - link "postcss.config.js, (File)" [ref=e740] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/postcss.config.js
+                          - text: postcss.config.js
+                    - 'cell "feat: initial implementation of Open Cowork desktop agent app" [ref=e741]':
+                      - 'link "feat: initial implementation of Open Cowork desktop agent app" [ref=e744] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/5bed2df1dc4a79d36cf84c5d9a1c2bd09ebfdd23
+                    - cell "Jan 14, 20264 months ago" [ref=e745]:
+                      - generic [ref=e746]: Jan 14, 20264 months ago
+                  - 'row "readme.md, (File) docs: add ROADMAP.md and link from READMEs Apr 16, 20263 weeks ago" [ref=e747]':
+                    - cell "readme.md, (File)" [ref=e748]:
+                      - generic [ref=e749]:
+                        - img [ref=e750]
+                        - link "readme.md, (File)" [ref=e755] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/readme.md
+                          - text: readme.md
+                    - 'cell "docs: add ROADMAP.md and link from READMEs" [ref=e756]':
+                      - 'link "docs: add ROADMAP.md and link from READMEs" [ref=e759] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/ee92062fd24afb229de126d9c3043be85f766ab5
+                    - cell "Apr 16, 20263 weeks ago" [ref=e760]:
+                      - generic [ref=e761]: Apr 16, 20263 weeks ago
+                  - 'row "tailwind.config.js, (File) fix(security): comprehensive codebase audit — 145 fixes Mar 17, 20262 months ago" [ref=e762]':
+                    - cell "tailwind.config.js, (File)" [ref=e763]:
+                      - generic [ref=e764]:
+                        - img [ref=e765]
+                        - link "tailwind.config.js, (File)" [ref=e770] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/tailwind.config.js
+                          - text: tailwind.config.js
+                    - 'cell "fix(security): comprehensive codebase audit — 145 fixes" [ref=e771]':
+                      - 'link "fix(security): comprehensive codebase audit — 145 fixes" [ref=e774] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/3dff9b9924b28efeab566bdaf0256db96ca1086f
+                    - cell "Mar 17, 20262 months ago" [ref=e775]:
+                      - generic [ref=e776]: Mar 17, 20262 months ago
+                  - 'row "tsconfig.json, (File) feat: initial implementation of Open Cowork desktop agent app Jan 14, 20264 months ago" [ref=e777]':
+                    - cell "tsconfig.json, (File)" [ref=e778]:
+                      - generic [ref=e779]:
+                        - img [ref=e780]
+                        - link "tsconfig.json, (File)" [ref=e785] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/tsconfig.json
+                          - text: tsconfig.json
+                    - 'cell "feat: initial implementation of Open Cowork desktop agent app" [ref=e786]':
+                      - 'link "feat: initial implementation of Open Cowork desktop agent app" [ref=e789] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/5bed2df1dc4a79d36cf84c5d9a1c2bd09ebfdd23
+                    - cell "Jan 14, 20264 months ago" [ref=e790]:
+                      - generic [ref=e791]: Jan 14, 20264 months ago
+                  - 'row "tsconfig.node.json, (File) refactor: remove dead code, unused components, and deprecated IPC cha… Mar 17, 20262 months ago" [ref=e792]':
+                    - cell "tsconfig.node.json, (File)" [ref=e793]:
+                      - generic [ref=e794]:
+                        - img [ref=e795]
+                        - link "tsconfig.node.json, (File)" [ref=e800] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/tsconfig.node.json
+                          - text: tsconfig.node.json
+                    - 'cell "refactor: remove dead code, unused components, and deprecated IPC cha…" [ref=e801]':
+                      - 'link "refactor: remove dead code, unused components, and deprecated IPC cha…" [ref=e804] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/7c203155a6e81ee144c61ec2eac6aec14c588770
+                    - cell "Mar 17, 20262 months ago" [ref=e805]:
+                      - generic [ref=e806]: Mar 17, 20262 months ago
+                  - 'row "vite.config.ts, (File) chore: clean up dependencies and optimize packaging config Mar 18, 20262 months ago" [ref=e807]':
+                    - cell "vite.config.ts, (File)" [ref=e808]:
+                      - generic [ref=e809]:
+                        - img [ref=e810]
+                        - link "vite.config.ts, (File)" [ref=e815] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/vite.config.ts
+                          - text: vite.config.ts
+                    - 'cell "chore: clean up dependencies and optimize packaging config" [ref=e816]':
+                      - 'link "chore: clean up dependencies and optimize packaging config" [ref=e819] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/80fae4b0fcf15b22a48b616e577b5a58d7dfb990
+                    - cell "Mar 18, 20262 months ago" [ref=e820]:
+                      - generic [ref=e821]: Mar 18, 20262 months ago
+                  - 'row "vitest.config.mts, (File) chore: improve open-source project maturity (P1 items) Mar 29, 20262 months ago" [ref=e822]':
+                    - cell "vitest.config.mts, (File)" [ref=e823]:
+                      - generic [ref=e824]:
+                        - img [ref=e825]
+                        - link "vitest.config.mts, (File)" [ref=e830] [cursor=pointer]:
+                          - /url: /OpenCoworkAI/open-cowork/blob/main/vitest.config.mts
+                          - text: vitest.config.mts
+                    - 'cell "chore: improve open-source project maturity (P1 items)" [ref=e831]':
+                      - 'link "chore: improve open-source project maturity (P1 items)" [ref=e834] [cursor=pointer]':
+                        - /url: /OpenCoworkAI/open-cowork/commit/bde5a70edd38676f858a4282f2f363bf161bab5a
+                    - cell "Mar 29, 20262 months ago" [ref=e835]:
+                      - generic [ref=e836]: Mar 29, 20262 months ago
+            - generic [ref=e838]:
+              - generic [ref=e839]:
+                - heading "Repository files navigation" [level=2] [ref=e840]
+                - navigation "Repository files" [ref=e841]:
+                  - list [ref=e842]:
+                    - listitem [ref=e843]:
+                      - link "README" [ref=e844] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e846]
+                        - generic [ref=e848]: README
+                    - listitem [ref=e849]:
+                      - link "Code of conduct" [ref=e850] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e852]
+                        - generic [ref=e854]: Code of conduct
+                    - listitem [ref=e855]:
+                      - link "Contributing" [ref=e856] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e858]
+                        - generic [ref=e860]: Contributing
+                    - listitem [ref=e861]:
+                      - link "MIT license" [ref=e862] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e864]
+                        - generic [ref=e866]: MIT license
+                    - listitem [ref=e867]:
+                      - link "Security" [ref=e868] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e870]
+                        - generic [ref=e872]: Security
+                - button "Outline" [ref=e873] [cursor=pointer]:
+                  - img [ref=e874]
+              - article [ref=e877]:
+                - paragraph [ref=e878]:
+                  - link "Open Cowork Logo" [ref=e879] [cursor=pointer]:
+                    - /url: /OpenCoworkAI/open-cowork/blob/main/resources/logo.png
+                    - img "Open Cowork Logo" [ref=e880]
+                - generic [ref=e881]:
+                  - 'heading "🚀 Open Cowork: Your Personal AI Agent Desktop App" [level=1] [ref=e882]'
+                  - 'link "Permalink: 🚀 Open Cowork: Your Personal AI Agent Desktop App" [ref=e883] [cursor=pointer]':
+                    - /url: "#-open-cowork-your-personal-ai-agent-desktop-app"
+                    - img [ref=e884]
+                - paragraph [ref=e886]: • Open Source Claude Cowork • One-Click Install
+                - paragraph [ref=e887]:
+                  - link "中文文档" [ref=e888] [cursor=pointer]:
+                    - /url: /OpenCoworkAI/open-cowork/blob/main/README_zh.md
+                  - text: •
+                  - link "Features" [ref=e889] [cursor=pointer]:
+                    - /url: "#features"
+                  - text: •
+                  - link "Demo" [ref=e890] [cursor=pointer]:
+                    - /url: "#demo"
+                  - text: •
+                  - link "Downloads" [ref=e891] [cursor=pointer]:
+                    - /url: "#installation"
+                  - text: •
+                  - link "Quick Start" [ref=e892] [cursor=pointer]:
+                    - /url: "#quick-start"
+                  - text: •
+                  - link "Skills Library" [ref=e893] [cursor=pointer]:
+                    - /url: "#skills"
+                - paragraph [ref=e894]:
+                  - link "Platform" [ref=e895] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/1c5218dd1ba476ddd8b3990a32d769c577eb0378471dd21b7d15d18aaa48158b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506c6174666f726d2d57696e646f77732532302537432532306d61634f532d626c7565
+                    - img "Platform" [ref=e896]
+                  - link "License" [ref=e897] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/5caa455d8debc46fb23abbadb45a733a937f3910a73fc875c2f7820468e1bb54/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d677265656e
+                    - img "License" [ref=e898]
+                  - link "Node.js" [ref=e899] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/fe32fe57409c1efb60a16fd8c2269971af241bac91db3383142b850948a37420/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4e6f64652e6a732d31382b2d627269676874677265656e
+                    - img "Node.js" [ref=e900]
+                  - link "Discord" [ref=e901] [cursor=pointer]:
+                    - /url: https://discord.gg/pynjtQDf
+                    - img "Discord" [ref=e902]
+                  - link "WeChat" [ref=e903] [cursor=pointer]:
+                    - /url: "#community"
+                    - img "WeChat" [ref=e904]
+                - separator [ref=e905]
+                - paragraph [ref=e906]: Open Cowork is a free, open-source AI agent desktop application for Windows and macOS. It wraps Claude Code, OpenAI, Gemini, DeepSeek, and other AI models into a user-friendly GUI with one-click installation — no coding required. Key capabilities include VM-level sandbox isolation (WSL2 on Windows, Lima on macOS), a built-in Skills system for generating PPTX, DOCX, XLSX, and PDF documents, MCP (Model Context Protocol) integration for connecting to browsers, Notion, and other desktop apps, GUI automation via computer use, and remote control through Feishu (Lark) and Slack. Open Cowork is the open-source implementation of Claude Cowork, designed to make AI-powered desktop automation accessible to everyone.
+                - separator [ref=e907]
+                - generic [ref=e908]:
+                  - heading "📖 Introduction" [level=2] [ref=e909]
+                  - 'link "Permalink: 📖 Introduction" [ref=e910] [cursor=pointer]':
+                    - /url: "#-introduction"
+                    - img [ref=e911]
+                - paragraph [ref=e913]:
+                  - strong [ref=e914]: Open Cowork
+                  - text: is an open-source implementation of
+                  - strong [ref=e915]: Claude Cowork
+                  - text: ", with one-click installers for"
+                  - strong [ref=e916]: Windows
+                  - text: and
+                  - strong [ref=e917]: macOS
+                  - text: —no coding required.
+                - paragraph [ref=e918]:
+                  - text: It provides a sandboxed workspace where AI can manage files, generate professional outputs (PPTX, DOCX, XLSX, etc.) through our built-in
+                  - strong [ref=e919]: Skills
+                  - text: system, and
+                  - strong [ref=e920]: connect to desktop apps via MCP
+                  - text: (browser, Notion, etc.) for better collaboration.
+                - generic [ref=e921]:
+                  - paragraph [ref=e922]:
+                    - img [ref=e923]
+                    - text: Warning
+                  - paragraph [ref=e925]:
+                    - strong [ref=e926]: Disclaimer
+                    - text: ": Open Cowork is an AI collaboration tool. Please exercise caution with its operations, especially when authorizing file modifications or deletions. We support VM-based sandbox isolation, but some operations may still carry risks."
+                - separator [ref=e927]
+                - paragraph
+                - generic [ref=e928]:
+                  - heading "✨ Key Features" [level=2] [ref=e929]
+                  - 'link "Permalink: ✨ Key Features" [ref=e930] [cursor=pointer]':
+                    - /url: "#-key-features"
+                    - img [ref=e931]
+                - table [ref=e934]:
+                  - rowgroup [ref=e935]:
+                    - row "MCP & Skills Remote Control GUI Operation" [ref=e936]:
+                      - columnheader [ref=e937]
+                      - columnheader "MCP & Skills" [ref=e938]
+                      - columnheader "Remote Control" [ref=e939]
+                      - columnheader "GUI Operation" [ref=e940]
+                  - rowgroup [ref=e941]:
+                    - row "Claude Cowork ✓ ✗ ✗" [ref=e942]:
+                      - cell "Claude Cowork" [ref=e943]
+                      - cell "✓" [ref=e944]
+                      - cell "✗" [ref=e945]
+                      - cell "✗" [ref=e946]
+                    - row "OpenClaw ✓ ✓ ✗" [ref=e947]:
+                      - cell "OpenClaw" [ref=e948]
+                      - cell "✓" [ref=e949]
+                      - cell "✓" [ref=e950]
+                      - cell "✗" [ref=e951]
+                    - row "OpenCowork ✓ ✓ ✓" [ref=e952]:
+                      - cell "OpenCowork" [ref=e953]
+                      - cell "✓" [ref=e954]
+                      - cell "✓" [ref=e955]
+                      - cell "✓" [ref=e956]
+                - list [ref=e957]:
+                  - listitem [ref=e958]:
+                    - strong [ref=e959]: One-Click Install, Ready to Use
+                    - text: ": Pre-built installers for Windows and macOS, no environment setup needed—just download and start using."
+                  - listitem [ref=e960]:
+                    - strong [ref=e961]: Flexible Model Support
+                    - text: ": Supports"
+                    - strong [ref=e962]: Claude
+                    - text: ","
+                    - strong [ref=e963]: OpenAI-compatible APIs
+                    - text: ", and Chinese models like"
+                    - strong [ref=e964]: GLM
+                    - text: ","
+                    - strong [ref=e965]: MiniMax
+                    - text: ","
+                    - strong [ref=e966]: Kimi
+                    - text: . Use your OpenRouter, Anthropic, or other API keys with flexible configuration. More models coming soon!
+                  - listitem [ref=e967]:
+                    - strong [ref=e968]: Remote Control
+                    - text: ": Connect to collaboration platforms like"
+                    - strong [ref=e969]: Feishu (Lark)
+                    - text: and other remote services to automate workflows and cross-platform operations.
+                  - listitem [ref=e970]:
+                    - strong [ref=e971]: GUI Operation
+                    - text: ": Control and interact with various desktop GUI applications on your computer."
+                    - strong [ref=e972]: "Recommended model: Gemini-3-Pro"
+                    - text: for optimal GUI understanding and control.
+                  - listitem [ref=e973]:
+                    - strong [ref=e974]: Smart File Management
+                    - text: ": Read, write, and organize files within your workspace."
+                  - listitem [ref=e975]:
+                    - strong [ref=e976]: Skills System
+                    - text: ": Built-in workflows for PPTX, DOCX, PDF, XLSX generation and processing."
+                    - strong [ref=e977]: Supports custom skill creation and deletion.
+                  - listitem [ref=e978]:
+                    - strong [ref=e979]: MCP External Service Support
+                    - text: ": Integrate browser, Notion, custom apps and more through"
+                    - strong [ref=e980]: MCP Connectors
+                    - text: to extend AI capabilities.
+                  - listitem [ref=e981]:
+                    - strong [ref=e982]: Multimodal Input
+                    - text: ": Drag & drop files and images directly into the chat input for seamless multimodal interaction."
+                  - listitem [ref=e983]:
+                    - strong [ref=e984]: Real-time Trace
+                    - text: ": Watch AI reasoning and tool execution in the Trace Panel."
+                  - listitem [ref=e985]:
+                    - strong [ref=e986]: Secure Workspace
+                    - text: ": All operations confined to your chosen workspace folder."
+                  - listitem [ref=e987]:
+                    - strong [ref=e988]: VM-Level Isolation
+                    - text: ": WSL2 (Windows) and Lima (macOS) VM isolation—all commands execute in an isolated VM to protect your host system."
+                  - listitem [ref=e989]:
+                    - strong [ref=e990]: UI Enhancements
+                    - text: ": Beautiful and flexible UI design, system language switching, comprehensive MCP/Skills/Tools call display."
+                - paragraph
+                - generic [ref=e991]:
+                  - heading "🎬 Demo" [level=2] [ref=e992]
+                  - 'link "Permalink: 🎬 Demo" [ref=e993] [cursor=pointer]':
+                    - /url: "#-demo"
+                    - img [ref=e994]
+                - paragraph [ref=e996]: "See Open Cowork in action:"
+                - generic [ref=e997]:
+                  - heading "1. Folder Organization & Cleanup 📂" [level=3] [ref=e998]
+                  - 'link "Permalink: 1. Folder Organization & Cleanup 📂" [ref=e999] [cursor=pointer]':
+                    - /url: "#1-folder-organization--cleanup-"
+                    - img [ref=e1000]
+                - group [ref=e1002]:
+                  - generic "document_organization.mp4" [ref=e1003] [cursor=pointer]:
+                    - img [ref=e1004]
+                    - text: document_organization.mp4
+                - generic [ref=e1008]:
+                  - heading "2. Generate PPT from Files 📊" [level=3] [ref=e1009]
+                  - 'link "Permalink: 2. Generate PPT from Files 📊" [ref=e1010] [cursor=pointer]':
+                    - /url: "#2-generate-ppt-from-files-"
+                    - img [ref=e1011]
+                - group [ref=e1013]:
+                  - generic "ppt_generation.mov" [ref=e1014] [cursor=pointer]:
+                    - img [ref=e1015]
+                    - text: ppt_generation.mov
+                - generic [ref=e1019]:
+                  - heading "3. Generate XLSX Spreadsheets 📉" [level=3] [ref=e1020]
+                  - 'link "Permalink: 3. Generate XLSX Spreadsheets 📉" [ref=e1021] [cursor=pointer]':
+                    - /url: "#3-generate-xlsx-spreadsheets-"
+                    - img [ref=e1022]
+                - group [ref=e1024]:
+                  - generic "xlsx_generation.mov" [ref=e1025] [cursor=pointer]:
+                    - img [ref=e1026]
+                    - text: xlsx_generation.mov
+                - generic [ref=e1030]:
+                  - heading "4. GUI Operation🖥" [level=3] [ref=e1031]
+                  - 'link "Permalink: 4. GUI Operation🖥" [ref=e1032] [cursor=pointer]':
+                    - /url: "#4-gui-operation"
+                    - img [ref=e1033]
+                - group [ref=e1035]:
+                  - generic "GUi_opeeration.mov" [ref=e1036] [cursor=pointer]:
+                    - img [ref=e1037]
+                    - text: GUi_opeeration.mov
+                - generic [ref=e1041]:
+                  - heading "5. Remote control with Feishu(Lark) 🤖" [level=3] [ref=e1042]
+                  - 'link "Permalink: 5. Remote control with Feishu(Lark) 🤖" [ref=e1043] [cursor=pointer]':
+                    - /url: "#5-remote-control-with-feishulark-"
+                    - img [ref=e1044]
+                - group [ref=e1046]:
+                  - generic "feishu_operation.mp4" [ref=e1047] [cursor=pointer]:
+                    - img [ref=e1048]
+                    - text: feishu_operation.mp4
+                - separator [ref=e1052]
+                - paragraph
+                - generic [ref=e1053]:
+                  - heading "📦 Installation" [level=2] [ref=e1054]
+                  - 'link "Permalink: 📦 Installation" [ref=e1055] [cursor=pointer]':
+                    - /url: "#-installation"
+                    - img [ref=e1056]
+                - generic [ref=e1058]:
+                  - 'heading "Option 1: Homebrew (macOS, Recommended)" [level=3] [ref=e1059]'
+                  - 'link "Permalink: Option 1: Homebrew (macOS, Recommended)" [ref=e1060] [cursor=pointer]':
+                    - /url: "#option-1-homebrew-macos-recommended"
+                    - img [ref=e1061]
+                - generic [ref=e1063]:
+                  - generic [ref=e1064]: brew tap OpenCoworkAI/tap brew install --cask --no-quarantine open-cowork
+                  - button "Copy" [ref=e1066] [cursor=pointer]:
+                    - img [ref=e1067]
+                - blockquote [ref=e1070]:
+                  - paragraph [ref=e1071]:
+                    - text: The
+                    - code [ref=e1072]: "--no-quarantine"
+                    - text: flag bypasses macOS Gatekeeper, so you won't see the "Apple cannot verify this app" warning.
+                - generic [ref=e1073]:
+                  - 'heading "Option 2: Download Installer" [level=3] [ref=e1074]'
+                  - 'link "Permalink: Option 2: Download Installer" [ref=e1075] [cursor=pointer]':
+                    - /url: "#option-2-download-installer"
+                    - img [ref=e1076]
+                - paragraph [ref=e1078]:
+                  - text: Get the latest version from our
+                  - link "Releases Page" [ref=e1079] [cursor=pointer]:
+                    - /url: https://github.com/OpenCoworkAI/open-cowork/releases
+                  - text: .
+                - table [ref=e1081]:
+                  - rowgroup [ref=e1082]:
+                    - row "Platform File Type" [ref=e1083]:
+                      - columnheader "Platform" [ref=e1084]
+                      - columnheader "File Type" [ref=e1085]
+                  - rowgroup [ref=e1086]:
+                    - row "Windows .exe" [ref=e1087]:
+                      - cell "Windows" [ref=e1088]:
+                        - strong [ref=e1089]: Windows
+                      - cell ".exe" [ref=e1090]:
+                        - code [ref=e1091]: .exe
+                    - row "macOS (Apple Silicon) .dmg" [ref=e1092]:
+                      - cell "macOS (Apple Silicon)" [ref=e1093]:
+                        - strong [ref=e1094]: macOS
+                        - text: (Apple Silicon)
+                      - cell ".dmg" [ref=e1095]:
+                        - code [ref=e1096]: .dmg
+                - generic [ref=e1097]:
+                  - 'heading "Option 3: Build from Source" [level=3] [ref=e1098]'
+                  - 'link "Permalink: Option 3: Build from Source" [ref=e1099] [cursor=pointer]':
+                    - /url: "#option-3-build-from-source"
+                    - img [ref=e1100]
+                - paragraph [ref=e1102]: "For developers who want to contribute or modify the codebase:"
+                - generic [ref=e1103]:
+                  - generic [ref=e1104]: git clone https://github.com/OpenCoworkAI/open-cowork.git cd open-cowork npm install npm run rebuild npm run dev
+                  - button "Copy" [ref=e1106] [cursor=pointer]:
+                    - img [ref=e1107]
+                - paragraph [ref=e1110]:
+                  - text: "To build the installer locally:"
+                  - code [ref=e1111]: npm run build
+                - generic [ref=e1112]:
+                  - 'heading "Security Configuration: 🔒 Sandbox Support" [level=3] [ref=e1113]'
+                  - 'link "Permalink: Security Configuration: 🔒 Sandbox Support" [ref=e1114] [cursor=pointer]':
+                    - /url: "#security-configuration--sandbox-support"
+                    - img [ref=e1115]
+                - paragraph [ref=e1117]:
+                  - text: Open Cowork provides
+                  - strong [ref=e1118]: multi-level sandbox protection
+                  - text: "to keep your system safe:"
+                - table [ref=e1120]:
+                  - rowgroup [ref=e1121]:
+                    - row "Level Platform Technology Description" [ref=e1122]:
+                      - columnheader "Level" [ref=e1123]
+                      - columnheader "Platform" [ref=e1124]
+                      - columnheader "Technology" [ref=e1125]
+                      - columnheader "Description" [ref=e1126]
+                  - rowgroup [ref=e1127]:
+                    - row "Basic All Path Guard File operations restricted to workspace folder" [ref=e1128]:
+                      - cell "Basic" [ref=e1129]:
+                        - strong [ref=e1130]: Basic
+                      - cell "All" [ref=e1131]
+                      - cell "Path Guard" [ref=e1132]
+                      - cell "File operations restricted to workspace folder" [ref=e1133]
+                    - row "Enhanced Windows WSL2 Commands execute in isolated Linux VM" [ref=e1134]:
+                      - cell "Enhanced" [ref=e1135]:
+                        - strong [ref=e1136]: Enhanced
+                      - cell "Windows" [ref=e1137]
+                      - cell "WSL2" [ref=e1138]
+                      - cell "Commands execute in isolated Linux VM" [ref=e1139]
+                    - row "Enhanced macOS Lima Commands execute in isolated Linux VM" [ref=e1140]:
+                      - cell "Enhanced" [ref=e1141]:
+                        - strong [ref=e1142]: Enhanced
+                      - cell "macOS" [ref=e1143]
+                      - cell "Lima" [ref=e1144]
+                      - cell "Commands execute in isolated Linux VM" [ref=e1145]
+                - list [ref=e1146]:
+                  - listitem [ref=e1147]:
+                    - strong [ref=e1148]: Windows (WSL2)
+                    - text: ": When WSL2 is detected, all Bash commands are automatically routed to a Linux VM. The workspace is synced bidirectionally."
+                  - listitem [ref=e1149]:
+                    - strong [ref=e1150]: macOS (Lima)
+                    - text: ": When"
+                    - link "Lima" [ref=e1151] [cursor=pointer]:
+                      - /url: https://lima-vm.io/
+                    - text: is installed (
+                    - code [ref=e1152]: brew install lima
+                    - text: ), commands run in an Ubuntu VM with
+                    - code [ref=e1153]: /Users
+                    - text: mounted.
+                  - listitem [ref=e1154]:
+                    - strong [ref=e1155]: Fallback
+                    - text: ": If no VM is available, commands run natively with path-based restrictions."
+                - paragraph [ref=e1156]:
+                  - strong [ref=e1157]: Setup (Optional, Recommended)
+                - list [ref=e1158]:
+                  - listitem [ref=e1159]:
+                    - paragraph [ref=e1160]:
+                      - strong [ref=e1161]: Windows
+                      - text: ": WSL2 is auto-detected if installed."
+                      - link "Install WSL2" [ref=e1162] [cursor=pointer]:
+                        - /url: https://docs.microsoft.com/en-us/windows/wsl/install
+                  - listitem [ref=e1163]:
+                    - paragraph [ref=e1164]:
+                      - strong [ref=e1165]: macOS
+                      - text: ": Lima is auto-detected if installed. Install command:"
+                - generic [ref=e1166]:
+                  - generic [ref=e1167]:
+                    - text: brew install lima
+                    - generic [ref=e1168]: "# Open Cowork will automatically create and manage a 'claude-sandbox' VM"
+                  - button "Copy" [ref=e1170] [cursor=pointer]:
+                    - img [ref=e1171]
+                - separator [ref=e1174]
+                - paragraph
+                - generic [ref=e1175]:
+                  - heading "🚀 Quick Start Guide" [level=2] [ref=e1176]
+                  - 'link "Permalink: 🚀 Quick Start Guide" [ref=e1177] [cursor=pointer]':
+                    - /url: "#-quick-start-guide"
+                    - img [ref=e1178]
+                - generic [ref=e1180]:
+                  - heading "1. Get an API Key" [level=3] [ref=e1181]
+                  - 'link "Permalink: 1. Get an API Key" [ref=e1182] [cursor=pointer]':
+                    - /url: "#1-get-an-api-key"
+                    - img [ref=e1183]
+                - paragraph [ref=e1185]:
+                  - text: You need an API key to power the agent. We support
+                  - strong [ref=e1186]: OpenRouter
+                  - text: ","
+                  - strong [ref=e1187]: Anthropic
+                  - text: ", and various cost-effective"
+                  - strong [ref=e1188]: Chinese Models
+                  - text: .
+                - table [ref=e1190]:
+                  - rowgroup [ref=e1191]:
+                    - row "Provider Get Key / Coding Plan Base URL (Required) Recommended Model" [ref=e1192]:
+                      - columnheader "Provider" [ref=e1193]
+                      - columnheader "Get Key / Coding Plan" [ref=e1194]
+                      - columnheader "Base URL (Required)" [ref=e1195]
+                      - columnheader "Recommended Model" [ref=e1196]
+                  - rowgroup [ref=e1197]:
+                    - row "OpenRouter OpenRouter https://openrouter.ai/api claude-4-5-sonnet" [ref=e1198]:
+                      - cell "OpenRouter" [ref=e1199]:
+                        - strong [ref=e1200]: OpenRouter
+                      - cell "OpenRouter" [ref=e1201]:
+                        - link "OpenRouter" [ref=e1202] [cursor=pointer]:
+                          - /url: https://openrouter.ai/
+                      - cell "https://openrouter.ai/api" [ref=e1203]:
+                        - code [ref=e1204]: https://openrouter.ai/api
+                      - cell "claude-4-5-sonnet" [ref=e1205]:
+                        - code [ref=e1206]: claude-4-5-sonnet
+                    - row "Anthropic Anthropic Console (Default) claude-4-5-sonnet" [ref=e1207]:
+                      - cell "Anthropic" [ref=e1208]:
+                        - strong [ref=e1209]: Anthropic
+                      - cell "Anthropic Console" [ref=e1210]:
+                        - link "Anthropic Console" [ref=e1211] [cursor=pointer]:
+                          - /url: https://console.anthropic.com/
+                      - cell "(Default)" [ref=e1212]
+                      - cell "claude-4-5-sonnet" [ref=e1213]:
+                        - code [ref=e1214]: claude-4-5-sonnet
+                    - row "Zhipu AI (GLM) GLM Coding Plan (⚡️Chinese Deal) https://open.bigmodel.cn/api/anthropic glm-4.7, glm-4.6" [ref=e1215]:
+                      - cell "Zhipu AI (GLM)" [ref=e1216]:
+                        - strong [ref=e1217]: Zhipu AI (GLM)
+                      - cell "GLM Coding Plan (⚡️Chinese Deal)" [ref=e1218]:
+                        - link "GLM Coding Plan" [ref=e1219] [cursor=pointer]:
+                          - /url: https://bigmodel.cn/glm-coding
+                        - text: (⚡️Chinese Deal)
+                      - cell "https://open.bigmodel.cn/api/anthropic" [ref=e1220]:
+                        - code [ref=e1221]: https://open.bigmodel.cn/api/anthropic
+                      - cell "glm-4.7, glm-4.6" [ref=e1222]:
+                        - code [ref=e1223]: glm-4.7
+                        - text: ","
+                        - code [ref=e1224]: glm-4.6
+                    - row "MiniMax MiniMax Coding Plan https://api.minimaxi.com/anthropic minimax-m2" [ref=e1225]:
+                      - cell "MiniMax" [ref=e1226]:
+                        - strong [ref=e1227]: MiniMax
+                      - cell "MiniMax Coding Plan" [ref=e1228]:
+                        - link "MiniMax Coding Plan" [ref=e1229] [cursor=pointer]:
+                          - /url: https://platform.minimaxi.com/subscribe/coding-plan
+                      - cell "https://api.minimaxi.com/anthropic" [ref=e1230]:
+                        - code [ref=e1231]: https://api.minimaxi.com/anthropic
+                      - cell "minimax-m2" [ref=e1232]:
+                        - code [ref=e1233]: minimax-m2
+                    - row "Kimi Kimi Coding Plan https://api.kimi.com/coding/ kimi-k2" [ref=e1234]:
+                      - cell "Kimi" [ref=e1235]:
+                        - strong [ref=e1236]: Kimi
+                      - cell "Kimi Coding Plan" [ref=e1237]:
+                        - link "Kimi Coding Plan" [ref=e1238] [cursor=pointer]:
+                          - /url: https://www.kimi.com/membership/pricing
+                      - cell "https://api.kimi.com/coding/" [ref=e1239]:
+                        - code [ref=e1240]: https://api.kimi.com/coding/
+                      - cell "kimi-k2" [ref=e1241]:
+                        - code [ref=e1242]: kimi-k2
+                - generic [ref=e1243]:
+                  - heading "2. Configure" [level=3] [ref=e1244]
+                  - 'link "Permalink: 2. Configure" [ref=e1245] [cursor=pointer]':
+                    - /url: "#2-configure"
+                    - img [ref=e1246]
+                - list [ref=e1248]:
+                  - listitem [ref=e1249]:
+                    - text: Open the app and click the ⚙️
+                    - strong [ref=e1250]: Settings
+                    - text: icon in the bottom left.
+                  - listitem [ref=e1251]:
+                    - text: Paste your
+                    - strong [ref=e1252]: API Key
+                    - text: .
+                  - listitem [ref=e1253]:
+                    - strong [ref=e1254]: Crucial
+                    - text: ": Set the"
+                    - strong [ref=e1255]: Base URL
+                    - text: according to the table above (especially for Zhipu/MiniMax, etc.).
+                  - listitem [ref=e1256]:
+                    - text: Enter the
+                    - strong [ref=e1257]: Model
+                    - text: name you want to use.
+                - generic [ref=e1258]:
+                  - heading "3. Start Coworking" [level=3] [ref=e1259]
+                  - 'link "Permalink: 3. Start Coworking" [ref=e1260] [cursor=pointer]':
+                    - /url: "#3-start-coworking"
+                    - img [ref=e1261]
+                - list [ref=e1263]:
+                  - listitem [ref=e1264]:
+                    - strong [ref=e1265]: Select a Workspace
+                    - text: ": Choose a folder where Claude is allowed to work."
+                  - listitem [ref=e1266]:
+                    - strong [ref=e1267]: Enter a Prompt
+                    - text: ":"
+                    - blockquote [ref=e1268]:
+                      - paragraph [ref=e1269]: "\"Read the financial_report.csv in this folder and create a PowerPoint summary with 5 slides.\""
+                - generic [ref=e1270]:
+                  - heading "📝 Important Notes" [level=3] [ref=e1271]
+                  - 'link "Permalink: 📝 Important Notes" [ref=e1272] [cursor=pointer]':
+                    - /url: "#-important-notes"
+                    - img [ref=e1273]
+                - list [ref=e1275]:
+                  - listitem [ref=e1276]:
+                    - strong [ref=e1277]: macOS Installation
+                    - text: ": If you downloaded the DMG directly (not via Homebrew) and see a security warning, go to"
+                    - strong [ref=e1278]: System Settings > Privacy & Security
+                    - text: and click
+                    - strong [ref=e1279]: Open Anyway
+                    - text: ". Or install via Homebrew to avoid this entirely:"
+                    - generic [ref=e1280]:
+                      - generic [ref=e1281]: brew tap OpenCoworkAI/tap && brew install --cask --no-quarantine open-cowork
+                      - button "Copy" [ref=e1283] [cursor=pointer]:
+                        - img [ref=e1284]
+                  - listitem [ref=e1287]:
+                    - strong [ref=e1288]: Network Access
+                    - text: ": For tools like"
+                    - code [ref=e1289]: WebSearch
+                    - text: ", you may need to enable \"Virtual Network Interface\" (TUN Mode) in your proxy settings to ensure connectivity."
+                  - listitem [ref=e1290]:
+                    - strong [ref=e1291]: Notion Connector
+                    - text: ": Besides setting the integration token, you also need to add connections in a root page. See"
+                    - link "https://www.notion.com/help/add-and-manage-connections-with-the-api" [ref=e1292] [cursor=pointer]:
+                      - /url: https://www.notion.com/help/add-and-manage-connections-with-the-api
+                    - text: for more details.
+                - separator [ref=e1293]
+                - paragraph
+                - generic [ref=e1294]:
+                  - heading "🧰 Skills Library" [level=2] [ref=e1295]
+                  - 'link "Permalink: 🧰 Skills Library" [ref=e1296] [cursor=pointer]':
+                    - /url: "#-skills-library"
+                    - img [ref=e1297]
+                - paragraph [ref=e1299]:
+                  - text: Open Cowork ships with built-in skills under
+                  - code [ref=e1300]: .claude/skills/
+                  - text: ", and supports user-added or custom skills, including:"
+                - list [ref=e1301]:
+                  - listitem [ref=e1302]:
+                    - code [ref=e1303]: pptx
+                    - text: for PowerPoint generation
+                  - listitem [ref=e1304]:
+                    - code [ref=e1305]: docx
+                    - text: for Word document processing
+                  - listitem [ref=e1306]:
+                    - code [ref=e1307]: pdf
+                    - text: for PDF handling and forms
+                  - listitem [ref=e1308]:
+                    - code [ref=e1309]: xlsx
+                    - text: for Excel spreadsheet support
+                  - listitem [ref=e1310]:
+                    - code [ref=e1311]: skill-creator
+                    - text: for creating custom skills
+                - separator [ref=e1312]
+                - generic [ref=e1313]:
+                  - heading "🏗️ Architecture" [level=2] [ref=e1314]
+                  - 'link "Permalink: 🏗️ Architecture" [ref=e1315] [cursor=pointer]':
+                    - /url: "#️-architecture"
+                    - img [ref=e1316]
+                - generic [ref=e1318]:
+                  - code [ref=e1320]: "open-cowork/ ├── src/ │ ├── main/ # Electron Main Process (Node.js) │ │ ├── index.ts # Main entry point │ │ ├── claude/ # Agent SDK & Runner │ │ │ └── agent-runner.ts # AI agent execution logic │ │ ├── config/ # Configuration management │ │ │ └── config-store.ts # Persistent settings storage │ │ ├── db/ # Database layer │ │ │ └── database.ts # SQLite/data persistence │ │ ├── ipc/ # IPC handlers │ │ ├── memory/ # Memory management │ │ │ └── memory-manager.ts │ │ ├── sandbox/ # Security & Path Resolution │ │ │ └── path-resolver.ts # Sandboxed file access │ │ ├── session/ # Session management │ │ │ └── session-manager.ts │ │ ├── skills/ # Skill Loader & Manager │ │ │ └── skills-manager.ts │ │ └── tools/ # Tool execution │ │ └── tool-executor.ts # Tool call handling │ ├── preload/ # Electron preload scripts │ │ └── index.ts # Context bridge setup │ └── renderer/ # Frontend UI (React + Tailwind) │ ├── App.tsx # Root component │ ├── main.tsx # React entry point │ ├── components/ # UI Components │ │ ├── ChatView.tsx # Main chat interface │ │ ├── ConfigModal.tsx # Settings dialog │ │ ├── ContextPanel.tsx # File context display │ │ ├── MessageCard.tsx # Chat message component │ │ ├── PermissionDialog.tsx │ │ ├── Sidebar.tsx # Navigation sidebar │ │ ├── Titlebar.tsx # Custom window titlebar │ │ ├── TracePanel.tsx # AI reasoning trace │ │ └── WelcomeView.tsx # Onboarding screen │ ├── hooks/ # Custom React hooks │ │ └── useIPC.ts # IPC communication hook │ ├── store/ # State management │ │ └── index.ts │ ├── styles/ # CSS styles │ │ └── globals.css │ ├── types/ # TypeScript types │ │ └── index.ts │ └── utils/ # Utility functions ├── .claude/ │ └── skills/ # Default Skill Definitions │ ├── pptx/ # PowerPoint generation │ ├── docx/ # Word document processing │ ├── pdf/ # PDF handling & forms │ ├── xlsx/ # Excel spreadsheet support │ └── skill-creator/ # Skill development toolkit ├── resources/ # Static Assets (icons, images) ├── electron-builder.yml # Build configuration ├── vite.config.ts # Vite bundler config └── package.json # Dependencies & scripts"
+                  - button "Copy" [ref=e1322] [cursor=pointer]:
+                    - img [ref=e1323]
+                - separator [ref=e1326]
+                - generic [ref=e1327]:
+                  - heading "🗺️ Roadmap" [level=2] [ref=e1328]
+                  - 'link "Permalink: 🗺️ Roadmap" [ref=e1329] [cursor=pointer]':
+                    - /url: "#️-roadmap"
+                    - img [ref=e1330]
+                - paragraph [ref=e1332]:
+                  - text: See our full
+                  - strong [ref=e1333]:
+                    - link "ROADMAP.md" [ref=e1334] [cursor=pointer]:
+                      - /url: /OpenCoworkAI/open-cowork/blob/main/ROADMAP.md
+                  - text: for detailed plans.
+                - paragraph [ref=e1335]:
+                  - strong [ref=e1336]: "Completed:"
+                  - text: Core installers · Filesystem sandboxing · VM isolation (WSL2/Lima) · Skills (PPTX/DOCX/PDF/XLSX) · MCP connectors · Multi-model support · Rich input · i18n
+                - paragraph [ref=e1337]:
+                  - strong [ref=e1338]: "Coming next:"
+                  - text: Memory optimization · Linux support · Plugin system · Computer use · Stable release
+                - separator [ref=e1339]
+                - generic [ref=e1340]:
+                  - heading "❓ FAQ" [level=2] [ref=e1341]
+                  - 'link "Permalink: ❓ FAQ" [ref=e1342] [cursor=pointer]':
+                    - /url: "#-faq"
+                    - img [ref=e1343]
+                - paragraph [ref=e1345]:
+                  - strong [ref=e1346]: What is Open Cowork?
+                  - text: Open Cowork is a free, open-source desktop application that provides a local AI agent workspace. It wraps AI models (Claude, GPT, Gemini, DeepSeek, etc.) into a GUI with one-click installers for Windows and macOS — no terminal or coding knowledge required.
+                - paragraph [ref=e1347]:
+                  - strong [ref=e1348]: How is Open Cowork different from Claude Cowork?
+                  - text: Open Cowork is the open-source implementation of Claude Cowork. It adds multi-model support (not just Claude), GUI automation via computer use, remote control through Feishu/Slack, and VM-level sandbox isolation. See the
+                  - link "feature comparison table" [ref=e1349] [cursor=pointer]:
+                    - /url: "#features"
+                  - text: for details.
+                - paragraph [ref=e1350]:
+                  - strong [ref=e1351]: What AI models does Open Cowork support?
+                  - text: Claude (via Anthropic or OpenRouter), OpenAI-compatible APIs, and Chinese models including GLM (Zhipu AI), MiniMax, and Kimi. Any provider offering an OpenAI-compatible API endpoint can be configured.
+                - paragraph [ref=e1352]:
+                  - strong [ref=e1353]: Is Open Cowork free?
+                  - text: Yes. Open Cowork itself is completely free and open-source under the MIT license. You only need to pay for the AI model API usage from your chosen provider.
+                - paragraph [ref=e1354]:
+                  - strong [ref=e1355]: Does Open Cowork work on Linux?
+                  - text: Currently, Open Cowork provides pre-built installers for Windows and macOS only. Linux users can build from source — see the
+                  - link "Build from Source" [ref=e1356] [cursor=pointer]:
+                    - /url: "#installation"
+                  - text: section.
+                - paragraph [ref=e1357]:
+                  - strong [ref=e1358]: How does sandbox isolation work?
+                  - text: "Open Cowork offers multi-level protection: basic path-based restrictions on all platforms, and enhanced VM-level isolation using WSL2 (Windows) or Lima (macOS). When a VM is available, all commands execute inside an isolated Linux environment, protecting your host system."
+                - paragraph [ref=e1359]:
+                  - strong [ref=e1360]: What are Skills and how do I create custom ones?
+                  - text: Skills are built-in workflows for specific tasks like generating PPTX, DOCX, PDF, or XLSX files. Open Cowork ships with default skills under
+                  - code [ref=e1361]: .claude/skills/
+                  - text: and includes a
+                  - code [ref=e1362]: skill-creator
+                  - text: tool to help you build your own custom skills.
+                - paragraph [ref=e1363]:
+                  - strong [ref=e1364]: What is MCP and how does it work?
+                  - text: MCP (Model Context Protocol) lets AI connect to external tools and services. Open Cowork supports MCP connectors for browsers, Notion, and other desktop apps — extending the AI's capabilities beyond just file management and code.
+                - paragraph [ref=e1365]:
+                  - strong [ref=e1366]: How do I set up remote control via Feishu or Slack?
+                  - text: Open Cowork supports remote control through Feishu (Lark) and Slack integration, allowing you to send commands and receive results from collaboration platforms. Check the app settings for remote control configuration.
+                - paragraph [ref=e1367]:
+                  - strong [ref=e1368]: Is my data safe? Does Open Cowork send data to external servers?
+                  - text: Open Cowork runs locally on your machine. Your files stay in your workspace. The only external communication is with the AI model API you configure (e.g., Anthropic, OpenRouter). No data is sent to Open Cowork servers.
+                - separator [ref=e1369]
+                - generic [ref=e1370]:
+                  - heading "🛠️ Contributing" [level=2] [ref=e1371]
+                  - 'link "Permalink: 🛠️ Contributing" [ref=e1372] [cursor=pointer]':
+                    - /url: "#️-contributing"
+                    - img [ref=e1373]
+                - paragraph [ref=e1375]: "We welcome contributions! Whether it's a new Skill, a UI fix, or a security improvement:"
+                - list [ref=e1376]:
+                  - listitem [ref=e1377]: Fork the repo.
+                  - listitem [ref=e1378]:
+                    - text: Create a branch (
+                    - code [ref=e1379]: git checkout -b feature/NewSkill
+                    - text: ).
+                  - listitem [ref=e1380]: Submit a PR.
+                - separator [ref=e1381]
+                - generic [ref=e1382]:
+                  - heading "💬 Community" [level=2] [ref=e1383]
+                  - 'link "Permalink: 💬 Community" [ref=e1384] [cursor=pointer]':
+                    - /url: "#-community"
+                    - img [ref=e1385]
+                - paragraph [ref=e1387]: "Join our community for support and discussion:"
+                - list [ref=e1388]:
+                  - listitem [ref=e1389]:
+                    - strong [ref=e1390]: Discord
+                    - text: ":"
+                    - link "Join our Discord server" [ref=e1391] [cursor=pointer]:
+                      - /url: https://discord.gg/pynjtQDf
+                    - text: — for real-time chat, support, and development discussion.
+                  - listitem [ref=e1392]:
+                    - strong [ref=e1393]: WeChat
+                    - text: ": Scan the QR code below to join our WeChat group (Chinese community)."
+                - paragraph [ref=e1394]:
+                  - link "WeChat Group" [ref=e1395] [cursor=pointer]:
+                    - /url: /OpenCoworkAI/open-cowork/blob/main/resources/WeChat.jpg
+                    - img "WeChat Group" [ref=e1396]
+                - separator [ref=e1397]
+                - generic [ref=e1398]:
+                  - heading "📄 License" [level=2] [ref=e1399]
+                  - 'link "Permalink: 📄 License" [ref=e1400] [cursor=pointer]':
+                    - /url: "#-license"
+                    - img [ref=e1401]
+                - paragraph [ref=e1403]: MIT © Open Cowork Team
+                - separator [ref=e1404]
+                - paragraph [ref=e1405]: Made with ❤️ by the Open Cowork Team with the help of opus4.5
+        - generic [ref=e1409]:
+          - generic [ref=e1412]:
+            - heading "About" [level=2] [ref=e1413]
+            - paragraph [ref=e1414]: Open-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills — with sandbox isolation, multi-model support, and Feishu/Slack integration.
+            - generic [ref=e1415]:
+              - img [ref=e1416]
+              - link "github.com/OpenCoworkAI/open-cowork" [ref=e1419] [cursor=pointer]:
+                - /url: https://github.com/OpenCoworkAI/open-cowork
+            - heading "Topics" [level=3] [ref=e1420]
+            - generic [ref=e1422]:
+              - link "electron" [ref=e1423] [cursor=pointer]:
+                - /url: /topics/electron
+              - link "desktop-app" [ref=e1424] [cursor=pointer]:
+                - /url: /topics/desktop-app
+              - link "skills" [ref=e1425] [cursor=pointer]:
+                - /url: /topics/skills
+              - link "mcp" [ref=e1426] [cursor=pointer]:
+                - /url: /topics/mcp
+              - link "sandbox" [ref=e1427] [cursor=pointer]:
+                - /url: /topics/sandbox
+              - link "multi-model" [ref=e1428] [cursor=pointer]:
+                - /url: /topics/multi-model
+              - link "ai-tools" [ref=e1429] [cursor=pointer]:
+                - /url: /topics/ai-tools
+              - link "ai-agent" [ref=e1430] [cursor=pointer]:
+                - /url: /topics/ai-agent
+              - link "anthropic" [ref=e1431] [cursor=pointer]:
+                - /url: /topics/anthropic
+              - link "computer-use" [ref=e1432] [cursor=pointer]:
+                - /url: /topics/computer-use
+              - link "ai-coding" [ref=e1433] [cursor=pointer]:
+                - /url: /topics/ai-coding
+              - link "claude-code" [ref=e1434] [cursor=pointer]:
+                - /url: /topics/claude-code
+              - link "coding-agent" [ref=e1435] [cursor=pointer]:
+                - /url: /topics/coding-agent
+              - link "open-cowork" [ref=e1436] [cursor=pointer]:
+                - /url: /topics/open-cowork
+            - heading "Resources" [level=3] [ref=e1437]
+            - link "Readme" [ref=e1439] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e1440]
+              - text: Readme
+            - heading "License" [level=3] [ref=e1442]
+            - link "MIT license" [ref=e1444] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+              - img [ref=e1445]
+              - text: MIT license
+            - heading "Code of conduct" [level=3] [ref=e1447]
+            - link "Code of conduct" [ref=e1449] [cursor=pointer]:
+              - /url: "#coc-ov-file"
+              - img [ref=e1450]
+              - text: Code of conduct
+            - heading "Contributing" [level=3] [ref=e1452]
+            - link "Contributing" [ref=e1454] [cursor=pointer]:
+              - /url: "#contributing-ov-file"
+              - img [ref=e1455]
+              - text: Contributing
+            - heading "Security policy" [level=3] [ref=e1457]
+            - link "Security policy" [ref=e1459] [cursor=pointer]:
+              - /url: "#security-ov-file"
+              - img [ref=e1460]
+              - text: Security policy
+            - link "Activity" [ref=e1463] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/activity
+              - img [ref=e1464]
+              - text: Activity
+            - link "Custom properties" [ref=e1467] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/custom-properties
+              - img [ref=e1468]
+              - text: Custom properties
+            - heading "Stars" [level=3] [ref=e1470]
+            - link "1.2k stars" [ref=e1472] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/stargazers
+              - img [ref=e1473]
+              - strong [ref=e1475]: 1.2k
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e1476]
+            - link "9 watching" [ref=e1478] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/watchers
+              - img [ref=e1479]
+              - strong [ref=e1481]: "9"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e1482]
+            - link "152 forks" [ref=e1484] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/forks
+              - img [ref=e1485]
+              - strong [ref=e1487]: "152"
+              - text: forks
+            - link "Report repository" [ref=e1489] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FOpenCoworkAI%2Fopen-cowork&report=OpenCoworkAI+%28user%29
+          - generic [ref=e1491]:
+            - heading "Releases 12" [level=2] [ref=e1492]:
+              - link "Releases 12" [ref=e1493] [cursor=pointer]:
+                - /url: /OpenCoworkAI/open-cowork/releases
+                - text: Releases
+                - generic "12" [ref=e1494]
+            - link "v3.3.0 Latest Apr 18, 20262 weeks ago" [ref=e1495] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/releases/tag/v3.3.0
+              - img [ref=e1496]
+              - generic [ref=e1498]:
+                - generic [ref=e1499]:
+                  - generic [ref=e1500]: v3.3.0
+                  - 'generic "Label: Latest" [ref=e1501]': Latest
+                - generic [ref=e1502]: Apr 18, 20262 weeks ago
+            - link "+ 11 releases" [ref=e1504] [cursor=pointer]:
+              - /url: /OpenCoworkAI/open-cowork/releases
+          - generic [ref=e1506]:
+            - heading "Packages" [level=2] [ref=e1507]:
+              - link "Packages" [ref=e1508] [cursor=pointer]:
+                - /url: /orgs/OpenCoworkAI/packages?repo_name=open-cowork
+            - generic [ref=e1509]: No packages published
+          - generic [ref=e1511]:
+            - heading "Contributors 14" [level=2] [ref=e1512]:
+              - link "Contributors 14" [ref=e1513] [cursor=pointer]:
+                - /url: /OpenCoworkAI/open-cowork/graphs/contributors
+                - text: Contributors
+                - generic "14" [ref=e1514]
+            - list [ref=e1515]:
+              - listitem [ref=e1516]:
+                - link "@hqhq1025" [ref=e1517] [cursor=pointer]:
+                  - /url: https://github.com/hqhq1025
+                  - img "@hqhq1025" [ref=e1518]
+              - listitem [ref=e1519]:
+                - link "@nonstopfor" [ref=e1520] [cursor=pointer]:
+                  - /url: https://github.com/nonstopfor
+                  - img "@nonstopfor" [ref=e1521]
+              - listitem [ref=e1522]:
+                - link "@yangjunx21" [ref=e1523] [cursor=pointer]:
+                  - /url: https://github.com/yangjunx21
+                  - img "@yangjunx21" [ref=e1524]
+              - listitem [ref=e1525]:
+                - link "@Sun-sunshine06" [ref=e1526] [cursor=pointer]:
+                  - /url: https://github.com/Sun-sunshine06
+                  - img "@Sun-sunshine06" [ref=e1527]
+              - listitem [ref=e1528]:
+                - link "@dependabot[bot]" [ref=e1529] [cursor=pointer]:
+                  - /url: https://github.com/apps/dependabot
+                  - img "@dependabot[bot]" [ref=e1530]
+              - listitem [ref=e1531]:
+                - link "@chengjl19" [ref=e1532] [cursor=pointer]:
+                  - /url: https://github.com/chengjl19
+                  - img "@chengjl19" [ref=e1533]
+              - listitem [ref=e1534]:
+                - link "@YosinLiu" [ref=e1535] [cursor=pointer]:
+                  - /url: https://github.com/YosinLiu
+                  - img "@YosinLiu" [ref=e1536]
+              - listitem [ref=e1537]:
+                - link "@claude" [ref=e1538] [cursor=pointer]:
+                  - /url: https://github.com/claude
+                  - img "@claude" [ref=e1539]
+              - listitem [ref=e1540]:
+                - link "@willytop8" [ref=e1541] [cursor=pointer]:
+                  - /url: https://github.com/willytop8
+                  - img "@willytop8" [ref=e1542]
+              - listitem [ref=e1543]:
+                - link "@andoan16" [ref=e1544] [cursor=pointer]:
+                  - /url: https://github.com/andoan16
+                  - img "@andoan16" [ref=e1545]
+              - listitem [ref=e1546]:
+                - link "@JackXFan" [ref=e1547] [cursor=pointer]:
+                  - /url: https://github.com/JackXFan
+                  - img "@JackXFan" [ref=e1548]
+              - listitem [ref=e1549]:
+                - link "@Tujz2023" [ref=e1550] [cursor=pointer]:
+                  - /url: https://github.com/Tujz2023
+                  - img "@Tujz2023" [ref=e1551]
+              - listitem [ref=e1552]:
+                - link "@EdgePro001" [ref=e1553] [cursor=pointer]:
+                  - /url: https://github.com/EdgePro001
+                  - img "@EdgePro001" [ref=e1554]
+              - listitem [ref=e1555]:
+                - link "@ciwei21520" [ref=e1556] [cursor=pointer]:
+                  - /url: https://github.com/ciwei21520
+                  - img "@ciwei21520" [ref=e1557]
+          - generic [ref=e1559]:
+            - heading "Languages" [level=2] [ref=e1560]
+            - list [ref=e1570]:
+              - listitem [ref=e1571]:
+                - link "TypeScript 85.4%" [ref=e1572] [cursor=pointer]:
+                  - /url: /OpenCoworkAI/open-cowork/search?l=typescript
+                  - img [ref=e1573]
+                  - generic [ref=e1575]: TypeScript
+                  - generic [ref=e1576]: 85.4%
+              - listitem [ref=e1577]:
+                - link "Python 10.3%" [ref=e1578] [cursor=pointer]:
+                  - /url: /OpenCoworkAI/open-cowork/search?l=python
+                  - img [ref=e1579]
+                  - generic [ref=e1581]: Python
+                  - generic [ref=e1582]: 10.3%
+              - listitem [ref=e1583]:
+                - link "JavaScript 3.5%" [ref=e1584] [cursor=pointer]:
+                  - /url: /OpenCoworkAI/open-cowork/search?l=javascript
+                  - img [ref=e1585]
+                  - generic [ref=e1587]: JavaScript
+                  - generic [ref=e1588]: 3.5%
+              - listitem [ref=e1589]:
+                - link "CSS 0.4%" [ref=e1590] [cursor=pointer]:
+                  - /url: /OpenCoworkAI/open-cowork/search?l=css
+                  - img [ref=e1591]
+                  - generic [ref=e1593]: CSS
+                  - generic [ref=e1594]: 0.4%
+              - listitem [ref=e1595]:
+                - link "PowerShell 0.2%" [ref=e1596] [cursor=pointer]:
+                  - /url: /OpenCoworkAI/open-cowork/search?l=powershell
+                  - img [ref=e1597]
+                  - generic [ref=e1599]: PowerShell
+                  - generic [ref=e1600]: 0.2%
+              - listitem [ref=e1601]:
+                - link "Shell 0.1%" [ref=e1602] [cursor=pointer]:
+                  - /url: /OpenCoworkAI/open-cowork/search?l=shell
+                  - img [ref=e1603]
+                  - generic [ref=e1605]: Shell
+                  - generic [ref=e1606]: 0.1%
+              - listitem [ref=e1607]:
+                - generic [ref=e1608]:
+                  - img [ref=e1609]
+                  - generic [ref=e1611]: Other
+                  - generic [ref=e1612]: 0.1%
+  - contentinfo [ref=e1614]:
+    - heading "Footer" [level=2] [ref=e1615]
+    - generic [ref=e1616]:
+      - generic [ref=e1617]:
+        - link "GitHub Homepage" [ref=e1618] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e1619]
+        - generic [ref=e1621]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e1622]:
+        - heading "Footer navigation" [level=3] [ref=e1623]
+        - list "Footer navigation" [ref=e1624]:
+          - listitem [ref=e1625]:
+            - link "Terms" [ref=e1626] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e1627]:
+            - link "Privacy" [ref=e1628] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e1629]:
+            - link "Security" [ref=e1630] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e1631]:
+            - link "Status" [ref=e1632] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1633]:
+            - link "Community" [ref=e1634] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1635]:
+            - link "Docs" [ref=e1636] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1637]:
+            - link "Contact" [ref=e1638] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1639]:
+            - button "Manage cookies" [ref=e1641] [cursor=pointer]
+          - listitem [ref=e1642]:
+            - button "Do not share my personal information" [ref=e1644] [cursor=pointer]
