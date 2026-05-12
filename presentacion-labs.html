@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de IA para No Informáticos - Labs Prácticos 2026</title>
+  
+  <!-- RevealJS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/white.min.css">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-primary: #0a0e17;
+      --bg-secondary: #111827;
+      --bg-dark: #000000;
+      --text-primary: #00cc33;
+      --text-secondary: #00992a;
+      --text-muted: #006622;
+      --text-on-dark: #00cc33;
+      --accent-1: #00cc33;
+      --accent-2: #00b4e6;
+      --accent-3: #e60033;
+      --accent-4: #ffcc00;
+      --accent-orange: #ff9500;
+      --accent-purple: #9333ea;
+      --accent-pink: #ec4899;
+      --accent-cyan: #06b6d4;
+      --font-display: 'JetBrains Mono', 'Courier New', monospace;
+      --font-body: 'JetBrains Mono', 'Courier New', monospace;
+      --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+      --size-stat: clamp(4rem, 10vw, 8rem);
+      --size-h1: clamp(3rem, 6vw, 5rem);
+      --size-h2: clamp(2rem, 4vw, 3rem);
+      --size-h3: clamp(1.5rem, 2.5vw, 2rem);
+      --size-body: clamp(0.9rem, 1.5vw, 1.3rem);
+      --size-body-lg: clamp(1.1rem, 2vw, 1.5rem);
+      --size-label: clamp(0.75rem, 1.25vw, 0.9rem);
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2rem;
+      --bar-width: 120px;
+      --bar-height: 4px;
+    }
+
+    body { background: #0a0e17; }
+
+    .reveal { 
+      font-family: var(--font-body); 
+      color: var(--text-primary); 
+      background: var(--bg-primary);
+      filter: brightness(0.95);
+    }
+      
+    .reveal h1, .reveal h2, .reveal h3 { 
+      font-family: var(--font-display); 
+      font-weight: 800; 
+      letter-spacing: -0.03em; 
+      line-height: 1.15; 
+      text-shadow: 0 0 20px var(--accent-1);
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: brightness(0.9);
+    }
+      
+    .reveal h1 { font-size: var(--size-h1); text-shadow: 0 0 30px var(--accent-1); }
+    .reveal h2 { font-size: var(--size-h2); margin: 0 0 0.7em 0; color: var(--accent-2); -webkit-text-fill-color: var(--accent-2); }
+    .reveal h3 { font-size: var(--size-h3); color: var(--accent-1); margin: 0 0 0.5em 0; -webkit-text-fill-color: var(--accent-1); }
+      
+    .reveal p { font-size: var(--size-body); line-height: 1.6; margin: 0 0 1em 0; color: var(--text-primary); }
+      
+    .reveal .slides section { 
+      text-align: left; 
+      padding: 40px 60px; 
+      background: var(--bg-primary);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+    }
+      
+    .reveal .slides section.centered { 
+      text-align: center; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .reveal .label { 
+      font-family: var(--font-mono); 
+      font-size: var(--size-label); 
+      text-transform: uppercase; 
+      letter-spacing: 0.25em; 
+      color: var(--accent-3); 
+      font-weight: 700;
+      background: rgba(230, 0, 51, 0.1);
+      padding: 5px 12px;
+      border-radius: 4px;
+      border: 1px solid var(--accent-3);
+      box-shadow: 0 0 10px rgba(230, 0, 51, 0.3);
+      display: inline-block;
+    }
+      
+    .reveal .lead { font-size: var(--size-body-lg); color: var(--text-secondary); line-height: 1.6; font-weight: 400; }
+    .reveal .text-muted { color: var(--text-muted); }
+    .reveal .text-accent-1 { color: var(--accent-1); }
+    .reveal .text-accent-2 { color: var(--accent-2); }
+    .reveal .text-accent-3 { color: var(--accent-3); }
+    .reveal .text-accent-4 { color: var(--accent-4); }
+    .reveal .text-accent-purple { color: var(--accent-purple); }
+    .reveal .text-on-dark { color: var(--text-on-dark); }
+    .reveal .text-accent-cyan { color: var(--accent-cyan); }
+    .reveal .text-accent-orange { color: var(--accent-orange); }
+
+    .bar { width: var(--bar-width); height: var(--bar-height); background: linear-gradient(90deg, var(--accent-1), var(--accent-2)); margin: 0 0 var(--space-md) 0; }
+    .bar-accent-2 { background: linear-gradient(90deg, var(--accent-2), var(--accent-purple)); }
+    .bar-accent-3 { background: linear-gradient(90deg, var(--accent-3), var(--accent-4)); }
+
+    .card { background: var(--bg-secondary); border: 1px solid var(--text-muted); border-radius: 8px; padding: var(--space-md); margin: var(--space-sm) 0; }
+    .card-accent-2 { border-color: var(--accent-2); }
+    .card-accent-3 { border-color: var(--accent-3); }
+    .card-accent-4 { border-color: var(--accent-4); }
+    .card-accent-purple { border-color: var(--accent-purple); }
+    .card-accent-cyan { border-color: var(--accent-cyan); }
+    .card-accent-orange { border-color: var(--accent-orange); }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-md); }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-sm); }
+
+    .stat-number { font-size: var(--size-stat); font-weight: 800; background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+
+    pre { background: var(--bg-secondary); border: 1px solid var(--text-muted); border-radius: 8px; padding: var(--space-md); font-size: 0.8em; overflow-x: auto; }
+    code { font-family: var(--font-mono); color: var(--accent-1); }
+    .reveal pre code { color: var(--accent-1); }
+
+    ul, ol { margin-left: var(--space-md); }
+    li { margin: 0.5em 0; }
+
+    table { width: 100%; border-collapse: collapse; margin: var(--space-md) 0; }
+    th, td { border: 1px solid var(--text-muted); padding: 0.75em; text-align: left; }
+    th { background: var(--bg-secondary); color: var(--accent-2); }
+
+    .highlight-box { background: linear-gradient(135deg, rgba(0,204,51,0.1), rgba(0,180,230,0.1)); border-left: 4px solid var(--accent-1); padding: var(--space-md); margin: var(--space-md) 0; border-radius: 0 8px 8px 0; }
+    .warning-box { background: rgba(230,0,51,0.1); border-left: 4px solid var(--accent-3); padding: var(--space-md); margin: var(--space-md) 0; border-radius: 0 8px 8px 0; }
+    .info-box { background: rgba(0,180,230,0.1); border-left: 4px solid var(--accent-2); padding: var(--space-md); margin: var(--space-md) 0; border-radius: 0 8px 8px 0; }
+    .success-box { background: rgba(0,204,51,0.15); border: 1px solid var(--accent-1); padding: var(--space-md); margin: var(--space-md) 0; border-radius: 8px; }
+
+    .emoji-icon { font-size: 3em; margin: 0.2em; }
+    .small-text { font-size: 0.7em; }
+    
+    .reveal section .fragment { transition: all 0.3s ease; }
+    .reveal section .fragment.highlight-green { color: var(--accent-1); font-weight: bold; }
+    
+    .timeline { position: relative; padding-left: 30px; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--accent-1), var(--accent-2)); }
+    .timeline-item { position: relative; margin-bottom: var(--space-md); }
+    .timeline-item::before { content: ''; position: absolute; left: -34px; top: 5px; width: 10px; height: 10px; background: var(--accent-1); border-radius: 50%; }
+
+    .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 0.7em; font-weight: bold; margin: 2px; }
+    .badge-success { background: rgba(0,204,51,0.2); color: var(--accent-1); border: 1px solid var(--accent-1); }
+    .badge-warning { background: rgba(255,204,0,0.2); color: var(--accent-4); border: 1px solid var(--accent-4); }
+    .badge-info { background: rgba(0,180,230,0.2); color: var(--accent-2); border: 1px solid var(--accent-2); }
+    .badge-purple { background: rgba(147,51,234,0.2); color: var(--accent-purple); border: 1px solid var(--accent-purple); }
+
+    .lab-step { background: var(--bg-secondary); border-left: 3px solid var(--accent-cyan); padding: var(--space-sm) var(--space-md); margin: var(--space-sm) 0; border-radius: 0 4px 4px 0; }
+    .lab-step-number { display: inline-block; width: 24px; height: 24px; background: var(--accent-cyan); color: var(--bg-primary); border-radius: 50%; text-align: center; line-height: 24px; font-size: 0.8em; font-weight: bold; margin-right: 8px; }
+    
+    .step-list { list-style: none; margin-left: 0; padding: 0; }
+    .step-list li { position: relative; padding-left: 35px; margin-bottom: var(--space-md); }
+    .step-list li::before { content: attr(data-step); position: absolute; left: 0; top: 0; width: 24px; height: 24px; background: var(--accent-2); color: var(--bg-primary); border-radius: 50%; text-align: center; line-height: 24px; font-size: 0.8em; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      
+      <!-- SLIDE 1: Portada Labs -->
+      <section class="centered">
+        <span class="label">LABS PRÁCTICOS 2026</span>
+        <h1>Taller de IA para No Informáticos</h1>
+        <div class="bar"></div>
+        <p class="lead">5 Ejercicios para Dominar OpenCode</p>
+        <p class="text-muted">Duración estimada: 2 horas</p>
+        <p class="text-accent-2" style="margin-top: var(--space-lg);">👨‍💻 Diego Saavedra García</p>
+      </section>
+
+      <!-- SLIDE 2: Objetivos de Labs -->
+      <section>
+        <h2>🎯 Objetivos de los Labs</h2>
+        <div class="bar"></div>
+        <p>Al completar estos labs serás capaz de:</p>
+        <div class="grid-2" style="margin-top: var(--space-md);">
+          <div>
+            <div class="card">
+              <h3>Lab 1: Instalación</h3>
+              <p>Instalar y verificar OpenCode</p>
+            </div>
+            <div class="card card-accent-2">
+              <h3>Lab 2: Perfil</h3>
+              <p>Crear tu AGENTS.md personalizado</p>
+            </div>
+            <div class="card card-accent-3">
+              <h3>Lab 3: Agentes</h3>
+              <p>Crear agentes especializados</p>
+            </div>
+          </div>
+          <div>
+            <div class="card card-accent-4">
+              <h3>Lab 4: MCPs</h3>
+              <p>Conectar extensiones</p>
+            </div>
+            <div class="card card-accent-purple">
+              <h3>Lab 5: E2E</h3>
+              <p>Caso práctico completo</p>
+            </div>
+            <div class="success-box">
+              <h3>⏱️ Tiempo Total</h3>
+              <p>~110 minutos con teoría</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 3: LAB 1 - Instalación -->
+      <section>
+        <span class="label">LAB 1</span>
+        <h2>Instalación y Verificación</h2>
+        <div class="bar"></div>
+        <p class="lead">Duración: 15 minutos</p>
+        <div class="highlight-box">
+          <h3>📋 Requisitos Previos</h3>
+          <ul>
+            <li>Node.js 18+ instalado</li>
+            <li>Terminal/PowerShell accesible</li>
+            <li>Conexión a internet</li>
+          </ul>
+        </div>
+        <div class="info-box">
+          <h3>💡 Verificar Node.js</h3>
+          <pre><code>node --version
+npm --version</code></pre>
+          <p class="text-muted small-text">Deberías ver: v20.x.x y 10.x.x</p>
+        </div>
+      </section>
+
+      <!-- SLIDE 4: LAB 1 - Comandos -->
+      <section>
+        <span class="label">LAB 1</span>
+        <h2>Comandos de Instalación</h2>
+        <div class="bar"></div>
+        <div class="lab-step">
+          <h3>1. Instalar OpenCode</h3>
+          <pre><code>npm install -g opencode-ai</code></pre>
+        </div>
+        <div class="lab-step">
+          <h3>2. Verificar Instalación</h3>
+          <pre><code>opencode --version
+opencode --help</code></pre>
+        </div>
+        <div class="lab-step">
+          <h3>3. Ver Configuración</h3>
+          <pre><code>opencode config list
+opencode plugins list
+opencode agents list</code></pre>
+        </div>
+      </section>
+
+      <!-- SLIDE 5: LAB 2 - Perfil -->
+      <section>
+        <span class="label">LAB 2</span>
+        <h2>Configuración de Perfil</h2>
+        <div class="bar"></div>
+        <p class="lead">Duración: 20 minutos</p>
+        <div class="grid-2">
+          <div>
+            <h3>📁 Estructura</h3>
+            <pre><code>~/.config/opencode/
+├── opencode.json
+├── AGENTS.md          ← Tu perfil
+├── mcp.json
+└── agents/</code></pre>
+          </div>
+          <div>
+            <h3>📝 Crear directorio</h3>
+            <pre><code>mkdir -p ~/.config/opencode</code></pre>
+          </div>
+        </div>
+        <div class="highlight-box">
+          <p><strong>AGENTS.md</strong> es tu tarjeta de presentación para OpenCode. Le dice quién eres y cómo prefieres trabajar.</p>
+        </div>
+      </section>
+
+      <!-- SLIDE 6: LAB 2 - Template -->
+      <section>
+        <span class="label">LAB 2</span>
+        <h2>Template de Perfil</h2>
+        <div class="bar"></div>
+        <pre style="font-size: 0.65em; max-height: 70vh; overflow-y: auto;"><code># Mi Perfil Profesional
+
+## Quién soy
+[Tu nombre completo]
+[Tu profesión]
+[Tu industria o sector]
+
+## Sobre mi trabajo
+[Describe brevemente qué haces]
+
+## Objetivos con IA
+- [Objetivo 1]
+- [Objetivo 2]
+
+## Cómo prefiero trabajar
+**Tono:** Formal / Casual / Profesional
+**Idioma:** Español latino / Español / Inglés
+**Nivel de detalle:** Resumen / Equilibrado / Detallado
+
+## Restricciones importantes
+- [Restricción 1]
+- [Restricción 2]
+
+## proyectos actuales
+1. [Proyecto 1]
+2. [Proyecto 2]</code></pre>
+      </section>
+
+      <!-- SLIDE 7: LAB 3 - Agente Especializado -->
+      <section>
+        <span class="label">LAB 3</span>
+        <h2>Crear Agente Especializado</h2>
+        <div class="bar"></div>
+        <p class="lead">Duración: 25 minutos</p>
+        <div class="grid-2">
+          <div>
+            <h3>📁 Ubicación</h3>
+            <pre><code>~/.config/opencode/agents/
+└── mi-agente.md</code></pre>
+          </div>
+          <div>
+            <h3>🔧 Estructura</h3>
+            <ul>
+              <li>Frontmatter (metadata)</li>
+              <li>Rol y expertise</li>
+              <li>Formatos de entrega</li>
+              <li>Restricciones</li>
+            </ul>
+          </div>
+        </div>
+        <div class="info-box">
+          <p><strong>Trigger:</strong> Palabras clave que activan el agente. Ejemplo: <code>lesson, class, student, education</code></p>
+        </div>
+      </section>
+
+      <!-- SLIDE 8: LAB 3 - Ejemplo Educator -->
+      <section>
+        <span class="label">LAB 3</span>
+        <h2>Agente para Educator</h2>
+        <div class="bar"></div>
+        <pre style="font-size: 0.6em; max-height: 75vh; overflow-y: auto;"><code>---
+name: educator
+description: "Trigger: lesson, class, teaching, student, education. Asistente para educadores"
+mode: subagent
+permission:
+  edit: allow
+  bash: deny
+  webfetch: allow
+---
+
+# Eres un asistente para educadores
+
+## Tu expertise
+- Diseño curricular y planes de clase
+- Creación de evaluaciones y rúbricas
+- Estrategias didácticas
+- Adaptación para diferentes estilos de aprendizaje
+
+## Tipos de contenido que generas
+
+### Plan de Clase
+```
+PLAN DE CLASE
+Título: [Tema]
+Duración: [X] minutos
+Objetivo: [Objetivo de aprendizaje]
+MATERIALES: [Lista]
+DESARROLLO:
+1. Inicio ([X] min): [Actividad]
+2. Desarrollo ([X] min): [Actividad]
+3. Cierre ([X] min): [Actividad]
+EVALUACIÓN: [Tipo y rúbrica]
+```</code></pre>
+      </section>
+
+      <!-- SLIDE 9: LAB 4 - MCPs -->
+      <section>
+        <span class="label">LAB 4</span>
+        <h2>Extensiones MCP</h2>
+        <div class="bar"></div>
+        <p class="lead">Duración: 20 minutos</p>
+        <div class="grid-2">
+          <div>
+            <h3>🔌 Qué es MCP</h3>
+            <p>Model Context Protocol</p>
+            <p class="text-muted">Como un cable USB para IA</p>
+            <ul>
+              <li>Conecta con herramientas externas</li>
+              <li>GitHub, Notion, Slack, etc.</li>
+              <li>Extiende las capacidades</li>
+            </ul>
+          </div>
+          <div>
+            <h3>📦 Instalar MCP</h3>
+            <pre><code>opencode mcp add
+
+# Seleccionar:
+# Nombre: context7
+# Tipo: Remote
+# URL: https://mcp.context7.com/mcp</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 10: LAB 4 - MCPs Populares -->
+      <section>
+        <span class="label">LAB 4</span>
+        <h2>MCPs Recomendados</h2>
+        <div class="bar"></div>
+        <table style="font-size: 0.85em;">
+          <thead>
+            <tr>
+              <th>MCP</th>
+              <th>Para qué sirve</th>
+              <th>Profesión</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Context7</strong></td>
+              <td>Documentación actualizada</td>
+              <td>Todos</td>
+            </tr>
+            <tr>
+              <td><strong>NotebookLM</strong></td>
+              <td>Análisis de documentos</td>
+              <td>Educador, Investigador</td>
+            </tr>
+            <tr>
+              <td><strong>GitHub</strong></td>
+              <td>Gestión de proyectos</td>
+              <td>Administrador</td>
+            </tr>
+            <tr>
+              <td><strong>Slack</strong></td>
+              <td>Comunicación</td>
+              <td>Marketing</td>
+            </tr>
+            <tr>
+              <td><strong>Engram</strong></td>
+              <td>Memoria persistente</td>
+              <td>Todos</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="success-box" style="margin-top: var(--space-md);">
+          <p><strong>✅ Verificar:</strong> <code>opencode mcp list</code></p>
+        </div>
+      </section>
+
+      <!-- SLIDE 11: LAB 5 - Caso E2E -->
+      <section>
+        <span class="label">LAB 5</span>
+        <h2>Caso Práctico End-to-End</h2>
+        <div class="bar"></div>
+        <p class="lead">Duración: 30 minutos</p>
+        <div class="grid-3">
+          <div class="card">
+            <span class="emoji-icon">👩‍🏫</span>
+            <h3>Escenario: Educator</h3>
+            <p class="text-muted small-text">Preparar clase sobre Revolución Francesa</p>
+            <ul class="small-text">
+              <li>Plan de clase (90 min)</li>
+              <li>Presentación 10 slides</li>
+              <li>Evaluación 5 preguntas</li>
+            </ul>
+          </div>
+          <div class="card card-accent-2">
+            <span class="emoji-icon">👨‍💼</span>
+            <h3>Escenario: Admin</h3>
+            <p class="text-muted small-text">Reporte trimestral a junta</p>
+            <ul class="small-text">
+              <li>Reporte ejecutivo</li>
+              <li>Métricas clave</li>
+              <li>Plan próximo trimestre</li>
+            </ul>
+          </div>
+          <div class="card card-accent-purple">
+            <span class="emoji-icon">📱</span>
+            <h3>Escenario: Marketing</h3>
+            <p class="text-muted small-text">Calendario Instagram</p>
+            <ul class="small-text">
+              <li>7 días de contenido</li>
+              <li>Caption + hashtags</li>
+              <li>Horarios óptimos</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 12: LAB 5 - Pasos -->
+      <section>
+        <span class="label">LAB 5</span>
+        <h2>Ejecución del Caso E2E</h2>
+        <div class="bar"></div>
+        <ul class="step-list">
+          <li data-step="1">
+            <strong>Abre OpenCode</strong>
+            <pre><code>opencode</code></pre>
+          </li>
+          <li data-step="2">
+            <strong>Carga tu agente especializado</strong>
+            <pre><code>/load @agents/mi-agente</code></pre>
+          </li>
+          <li data-step="3">
+            <strong>Genera el contenido</strong>
+            <p>Usa prompts específicos con contexto y requisitos claros</p>
+          </li>
+          <li data-step="4">
+            <strong>Exporta/Guarda</strong>
+            <p>Guarda en archivos .md para reutilizar</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SLIDE 13: LAB 5 - Prompt Educator -->
+      <section>
+        <span class="label">LAB 5</span>
+        <h2>Prompt para Educator</h2>
+        <div class="bar"></div>
+        <pre style="font-size: 0.75em; max-height: 70vh; overflow-y: auto;"><code>/load @agents/educator
+
+Necesito un plan de clase de 90 minutos sobre la 
+Revolución Francesa para estudiantes de 4to año de 
+bachillerato.
+
+Incluye:
+- Objetivo de aprendizaje
+- 3 actividades principales
+- Recursos necesarios
+- Evaluación formativa
+
+Basado en el plan anterior, crea una presentación de 
+10 slides en formato markdown.
+Cada slide debe tener:
+- Título
+- 3-4 puntos clave
+- Sugerencia visual entre paréntesis
+
+Crea una evaluación de 5 preguntas:
+- 2 de opción múltiple
+- 1 de respuesta corta
+- 1 de desarrollo
+- 1 de análisis de documento
+
+Incluye rúbrica de corrección.</code></pre>
+      </section>
+
+      <!-- SLIDE 14: Checklist General -->
+      <section>
+        <h2>✅ Checklist de Verificación</h2>
+        <div class="bar"></div>
+        <div class="grid-2">
+          <div>
+            <h3>Lab 1: Instalación</h3>
+            <ul>
+              <li><code>opencode --version</code> ✓</li>
+              <li><code>opencode --help</code> ✓</li>
+            </ul>
+            <h3>Lab 2: Perfil</h3>
+            <ul>
+              <li><code>~/.config/opencode/AGENTS.md</code> existe</li>
+              <li>Tu información real incluida</li>
+            </ul>
+            <h3>Lab 3: Agentes</h3>
+            <ul>
+              <li>1 agente especializado creado</li>
+              <li>Keywords configuradas</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Lab 4: MCPs</h3>
+            <ul>
+              <li><code>opencode mcp list</code> muestra MCP</li>
+              <li>MCP responde correctamente</li>
+            </ul>
+            <h3>Lab 5: E2E</h3>
+            <ul>
+              <li>Plan de clase completo</li>
+              <li>Presentación con estructura</li>
+              <li>Evaluación con rúbrica</li>
+            </ul>
+            <div class="success-box">
+              <p>🎉 <strong>¡Taller completado!</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 15: Entregables -->
+      <section>
+        <h2>📦 Entregables del Taller</h2>
+        <div class="bar"></div>
+        <div class="grid-2">
+          <div>
+            <div class="card">
+              <h3>📸 Screenshots</h3>
+              <ul>
+                <li>opencode --version</li>
+                <li>AGENTS.md personalizado</li>
+                <li>Agente especializado</li>
+                <li>MCP instalado</li>
+              </ul>
+            </div>
+            <div class="card card-accent-2">
+              <h3>📁 Archivos</h3>
+              <ul>
+                <li>Plan de clase.md</li>
+                <li>Presentacion.md</li>
+                <li>Evaluacion.md</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="card card-accent-4">
+              <h3>📚 Materiales</h3>
+              <ul>
+                <li>Manual del Participante (PDF)</li>
+                <li>Taller completo (PDF)</li>
+                <li>Labs Prácticos (PDF)</li>
+                <li>Estructura OpenCode (referencia)</li>
+              </ul>
+            </div>
+            <div class="card card-accent-purple">
+              <h3>🎧 Contenido IA</h3>
+              <ul>
+                <li>NotebookLM: 5 fuentes cargadas</li>
+                <li>Podcast del taller</li>
+                <li>Flashcards de repaso</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 16: Recursos -->
+      <section>
+        <h2>📚 Recursos Adicionales</h2>
+        <div class="bar"></div>
+        <div class="grid-2">
+          <div>
+            <h3>Documentación</h3>
+            <ul>
+              <li><a href="https://dev.opencode.ai/docs" class="text-accent-2">docs.opencode.ai</a></li>
+              <li><a href="https://opencode.ai/download" class="text-accent-2">opencode.ai/download</a></li>
+              <li>GitHub: github.com/anomalyco/opencode</li>
+            </ul>
+            <h3>MCPs</h3>
+            <ul>
+              <li>Awesome MCP Servers (GitHub)</li>
+              <li>MCP Server Directory</li>
+              <li>Context7 para documentación</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Skills</h3>
+            <ul>
+              <li>opencode-skills-collection</li>
+              <li>Skills públicos en GitHub</li>
+              <li>Skills personalizados</li>
+            </ul>
+            <h3>Comunidad</h3>
+            <ul>
+              <li>Discord: OpenCode Community</li>
+              <li>GitHub Issues</li>
+              <li>Reddit: r/opencode</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 17: Cierre -->
+      <section class="centered">
+        <h1>🎉 ¡Practica!</h1>
+        <div class="bar bar-accent-2"></div>
+        <p class="lead">La mejor forma de aprender es haciendo.</p>
+        <p class="text-muted">Empieza con Lab 1 y ve avanzando.</p>
+        <div style="margin-top: var(--space-lg);">
+          <p class="text-accent-2">👨‍💻 Diego Saavedra García</p>
+          <p class="text-muted">dsaavedra88@gmail.com</p>
+        </div>
+        <p style="margin-top: var(--space-lg);">
+          <em>"🤖 La IA no reemplaza al profesional,<br>pero el profesional que usa IA<br>reemplazará al que no lo hace"</em>
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      showSlideNumber: 'all',
+      transition: 'slide',
+      backgroundTransition: 'fade',
+      center: false,
+      width: 1280,
+      height: 720,
+      margin: 0.04,
+      minScale: 0.2,
+      maxScale: 2.0
+    });
+  </script>
+</body>
+</html>
