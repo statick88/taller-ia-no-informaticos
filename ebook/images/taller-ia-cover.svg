@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1050" width="800" height="1050">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#12121a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#00cc33" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#00b4e6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#00cc33" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#00cc33" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1050" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04">
+    <line x1="0" y1="0" x2="0" y2="1050" stroke="#00cc33" stroke-width="1" transform="translate(100,0)"/>
+    <line x1="0" y1="0" x2="0" y2="1050" stroke="#00cc33" stroke-width="1" transform="translate(200,0)"/>
+    <line x1="0" y1="0" x2="0" y2="1050" stroke="#00cc33" stroke-width="1" transform="translate(300,0)"/>
+    <line x1="0" y1="0" x2="0" y2="1050" stroke="#00cc33" stroke-width="1" transform="translate(400,0)"/>
+    <line x1="0" y1="0" x2="0" y2="1050" stroke="#00cc33" stroke-width="1" transform="translate(500,0)"/>
+    <line x1="0" y1="0" x2="0" y2="1050" stroke="#00cc33" stroke-width="1" transform="translate(600,0)"/>
+    <line x1="0" y1="0" x2="0" y2="1050" stroke="#00cc33" stroke-width="1" transform="translate(700,0)"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#00cc33" stroke-width="1"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#00cc33" stroke-width="1"/>
+    <line x1="0" y1="800" x2="800" y2="800" stroke="#00cc33" stroke-width="1"/>
+    <line x1="0" y1="900" x2="800" y2="900" stroke="#00cc33" stroke-width="1"/>
+  </g>
+
+  <!-- Gradient glow behind title -->
+  <rect x="100" y="300" width="600" height="200" fill="url(#glow)" rx="20"/>
+
+  <!-- Decorative top line -->
+  <line x1="250" y1="260" x2="550" y2="260" stroke="#00cc33" stroke-width="2" opacity="0.5"/>
+  <circle cx="250" cy="260" r="4" fill="#00cc33" opacity="0.5"/>
+  <circle cx="400" cy="260" r="3" fill="#00b4e6" opacity="0.7"/>
+  <circle cx="550" cy="260" r="4" fill="#00cc33" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="400" y="390" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="48" fill="#00cc33" text-anchor="middle" filter="url(#shadow)">TALLER DE IA</text>
+  <text x="400" y="440" font-family="Inter, Arial, sans-serif" font-weight="300" font-size="36" fill="#e0e0e0" text-anchor="middle">PARA NO INFORMÁTICOS</text>
+
+  <!-- Decorative bottom line -->
+  <line x1="250" y1="480" x2="550" y2="480" stroke="#00cc33" stroke-width="2" opacity="0.5"/>
+
+  <!-- Subtitle -->
+  <text x="400" y="540" font-family="Inter, Arial, sans-serif" font-weight="400" font-size="20" fill="#888888" text-anchor="middle">Guía Práctica — 2 Horas — 2026</text>
+
+  <!-- Author -->
+  <text x="400" y="590" font-family="Inter, Arial, sans-serif" font-weight="400" font-size="16" fill="#606070" text-anchor="middle">Diego Saavedra García</text>
+
+  <!-- Icon: Neural network (brain) centered -->
+  <g transform="translate(400, 200)" opacity="0.15">
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#00cc33" stroke-width="1"/>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#00b4e6" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#00cc33" stroke-width="0.6"/>
+    <!-- Nodes -->
+    <circle cx="-60" cy="-40" r="5" fill="#00cc33"/>
+    <circle cx="60" cy="-40" r="5" fill="#00cc33"/>
+    <circle cx="0" cy="40" r="5" fill="#00b4e6"/>
+    <circle cx="-30" cy="10" r="4" fill="#00cc33"/>
+    <circle cx="30" cy="10" r="4" fill="#00cc33"/>
+    <!-- Connections -->
+    <line x1="-60" y1="-40" x2="0" y2="40" stroke="#00cc33" stroke-width="1" opacity="0.6"/>
+    <line x1="60" y1="-40" x2="0" y2="40" stroke="#00cc33" stroke-width="1" opacity="0.6"/>
+    <line x1="-60" y1="-40" x2="60" y2="-40" stroke="#00b4e6" stroke-width="1" opacity="0.4"/>
+    <line x1="-30" y1="10" x2="30" y2="10" stroke="#00cc33" stroke-width="1" opacity="0.5"/>
+    <line x1="0" y1="-80" x2="-60" y2="-40" stroke="#00b4e6" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="-80" x2="60" y2="-40" stroke="#00b4e6" stroke-width="1" opacity="0.4"/>
+    <circle cx="0" cy="-80" r="5" fill="#00cc33"/>
+  </g>
+
+  <!-- Bottom tech stack icons (text-based) -->
+  <g transform="translate(0, 850)">
+    <rect x="100" y="20" width="600" height="60" rx="8" fill="#12121a" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="200" y="50" font-family="Inter, monospace" font-size="13" fill="#606070" text-anchor="middle">🤖 OpenCode   |   📓 NotebookLM   |   ⚡ MCP   |   🛠️ SDD</text>
+  </g>
+
+  <!-- CC license badge -->
+  <rect x="320" y="950" width="160" height="28" rx="14" fill="#00cc3310" stroke="#00cc3330" stroke-width="1"/>
+  <text x="400" y="969" font-family="Inter, Arial" font-size="12" fill="#00cc33" text-anchor="middle" font-weight="600">CC BY-NC-SA 4.0</text>
+</svg>

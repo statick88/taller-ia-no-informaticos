@@ -29,30 +29,21 @@ jobs:
         with:
           version: 1.9.37
 
-      - name: Render ebook
+      - name: Render ebook (HTML)
         run: |
           cd ebook
-          quarto render --to all
+          quarto render
 
-      - name: Build landing page and reorganize site
+      - name: Post-procesamiento y reorganización
+        run: |
+          cd ebook
+          python3 post_process.py
+
+      - name: Generar landing page del sitio
         run: |
           cd ebook/_book
 
-          # Mover todo el contenido del ebook a /libro/
-          mkdir -p libro
-          for f in *.html *.json *.xml *.css; do
-            [ -f "$f" ] && mv "$f" libro/
-          done
-          mv site_libs libro/ 2>/dev/null || true
-          mv *.html libro/ 2>/dev/null || true
-
-          # Copiar presentacion
-          mkdir -p ../presentacion
-          cp ../../presentacion.html ../presentacion/index.html
-          cp -r ../../presentation ../presentacion/ 2>/dev/null || true
-
-          # Generar landing page
-          cat > ../index.html << 'LANDING'
+          cat > index.html << 'LANDING'
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -117,9 +108,7 @@ jobs:
 </body>
 </html>
 LANDING
-          # Mover landing a la raíz de _book
-          mv ../index.html .
-          echo "✅ Site structure reorganized"
+          echo "✅ Landing page generada"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

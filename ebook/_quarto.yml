@@ -22,14 +22,14 @@ book:
   page-navigation: true
   search: true
 
-  # Sidebar config
+  # Sidebar de navegación (visible por defecto, se puede ocultar con toggle)
   sidebar:
     title: "📚 Taller de IA"
     search: true
     collapse-level: 1
     pinned: true
     style: "floating"
-    logo: "https://via.placeholder.com/150/00cc33/000000?text=IA"
+    logo: "images/taller-ia-cover.svg"
 
   # Repository info
   repo-url: https://github.com/statick88/taller-ia-no-informaticos
@@ -47,7 +47,7 @@ book:
     - epub
 
   # Cover image
-  # cover-image: images/cover.svg
+  cover-image: images/taller-ia-cover.svg
 
   # Professional footer (estandar del taller)
   page-footer:
@@ -95,10 +95,12 @@ book:
 
 format:
   html:
-    theme: cosmo
+    theme: solar
     css: styles.css
     fontsize: 1.1em
+    page-layout: full
     toc: true
+    toc-location: body
     toc-depth: 3
     number-sections: true
     code-copy: true
@@ -107,10 +109,9 @@ format:
     anchor-sections: true
     section-numbering: "1.0"
     grid:
-      sidebar-width: 280px
-      body-width: 800px
-      margin-width: 60px
-      gutter-width: 30px
+      body-width: 1200px
+      margin-width: 0px
+      gutter-width: 0px
 
   pdf:
     documentclass: scrbook
