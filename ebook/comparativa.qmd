@@ -1,0 +1,121 @@
+# 9. Análisis Comparativo
+
+## Comparativa de herramientas
+
+| Característica | Copilot | OpenCode | Ollama | Gemini | NotebookLM |
+|---------------|---------|----------|--------|--------|------------|
+| **Costo** | Freemium | Freemium | Gratis | Freemium | Gratis |
+| **Curva de aprendizaje** | Media | Baja | Media | Baja | Baja |
+| **Memoria persistente** | No | Sí | Sí | Limitada | Sí |
+| **Personalización** | Limitada | Profunda | Media | Limitada | Limitada |
+| **Requiere internet** | Sí | Sí | No | Sí | Sí |
+| **Datos locales** | No | No | Sí | No | Parcial |
+| **Acceso a archivos** | IDE | Terminal | Terminal | Google | Google |
+| **Skills/Extensiones** | VS Code | Sistema | Sistema | Google | Google |
+| **MCP** | No | Sí | Limitado | No | No |
+
+## Comparativa detallada
+
+### OpenCode vs Copilot
+
+| Aspecto | OpenCode | Copilot |
+|---------|----------|--------|
+| **Dónde funciona** | Terminal + cualquier editor | Solo VS Code |
+| **Memoria** | Conversaciones completas | No |
+| **Precio base** | Gratis (usa tu API key) | $10/mes |
+| **Extensible** | Sí, con MCP y Skills | Limitado |
+| **Para quién** | Profesionales diversos | Desarrolladores |
+
+### OpenCode vs Ollama
+
+| Aspecto | OpenCode | Ollama |
+|---------|----------|--------|
+| **Internet** | Requiere | No |
+| **Privacidad** | Datos van a la nube | Todo local |
+| **Modelos** | Cualquiera (OpenAI, Anthropic...) | Solo modelos locales |
+| **Facilidad** | Más fácil de usar | Requiere más configuración |
+| **Costo** | Costo de API | Gratis (hardware propio) |
+
+### Cuándo usar cada uno
+
+#### Usa OpenCode cuando:
+
+- Quieres máxima flexibilidad
+- Trabajas con múltiples archivos
+- Necesitas memoria persistente
+- Usas diferentes editores
+- Quieres personalizar profundamente
+
+#### Usa Ollama cuando:
+
+- Trabajas con datos sensibles
+- Necesitas privacidad total
+- No tienes internet confiable
+- Quieres modelos personalizados
+- Tienes hardware potente
+
+#### Usa Copilot cuando:
+
+- Solo programas en VS Code
+- No quieres configurar nada
+- Tienes budget para $10/mes
+- Solo necesitas sugerencias de código
+
+#### Usa Gemini cuando:
+
+- Usas el ecosistema Google
+- Trabajas con Sheets y Docs
+- Quieres integración nativa
+- Usas Android
+
+#### Usa NotebookLM cuando:
+
+- Solo analizas documentos
+- Necesitas resumir PDFs
+- Quieres generar quizzes
+- Estudias para exámenes
+
+## Recomendaciones por presupuesto
+
+| Presupuesto | Herramienta(s) |
+|------------|---------------|
+| **$0** | OpenCode (API gratuita) + Ollama |
+| **$10/mes** | OpenCode (API) + Copilot |
+| **$20+/mes** | OpenCode + Copilot + Gemini |
+
+## Recomendaciones por nivel técnico
+
+| Nivel | Herramienta(s) |
+|-------|---------------|
+| **Principiante** | OpenCode + NotebookLM |
+| **Intermedio** | OpenCode + Ollama + NotebookLM |
+| **Avanzado** | OpenCode + Ollama + MCPs |
+
+## El ecosistema ideal
+
+Para la mayoría de profesionales no informáticos:
+
+```
+┌─────────────────────────────────────┐
+│         OpenCode                     │
+│    (Asistente principal)            │
+│                                      │
+│    + NotebookLM                      │
+│    (Análisis de documentos)          │
+│                                      │
+│    + Gemini                         │
+│    (Ecosistema Google)               │
+└─────────────────────────────────────┘
+```
+
+Para máxima privacidad:
+
+```
+┌─────────────────────────────────────┐
+│         Ollama                       │
+│    (Asistente local)                │
+│                                      │
+│    + NotebookLM (local)              │
+│    (Análisis de documentos)          │
+└─────────────────────────────────────┘
+```

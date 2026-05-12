@@ -1,0 +1,115 @@
+# 10. Resumen y Próximos Pasos
+
+## Lo que aprendiste
+
+1. **Evidencia científica**: Los estudios demuestran beneficios reales
+2. **Ecosistema IA**: Herramientas disponibles en 2026
+3. **OpenCode**: Instalación y configuración básica
+4. **Perfiles**: Personalización con AGENTS.md
+5. **MCP y Skills**: Extensiones de capacidades
+6. **Casos de uso**: 12 profesiones cubiertas
+7. **Labs prácticos**: 5 ejercicios guiados
+
+## Plan de acción post-taller
+
+### Semana 1: Fondation
+
+- [ ] Instala OpenCode en tu computadora
+- [ ] Crea tu primer AGENTS.md
+- [ ] Haz tu primera pregunta
+
+### Semana 2: Exploración
+
+- [ ] Explora 2-3 skills útiles
+- [ ] Configura al menos un MCP
+- [ ] Prueba en una tarea real
+
+### Semana 3: Integración
+
+- [ ] Integra OpenCode en tu flujo de trabajo
+- [ ] Usa NotebookLM para documentos
+- [ ] Documenta qué funciona para ti
+
+### Semana 4: Compartición
+
+- [ ] Comparte con colegas
+- [ ] Crea tu biblioteca de prompts
+- [ ] Contribuye a la comunidad
+
+## Recursos oficiales
+
+### Documentación
+
+- **OpenCode Docs**: [opencode.dev/docs](https://opencode.dev/docs)
+- **GitHub**: [github.com/opencode-ai/opencode](https://github.com/opencode-ai/opencode)
+- **Discord**: [discord.gg/opencode](https://discord.gg/opencode)
+
+### Comunidad
+
+- **Discord de OpenCode**: Preguntas y soporte
+- **GitHub Discussions**: Ideas y features
+- **Twitter/X**: Novedades y tips
+
+### Aprendizaje continuo
+
+1. **Practica diariamente** — Usa OpenCode en tu trabajo
+2. **Explora features** — Lee la documentación completa
+3. **Únete a la comunidad** — Participa en Discord
+4. **Comparte conocimiento** — Enseña a tus colegas
+5. **Contribuye** — Reporta bugs y sugiere features
+
+## Errores comunes a evitar
+
+::: {.warning}
+**No compartas tu API key** con nadie. Es como una contraseña.
+
+**Verifica el código** antes de ejecutarlo. La IA puede cometer errores.
+
+**No subas archivos sensibles** a repos públicos.
+
+**Usa variables de entorno** para guardar secretos.
+:::
+
+## Tips para usar OpenCode efectivamente
+
+### Sé específico
+
+Cuanto más contexto, mejor ayuda. En lugar de:
+
+> "Ayúdame con mi proyecto"
+
+Escribe:
+
+> "Trabajo en marketing B2B. Necesito crear un calendario de contenido para LinkedIn del próximo mes sobre IA generativa. Mi audiencia son CTOs de empresas de 50-200 empleados."
+
+### Divide problemas grandes
+
+En lugar de:
+
+> "Hazme una aplicación completa"
+
+Pide:
+
+> "Primero, diseña la arquitectura. Después, crea el modelo de datos. Luego, implementa el frontend."
+
+### Itera y refina
+
+1. Pide una primera versión
+2. Solicita mejoras específicas
+3. Repite hasta estar satisfecho
+
+## Mantente actualizado
+
+La IA evoluciona rápidamente. Para estar al día:
+
+- Sigue las releases de OpenCode
+- Lee el blog de Anthropic/OpenAI
+- Únete a comunidades de práctica
+- Experimenta con nuevas features
+
+---
+
+::: {.text-center}
+*Este material se actualiza continuamente.*
+*Última actualización: Mayo 2026*
+:::

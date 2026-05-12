@@ -1,0 +1,239 @@
+# 7. Casos de Uso por Profesión
+
+Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su trabajo diario. Cada caso incluye el perfil recomendado, las acciones específicas y las herramientas complementarias.
+
+---
+
+## Caso 1: Educator / Docente
+
+**Perfil**: Profesora de historia en bachillerato
+
+**Necesidad**: Crear plan de unidad sobre la Edad Media
+
+**Con OpenCode**:
+
+1. Configura tu perfil de educator
+2. Escribe: "Crea un plan de unidad sobre la Edad Media para 3er año"
+3. Recibes estructura con objetivos, contenidos, actividades
+4. Pide: "Genera una evaluación con 10 preguntas"
+5. Recibes preguntas con rúbrica de corrección
+6. Pide: "Busca fuentes actualizadas sobre [tema específico]"
+
+**Resultado**: Plan de unidad completo en 15 minutos vs 3 horas manual
+
+**Herramientas útiles**:
+
+- OpenCode para generación de contenido
+- NotebookLM para analizar recursos educativos
+
+---
+
+## Caso 2: Administrador de Empresas
+
+**Perfil**: Gerente de recursos humanos
+
+**Necesidad**: Elaborar informe de rotación de personal
+
+**Con OpenCode**:
+
+1. Configura tu perfil de RRHH
+2. Escribe: "Ayúdame a estructurar un informe de rotación de personal"
+3. Recibes plantilla con métricas clave
+4. Proporciona tus datos
+5. Pide: "Análisis de las causas principales"
+6. Recibes recomendaciones basadas en datos
+
+**Resultado**: Informe profesional con insights accionables
+
+**Herramientas**:
+
+- OpenCode para estructuración
+- Gemini para análisis de hojas de cálculo
+
+---
+
+## Caso 3: Profesional de Marketing
+
+**Perfil**: Coordinador de marketing digital
+
+**Necesidad**: Calendario de contenido para redes sociales
+
+**Con OpenCode**:
+
+1. Configura perfil de marketing
+2. Escribe: "Crea un calendario de contenido para Instagram para el próximo mes"
+3. Recibes 30 publicaciones con temas, horarios, hashtags
+4. Pide: "Analiza las redes de [competidor]"
+5. Recibes análisis de competidores
+6. Pide: "Genera captions para 5 publicaciones"
+
+**Resultado**: Contenido para un mes en 30 minutos
+
+---
+
+## Caso 4: Profesional de Salud
+
+**Perfil**: Médico general en centro de salud
+
+**Necesidad**: Mantenerse actualizado en protocolos
+
+**Con Ollama + NotebookLM**:
+
+1. Configura Ollama (trabajo offline)
+2. Busca: "Protocolos actualizados diabetes tipo 2 2026"
+3. En NotebookLM: Agrega artículos de revistas médicas
+4. Pide: "Resume los hallazgos principales"
+5. Verifica siempre con fuentes primarias
+
+**Privacidad**: Datos de pacientes nunca dejan la institución
+
+---
+
+## Caso 5: Abogado / Legal
+
+**Perfil**: Lawyer en bufete mediano
+
+**Necesidad**: Investigar precedentes judiciales
+
+**Con OpenCode**:
+
+1. Configura perfil legal
+2. Escribe: "Busca precedentes sobre [tema jurídico]"
+3. Recibes casos relevantes con citas
+4. Pide: "Resume los argumentos principales"
+5. Verifica siempre con fuentes oficiales
+
+---
+
+## Caso 6: Contador / Contador Público
+
+**Perfil**: Contador en empresa comercial
+
+**Necesidad**: Entender nuevas regulaciones fiscales
+
+**Con OpenCode**:
+
+1. Configura perfil contable
+2. Escribe: "Explica las reformas tributarias 2026"
+3. Recibes resumen en lenguaje claro
+4. Pide: "¿Cómo afecta a empresas del sector retail?"
+5. Recibes análisis específico
+
+---
+
+## Caso 7: Periodista / Comunicador
+
+**Perfil**: Periodista de investigación
+
+**Necesidad**: Investigar tema complejo
+
+**Con OpenCode**:
+
+1. Configura perfil de periodista
+2. Escribe: "Investiga sobre [tema]"
+3. Recibes fuentes confiables
+4. Pide: "Resume en 5 oraciones"
+5. Pide: "¿Qué ángulos no han sido explorados?"
+
+---
+
+## Caso 8: Ingeniero (No de Software)
+
+**Perfil**: Ingeniero civil en constructora
+
+**Necesidad**: Revisar normativas de construcción
+
+**Con OpenCode**:
+
+1. Configura perfil de ingeniería civil
+2. Escribe: "¿Cuáles son los requisitos sísmicos para muros de concreto?"
+3. Recibes norma con parámetros
+4. Pide: "Busca ejemplos de aplicación"
+5. Recibes casos de estudio
+
+---
+
+## Caso 9: Arquitecto
+
+**Perfil**: Arquitecto en estudio de diseño
+
+**Necesidad**: Investigar tendencias sostenibles
+
+**Con OpenCode**:
+
+1. Configura perfil de arquitectura
+2. Escribe: "Tendencias en materiales sostenibles 2026"
+3. Recibes lista de materiales con propiedades
+4. Pide: "Proyectos ejemplo que los usen"
+5. Recibes casos reales
+
+---
+
+## Caso 10: Investigador Académico
+
+**Perfil**: Profesor investigador universitario
+
+**Necesidad**: Revisión bibliográfica para artículo
+
+**Con OpenCode**:
+
+1. Configura perfil de investigador
+2. Escribe: "/busqueda_cientifica [tu tema]"
+3. Recibes 20+ fuentes Q1/Q2
+4. Verifica en NotebookLM
+5. Pide: "Resume el estado del arte"
+6. Solicita: "Genera debate entre autores"
+
+**Resultado**: Revisión de literatura completa en horas vs semanas
+
+---
+
+## Caso 11: Estudiante Universitario
+
+**Perfil**: Estudiante de maestría
+
+**Necesidad**: Completar trabajo de investigación
+
+**Con OpenCode**:
+
+1. Configura tu perfil de estudiante
+2. Escribe: "Ayúdame a estructurar mi TFM sobre [tema]"
+3. Recibes estructura IMRAD
+4. Proporciona avances
+5. Pide: "Revisa mi redacción"
+6. Recibes correcciones
+
+---
+
+## Caso 12: Emprendedor / Pequeño empresario
+
+**Perfil**: Owner de tienda online
+
+**Necesidad**: Mejorar rentabilidad
+
+**Con OpenCode**:
+
+1. Configura perfil de negocio
+2. Escribe: "Analiza mis ventas del último mes [comparte datos]"
+3. Recibes análisis de patrones
+4. Pide: "Recomienda productos a ordenar"
+5. Pide: "Estrategia de precios"
+
+---
+
+## Resumen de herramientas por profesión
+
+| Profesión | Herramienta Principal | Complementaria |
+|-----------|----------------------|----------------|
+| Educator | OpenCode | NotebookLM |
+| Administrador | OpenCode | Gemini |
+| Marketing | OpenCode | Amp |
+| Salud | Ollama | NotebookLM |
+| Legal | OpenCode | — |
+| Contador | OpenCode | Gemini |
+| Periodista | OpenCode | NotebookLM |
+| Ingeniero | OpenCode | — |
+| Arquitecto | OpenCode | — |
+| Investigador | OpenCode | NotebookLM |
+| Estudiante | OpenCode | NotebookLM |
+| Emprendedor | OpenCode | Gemini |

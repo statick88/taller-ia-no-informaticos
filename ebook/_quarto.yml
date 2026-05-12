@@ -1,0 +1,84 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Taller de IA para No Informáticos"
+  subtitle: "Guía Práctica para Profesionales 2026"
+  author:
+    - name: "Diego Saavedra García"
+      affiliations:
+        - "OpenCode Community"
+        - "Docente Universitario"
+  date: "2026-05-12"
+  version: "1.0"
+  cover-image: _cover.md
+  site-url: "https://statick88.github.io/taller-ia-no-informaticos/"
+  description: "Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar."
+
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - fundamentos.qmd
+    - opencode.qmd
+    - instalacion.qmd
+    - perfiles.qmd
+    - mcp-skills.qmd
+    - casos-uso.qmd
+    - labs.qmd
+    - comparativa.qmd
+    - proximos-pasos.qmd
+    - referencias.qmd
+
+  appendices:
+    - apendice-cheatsheet.qmd
+    - apendice-faq.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-copy: true
+    smooth-scroll: true
+    link-external-newwindow: true
+
+  pdf:
+    documentclass: scrbook
+    classoption:
+      - "oneside"
+      - "openany"
+    geometry:
+      - top=25mm
+      - bottom=25mm
+      - left=30mm
+      - right=25mm
+    fontsize: 11pt
+    linestretch: 1.3
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    link-color: "blue!50!black"
+    url-color: "teal"
+    citecolor: "violet"
+    filecolor: "olive"
+    papersize: a4
+
+  epub:
+    toc: true
+    toc-depth: 3
+
+execute:
+  echo: false
+  warning: false
+  cache: false
+
+metadata:
+  keywords:
+    - inteligencia artificial
+    - opencode
+    - productivity
+    - no-code
+    - tutorial
+  lang: es

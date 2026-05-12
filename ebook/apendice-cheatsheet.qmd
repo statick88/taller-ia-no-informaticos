@@ -1,0 +1,126 @@
+# Apéndice A: Cheatsheet
+
+## Comandos esenciales
+
+### Instalación
+
+```bash
+# Instalar OpenCode
+npm install -g opencode-ai
+
+# Verificar instalación
+opencode --version
+
+# Ver ayuda
+opencode --help
+```
+
+### Configuración
+
+```bash
+# Ver configuración actual
+opencode config list
+
+# Ver plugins instalados
+opencode plugins list
+
+# Ver agentes disponibles
+opencode agents list
+```
+
+### Uso básico
+
+```bash
+# Iniciar conversación
+opencode
+
+# Ejecutar con prompt
+opencode "tu pregunta aquí"
+
+# Usar un agente específico
+opencode --agent nombre-agente "tu pregunta"
+```
+
+## Estructura de archivos
+
+```
+~/.config/opencode/
+├── opencode.json      # Configuración principal
+├── AGENTS.md          # Tu perfil global
+└── agents/            # Agentes personalizados
+    └── mi-agente.md
+```
+
+## Skins y prompts útiles
+
+### Presentarse
+
+```
+Hola, me llamo [nombre] y trabajo en [industria].
+Ayúdame con [tarea específica].
+```
+
+### Pedir ayuda estructurada
+
+```
+Necesito [resultado]. 
+Contexto: [información relevante].
+Restricciones: [límites si hay].
+```
+
+### Investigar
+
+```
+Busca información sobre [tema].
+Filtros: [fuentes confiables, fechas, etc.].
+Formato: [cómo quieres la respuesta].
+```
+
+## Atajos útiles
+
+| Acción | Cómo hacerlo |
+|--------|-------------|
+| Nueva conversación | `Ctrl+C` para salir, luego `opencode` |
+| Ver historial | Flechas arriba/abajo |
+| Cancelar | `Ctrl+C` |
+| Limpiar pantalla | `Ctrl+L` |
+| Help | `opencode --help` |
+
+## Troubleshooting rápido
+
+### Error: "command not found"
+
+```bash
+# Verificar que npm está en PATH
+npm --version
+
+# Reinstalar si es necesario
+npm install -g opencode-ai
+```
+
+### Error: "API key inválida"
+
+1. Ve a platform.openai.com
+2. Verifica tu API key
+3. Actualiza ~/.config/opencode/opencode.json
+
+### Error: "Permiso denegado"
+
+```bash
+# Linux/Mac
+sudo npm install -g opencode-ai
+
+# O cambia el directorio
+mkdir -p ~/.npm-global
+npm config set prefix '~/.npm-global'
+export PATH=~/.npm-global/bin:$PATH
+```
+
+## Recursos rápidos
+
+| Recurso | URL |
+|---------|-----|
+| Docs | opencode.dev/docs |
+| GitHub | github.com/opencode-ai/opencode |
+| Discord | discord.gg/opencode |
+| npm | npmjs.com/package/opencode-ai |

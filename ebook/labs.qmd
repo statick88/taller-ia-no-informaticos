@@ -1,0 +1,324 @@
+# 8. Labs Prácticos
+
+## 5 Labs para dominar OpenCode en 2 horas
+
+Cada lab está diseñado para completarse en 15-30 minutos. Puedes hacerlos en orden o seleccionar el que necesites.
+
+---
+
+## LAB 1: Instalación y Verificación (15 minutos)
+
+### Objetivo
+
+Instalar OpenCode y verificar que funciona correctamente.
+
+### Paso 1: Verificar instalación de npm/Node.js
+
+Abre tu terminal (PowerShell en Windows, Terminal en Mac/Linux):
+
+```bash
+# Verificar que Node.js está instalado
+node --version
+
+# Verificar que npm está instalado
+npm --version
+```
+
+**Deberías ver algo como:** `v20.x.x` y `10.x.x`
+
+### Paso 2: Instalar OpenCode
+
+```bash
+# Instalar globalmente
+npm install -g opencode-ai
+
+# O si prefieres con permisos de administrador (Linux)
+sudo npm install -g opencode-ai
+```
+
+### Paso 3: Verificar instalación
+
+```bash
+# Verificar versión instalada
+opencode --version
+
+# Verificar que responde
+opencode --help
+```
+
+### Paso 4: Primeros comandos
+
+```bash
+# Ver configuración actual
+opencode config list
+
+# Ver plugins instalados
+opencode plugins list
+
+# Ver agentes disponibles
+opencode agents list
+```
+
+### Checklist de verificación
+
+- [ ] `node --version` muestra v18 o superior
+- [ ] `opencode --version` muestra la versión
+- [ ] `opencode --help` muestra la ayuda
+- [ ] Sin errores de permisos
+
+---
+
+## LAB 2: Configuración de Perfil Personal (20 minutos)
+
+### Objetivo
+
+Crear tu archivo AGENTS.md con tu información profesional.
+
+### Paso 1: Crear directorio de configuración
+
+```bash
+# Crear estructura de directorios
+mkdir -p ~/.config/opencode
+```
+
+### Paso 2: Crear tu AGENTS.md
+
+Crea el archivo `~/.config/opencode/AGENTS.md` con este contenido:
+
+```markdown
+# Mi Perfil Profesional
+
+## Quién soy
+
+[Tu nombre completo]
+[Tu profesión]
+[Tu industria o sector]
+[Años de experiencia]
+
+## Sobre mi trabajo
+
+[Describe brevemente qué haces]
+[Qué tipo de proyectos manejas]
+[Qué herramientas usas]
+
+## Mis objetivos con IA
+
+- [Objetivo 1]
+- [Objetivo 2]
+- [Objetivo 3]
+
+## Cómo prefiero que me ayudes
+
+[Estilo: detallado, conciso, etc.]
+[Formato preferido: listas, párrafos, etc.]
+[Idioma: español con tecnicismos]
+```
+
+### Paso 3: Personaliza según tu profesión
+
+Edita las secciones con tu información real. Cuanto más específico, mejor ayuda.
+
+### Paso 4: Probar tu perfil
+
+```bash
+opencode "Hola, ¿puedes presentarme qué sabes sobre mí?"
+```
+
+### Checklist
+
+- [ ] Archivo AGENTS.md creado en `~/.config/opencode/`
+- [ ] Contiene tu nombre y profesión
+- [ ] Describe tus objetivos con IA
+- [ ] Define tu estilo preferido
+- [ ] La IA reconoce tu perfil
+
+---
+
+## LAB 3: Agentes Especializados (25 minutos)
+
+### Objetivo
+
+Crear un agente especializado para tu profesión.
+
+### Paso 1: Diseñar el perfil del agente
+
+Define:
+
+- **Nombre del agente**: e.g., `educator`, `marketer`
+- **Rol**: Qué hace este agente
+- **Herramientas**: Qué capacidades tiene
+- **Instrucciones**: Cómo debe comportarse
+
+### Paso 2: Crear directorio de agentes
+
+```bash
+mkdir -p ~/.config/opencode/agents
+```
+
+### Paso 3: Crear archivo del agente
+
+Crea `~/.config/opencode/agents/mi-agente.md`:
+
+```markdown
+# Mi Agente [Nombre]
+
+## Rol
+[Describe el rol del agente]
+
+## Experiencia
+[Años de experiencia]
+[Especializaciones]
+
+## Herramientas disponibles
+- [Herramienta 1]
+- [Herramienta 2]
+
+## Instrucciones del sistema
+
+1. [Regla 1]
+2. [Regla 2]
+3. [Regla 3]
+
+## Patrón de proyecto
+[Cómo estructurar el trabajo]
+```
+
+### Paso 4: Probar el agente
+
+```bash
+opencode --agent mi-agente "Tu primera tarea"
+```
+
+### Checklist
+
+- [ ] Directorio `agents/` creado
+- [ ] Archivo de agente con rol definido
+- [ ] Herramientas especificadas
+- [ ] Instrucciones claras
+- [ ] Probado con una tarea real
+
+---
+
+## LAB 4: MCPs y Skills (30 minutos)
+
+### Objetivo
+
+Conectar extensiones y habilidades útiles.
+
+### Paso 1: Instalar MCP de filesystem
+
+```bash
+# Crear archivo de configuración MCP
+mkdir -p ~/.config/opencode
+touch ~/.config/opencode/mcp.json
+```
+
+### Paso 2: Configurar MCP de filesystem
+
+Edita `~/.config/opencode/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+    }
+  }
+}
+```
+
+### Paso 3: Explorar skills disponibles
+
+```bash
+opencode "/skills"
+```
+
+### Paso 4: Instalar una skill útil
+
+1. Identifica una skill que necesites
+2. Busca en `~/.claude/skills/`
+3. O instala desde la comunidad
+
+### Paso 5: Usar una skill
+
+```bash
+opencode "Usa la skill de [nombre] para [tarea]"
+```
+
+### Checklist
+
+- [ ] Archivo mcp.json creado
+- [ ] Al menos un MCP configurado
+- [ ] Al menos una skill identificada
+- [ ] Una skill probada con éxito
+
+---
+
+## LAB 5: Proyecto Completo (40 minutos)
+
+### Objetivo
+
+Aplicar todo lo aprendido en un caso real de tu trabajo.
+
+### Paso 1: Define tu proyecto
+
+Elige una tarea real de tu trabajo que puedas completar con OpenCode:
+
+- Redactar un informe
+- Investigar un tema
+- Crear contenido
+- Analizar datos
+- Estructurar un documento
+
+### Paso 2: Configura tu entorno
+
+1. Asegúrate de que tu AGENTS.md está actualizado
+2. Activa los MCP necesarios
+3. Carga las skills relevantes
+
+### Paso 3: Implementa con ayuda de OpenCode
+
+```bash
+opencode "Necesito [tu tarea]. Empecemos."
+```
+
+### Paso 4: Itera y refina
+
+- Pide mejoras
+- Solicita variaciones
+- Verifica el trabajo
+
+### Paso 5: Documenta lo aprendido
+
+Crea un resumen de:
+
+- Qué funcionó bien
+- Qué necesitas mejorar
+- Qué commands usaste
+- Qué configuración fue útil
+
+### Checklist
+
+- [ ] Tarea real seleccionada
+- [ ] Entorno configurado
+- [ ] Trabajo completado
+- [ ] Documentación creada
+- [ ] Próximos pasos definidos
+
+---
+
+## Plan post-labs
+
+| Semana | Acción |
+|--------|--------|
+| **1ra** | Personaliza tu AGENTS.md |
+| **2da** | Explora 2-3 skills |
+| **3ra** | Integra en tu flujo de trabajo |
+| **4ta** | Comparte con colegas |
+
+## Recursos adicionales
+
+- Documentación: [opencode.dev/docs](https://opencode.dev/docs)
+- GitHub: [github.com/opencode-ai/opencode](https://github.com/opencode-ai/opencode)
+- Discord: [discord.gg/opencode](https://discord.gg/opencode)

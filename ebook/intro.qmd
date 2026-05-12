@@ -1,0 +1,54 @@
+# 1. Fundamentos: ¿Por qué usar IA?
+
+## Evidencia científica
+
+La investigación científica demuestra beneficios significativos del uso de asistentes de IA en el trabajo profesional.
+
+### Estudio de Repsol (2024)
+
+La multienergética española, en colaboración con MIT Technology Review, evaluó Microsoft 365 Copilot durante 4 meses con 300 empleados:
+
+- **Ahorro de tiempo**: 121 minutos brutos por semana por empleado (96.8 horas/año)
+- **Mejora en calidad**: 16% de incremento en la calidad de entregables
+- **Satisfacción**: 61.9% declaró que preferiría no volver a trabajar sin la herramienta
+- **Perfil más beneficiado**: Técnicos cualificados y profesionales sénior
+
+### Estudio en Ecuador (El Oro, 2025)
+
+Investigación en 900 empleados de empresas comerciales:
+
+- **Productividad**: El uso frecuente de IA incrementa la productividad (odds ratio de 2.34)
+- **Eficiencia**: 40% de reducción en duración de tareas administrativas
+- **Precisión**: 72% de reducción en incidencia de errores
+
+### Estudio en México (2025)
+
+Encuesta a 327 usuarios mexicanos:
+
+- **Productividad**: 62% usa IA para incrementar productividad
+- **Ahorro**: 7.02 horas semanales en promedio
+- **Creatividad**: 31.5% usa IA para generar nuevas ideas
+- **Motivación**: Cerca de un tercio busca innovación
+
+### Estudio en Universidades Latinoamericanas (2024)
+
+Implementación de asistentes virtuales en universidades de Ecuador, Perú y Colombia:
+
+- **Satisfacción**: Más del 75% reportó altos niveles de satisfacción
+- **Docentes**: Reducción de carga administrativa
+- **Estudiantes**: Retroalimentación inmediata y adaptación de contenidos
+
+## Conclusión científica
+
+Los estudios demuestran consistentemente que los asistentes de IA:
+
+1. **Ahorran tiempo significativo** (2+ horas/semana)
+2. **Mejoran la calidad** del trabajo realizado
+3. **Aumentan la satisfacción** laboral
+4. **Reducen errores** en tareas repetitivas
+
+> La IA no reemplaza al profesional, pero amplifica su capacidad.
+
+## ¿Qué es un asistente de IA?
+
+Es como un compañero virtual que te ayuda con tareas intelectuales: escribir, investigar, analizar, resumir. A diferencia de los motores de búsqueda, entiende el contexto y puede mantener una conversación.

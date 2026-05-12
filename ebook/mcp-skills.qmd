@@ -1,0 +1,134 @@
+# 6. MCP y Skills
+
+## ¿Qué es MCP?
+
+MCP (Model Context Protocol) es un protocolo que permite a OpenCode conectarse con herramientas externas como bases de datos, APIs, y servicios.
+
+### ¿Por qué usar MCP?
+
+Los MCP permiten que OpenCode acceda a información y herramientas que no están en su contexto base:
+
+- **NotebookLM**: Análisis de documentos y PDFs
+- **GitHub**: Repositorios y issues
+- **Jira**: Gestión de proyectos
+- **Slack**: Comunicación de equipo
+- **Bases de datos**: Consultas SQL
+
+### ⚠️ Precaución con tokens
+
+> MCP añade tokens a cada consulta. Un solo MCP como GitHub puede añadir 20,000 tokens. Sé selectivo: solo conecta los MCP que realmente uses.
+
+## MCPs Recomendados
+
+| MCP | Función | Tokens estimados |
+|-----|---------|-----------------|
+| Filesystem | Leer y escribir archivos | ~2K |
+| Git | Control de versiones | ~5K |
+| Search | Búsqueda en proyecto | ~3K |
+| Database | Consultas SQL | ~4K |
+| Web | Navegación web | ~8K |
+| Notion | Integración con notas | ~6K |
+| Slack | Mensajería team | ~5K |
+
+## Configurar un MCP
+
+### Archivo mcp.json
+
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git"]
+    }
+  }
+}
+```
+
+## ¿Qué son las Skills?
+
+Las skills son **habilidades pre-configuradas** que puedes agregar a OpenCode para tareas específicas. A diferencia de los MCP que conectan servicios externos, las skills extienden las capacidades de IA.
+
+### Sistema de nomenclatura
+
+Las skills siguen un formato estricto:
+
+- **Minúsculas**: `code-review`, no `Code-Review`
+- **Un solo guión**: entre palabras
+- **Máximo 64 caracteres**: nombre completo
+- **Ubicación**: `~/.claude/skills/`
+
+## Skills Recomendadas
+
+### Investigación y Escritura
+
+| Skill | Descripción |
+|-------|-------------|
+| `busqueda-cientifica` | IEEE, ACM, arXiv, Q1/Q2 |
+| `redaccion-cientifica` | Estructura IMRAD, APA/IEEE |
+| `estructura-paper` | Secciones de paper |
+| `citacion-normas` | Normas de citación |
+| `cientifico` | Orquestador de investigación |
+
+### Desarrollo y Código
+
+| Skill | Descripción |
+|-------|-------------|
+| `code-review` | Revisión automática |
+| `testing` | Generación de tests |
+| `security-scan` | Vulnerabilidades OWASP |
+| `best-practices` | Seguridad, compatibilidad |
+
+### Presentación y Docs
+
+| Skill | Descripción |
+|-------|-------------|
+| `docs` | Documentación automática |
+| `pptx-generator` | Presentaciones PowerPoint |
+| `pdf-generator` | Documentos PDF |
+| `revealjs-presenter` | Slides HTML |
+
+## Instalar una Skill
+
+1. Ve a la configuración de OpenCode
+2. Selecciona "Skills"
+3. Busca la skill que necesitas
+4. Haz clic en "Instalar"
+
+## Combinar MCP + Skills
+
+El verdadero poder viene de combinar ambos:
+
+```
+┌──────────────────────────────────────┐
+│  Skill: búsqueda científica           │
+│  ↓                                   │
+│  MCP: Web (para buscar)              │
+│  ↓                                   │
+│  MCP: NotebookLM (para analizar)      │
+│  ↓                                   │
+│  Skill: redacción científica         │
+│  ↓                                   │
+│  Skill: citación normas              │
+└──────────────────────────────────────┘
+```
+
+## Ejemplo: Investigación académica
+
+```bash
+# 1. Buscar con skill de investigación
+opencode "/busqueda_cientifica machine learning educación"
+
+# 2. Analizar documentos con NotebookLM
+opencode "Analiza estos papers y genera un resumen"
+
+# 3. Redactar con estructura IMRAD
+opencode "Redacta la introducción siguiendo estructura IMRAD"
+
+# 4. Citar correctamente
+opencode "Genera las citas en formato APA 7ma edición"
+```

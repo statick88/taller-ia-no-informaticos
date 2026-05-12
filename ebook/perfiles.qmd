@@ -1,0 +1,125 @@
+# 5. Perfiles Personalizados
+
+## ¿Qué es AGENTS.md?
+
+Es una **tarjeta de presentación** para tu asistente. Le dice quién eres, qué necesitas y cómo prefieres trabajar. Se guarda en `~/.config/opencode/AGENTS.md`.
+
+## Estructura básica
+
+```markdown
+# Mi Perfil Profesional
+
+## Quién soy
+[Nombre]
+[Profesión/Rol]
+[Industria]
+
+## Qué hago
+[Descripción de tu trabajo]
+
+## Mis objetivos
+- Objetivo 1
+- Objetivo 2
+- Objetivo 3
+
+## Cómo prefiero que me ayudes
+[Estilo preferido]
+[Nivel de detalle]
+[Formato de respuesta]
+```
+
+## Precedencia de configuración
+
+OpenCode sigue este orden de prioridad para cargar configuraciones:
+
+1. **AGENTS.md local** (`./AGENTS.md`) — el más específico
+2. **AGENTS.md global** (`~/.config/opencode/AGENTS.md`) — tu configuración personal
+3. **Clasificación del proyecto** — detección automática
+4. **Fallback de Claude Code** — configuración por defecto
+
+> Esto significa que puedes tener múltiples perfiles para diferentes proyectos.
+
+## Ejemplo: Perfil de Educator
+
+```markdown
+# Mi Perfil Profesional
+
+## Quién soy
+María García
+Profesora de matemáticas
+Educación secundaria
+
+## Qué hago
+Clases de bachillerato.
+Evaluaciones.
+Tutorías.
+Preparación de materiales.
+
+## Mis objetivos
+- Crear planes de clase efectivos
+- Generar evaluaciones equilibradas
+- Adaptar contenidos a diferentes niveles
+```
+
+## Ejemplo: Perfil de Administrador
+
+```markdown
+# Mi Perfil Profesional
+
+## Quién soy
+Juan Pérez
+Gerente de operaciones
+Sector: Retail
+
+## Qué hago
+Coordinación logística.
+Gestión de inventario.
+Reportes semanales.
+Reuniones de equipo.
+
+## Mis objetivos
+- Automatizar reportes repetitivos
+- Mejorar análisis de datos
+- Reducir tiempo en tareas administrativas
+```
+
+## Ejemplo: Perfil de Marketing
+
+```markdown
+# Mi Perfil Profesional
+
+## Quién soy
+Ana López
+Coordinadora de Marketing Digital
+Sector: Tecnología B2B
+
+## Qué hago
+Gestión de redes sociales.
+Creación de contenido.
+Campañas de email marketing.
+Análisis de métricas.
+
+## Mis objetivos
+- Generar contenido consistente
+- Aumentar engagement
+- Medir ROI de campañas
+```
+
+## Perfiles Incluidos en OpenCode
+
+| Perfil | Descripción |
+|--------|-------------|
+| Developer | Programación general, código limpio |
+| Educator | Enseñanza, explicaciones claras |
+| Admin | Tareas administrativas, documentos |
+| Marketing | Contenido, redes sociales |
+| Researcher | Búsqueda, análisis, papers |
+| Security | Auditorías, pentesting, CVE |
+
+## Tips para tu perfil
+
+1. **Sé específico**: Cuanto más contexto, mejor ayuda
+2. **Incluye tu industria**: Contexto específico vale oro
+3. **Define el formato**: ¿Prefieres listas? ¿Textos largos?
+4. **Menciona herramientas**: Qué software usas habitualmente
+5. **Actualiza regularmente**: Tu perfil debe evolucionar contigo

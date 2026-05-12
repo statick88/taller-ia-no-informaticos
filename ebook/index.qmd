@@ -1,0 +1,56 @@
+# Prefacio {-}
+
+```{=html}
+<div style="text-align: center; padding: 40px 0; background: linear-gradient(135deg, #0a0a0f, #1a1a25); margin: 0 -20px; border-radius: 8px;">
+  <h1 style="color: #00cc33; font-size: 2.5em; margin: 0;">Taller de IA<br>para No Informáticos</h1>
+  <p style="color: #a0a0b0; font-size: 1.3em; margin-top: 15px;">Guía Práctica para Profesionales 2026</p>
+  <p style="color: #606070; margin-top: 30px;">Diego Saavedra García</p>
+</div>
+```
+
+---
+
+## ¿Qué es este taller?
+
+Este taller gratuito de 2 horas te enseñará a usar **OpenCode** y herramientas de inteligencia artificial para aumentar tu productividad profesional, **sin necesidad de saber programar**.
+
+## ¿Qué aprenderás?
+
+Al finalizar este taller podrás:
+
+- **Usar OpenCode** para tareas profesionales
+- **Personalizar tu asistente** con tu perfil
+- **Instalar habilidades adicionales** (Skills)
+- **Conectar extensiones** (MCP)
+- **Crear agentes especializados**
+- **Elegir la mejor herramienta** para cada trabajo
+
+## Estructura del Ebook
+
+Este ebook está organizado en secciones que puedes leer en orden o seleccionar según tu necesidad:
+
+| Sección | Contenido |
+|---------|-----------|
+| **Fundamentos** | Por qué la IA importa, evidencia científica |
+| **OpenCode** | Qué es, cómo funciona, por qué elegirlo |
+| **Instalación** | Pasos detallados para Windows, Mac, Linux |
+| **Perfiles** | Cómo personalizar tu asistente con AGENTS.md |
+| **MCP y Skills** | Extensiones y capacidades adicionales |
+| **Casos de Uso** | 12 profesiones, con ejemplos concretos |
+| **Labs Prácticos** | 5 ejercicios guiados paso a paso |
+| **Comparativa** | OpenCode vs Copilot vs Ollama vs Gemini |
+
+## Requisitos Previos
+
+Antes de empezar, asegúrate de tener:
+
+1. **Cuenta de Google** (para NotebookLM, gratis)
+2. **Editor de texto** (Bloc de notas o TextEdit)
+3. **Navegador actualizado** (Chrome, Firefox o Edge)
+4. **Conexión a internet** estable
+
+---
+
+::: {.text-center}
+*Material preparado para el Taller de IA para No Informáticos*
+:::

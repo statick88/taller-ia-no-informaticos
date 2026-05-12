@@ -1,0 +1,190 @@
+# Apéndice B: Preguntas Frecuentes
+
+## General
+
+### ¿Necesito saber programar para usar OpenCode?
+
+**No**, el taller es específicamente para profesionales sin conocimientos técnicos. OpenCode está diseñado para ser accesible para cualquier persona.
+
+### ¿Cuánto cuesta OpenCode?
+
+OpenCode en sí es **gratis** (código abierto). Lo que puedes necesitar pagar es:
+
+- Tu propia API key (OpenAI, Anthropic, etc.) que tiene un costo según uso
+- OpenAI tiene $5 de crédito gratuito para nuevos usuarios
+- Para uso básico, el costo es mínimo (~$1-5/mes)
+
+### ¿Es seguro usar estas herramientas?
+
+Para **datos sensibles** (médicos, legales, financieros):
+- Usa Ollama (trabaja 100% offline)
+- No compartas información de clientes
+- Usa VPN si es posible
+
+Para **datos generales**:
+- Las herramientas estándar son seguras
+- Lee los términos de servicio
+- Mantén backups de tu trabajo
+
+### ¿Reemplazará la IA mi trabajo?
+
+**No**. La IA es una herramienta que amplifica tus capacidades. No reemplaza:
+
+- Tu juicio profesional
+- Tus relaciones interpersonales
+- Tu creatividad y experiencia
+- Tu responsabilidad legal/ética
+
+## Instalación
+
+### Node.js no está instalado. ¿Qué hago?
+
+1. Ve a [nodejs.org](https://nodejs.org)
+2. Descarga la versión LTS (recomendada)
+3. Instala con valores por defecto
+4. **Reinicia tu terminal**
+5. Verifica: `node --version`
+
+### ¿Puedo usar OpenCode en un Chromebook?
+
+Técnicamente sí, pero requiere:
+- Linux (Crostini) habilitado
+- O usar la versión web de otras herramientas
+- Mejor opción: usa NotebookLM para documentos
+
+### ¿Funciona en teléfono?
+
+No directamente. Pero puedes:
+- Usar la app de terminal en iOS/Android
+- Acceder desde otra computadora
+- Usar herramientas web como ChatGPT/Claude
+
+## Configuración
+
+### ¿Dónde está mi archivo AGENTS.md?
+
+- **Global**: `~/.config/opencode/AGENTS.md`
+- **Local (por proyecto)**: `./AGENTS.md` en tu carpeta de proyecto
+
+### ¿Puedo tener múltiples perfiles?
+
+¡Sí! Puedes:
+
+1. Tener un perfil global en `~/.config/opencode/AGENTS.md`
+2. Tener perfiles de proyecto en `./AGENTS.md`
+3. Crear agentes especializados en `~/.config/opencode/agents/`
+
+### ¿Cómo cambio el modelo de IA?
+
+Edita `~/.config/opencode/opencode.json`:
+
+```json
+{
+  "provider": "anthropic",
+  "model": "claude-3-5-sonnet"
+}
+```
+
+## Uso
+
+### ¿Por qué la IA no recuerda nuestra conversación?
+
+Porque cada sesión es independiente. Para recordar:
+
+1. Usa memoria persistente (Engram, Notion)
+2. Mantén tu AGENTS.md actualizado
+3. Copia información importante al inicio de nuevas sesiones
+
+### ¿Puede OpenCode acceder a internet?
+
+**Sí**, con el MCP de web puedes:
+- Buscar información actualizada
+- Navegar páginas web
+- Acceder a APIs
+
+### ¿Puede ver mis archivos?
+
+Solo si:
+1. Lo autorizas explícitamente
+2. Tienes MCP de filesystem instalado
+3. Estás en el directorio correcto
+
+## Privacidad
+
+### ¿Quién puede ver mis conversaciones?
+
+Depende del proveedor:
+
+- **OpenAI**: Pueden ver datos (aunque匿名izados) para entrenar
+- **Anthropic**: No usa datos para entrenar
+- **Ollama**: 100% local, nadie ve nada
+
+### ¿Debería preocuparme por filtrar datos?
+
+Para trabajo profesional general: **no demasiado**.
+
+Para datos sensibles (médicos, legales, financieros): **sí, sé cauteloso**.
+
+### ¿Cómo protejo información sensible?
+
+1. No compartas nombres de clientes
+2. Usa Ollama para datos muy sensibles
+3. Revisa antes de enviar
+4. Usa variables de entorno, no hardcodees secrets
+
+## Troubleshooting
+
+### La respuesta está en inglés, ¿puedo cambiarla?
+
+Sí, tu AGENTS.md puede especificar:
+
+```markdown
+## Preferencias
+- Siempre responde en español
+- Usa terminología técnica de mi industria
+```
+
+### Las respuestas son muy largas o muy cortas
+
+Puedes pedir explícitamente:
+
+```
+"Responde en máximo 3 oraciones"
+"Sé muy detallado en la sección de métodos"
+```
+
+### No entiendo algo de la respuesta
+
+¡Pregunta! La IA puede:
+
+1. Explicar de otra forma
+2. Dar ejemplos
+3. Dividir en pasos más simples
+
+### ¿Cómo reporto un bug?
+
+1. Discord de OpenCode
+2. GitHub Issues
+3. Documenta los pasos para reproducirlo
+
+## Comunidad
+
+### ¿Dónde puedo pedir ayuda?
+
+1. **Discord de OpenCode** — Mejor para ayuda rápida
+2. **GitHub Discussions** — Para preguntas detalladas
+3. **Este taller** — Para aprender conceptos
+
+### ¿Cómo contribuyó a OpenCode?
+
+- Reporta bugs
+- Sugiere features
+- Contribuye código (si sabes programar)
+- Comparte tu experiencia
+- Ayúdanos a traducir docs
+
+---
+
+::: {.text-center}
+*¿Tu pregunta no está aquí? Pregunta en Discord o crea un issue en GitHub.*
+:::
