@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de IA para No Informáticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00cc33;
+      --primary-dark: #00a828;
+      --secondary: #00b4e6;
+      --secondary-dark: #0099cc;
+      --bg-dark: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a25;
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0b0;
+      --text-muted: #606070;
+      --border: rgba(255, 255, 255, 0.08);
+      --glow-green: 0 0 60px rgba(0, 204, 51, 0.3);
+      --glow-blue: 0 0 60px rgba(0, 180, 230, 0.3);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Background Effects */
+    .bg-effects {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .bg-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.4;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .bg-orb-1 {
+      width: 600px;
+      height: 600px;
+      background: var(--primary);
+      top: -200px;
+      right: -100px;
+      animation-delay: 0s;
+    }
+
+    .bg-orb-2 {
+      width: 500px;
+      height: 500px;
+      background: var(--secondary);
+      bottom: -150px;
+      left: -100px;
+      animation-delay: -7s;
+    }
+
+    .bg-orb-3 {
+      width: 300px;
+      height: 300px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation-delay: -14s;
+      opacity: 0.2;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(30px, -30px) scale(1.05); }
+      50% { transform: translate(-20px, 20px) scale(0.95); }
+      75% { transform: translate(-30px, -20px) scale(1.02); }
+    }
+
+    /* Grid Pattern */
+    .grid-pattern {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Main Content */
+    .container {
+      position: relative;
+      z-index: 10;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 24px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(0, 204, 51, 0.1);
+      border: 1px solid rgba(0, 204, 51, 0.3);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--primary);
+      margin-bottom: 24px;
+    }
+
+    .badge-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    .title {
+      font-size: clamp(32px, 6vw, 56px);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .title-highlight {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Version Cards */
+    .versions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .version-card {
+      position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+
+    .version-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .version-card-v1::before {
+      background: linear-gradient(90deg, var(--secondary), var(--secondary-dark));
+    }
+
+    .version-card-v2::before {
+      background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+    }
+
+    .version-card:hover {
+      transform: translateY(-8px);
+      border-color: transparent;
+    }
+
+    .version-card-v1:hover {
+      box-shadow: var(--glow-blue);
+      background: var(--bg-card-hover);
+    }
+
+    .version-card-v1:hover::before {
+      opacity: 1;
+    }
+
+    .version-card-v2:hover {
+      box-shadow: var(--glow-green);
+      background: var(--bg-card-hover);
+    }
+
+    .version-card-v2:hover::before {
+      opacity: 1;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .version-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .version-card-v1 .version-badge {
+      background: rgba(0, 180, 230, 0.15);
+      color: var(--secondary);
+    }
+
+    .version-card-v2 .version-badge {
+      background: rgba(0, 204, 51, 0.15);
+      color: var(--primary);
+    }
+
+    .arrow-icon {
+      width: 24px;
+      height: 24px;
+      color: var(--text-muted);
+      transition: all 0.3s ease;
+    }
+
+    .version-card:hover .arrow-icon {
+      color: var(--text-primary);
+      transform: translateX(4px);
+    }
+
+    .card-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .card-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .topic-tag {
+      padding: 4px 10px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 60px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer a:hover {
+      color: var(--text-primary);
+    }
+
+    .tech-stack {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .tech-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .tech-item svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .container {
+        padding: 60px 20px;
+      }
+
+      .header {
+        margin-bottom: 40px;
+      }
+
+      .versions-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .version-card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Effects -->
+  <div class="bg-effects">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+  <div class="grid-pattern"></div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="badge">
+        <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+        opencode.dev
+      </div>
+      <h1 class="title">
+        Taller de <span class="title-highlight">IA</span> para<br>No Informáticos
+      </h1>
+      <p class="subtitle">
+        Aprende a usar agentes de IA de forma práctica. Elige una versión del taller para comenzar.
+      </p>
+    </header>
+
+    <!-- Version Cards -->
+    <div class="versions-grid">
+      <!-- Version 1 -->
+      <a href="presentacion.html" class="version-card version-card-v1">
+        <div class="card-header">
+          <span class="version-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="12" r="8"/>
+            </svg>
+            Versión 1
+          </span>
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+        <h2 class="card-title">Fundamentos</h2>
+        <p class="card-description">
+          Introducción a los conceptos básicos de IA, prompting efectivo y casos de uso prácticos para profesionales.
+        </p>
+        <div class="card-topics">
+          <span class="topic-tag">IA Generativa</span>
+          <span class="topic-tag">Prompting</span>
+          <span class="topic-tag">Casos de Uso</span>
+        </div>
+      </a>
+
+      <!-- Version 2 -->
+      <a href="presentacion-parte2.html" class="version-card version-card-v2">
+        <div class="card-header">
+          <span class="version-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="12" r="8"/>
+            </svg>
+            Versión 2
+          </span>
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+        <h2 class="card-title">OpenCode & Agentes</h2>
+        <p class="card-description">
+          Configuración de OpenCode, perfiles, agentes, MCP y skills. Domina las herramientas del developer AI.
+        </p>
+        <div class="card-topics">
+          <span class="topic-tag">OpenCode</span>
+          <span class="topic-tag">Agentes</span>
+          <span class="topic-tag">MCP</span>
+          <span class="topic-tag">Skills</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        Desarrollado con <a href="https://opencode.dev" target="_blank">OpenCode</a> para profesionales no técnicos
+      </p>
+      <div class="tech-stack">
+        <span class="tech-item">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          RevealJS
+        </span>
+        <span class="tech-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+          GitHub Pages
+        </span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
