@@ -31,21 +31,20 @@
       --accent-purple: #9333ea;
       --accent-pink: #ec4899;
       --accent-cyan: #06b6d4;
-      --font-display: 'JetBrains Mono', 'Courier New', monospace;
-      --font-body: 'JetBrains Mono', 'Courier New', monospace;
-      --font-mono: 'JetBrains Mono', 'Courier New', monospace;
-      --size-stat: clamp(4rem, 10vw, 8rem);
-      --size-h1: clamp(3rem, 6vw, 5rem);
-      --size-h2: clamp(2rem, 4vw, 3rem);
-      --size-h3: clamp(1.5rem, 2.5vw, 2rem);
-      --size-body: clamp(0.9rem, 1.5vw, 1.3rem);
-      --size-body-lg: clamp(1.1rem, 2vw, 1.5rem);
-      --size-label: clamp(0.75rem, 1.25vw, 0.9rem);
-      --space-sm: 1rem;
-      --space-md: 1.5rem;
-      --space-lg: 2rem;
-      --bar-width: 120px;
-      --bar-height: 4px;
+      --font-display: 'Inter', 'Space Grotesk', sans-serif;
+      --font-body: 'Inter', 'Space Grotesk', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --size-h1: clamp(1.8rem, 4vw, 3rem);
+      --size-h2: clamp(1.4rem, 3vw, 2rem);
+      --size-h3: clamp(1.1rem, 2vw, 1.4rem);
+      --size-body: clamp(0.7rem, 1.2vw, 1rem);
+      --size-body-lg: clamp(0.85rem, 1.5vw, 1.1rem);
+      --size-label: clamp(0.6rem, 1vw, 0.75rem);
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --bar-width: 80px;
+      --bar-height: 3px;
     }
 
     body { background: #0a0e17; }
@@ -78,12 +77,13 @@
       
     .reveal .slides section { 
       text-align: left; 
-      padding: 40px 60px; 
+      padding: 30px 50px; 
       background: var(--bg-primary);
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      min-height: 100vh;
+      justify-content: flex-start;
+      height: auto;
+      min-height: 0;
     }
       
     .reveal .slides section.centered { 
@@ -124,7 +124,7 @@
     .bar-accent-2 { background: linear-gradient(90deg, var(--accent-2), var(--accent-purple)); }
     .bar-accent-3 { background: linear-gradient(90deg, var(--accent-3), var(--accent-4)); }
 
-    .card { background: var(--bg-secondary); border: 1px solid var(--text-muted); border-radius: 8px; padding: var(--space-md); margin: var(--space-sm) 0; }
+    .card { background: var(--bg-secondary); border: 1px solid var(--text-muted); border-radius: 6px; padding: var(--space-sm); margin: var(--space-sm) 0; font-size: var(--size-body); }
     .card-accent-2 { border-color: var(--accent-2); }
     .card-accent-3 { border-color: var(--accent-3); }
     .card-accent-4 { border-color: var(--accent-4); }
@@ -138,8 +138,8 @@
 
     .stat-number { font-size: var(--size-stat); font-weight: 800; background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
 
-    pre { background: var(--bg-secondary); border: 1px solid var(--text-muted); border-radius: 8px; padding: var(--space-md); font-size: 0.8em; overflow-x: auto; }
-    code { font-family: var(--font-mono); color: var(--accent-1); }
+    pre { background: var(--bg-secondary); border: 1px solid var(--text-muted); border-radius: 6px; padding: var(--space-sm); font-size: 0.75em; overflow-x: auto; }
+    code { font-family: var(--font-mono); color: var(--accent-1); font-size: 0.85em; }
     .reveal pre code { color: var(--accent-1); }
 
     ul, ol { margin-left: var(--space-md); }
@@ -149,13 +149,13 @@
     th, td { border: 1px solid var(--text-muted); padding: 0.75em; text-align: left; }
     th { background: var(--bg-secondary); color: var(--accent-2); }
 
-    .highlight-box { background: linear-gradient(135deg, rgba(0,204,51,0.1), rgba(0,180,230,0.1)); border-left: 4px solid var(--accent-1); padding: var(--space-md); margin: var(--space-md) 0; border-radius: 0 8px 8px 0; }
-    .warning-box { background: rgba(230,0,51,0.1); border-left: 4px solid var(--accent-3); padding: var(--space-md); margin: var(--space-md) 0; border-radius: 0 8px 8px 0; }
-    .info-box { background: rgba(0,180,230,0.1); border-left: 4px solid var(--accent-2); padding: var(--space-md); margin: var(--space-md) 0; border-radius: 0 8px 8px 0; }
-    .success-box { background: rgba(0,204,51,0.15); border: 1px solid var(--accent-1); padding: var(--space-md); margin: var(--space-md) 0; border-radius: 8px; }
+    .highlight-box { background: linear-gradient(135deg, rgba(0,204,51,0.1), rgba(0,180,230,0.1)); border-left: 3px solid var(--accent-1); padding: var(--space-sm); margin: var(--space-sm) 0; border-radius: 0 6px 6px 0; }
+    .warning-box { background: rgba(230,0,51,0.1); border-left: 3px solid var(--accent-3); padding: var(--space-sm); margin: var(--space-sm) 0; border-radius: 0 6px 6px 0; }
+    .info-box { background: rgba(0,180,230,0.1); border-left: 3px solid var(--accent-2); padding: var(--space-sm); margin: var(--space-sm) 0; border-radius: 0 6px 6px 0; }
+    .success-box { background: rgba(0,204,51,0.15); border: 1px solid var(--accent-1); padding: var(--space-sm); margin: var(--space-sm) 0; border-radius: 6px; }
 
-    .emoji-icon { font-size: 3em; margin: 0.2em; }
-    .small-text { font-size: 0.7em; }
+    .emoji-icon { font-size: 1.5em; margin: 0.1em; }
+    .small-text { font-size: 0.65em; }
     
     .reveal section .fragment { transition: all 0.3s ease; }
     .reveal section .fragment.highlight-green { color: var(--accent-1); font-weight: bold; }
@@ -717,14 +717,13 @@ Incluye rúbrica de corrección.</code></pre>
   <script>
     Reveal.initialize({
       hash: true,
-      slideNumber: 'c/t',
-      showSlideNumber: 'all',
-      transition: 'slide',
+      center: true,
+      transition: 'fade',
+      transitionSpeed: 'fast',
       backgroundTransition: 'fade',
-      center: false,
-      width: 1280,
-      height: 720,
-      margin: 0.04,
+      width: 1920,
+      height: 1080,
+      margin: 0.08,
       minScale: 0.2,
       maxScale: 2.0
     });
