@@ -1,4 +1,9 @@
-# 10. Resumen y Próximos Pasos
+---
+title: "Próximos Pasos"
+subtitle: "Plan de acción y recursos continuos"
+---
+
+# Resumen y Próximos Pasos
 
 ## Lo que aprendiste
 
@@ -12,11 +17,11 @@
 
 ## Plan de acción post-taller
 
-### Semana 1: Fondation
+### Semana 1: Fundamentos
 
 - [ ] Instala OpenCode en tu computadora
 - [ ] Crea tu primer AGENTS.md
-- [ ] Haz tu primera pregunta
+- [ ] Haz tu primera pregunta a la IA
 
 ### Semana 2: Exploración
 
@@ -38,29 +43,13 @@
 
 ## Recursos oficiales
 
-### Documentación
-
-- **OpenCode Docs**: [opencode.dev/docs](https://opencode.dev/docs)
+- **Documentación**: [opencode.dev/docs](https://opencode.dev/docs)
 - **GitHub**: [github.com/opencode-ai/opencode](https://github.com/opencode-ai/opencode)
 - **Discord**: [discord.gg/opencode](https://discord.gg/opencode)
 
-### Comunidad
-
-- **Discord de OpenCode**: Preguntas y soporte
-- **GitHub Discussions**: Ideas y features
-- **Twitter/X**: Novedades y tips
-
-### Aprendizaje continuo
-
-1. **Practica diariamente** — Usa OpenCode en tu trabajo
-2. **Explora features** — Lee la documentación completa
-3. **Únete a la comunidad** — Participa en Discord
-4. **Comparte conocimiento** — Enseña a tus colegas
-5. **Contribuye** — Reporta bugs y sugiere features
-
 ## Errores comunes a evitar
 
-::: {.warning}
+::: {.callout .callout-warning}
 **No compartas tu API key** con nadie. Es como una contraseña.
 
 **Verifica el código** antes de ejecutarlo. La IA puede cometer errores.
@@ -70,7 +59,7 @@
 **Usa variables de entorno** para guardar secretos.
 :::
 
-## Tips para usar OpenCode efectivamente
+## Tips para usar OpenCode eficientemente
 
 ### Sé específico
 
@@ -109,7 +98,5 @@ La IA evoluciona rápidamente. Para estar al día:
 
 ---
 
-::: {.text-center}
-*Este material se actualiza continuamente.*
+*Material preparado para el Taller de IA para No Informáticos*
 *Última actualización: Mayo 2026*
-:::

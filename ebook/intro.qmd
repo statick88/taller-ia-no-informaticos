@@ -1,4 +1,9 @@
-# 1. Fundamentos: ¿Por qué usar IA?
+---
+title: "Introducción"
+subtitle: "¿Por qué la Inteligencia Artificial importa?"
+---
+
+# Introducción
 
 ## Evidencia científica
 

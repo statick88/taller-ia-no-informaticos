@@ -1,4 +1,9 @@
-# 3. OpenCode: Tu Asistente Personal
+---
+title: "OpenCode"
+subtitle: "Tu Asistente Personal de IA"
+---
+
+# OpenCode: Tu Asistente Personal
 
 ## ¿Qué es OpenCode?
 
@@ -22,8 +27,6 @@
 | Personalización profunda | Mínima | Total |
 
 ## Arquitectura de OpenCode
-
-OpenCode se estructura en capas:
 
 ```
 ┌─────────────────────────────────────┐
@@ -61,10 +64,6 @@ Protocolo que permite a OpenCode conectarse con herramientas externas como bases
 
 ## Ventajas sobre otras herramientas
 
-```{=html}
-<div style="background: linear-gradient(135deg, rgba(0,204,51,0.1), rgba(0,180,230,0.1)); border-left: 4px solid #00cc33; padding: 15px 20px; margin: 20px 0; border-radius: 0 8px 8px 0;">
-```
-
+::: {.callout .callout-note}
 **Estudios demuestran** que el uso frecuente de IA incrementa la productividad con un odds ratio de 2.34. Los empleados que usan IA generativa ahorran en promedio 96.8 horas al año.
-
-</div>
+:::

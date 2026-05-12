@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="keywords" content="inteligencia artificial, opencode, productivity, no-code, tutorial">
-<meta name="description" content="Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar.">
+<meta name="keywords" content="inteligencia artificial, opencode, notebooklm, ollama, productivity, no-code, tutorial">
+<meta name="description" content="Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar. Taller virtual gratuito de 2 horas.">
 
-<title>7&nbsp; 7. Casos de Uso por Profesión – Taller de IA para No Informáticos</title>
+<title>8&nbsp; Casos de Uso – Taller de IA para No Informáticos</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,7 +29,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -46,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-367522ac618891c39d4b2ae87ea7600e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c38393dfc485b7557db906cd7eda2179.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -77,6 +76,17 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Taller de IA para No Informáticos">
+<meta property="og:description" content="Guía completa para aprender IA sin programar — 2 horas, 100% gratis">
+<meta property="og:image" content="https://github.com/statick88/taller-ia-no-informaticos/images/taller-ia-cover.svg">
+<meta property="og:site_name" content="Taller de IA para No Informáticos">
+<meta property="og:image:alt" content="Taller de IA para No Informáticos">
+<meta name="twitter:title" content="Taller de IA para No Informáticos">
+<meta name="twitter:description" content="Guía completa para profesionales no informáticos">
+<meta name="twitter:image" content="https://github.com/statick88/taller-ia-no-informaticos/images/taller-ia-cover.svg">
+<meta name="twitter:image:alt" content="Taller de IA para No Informáticos">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -88,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./casos-uso.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">7. Casos de Uso por Profesión</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./casos-uso.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Casos de Uso</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -101,9 +111,55 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="https://via.placeholder.com/150/00cc33/000000?text=IA" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://via.placeholder.com/150/00cc33/000000?text=IA" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Taller de IA para No Informáticos</a> 
+      <a href="./">📚 Taller de IA</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/statick88/taller-ia-no-informaticos" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Taller-de-IA-para-No-Informáticos.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Taller-de-IA-para-No-Informáticos.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -116,94 +172,100 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prefacio</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">🤖 Taller de IA para No Informáticos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">1. Fundamentos: ¿Por qué usar IA?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fundamentos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2. El Ecosistema de IA en 2026</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ecosistema IA 2026</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./opencode.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">3. OpenCode: Tu Asistente Personal</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">OpenCode</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./instalacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">4. Instalación de OpenCode</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Instalación</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./perfiles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">5. Perfiles Personalizados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Perfiles Personalizados</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mcp-skills.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">6. MCP y Skills</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">MCP y Skills</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./casos-uso.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">7. Casos de Uso por Profesión</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Casos de Uso</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./labs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">8. Labs Prácticos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Labs Prácticos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comparativa.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">9. Análisis Comparativo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis Comparativo</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./proximos-pasos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">10. Resumen y Próximos Pasos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Próximos Pasos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./referencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Referencias Científicas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Referencias Científicas</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apendice-cheatsheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Apéndice A: Cheatsheet</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Cheatsheet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apendice-faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Apéndice B: Preguntas Frecuentes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Preguntas Frecuentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./apendice-gentle-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Apéndice C: Gentleman Programming — Gentle AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -218,28 +280,32 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#caso-1-educator-docente" id="toc-caso-1-educator-docente" class="nav-link active" data-scroll-target="#caso-1-educator-docente"><span class="header-section-number">7.1</span> Caso 1: Educator / Docente</a></li>
-  <li><a href="#caso-2-administrador-de-empresas" id="toc-caso-2-administrador-de-empresas" class="nav-link" data-scroll-target="#caso-2-administrador-de-empresas"><span class="header-section-number">7.2</span> Caso 2: Administrador de Empresas</a></li>
-  <li><a href="#caso-3-profesional-de-marketing" id="toc-caso-3-profesional-de-marketing" class="nav-link" data-scroll-target="#caso-3-profesional-de-marketing"><span class="header-section-number">7.3</span> Caso 3: Profesional de Marketing</a></li>
-  <li><a href="#caso-4-profesional-de-salud" id="toc-caso-4-profesional-de-salud" class="nav-link" data-scroll-target="#caso-4-profesional-de-salud"><span class="header-section-number">7.4</span> Caso 4: Profesional de Salud</a></li>
-  <li><a href="#caso-5-abogado-legal" id="toc-caso-5-abogado-legal" class="nav-link" data-scroll-target="#caso-5-abogado-legal"><span class="header-section-number">7.5</span> Caso 5: Abogado / Legal</a></li>
-  <li><a href="#caso-6-contador-contador-público" id="toc-caso-6-contador-contador-público" class="nav-link" data-scroll-target="#caso-6-contador-contador-público"><span class="header-section-number">7.6</span> Caso 6: Contador / Contador Público</a></li>
-  <li><a href="#caso-7-periodista-comunicador" id="toc-caso-7-periodista-comunicador" class="nav-link" data-scroll-target="#caso-7-periodista-comunicador"><span class="header-section-number">7.7</span> Caso 7: Periodista / Comunicador</a></li>
-  <li><a href="#caso-8-ingeniero-no-de-software" id="toc-caso-8-ingeniero-no-de-software" class="nav-link" data-scroll-target="#caso-8-ingeniero-no-de-software"><span class="header-section-number">7.8</span> Caso 8: Ingeniero (No de Software)</a></li>
-  <li><a href="#caso-9-arquitecto" id="toc-caso-9-arquitecto" class="nav-link" data-scroll-target="#caso-9-arquitecto"><span class="header-section-number">7.9</span> Caso 9: Arquitecto</a></li>
-  <li><a href="#caso-10-investigador-académico" id="toc-caso-10-investigador-académico" class="nav-link" data-scroll-target="#caso-10-investigador-académico"><span class="header-section-number">7.10</span> Caso 10: Investigador Académico</a></li>
-  <li><a href="#caso-11-estudiante-universitario" id="toc-caso-11-estudiante-universitario" class="nav-link" data-scroll-target="#caso-11-estudiante-universitario"><span class="header-section-number">7.11</span> Caso 11: Estudiante Universitario</a></li>
-  <li><a href="#caso-12-emprendedor-pequeño-empresario" id="toc-caso-12-emprendedor-pequeño-empresario" class="nav-link" data-scroll-target="#caso-12-emprendedor-pequeño-empresario"><span class="header-section-number">7.12</span> Caso 12: Emprendedor / Pequeño empresario</a></li>
-  <li><a href="#resumen-de-herramientas-por-profesión" id="toc-resumen-de-herramientas-por-profesión" class="nav-link" data-scroll-target="#resumen-de-herramientas-por-profesión"><span class="header-section-number">7.13</span> Resumen de herramientas por profesión</a></li>
+  <li><a href="#casos-de-uso-por-profesión" id="toc-casos-de-uso-por-profesión" class="nav-link active" data-scroll-target="#casos-de-uso-por-profesión"><span class="header-section-number">9</span> Casos de Uso por Profesión</a>
+  <ul class="collapse">
+  <li><a href="#caso-1-educator-docente" id="toc-caso-1-educator-docente" class="nav-link" data-scroll-target="#caso-1-educator-docente"><span class="header-section-number">9.1</span> Caso 1: Educator / Docente</a></li>
+  <li><a href="#caso-2-administrador-de-empresas" id="toc-caso-2-administrador-de-empresas" class="nav-link" data-scroll-target="#caso-2-administrador-de-empresas"><span class="header-section-number">9.2</span> Caso 2: Administrador de Empresas</a></li>
+  <li><a href="#caso-3-profesional-de-marketing" id="toc-caso-3-profesional-de-marketing" class="nav-link" data-scroll-target="#caso-3-profesional-de-marketing"><span class="header-section-number">9.3</span> Caso 3: Profesional de Marketing</a></li>
+  <li><a href="#caso-4-profesional-de-salud" id="toc-caso-4-profesional-de-salud" class="nav-link" data-scroll-target="#caso-4-profesional-de-salud"><span class="header-section-number">9.4</span> Caso 4: Profesional de Salud</a></li>
+  <li><a href="#caso-5-abogado-legal" id="toc-caso-5-abogado-legal" class="nav-link" data-scroll-target="#caso-5-abogado-legal"><span class="header-section-number">9.5</span> Caso 5: Abogado / Legal</a></li>
+  <li><a href="#caso-6-contador-contador-público" id="toc-caso-6-contador-contador-público" class="nav-link" data-scroll-target="#caso-6-contador-contador-público"><span class="header-section-number">9.6</span> Caso 6: Contador / Contador Público</a></li>
+  <li><a href="#caso-7-periodista-comunicador" id="toc-caso-7-periodista-comunicador" class="nav-link" data-scroll-target="#caso-7-periodista-comunicador"><span class="header-section-number">9.7</span> Caso 7: Periodista / Comunicador</a></li>
+  <li><a href="#caso-8-ingeniero-no-de-software" id="toc-caso-8-ingeniero-no-de-software" class="nav-link" data-scroll-target="#caso-8-ingeniero-no-de-software"><span class="header-section-number">9.8</span> Caso 8: Ingeniero (No de Software)</a></li>
+  <li><a href="#caso-9-arquitecto" id="toc-caso-9-arquitecto" class="nav-link" data-scroll-target="#caso-9-arquitecto"><span class="header-section-number">9.9</span> Caso 9: Arquitecto</a></li>
+  <li><a href="#caso-10-investigador-académico" id="toc-caso-10-investigador-académico" class="nav-link" data-scroll-target="#caso-10-investigador-académico"><span class="header-section-number">9.10</span> Caso 10: Investigador Académico</a></li>
+  <li><a href="#caso-11-estudiante-universitario" id="toc-caso-11-estudiante-universitario" class="nav-link" data-scroll-target="#caso-11-estudiante-universitario"><span class="header-section-number">9.11</span> Caso 11: Estudiante Universitario</a></li>
+  <li><a href="#caso-12-emprendedor-pequeño-empresario" id="toc-caso-12-emprendedor-pequeño-empresario" class="nav-link" data-scroll-target="#caso-12-emprendedor-pequeño-empresario"><span class="header-section-number">9.12</span> Caso 12: Emprendedor / Pequeño empresario</a></li>
+  <li><a href="#resumen-por-profesión" id="toc-resumen-por-profesión" class="nav-link" data-scroll-target="#resumen-por-profesión"><span class="header-section-number">9.13</span> Resumen por profesión</a></li>
+  </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/statick88/taller-ia-no-informaticos/edit/main/casos-uso.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/statick88/taller-ia-no-informaticos/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">7. Casos de Uso por Profesión</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Casos de Uso</span></h1>
+<p class="subtitle lead">12 profesiones con ejemplos reales</p>
 </div>
 
 
@@ -255,19 +321,20 @@ ul.task-list li input[type="checkbox"] {
 <div>
   <div class="keywords">
     <div class="block-title">Palabras clave</div>
-    <p>inteligencia artificial, opencode, productivity, no-code, tutorial</p>
+    <p>inteligencia artificial, opencode, notebooklm, ollama, productivity, no-code, tutorial</p>
   </div>
 </div>
 
 </header>
 
 
-<p>Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su trabajo diario. Cada caso incluye el perfil recomendado, las acciones específicas y las herramientas complementarias.</p>
+<section id="casos-de-uso-por-profesión" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Casos de Uso por Profesión</h1>
+<p>Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su trabajo diario.</p>
 <hr>
-<section id="caso-1-educator-docente" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="caso-1-educator-docente"><span class="header-section-number">7.1</span> Caso 1: Educator / Docente</h2>
-<p><strong>Perfil</strong>: Profesora de historia en bachillerato</p>
-<p><strong>Necesidad</strong>: Crear plan de unidad sobre la Edad Media</p>
+<section id="caso-1-educator-docente" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="caso-1-educator-docente"><span class="header-section-number">9.1</span> Caso 1: Educator / Docente</h2>
+<p><strong>Perfil</strong>: Profesora de historia en bachillerato <strong>Necesidad</strong>: Crear plan de unidad sobre la Edad Media</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura tu perfil de educator</li>
@@ -277,18 +344,25 @@ ul.task-list li input[type="checkbox"] {
 <li>Recibes preguntas con rúbrica de corrección</li>
 <li>Pide: “Busca fuentes actualizadas sobre [tema específico]”</li>
 </ol>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
 <p><strong>Resultado</strong>: Plan de unidad completo en 15 minutos vs 3 horas manual</p>
-<p><strong>Herramientas útiles</strong>:</p>
 <ul>
 <li>OpenCode para generación de contenido</li>
 <li>NotebookLM para analizar recursos educativos</li>
 </ul>
+</div>
+</div>
+</div>
 <hr>
 </section>
-<section id="caso-2-administrador-de-empresas" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="caso-2-administrador-de-empresas"><span class="header-section-number">7.2</span> Caso 2: Administrador de Empresas</h2>
-<p><strong>Perfil</strong>: Gerente de recursos humanos</p>
-<p><strong>Necesidad</strong>: Elaborar informe de rotación de personal</p>
+<section id="caso-2-administrador-de-empresas" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="caso-2-administrador-de-empresas"><span class="header-section-number">9.2</span> Caso 2: Administrador de Empresas</h2>
+<p><strong>Perfil</strong>: Gerente de recursos humanos <strong>Necesidad</strong>: Elaborar informe de rotación de personal</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura tu perfil de RRHH</li>
@@ -298,18 +372,29 @@ ul.task-list li input[type="checkbox"] {
 <li>Pide: “Análisis de las causas principales”</li>
 <li>Recibes recomendaciones basadas en datos</li>
 </ol>
-<p><strong>Resultado</strong>: Informe profesional con insights accionables</p>
-<p><strong>Herramientas</strong>:</p>
-<ul>
-<li>OpenCode para estructuración</li>
-<li>Gemini para análisis de hojas de cálculo</li>
-</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Herramienta</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OpenCode</td>
+<td>Estructuración</td>
+</tr>
+<tr class="even">
+<td>Gemini</td>
+<td>Análisis de hojas de cálculo</td>
+</tr>
+</tbody>
+</table>
 <hr>
 </section>
-<section id="caso-3-profesional-de-marketing" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="caso-3-profesional-de-marketing"><span class="header-section-number">7.3</span> Caso 3: Profesional de Marketing</h2>
-<p><strong>Perfil</strong>: Coordinador de marketing digital</p>
-<p><strong>Necesidad</strong>: Calendario de contenido para redes sociales</p>
+<section id="caso-3-profesional-de-marketing" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="caso-3-profesional-de-marketing"><span class="header-section-number">9.3</span> Caso 3: Profesional de Marketing</h2>
+<p><strong>Perfil</strong>: Coordinador de marketing digital <strong>Necesidad</strong>: Calendario de contenido para redes sociales</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura perfil de marketing</li>
@@ -319,28 +404,37 @@ ul.task-list li input[type="checkbox"] {
 <li>Recibes análisis de competidores</li>
 <li>Pide: “Genera captions para 5 publicaciones”</li>
 </ol>
-<p><strong>Resultado</strong>: Contenido para un mes en 30 minutos</p>
+<p><strong>Resultado</strong>: Contenido para un mes en 30 minutos.</p>
+<p><strong>Herramienta complementaria</strong>: Amp para automatización.</p>
 <hr>
 </section>
-<section id="caso-4-profesional-de-salud" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="caso-4-profesional-de-salud"><span class="header-section-number">7.4</span> Caso 4: Profesional de Salud</h2>
-<p><strong>Perfil</strong>: Médico general en centro de salud</p>
-<p><strong>Necesidad</strong>: Mantenerse actualizado en protocolos</p>
+<section id="caso-4-profesional-de-salud" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="caso-4-profesional-de-salud"><span class="header-section-number">9.4</span> Caso 4: Profesional de Salud</h2>
+<p><strong>Perfil</strong>: Médico general en centro de salud <strong>Necesidad</strong>: Mantenerse actualizado en protocolos</p>
 <p><strong>Con Ollama + NotebookLM</strong>:</p>
 <ol type="1">
 <li>Configura Ollama (trabajo offline)</li>
-<li>Busca: “Protocolos actualizados diabetes tipo 2 2026”</li>
+<li>Busca: “Protocolos actualizados diabetes tipo 2 2025”</li>
 <li>En NotebookLM: Agrega artículos de revistas médicas</li>
 <li>Pide: “Resume los hallazgos principales”</li>
 <li>Verifica siempre con fuentes primarias</li>
 </ol>
-<p><strong>Privacidad</strong>: Datos de pacientes nunca dejan la institución</p>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Privacidad</strong>: Datos de pacientes nunca dejan la institución.</p>
+</div>
+</div>
+</div>
+<p><strong>Herramientas</strong>: - Ollama (privacidad, offline) - NotebookLM (análisis de papers)</p>
 <hr>
 </section>
-<section id="caso-5-abogado-legal" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="caso-5-abogado-legal"><span class="header-section-number">7.5</span> Caso 5: Abogado / Legal</h2>
-<p><strong>Perfil</strong>: Lawyer en bufete mediano</p>
-<p><strong>Necesidad</strong>: Investigar precedentes judiciales</p>
+<section id="caso-5-abogado-legal" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="caso-5-abogado-legal"><span class="header-section-number">9.5</span> Caso 5: Abogado / Legal</h2>
+<p><strong>Perfil</strong>: Lawyer en bufete mediano <strong>Necesidad</strong>: Investigar precedentes judiciales</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura perfil legal</li>
@@ -349,26 +443,26 @@ ul.task-list li input[type="checkbox"] {
 <li>Pide: “Resume los argumentos principales”</li>
 <li>Verifica siempre con fuentes oficiales</li>
 </ol>
+<p><strong>Herramienta</strong>: OpenCode + normas de citación profesional.</p>
 <hr>
 </section>
-<section id="caso-6-contador-contador-público" class="level2" data-number="7.6">
-<h2 data-number="7.6" class="anchored" data-anchor-id="caso-6-contador-contador-público"><span class="header-section-number">7.6</span> Caso 6: Contador / Contador Público</h2>
-<p><strong>Perfil</strong>: Contador en empresa comercial</p>
-<p><strong>Necesidad</strong>: Entender nuevas regulaciones fiscales</p>
+<section id="caso-6-contador-contador-público" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="caso-6-contador-contador-público"><span class="header-section-number">9.6</span> Caso 6: Contador / Contador Público</h2>
+<p><strong>Perfil</strong>: Contador en empresa comercial <strong>Necesidad</strong>: Entender nuevas regulaciones fiscales</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura perfil contable</li>
-<li>Escribe: “Explica las reformas tributarias 2026”</li>
+<li>Escribe: “Explica las reformas tributarias 2025”</li>
 <li>Recibes resumen en lenguaje claro</li>
 <li>Pide: “¿Cómo afecta a empresas del sector retail?”</li>
 <li>Recibes análisis específico</li>
 </ol>
+<p><strong>Herramientas</strong>: - OpenCode para explicación - Gemini para hojas de cálculo</p>
 <hr>
 </section>
-<section id="caso-7-periodista-comunicador" class="level2" data-number="7.7">
-<h2 data-number="7.7" class="anchored" data-anchor-id="caso-7-periodista-comunicador"><span class="header-section-number">7.7</span> Caso 7: Periodista / Comunicador</h2>
-<p><strong>Perfil</strong>: Periodista de investigación</p>
-<p><strong>Necesidad</strong>: Investigar tema complejo</p>
+<section id="caso-7-periodista-comunicador" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="caso-7-periodista-comunicador"><span class="header-section-number">9.7</span> Caso 7: Periodista / Comunicador</h2>
+<p><strong>Perfil</strong>: Periodista de investigación <strong>Necesidad</strong>: Investigar tema complejo</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura perfil de periodista</li>
@@ -377,12 +471,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Pide: “Resume en 5 oraciones”</li>
 <li>Pide: “¿Qué ángulos no han sido explorados?”</li>
 </ol>
+<p><strong>Herramientas</strong>: - OpenCode para investigación - NotebookLM para analizar documentos</p>
 <hr>
 </section>
-<section id="caso-8-ingeniero-no-de-software" class="level2" data-number="7.8">
-<h2 data-number="7.8" class="anchored" data-anchor-id="caso-8-ingeniero-no-de-software"><span class="header-section-number">7.8</span> Caso 8: Ingeniero (No de Software)</h2>
-<p><strong>Perfil</strong>: Ingeniero civil en constructora</p>
-<p><strong>Necesidad</strong>: Revisar normativas de construcción</p>
+<section id="caso-8-ingeniero-no-de-software" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="caso-8-ingeniero-no-de-software"><span class="header-section-number">9.8</span> Caso 8: Ingeniero (No de Software)</h2>
+<p><strong>Perfil</strong>: Ingeniero civil en constructora <strong>Necesidad</strong>: Revisar normativas de construcción</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura perfil de ingeniería civil</li>
@@ -391,26 +485,26 @@ ul.task-list li input[type="checkbox"] {
 <li>Pide: “Busca ejemplos de aplicación”</li>
 <li>Recibes casos de estudio</li>
 </ol>
+<p><strong>Herramienta</strong>: OpenCode para normativa.</p>
 <hr>
 </section>
-<section id="caso-9-arquitecto" class="level2" data-number="7.9">
-<h2 data-number="7.9" class="anchored" data-anchor-id="caso-9-arquitecto"><span class="header-section-number">7.9</span> Caso 9: Arquitecto</h2>
-<p><strong>Perfil</strong>: Arquitecto en estudio de diseño</p>
-<p><strong>Necesidad</strong>: Investigar tendencias sostenibles</p>
+<section id="caso-9-arquitecto" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="caso-9-arquitecto"><span class="header-section-number">9.9</span> Caso 9: Arquitecto</h2>
+<p><strong>Perfil</strong>: Arquitecto en estudio de diseño <strong>Necesidad</strong>: Investigar tendencias sostenibles</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura perfil de arquitectura</li>
-<li>Escribe: “Tendencias en materiales sostenibles 2026”</li>
+<li>Escribe: “Tendencias en materiales sostenibles 2025”</li>
 <li>Recibes lista de materiales con propiedades</li>
 <li>Pide: “Proyectos ejemplo que los usen”</li>
-<li>Recibes casos reales</li>
+<li>Recibes casos reales con fotos</li>
 </ol>
+<p><strong>Herramienta</strong>: OpenCode.</p>
 <hr>
 </section>
-<section id="caso-10-investigador-académico" class="level2" data-number="7.10">
-<h2 data-number="7.10" class="anchored" data-anchor-id="caso-10-investigador-académico"><span class="header-section-number">7.10</span> Caso 10: Investigador Académico</h2>
-<p><strong>Perfil</strong>: Profesor investigador universitario</p>
-<p><strong>Necesidad</strong>: Revisión bibliográfica para artículo</p>
+<section id="caso-10-investigador-académico" class="level2" data-number="9.10">
+<h2 data-number="9.10" class="anchored" data-anchor-id="caso-10-investigador-académico"><span class="header-section-number">9.10</span> Caso 10: Investigador Académico</h2>
+<p><strong>Perfil</strong>: Profesor investigador universitario <strong>Necesidad</strong>: Revisión bibliográfica para artículo</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura perfil de investigador</li>
@@ -420,13 +514,13 @@ ul.task-list li input[type="checkbox"] {
 <li>Pide: “Resume el estado del arte”</li>
 <li>Solicita: “Genera debate entre autores”</li>
 </ol>
-<p><strong>Resultado</strong>: Revisión de literatura completa en horas vs semanas</p>
+<p><strong>Resultado</strong>: Revisión de literatura completa en horas vs semanas.</p>
+<p><strong>Herramientas</strong>: - OpenCode para búsqueda y análisis - NotebookLM para verificación</p>
 <hr>
 </section>
-<section id="caso-11-estudiante-universitario" class="level2" data-number="7.11">
-<h2 data-number="7.11" class="anchored" data-anchor-id="caso-11-estudiante-universitario"><span class="header-section-number">7.11</span> Caso 11: Estudiante Universitario</h2>
-<p><strong>Perfil</strong>: Estudiante de maestría</p>
-<p><strong>Necesidad</strong>: Completar trabajo de investigación</p>
+<section id="caso-11-estudiante-universitario" class="level2" data-number="9.11">
+<h2 data-number="9.11" class="anchored" data-anchor-id="caso-11-estudiante-universitario"><span class="header-section-number">9.11</span> Caso 11: Estudiante Universitario</h2>
+<p><strong>Perfil</strong>: Estudiante de maestría <strong>Necesidad</strong>: Completar trabajo de investigación</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura tu perfil de estudiante</li>
@@ -436,12 +530,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Pide: “Revisa mi redacción”</li>
 <li>Recibes correcciones</li>
 </ol>
+<p><strong>Herramientas</strong>: - OpenCode para estructura - NotebookLM para estudiar</p>
 <hr>
 </section>
-<section id="caso-12-emprendedor-pequeño-empresario" class="level2" data-number="7.12">
-<h2 data-number="7.12" class="anchored" data-anchor-id="caso-12-emprendedor-pequeño-empresario"><span class="header-section-number">7.12</span> Caso 12: Emprendedor / Pequeño empresario</h2>
-<p><strong>Perfil</strong>: Owner de tienda online</p>
-<p><strong>Necesidad</strong>: Mejorar rentabilidad</p>
+<section id="caso-12-emprendedor-pequeño-empresario" class="level2" data-number="9.12">
+<h2 data-number="9.12" class="anchored" data-anchor-id="caso-12-emprendedor-pequeño-empresario"><span class="header-section-number">9.12</span> Caso 12: Emprendedor / Pequeño empresario</h2>
+<p><strong>Perfil</strong>: Owner de tienda online <strong>Necesidad</strong>: Mejorar rentabilidad</p>
 <p><strong>Con OpenCode</strong>:</p>
 <ol type="1">
 <li>Configura perfil de negocio</li>
@@ -452,8 +546,8 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <hr>
 </section>
-<section id="resumen-de-herramientas-por-profesión" class="level2" data-number="7.13">
-<h2 data-number="7.13" class="anchored" data-anchor-id="resumen-de-herramientas-por-profesión"><span class="header-section-number">7.13</span> Resumen de herramientas por profesión</h2>
+<section id="resumen-por-profesión" class="level2" data-number="9.13">
+<h2 data-number="9.13" class="anchored" data-anchor-id="resumen-por-profesión"><span class="header-section-number">9.13</span> Resumen por profesión</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -527,6 +621,7 @@ ul.task-list li input[type="checkbox"] {
 </table>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -603,7 +698,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/statick88\.github\.io\/taller-ia-no-informaticos\/");
+        var filterRegex = new RegExp("https:\/\/github\.com\/statick88\/taller-ia-no-informaticos");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -937,17 +1032,30 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./mcp-skills.html" class="pagination-link" aria-label="6. MCP y Skills">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">6. MCP y Skills</span></span>
+      <a href="./mcp-skills.html" class="pagination-link" aria-label="MCP y Skills">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">MCP y Skills</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./labs.html" class="pagination-link" aria-label="8. Labs Prácticos">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">8. Labs Prácticos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./labs.html" class="pagination-link" aria-label="Labs Prácticos">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Labs Prácticos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 <strong>Diego Saavedra García</strong>. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>Material educativo para <strong>Taller de IA para No Informáticos</strong></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/statick88/taller-ia-no-informaticos/edit/main/casos-uso.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/statick88/taller-ia-no-informaticos/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+</div>
+  </div>
+</footer>
 
 
 

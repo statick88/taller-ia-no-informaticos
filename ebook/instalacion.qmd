@@ -1,4 +1,9 @@
-# 4. Instalación de OpenCode
+---
+title: "Instalación"
+subtitle: "Guía paso a paso para Windows, Mac y Linux"
+---
+
+# Instalación de OpenCode
 
 ## Requisitos Previos
 
@@ -20,17 +25,14 @@ Antes de instalar, asegúrate de tener:
 
 ### Paso 2: Instalar OpenCode
 
-Abre PowerShell y ejecuta:
-
 ```bash
 npm install -g opencode-ai
 ```
 
 ## Instalación en macOS
 
-### Con Homebrew:
-
 ```bash
+# Con Homebrew:
 brew install node
 npm install -g opencode-ai
 ```

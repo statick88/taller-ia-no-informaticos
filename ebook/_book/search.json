@@ -4,994 +4,1088 @@
     "href": "index.html",
     "title": "Taller de IA para No Informáticos",
     "section": "",
-    "text": "Prefacio",
+    "text": "1 🤖 Taller de IA para No Informáticos",
     "crumbs": [
-      "Prefacio"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🤖 Taller de IA para No Informáticos</span>"
     ]
   },
   {
-    "objectID": "index.html#qué-es-este-taller",
-    "href": "index.html#qué-es-este-taller",
+    "objectID": "index.html#domina-opencode-notebooklm-y-la-inteligencia-artificial",
+    "href": "index.html#domina-opencode-notebooklm-y-la-inteligencia-artificial",
     "title": "Taller de IA para No Informáticos",
-    "section": "¿Qué es este taller?",
-    "text": "¿Qué es este taller?\nEste taller gratuito de 2 horas te enseñará a usar OpenCode y herramientas de inteligencia artificial para aumentar tu productividad profesional, sin necesidad de saber programar.",
+    "section": "1.1 Domina OpenCode, NotebookLM y la Inteligencia Artificial",
+    "text": "1.1 Domina OpenCode, NotebookLM y la Inteligencia Artificial\n\n1.1.1 Sin saber programar — 100% gratuito\n\n\n\n  \n    Taller de IA para No Informáticos\n  \n  \n    Guía Práctica Completa — 2 Horas, 12 Secciones, 5 Labs\n  \n  \n    © 2026 · Diego Saavedra García\n    Taller de IA para No Informáticos",
     "crumbs": [
-      "Prefacio"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🤖 Taller de IA para No Informáticos</span>"
     ]
   },
   {
-    "objectID": "index.html#qué-aprenderás",
-    "href": "index.html#qué-aprenderás",
+    "objectID": "index.html#descripción-del-curso",
+    "href": "index.html#descripción-del-curso",
     "title": "Taller de IA para No Informáticos",
-    "section": "¿Qué aprenderás?",
-    "text": "¿Qué aprenderás?\nAl finalizar este taller podrás:\n\nUsar OpenCode para tareas profesionales\nPersonalizar tu asistente con tu perfil\nInstalar habilidades adicionales (Skills)\nConectar extensiones (MCP)\nCrear agentes especializados\nElegir la mejor herramienta para cada trabajo",
+    "section": "1.2 📋 Descripción del Curso",
+    "text": "1.2 📋 Descripción del Curso\nEste taller gratuito de 2 horas te enseñará a usar herramientas de inteligencia artificial para aumentar tu productividad profesional, sin importar tu área de trabajo.\n\n1.2.1 ¿Qué aprenderás?\n\n\n\n\n\n\n📌 Al finalizar serás capaz de:\n\n✅ Usar OpenCode para tareas profesionales\n✅ Personalizar tu asistente con perfiles personalizados\n✅ Instalar habilidades adicionales (Skills)\n✅ Conectar extensiones (MCP)\n✅ Crear agentes especializados\n✅ Elegir la mejor herramienta para cada trabajo\n✅ Aplicar todo en 5 labs prácticos",
     "crumbs": [
-      "Prefacio"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🤖 Taller de IA para No Informáticos</span>"
     ]
   },
   {
-    "objectID": "index.html#estructura-del-ebook",
-    "href": "index.html#estructura-del-ebook",
+    "objectID": "index.html#estructura-del-libro",
+    "href": "index.html#estructura-del-libro",
     "title": "Taller de IA para No Informáticos",
-    "section": "Estructura del Ebook",
-    "text": "Estructura del Ebook\nEste ebook está organizado en secciones que puedes leer en orden o seleccionar según tu necesidad:\n\n\n\nSección\nContenido\n\n\n\n\nFundamentos\nPor qué la IA importa, evidencia científica\n\n\nOpenCode\nQué es, cómo funciona, por qué elegirlo\n\n\nInstalación\nPasos detallados para Windows, Mac, Linux\n\n\nPerfiles\nCómo personalizar tu asistente con AGENTS.md\n\n\nMCP y Skills\nExtensiones y capacidades adicionales\n\n\nCasos de Uso\n12 profesiones, con ejemplos concretos\n\n\nLabs Prácticos\n5 ejercicios guiados paso a paso\n\n\nComparativa\nOpenCode vs Copilot vs Ollama vs Gemini",
+    "section": "1.3 📚 Estructura del Libro",
+    "text": "1.3 📚 Estructura del Libro\n\n\n\n\n\n\n\n\nSección\nTemas\nPáginas\n\n\n\n\nCap. 1\nIntroducción y fundamentos de IA\nConceptos básicos + evidencia científica\n\n\nCap. 2\nEcosistema IA 2026\nOpenCode, Copilot, Gemini, Ollama, NotebookLM\n\n\nCap. 3\nOpenCode a fondo\nArquitectura, características, ventajas\n\n\nCap. 4\nInstalación\nWindows, macOS, Linux — paso a paso\n\n\nCap. 5\nPerfiles personalizados\nAGENTS.md, JSON, agentes\n\n\nCap. 6\nMCP y Skills\nExtensiones, protocolo, habilidades\n\n\nCap. 7\nCasos de uso\n12 profesiones con ejemplos reales\n\n\nCap. 8\nLabs prácticos\n5 labs guiados (2 horas)\n\n\nCap. 9\nComparativa\nHerramientas vs. profesión vs. presupuesto\n\n\nCap. 10\nPróximos pasos\nPlan de acción 4 semanas\n\n\n+ Apéndice\nCheatsheet, FAQ, Gentleman AI\nReferencia rápida",
     "crumbs": [
-      "Prefacio"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🤖 Taller de IA para No Informáticos</span>"
     ]
   },
   {
     "objectID": "index.html#requisitos-previos",
     "href": "index.html#requisitos-previos",
     "title": "Taller de IA para No Informáticos",
-    "section": "Requisitos Previos",
-    "text": "Requisitos Previos\nAntes de empezar, asegúrate de tener:\n\nCuenta de Google (para NotebookLM, gratis)\nEditor de texto (Bloc de notas o TextEdit)\nNavegador actualizado (Chrome, Firefox o Edge)\nConexión a internet estable\n\n\n\nMaterial preparado para el Taller de IA para No Informáticos",
+    "section": "1.4 ⚡ Requisitos Previos",
+    "text": "1.4 ⚡ Requisitos Previos\nAntes de empezar, asegúrate de tener:\n\n\n\nRequisito\nDetalle\n\n\n\n\n🌐 Cuenta de Google\nPara NotebookLM (gratis)\n\n\n💻 Editor de texto\nBloc de notas, VS Code o similar\n\n\n🌍 Navegador actualizado\nChrome, Firefox o Edge\n\n\n📶 Conexión a internet\nEstable y confiable\n\n\n☕ Ganas de aprender\n¡Lo más importante!\n\n\n\n\n\n\n\n\n\n\n💡 Este curso es para profesionales de cualquier área — educación, salud, derecho, administración, marketing, ingeniería, etc. No se requieren conocimientos técnicos previos.",
     "crumbs": [
-      "Prefacio"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🤖 Taller de IA para No Informáticos</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#por-qué-este-taller",
+    "href": "index.html#por-qué-este-taller",
+    "title": "Taller de IA para No Informáticos",
+    "section": "1.5 🎯 ¿Por qué este taller?",
+    "text": "1.5 🎯 ¿Por qué este taller?\n\n“El uso frecuente de IA incrementa la productividad con un odds ratio de 2.34. Los empleados que usan IA generativa ahorran en promedio 96.8 horas al año.” — Estudio Repsol/MIT (2024) + Estudio Ecuador (2025)\n\nLa IA ya no es ciencia ficción. Es una herramienta real que puedes usar hoy para:\n\n🤖 Crear contenido 10x más rápido\n📊 Analizar datos sin ser data scientist\n📝 Resumir documentos complejos\n💡 Generar ideas creativas\n⏰ Ahorrar horas de trabajo repetitivo\n\n\nMaterial preparado para el Taller de IA para No Informáticos Por Diego Saavedra García · Taller de IA para No Informáticos · 2026",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🤖 Taller de IA para No Informáticos</span>"
     ]
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  1. Fundamentos: ¿Por qué usar IA?",
+    "title": "2  Introducción",
     "section": "",
-    "text": "1.1 Evidencia científica\nLa investigación científica demuestra beneficios significativos del uso de asistentes de IA en el trabajo profesional.",
+    "text": "3 Introducción",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1. Fundamentos: ¿Por qué usar IA?</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
     ]
   },
   {
     "objectID": "intro.html#evidencia-científica",
     "href": "intro.html#evidencia-científica",
-    "title": "1  1. Fundamentos: ¿Por qué usar IA?",
-    "section": "",
-    "text": "1.1.1 Estudio de Repsol (2024)\nLa multienergética española, en colaboración con MIT Technology Review, evaluó Microsoft 365 Copilot durante 4 meses con 300 empleados:\n\nAhorro de tiempo: 121 minutos brutos por semana por empleado (96.8 horas/año)\nMejora en calidad: 16% de incremento en la calidad de entregables\nSatisfacción: 61.9% declaró que preferiría no volver a trabajar sin la herramienta\nPerfil más beneficiado: Técnicos cualificados y profesionales sénior\n\n\n\n1.1.2 Estudio en Ecuador (El Oro, 2025)\nInvestigación en 900 empleados de empresas comerciales:\n\nProductividad: El uso frecuente de IA incrementa la productividad (odds ratio de 2.34)\nEficiencia: 40% de reducción en duración de tareas administrativas\nPrecisión: 72% de reducción en incidencia de errores\n\n\n\n1.1.3 Estudio en México (2025)\nEncuesta a 327 usuarios mexicanos:\n\nProductividad: 62% usa IA para incrementar productividad\nAhorro: 7.02 horas semanales en promedio\nCreatividad: 31.5% usa IA para generar nuevas ideas\nMotivación: Cerca de un tercio busca innovación\n\n\n\n1.1.4 Estudio en Universidades Latinoamericanas (2024)\nImplementación de asistentes virtuales en universidades de Ecuador, Perú y Colombia:\n\nSatisfacción: Más del 75% reportó altos niveles de satisfacción\nDocentes: Reducción de carga administrativa\nEstudiantes: Retroalimentación inmediata y adaptación de contenidos",
+    "title": "2  Introducción",
+    "section": "3.1 Evidencia científica",
+    "text": "3.1 Evidencia científica\nLa investigación científica demuestra beneficios significativos del uso de asistentes de IA en el trabajo profesional.\n\n3.1.1 Estudio de Repsol (2024)\nLa multienergética española, en colaboración con MIT Technology Review, evaluó Microsoft 365 Copilot durante 4 meses con 300 empleados:\n\nAhorro de tiempo: 121 minutos brutos por semana por empleado (96.8 horas/año)\nMejora en calidad: 16% de incremento en la calidad de entregables\nSatisfacción: 61.9% declaró que preferiría no volver a trabajar sin la herramienta\nPerfil más beneficiado: Técnicos cualificados y profesionales sénior\n\n\n\n3.1.2 Estudio en Ecuador (El Oro, 2025)\nInvestigación en 900 empleados de empresas comerciales:\n\nProductividad: El uso frecuente de IA incrementa la productividad (odds ratio de 2.34)\nEficiencia: 40% de reducción en duración de tareas administrativas\nPrecisión: 72% de reducción en incidencia de errores\n\n\n\n3.1.3 Estudio en México (2025)\nEncuesta a 327 usuarios mexicanos:\n\nProductividad: 62% usa IA para incrementar productividad\nAhorro: 7.02 horas semanales en promedio\nCreatividad: 31.5% usa IA para generar nuevas ideas\nMotivación: Cerca de un tercio busca innovación\n\n\n\n3.1.4 Estudio en Universidades Latinoamericanas (2024)\nImplementación de asistentes virtuales en universidades de Ecuador, Perú y Colombia:\n\nSatisfacción: Más del 75% reportó altos niveles de satisfacción\nDocentes: Reducción de carga administrativa\nEstudiantes: Retroalimentación inmediata y adaptación de contenidos",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1. Fundamentos: ¿Por qué usar IA?</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
     ]
   },
   {
     "objectID": "intro.html#conclusión-científica",
     "href": "intro.html#conclusión-científica",
-    "title": "1  1. Fundamentos: ¿Por qué usar IA?",
-    "section": "1.2 Conclusión científica",
-    "text": "1.2 Conclusión científica\nLos estudios demuestran consistentemente que los asistentes de IA:\n\nAhorran tiempo significativo (2+ horas/semana)\nMejoran la calidad del trabajo realizado\nAumentan la satisfacción laboral\nReducen errores en tareas repetitivas\n\n\nLa IA no reemplaza al profesional, pero amplifica su capacidad.",
+    "title": "2  Introducción",
+    "section": "3.2 Conclusión científica",
+    "text": "3.2 Conclusión científica\nLos estudios demuestran consistentemente que los asistentes de IA:\n\nAhorran tiempo significativo (2+ horas/semana)\nMejoran la calidad del trabajo realizado\nAumentan la satisfacción laboral\nReducen errores en tareas repetitivas\n\n\nLa IA no reemplaza al profesional, pero amplifica su capacidad.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1. Fundamentos: ¿Por qué usar IA?</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
     ]
   },
   {
     "objectID": "intro.html#qué-es-un-asistente-de-ia",
     "href": "intro.html#qué-es-un-asistente-de-ia",
-    "title": "1  1. Fundamentos: ¿Por qué usar IA?",
-    "section": "1.3 ¿Qué es un asistente de IA?",
-    "text": "1.3 ¿Qué es un asistente de IA?\nEs como un compañero virtual que te ayuda con tareas intelectuales: escribir, investigar, analizar, resumir. A diferencia de los motores de búsqueda, entiende el contexto y puede mantener una conversación.",
+    "title": "2  Introducción",
+    "section": "3.3 ¿Qué es un asistente de IA?",
+    "text": "3.3 ¿Qué es un asistente de IA?\nEs como un compañero virtual que te ayuda con tareas intelectuales: escribir, investigar, analizar, resumir. A diferencia de los motores de búsqueda, entiende el contexto y puede mantener una conversación.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1. Fundamentos: ¿Por qué usar IA?</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
     ]
   },
   {
     "objectID": "fundamentos.html",
     "href": "fundamentos.html",
-    "title": "2  2. El Ecosistema de IA en 2026",
+    "title": "3  Ecosistema IA 2026",
     "section": "",
-    "text": "2.1 Las principales herramientas",
+    "text": "4 El Ecosistema de IA en 2026",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>2. El Ecosistema de IA en 2026</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ecosistema IA 2026</span>"
     ]
   },
   {
     "objectID": "fundamentos.html#las-principales-herramientas",
     "href": "fundamentos.html#las-principales-herramientas",
-    "title": "2  2. El Ecosistema de IA en 2026",
-    "section": "",
-    "text": "Herramienta\nPara qué sirve\nVentaja principal\n\n\n\n\nOpenCode\nAsistencia versátil\nMemoria persistente y personalización\n\n\nCopilot\nProgramación\nIntegrado en VS Code\n\n\nGemini\nEcosistema Google\nIntegrado con Sheets, Docs, Drive\n\n\nOllama\nModelos locales\nTrabaja sin internet\n\n\nNotebookLM\nAnálisis de documentos\nGeneración de contenido desde fuentes",
+    "title": "3  Ecosistema IA 2026",
+    "section": "4.1 Las principales herramientas",
+    "text": "4.1 Las principales herramientas\n\n\n\n\n\n\n\n\nHerramienta\nPara qué sirve\nVentaja principal\n\n\n\n\nOpenCode\nAsistencia versátil\nMemoria persistente y personalización\n\n\nCopilot\nProgramación\nIntegrado en VS Code\n\n\nGemini\nEcosistema Google\nIntegrado con Sheets, Docs, Drive\n\n\nOllama\nModelos locales\nTrabaja sin internet\n\n\nNotebookLM\nAnálisis de documentos\nGeneración de contenido desde fuentes",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>2. El Ecosistema de IA en 2026</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ecosistema IA 2026</span>"
     ]
   },
   {
     "objectID": "fundamentos.html#cuál-elegir",
     "href": "fundamentos.html#cuál-elegir",
-    "title": "2  2. El Ecosistema de IA en 2026",
-    "section": "2.2 ¿Cuál elegir?",
-    "text": "2.2 ¿Cuál elegir?\n\n\n\nSi necesitas…\nElige…\n\n\n\n\nFlexibilidad sin programar\nOpenCode\n\n\nProgramar en VS Code\nCopilot\n\n\nUsar el ecosistema Google\nGemini\n\n\nPrivacidad total de datos\nOllama\n\n\nSolo analizar documentos\nNotebookLM",
+    "title": "3  Ecosistema IA 2026",
+    "section": "4.2 ¿Cuál elegir?",
+    "text": "4.2 ¿Cuál elegir?\n\n\n\nSi necesitas…\nElige…\n\n\n\n\nFlexibilidad sin programar\nOpenCode\n\n\nProgramar en VS Code\nCopilot\n\n\nUsar el ecosistema Google\nGemini\n\n\nPrivacidad total de datos\nOllama\n\n\nSolo analizar documentos\nNotebookLM",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>2. El Ecosistema de IA en 2026</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ecosistema IA 2026</span>"
     ]
   },
   {
     "objectID": "fundamentos.html#por-qué-opencode-en-2026",
     "href": "fundamentos.html#por-qué-opencode-en-2026",
-    "title": "2  2. El Ecosistema de IA en 2026",
-    "section": "2.3 Por qué OpenCode en 2026",
-    "text": "2.3 Por qué OpenCode en 2026\nOpenCode se ha convertido en una herramienta fundamental por varias razones:\n\n150K+ estrellas en GitHub y 6.5M de desarrolladores mensuales\nCódigo abierto: Puedes auditarlo y modificarlo\nSin costos de licenciamiento: Usa tu propia API key\nPrivacidad: Tus datos no se comparten con terceros\nAltamente personalizable: Perfiles, agentes y skills adaptables\nFlexible: Funciona con múltiples proveedores de IA (OpenAI, Anthropic, etc.)\nExtensible: Sistema MCP para conectar con herramientas externas",
+    "title": "3  Ecosistema IA 2026",
+    "section": "4.3 Por qué OpenCode en 2026",
+    "text": "4.3 Por qué OpenCode en 2026\nOpenCode se ha convertido en una herramienta fundamental por varias razones:\n\n150K+ estrellas en GitHub y 6.5M de desarrolladores mensuales\nCódigo abierto: Puedes auditarlo y modificarlo\nSin costos de licenciamiento: Usa tu propia API key\nPrivacidad: Tus datos no se comparten con terceros\nAltamente personalizable: Perfiles, agentes y skills adaptables\nFlexible: Funciona con múltiples proveedores de IA (OpenAI, Anthropic, etc.)\nExtensible: Sistema MCP para conectar con herramientas externas",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>2. El Ecosistema de IA en 2026</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ecosistema IA 2026</span>"
     ]
   },
   {
     "objectID": "opencode.html",
     "href": "opencode.html",
-    "title": "3  3. OpenCode: Tu Asistente Personal",
+    "title": "4  OpenCode",
     "section": "",
-    "text": "3.1 ¿Qué es OpenCode?\nOpenCode es una herramienta de desarrollo con IA que funciona en tu computadora. A diferencia de otros asistentes que solo funcionan en la web, OpenCode puede:",
+    "text": "5 OpenCode: Tu Asistente Personal",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3. OpenCode: Tu Asistente Personal</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenCode</span>"
     ]
   },
   {
     "objectID": "opencode.html#qué-es-opencode",
     "href": "opencode.html#qué-es-opencode",
-    "title": "3  3. OpenCode: Tu Asistente Personal",
-    "section": "",
-    "text": "Leer y modificar archivos de tu proyecto\nEjecutar comandos en tu terminal\nConectar con herramientas externas (MCP)\nAdaptarse a tu forma de trabajar mediante perfiles\nRecordar conversaciones anteriores (memoria persistente)",
+    "title": "4  OpenCode",
+    "section": "5.1 ¿Qué es OpenCode?",
+    "text": "5.1 ¿Qué es OpenCode?\nOpenCode es una herramienta de desarrollo con IA que funciona en tu computadora. A diferencia de otros asistentes que solo funcionan en la web, OpenCode puede:\n\nLeer y modificar archivos de tu proyecto\nEjecutar comandos en tu terminal\nConectar con herramientas externas (MCP)\nAdaptarse a tu forma de trabajar mediante perfiles\nRecordar conversaciones anteriores (memoria persistente)",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3. OpenCode: Tu Asistente Personal</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenCode</span>"
     ]
   },
   {
     "objectID": "opencode.html#diferencia-con-chatgpt-o-claude",
     "href": "opencode.html#diferencia-con-chatgpt-o-claude",
-    "title": "3  3. OpenCode: Tu Asistente Personal",
-    "section": "3.2 Diferencia con ChatGPT o Claude",
-    "text": "3.2 Diferencia con ChatGPT o Claude\n\n\n\nCaracterística\nChatGPT/Claude\nOpenCode\n\n\n\n\nAcceso a archivos\n❌ No\n✅ Sí\n\n\nEjecución de código\n❌ No\n✅ Sí\n\n\nMemoria persistente\nLimitada\nCompleta\n\n\nConexión a tu PC\n❌ No\n✅ Sí\n\n\nIntegración con herramientas\nLimitada\nMCP extensible\n\n\nPersonalización profunda\nMínima\nTotal",
+    "title": "4  OpenCode",
+    "section": "5.2 Diferencia con ChatGPT o Claude",
+    "text": "5.2 Diferencia con ChatGPT o Claude\n\n\n\nCaracterística\nChatGPT/Claude\nOpenCode\n\n\n\n\nAcceso a archivos\n❌ No\n✅ Sí\n\n\nEjecución de código\n❌ No\n✅ Sí\n\n\nMemoria persistente\nLimitada\nCompleta\n\n\nConexión a tu PC\n❌ No\n✅ Sí\n\n\nIntegración con herramientas\nLimitada\nMCP extensible\n\n\nPersonalización profunda\nMínima\nTotal",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3. OpenCode: Tu Asistente Personal</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenCode</span>"
     ]
   },
   {
     "objectID": "opencode.html#arquitectura-de-opencode",
     "href": "opencode.html#arquitectura-de-opencode",
-    "title": "3  3. OpenCode: Tu Asistente Personal",
-    "section": "3.3 Arquitectura de OpenCode",
-    "text": "3.3 Arquitectura de OpenCode\nOpenCode se estructura en capas:\n┌─────────────────────────────────────┐\n│         Agentes y Perfiles          │\n│   (Tu identidad y forma de trabajo)  │\n├─────────────────────────────────────┤\n│            Skills                    │\n│   (Habilidades pre-configuradas)     │\n├─────────────────────────────────────┤\n│             MCP                      │\n│   (Conexiones con herramientas)     │\n├─────────────────────────────────────┤\n│          Motor de IA                 │\n│   (OpenAI, Anthropic, etc.)         │\n└─────────────────────────────────────┘",
+    "title": "4  OpenCode",
+    "section": "5.3 Arquitectura de OpenCode",
+    "text": "5.3 Arquitectura de OpenCode\n┌─────────────────────────────────────┐\n│         Agentes y Perfiles          │\n│   (Tu identidad y forma de trabajo)  │\n├─────────────────────────────────────┤\n│            Skills                    │\n│   (Habilidades pre-configuradas)     │\n├─────────────────────────────────────┤\n│             MCP                      │\n│   (Conexiones con herramientas)     │\n├─────────────────────────────────────┤\n│          Motor de IA                 │\n│   (OpenAI, Anthropic, etc.)         │\n└─────────────────────────────────────┘",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3. OpenCode: Tu Asistente Personal</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenCode</span>"
     ]
   },
   {
     "objectID": "opencode.html#conceptos-clave",
     "href": "opencode.html#conceptos-clave",
-    "title": "3  3. OpenCode: Tu Asistente Personal",
-    "section": "3.4 Conceptos clave",
-    "text": "3.4 Conceptos clave\n\n3.4.1 Perfiles (AGENTS.md)\nLos perfiles son configuraciones que definen cómo OpenCode se comporta. Cada perfil tiene un sistema de instrucciones, herramientas y patrones de proyecto.\n\n\n3.4.2 Agentes\nUn agente es un perfil especializado que puede manejar tareas específicas. Ejemplo: researcher para investigación científica, pentest para seguridad.\n\n\n3.4.3 Skills\nLas skills son habilidades pre-configuradas que puedes agregar a OpenCode para tareas específicas como revisión de código, testing, documentación, etc.\n\n\n3.4.4 MCP (Model Context Protocol)\nProtocolo que permite a OpenCode conectarse con herramientas externas como bases de datos, APIs, servicios y más.",
+    "title": "4  OpenCode",
+    "section": "5.4 Conceptos clave",
+    "text": "5.4 Conceptos clave\n\n5.4.1 Perfiles (AGENTS.md)\nLos perfiles son configuraciones que definen cómo OpenCode se comporta. Cada perfil tiene un sistema de instrucciones, herramientas y patrones de proyecto.\n\n\n5.4.2 Agentes\nUn agente es un perfil especializado que puede manejar tareas específicas. Ejemplo: researcher para investigación científica, pentest para seguridad.\n\n\n5.4.3 Skills\nLas skills son habilidades pre-configuradas que puedes agregar a OpenCode para tareas específicas como revisión de código, testing, documentación, etc.\n\n\n5.4.4 MCP (Model Context Protocol)\nProtocolo que permite a OpenCode conectarse con herramientas externas como bases de datos, APIs, servicios y más.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3. OpenCode: Tu Asistente Personal</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenCode</span>"
     ]
   },
   {
     "objectID": "opencode.html#ventajas-sobre-otras-herramientas",
     "href": "opencode.html#ventajas-sobre-otras-herramientas",
-    "title": "3  3. OpenCode: Tu Asistente Personal",
-    "section": "3.5 Ventajas sobre otras herramientas",
-    "text": "3.5 Ventajas sobre otras herramientas\n\nEstudios demuestran que el uso frecuente de IA incrementa la productividad con un odds ratio de 2.34. Los empleados que usan IA generativa ahorran en promedio 96.8 horas al año.",
+    "title": "4  OpenCode",
+    "section": "5.5 Ventajas sobre otras herramientas",
+    "text": "5.5 Ventajas sobre otras herramientas\n\n\n\n\n\n\nEstudios demuestran que el uso frecuente de IA incrementa la productividad con un odds ratio de 2.34. Los empleados que usan IA generativa ahorran en promedio 96.8 horas al año.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3. OpenCode: Tu Asistente Personal</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenCode</span>"
     ]
   },
   {
     "objectID": "instalacion.html",
     "href": "instalacion.html",
-    "title": "4  4. Instalación de OpenCode",
+    "title": "5  Instalación",
     "section": "",
-    "text": "4.1 Requisitos Previos\nAntes de instalar, asegúrate de tener:",
+    "text": "6 Instalación de OpenCode",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>4. Instalación de OpenCode</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Instalación</span>"
     ]
   },
   {
     "objectID": "instalacion.html#requisitos-previos",
     "href": "instalacion.html#requisitos-previos",
-    "title": "4  4. Instalación de OpenCode",
-    "section": "",
-    "text": "Node.js 18+ — Verifica con: node --version\nGit — Para control de versiones\nEditor de texto — VS Code recomendado\nAPI Key — De OpenAI, Anthropic u otro proveedor",
+    "title": "5  Instalación",
+    "section": "6.1 Requisitos Previos",
+    "text": "6.1 Requisitos Previos\nAntes de instalar, asegúrate de tener:\n\nNode.js 18+ — Verifica con: node --version\nGit — Para control de versiones\nEditor de texto — VS Code recomendado\nAPI Key — De OpenAI, Anthropic u otro proveedor",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>4. Instalación de OpenCode</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Instalación</span>"
     ]
   },
   {
     "objectID": "instalacion.html#instalación-en-windows",
     "href": "instalacion.html#instalación-en-windows",
-    "title": "4  4. Instalación de OpenCode",
-    "section": "4.2 Instalación en Windows",
-    "text": "4.2 Instalación en Windows\n\n4.2.1 Paso 1: Instalar Node.js\n\nVe a nodejs.org\nDescarga la versión LTS (recomendada)\nInstala con valores por defecto\nReinicia tu terminal\n\n\n\n4.2.2 Paso 2: Instalar OpenCode\nAbre PowerShell y ejecuta:\nnpm install -g opencode-ai",
+    "title": "5  Instalación",
+    "section": "6.2 Instalación en Windows",
+    "text": "6.2 Instalación en Windows\n\n6.2.1 Paso 1: Instalar Node.js\n\nVe a nodejs.org\nDescarga la versión LTS (recomendada)\nInstala con valores por defecto\nReinicia tu terminal\n\n\n\n6.2.2 Paso 2: Instalar OpenCode\nnpm install -g opencode-ai",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>4. Instalación de OpenCode</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Instalación</span>"
     ]
   },
   {
     "objectID": "instalacion.html#instalación-en-macos",
     "href": "instalacion.html#instalación-en-macos",
-    "title": "4  4. Instalación de OpenCode",
-    "section": "4.3 Instalación en macOS",
-    "text": "4.3 Instalación en macOS\n\n4.3.1 Con Homebrew:\nbrew install node\nnpm install -g opencode-ai",
+    "title": "5  Instalación",
+    "section": "6.3 Instalación en macOS",
+    "text": "6.3 Instalación en macOS\n# Con Homebrew:\nbrew install node\nnpm install -g opencode-ai",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>4. Instalación de OpenCode</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Instalación</span>"
     ]
   },
   {
     "objectID": "instalacion.html#instalación-en-linux",
     "href": "instalacion.html#instalación-en-linux",
-    "title": "4  4. Instalación de OpenCode",
-    "section": "4.4 Instalación en Linux",
-    "text": "4.4 Instalación en Linux\nsudo apt install nodejs npm\nnpm install -g opencode-ai",
+    "title": "5  Instalación",
+    "section": "6.4 Instalación en Linux",
+    "text": "6.4 Instalación en Linux\nsudo apt install nodejs npm\nnpm install -g opencode-ai",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>4. Instalación de OpenCode</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Instalación</span>"
     ]
   },
   {
     "objectID": "instalacion.html#verificación-de-instalación",
     "href": "instalacion.html#verificación-de-instalación",
-    "title": "4  4. Instalación de OpenCode",
-    "section": "4.5 Verificación de instalación",
-    "text": "4.5 Verificación de instalación\n# Verificar versión instalada\nopencode --version\n\n# Ver ayuda\nopencode --help\n\n# Ver configuración actual\nopencode config list\n\n# Ver plugins instalados\nopencode plugins list",
+    "title": "5  Instalación",
+    "section": "6.5 Verificación de instalación",
+    "text": "6.5 Verificación de instalación\n# Verificar versión instalada\nopencode --version\n\n# Ver ayuda\nopencode --help\n\n# Ver configuración actual\nopencode config list\n\n# Ver plugins instalados\nopencode plugins list",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>4. Instalación de OpenCode</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Instalación</span>"
     ]
   },
   {
     "objectID": "instalacion.html#configuración-inicial",
     "href": "instalacion.html#configuración-inicial",
-    "title": "4  4. Instalación de OpenCode",
-    "section": "4.6 Configuración Inicial",
-    "text": "4.6 Configuración Inicial\n\n4.6.1 Archivo opencode.json\nCrea el archivo ~/.config/opencode/opencode.json:\n{\n  \"provider\": \"openai\",\n  \"model\": \"gpt-4o\",\n  \"apiKey\": \"tu-api-key-aqui\"\n}\n\n\n4.6.2 Obtener tu API Key\n\nVe a platform.openai.com\nCrea una cuenta o inicia sesión\nVe a “API Keys”\nCrea una nueva clave\nImportante: Nunca compartas esta clave",
+    "title": "5  Instalación",
+    "section": "6.6 Configuración Inicial",
+    "text": "6.6 Configuración Inicial\n\n6.6.1 Archivo opencode.json\nCrea el archivo ~/.config/opencode/opencode.json:\n{\n  \"provider\": \"openai\",\n  \"model\": \"gpt-4o\",\n  \"apiKey\": \"tu-api-key-aqui\"\n}\n\n\n6.6.2 Obtener tu API Key\n\nVe a platform.openai.com\nCrea una cuenta o inicia sesión\nVe a “API Keys”\nCrea una nueva clave\nImportante: Nunca compartas esta clave",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>4. Instalación de OpenCode</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Instalación</span>"
     ]
   },
   {
     "objectID": "instalacion.html#primeros-pasos",
     "href": "instalacion.html#primeros-pasos",
-    "title": "4  4. Instalación de OpenCode",
-    "section": "4.7 Primeros Pasos",
-    "text": "4.7 Primeros Pasos\n\n4.7.1 Iniciar conversación\nopencode\n\n\n4.7.2 Ejemplos de conversación\nPresentarte:\nHola, me llamo [tu nombre] y trabajo en [tu industria]. Ayúdame con [tu tarea].\nPedir ayuda:\nTengo que escribir un proyecto sobre [tema]. ¿Puedes ayudarme a estructurarlo?\nInvestigar:\nBusca información sobre [tu tema de interés]",
+    "title": "5  Instalación",
+    "section": "6.7 Primeros Pasos",
+    "text": "6.7 Primeros Pasos\n\n6.7.1 Iniciar conversación\nopencode\n\n\n6.7.2 Ejemplos de conversación\nPresentarte:\nHola, me llamo [tu nombre] y trabajo en [tu industria]. Ayúdame con [tu tarea].\nPedir ayuda:\nTengo que escribir un proyecto sobre [tema]. ¿Puedes ayudarme a estructurarlo?\nInvestigar:\nBusca información sobre [tu tema de interés]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>4. Instalación de OpenCode</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Instalación</span>"
     ]
   },
   {
     "objectID": "perfiles.html",
     "href": "perfiles.html",
-    "title": "5  5. Perfiles Personalizados",
+    "title": "6  Perfiles Personalizados",
     "section": "",
-    "text": "5.1 ¿Qué es AGENTS.md?\nEs una tarjeta de presentación para tu asistente. Le dice quién eres, qué necesitas y cómo prefieres trabajar. Se guarda en ~/.config/opencode/AGENTS.md.",
+    "text": "7 Perfiles Personalizados",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>5. Perfiles Personalizados</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Perfiles Personalizados</span>"
+    ]
+  },
+  {
+    "objectID": "perfiles.html#qué-es-agents.md",
+    "href": "perfiles.html#qué-es-agents.md",
+    "title": "6  Perfiles Personalizados",
+    "section": "7.1 ¿Qué es AGENTS.md?",
+    "text": "7.1 ¿Qué es AGENTS.md?\nEs una tarjeta de presentación para tu asistente. Le dice quién eres, qué necesitas y cómo prefieres trabajar. Se guarda en ~/.config/opencode/AGENTS.md.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Perfiles Personalizados</span>"
     ]
   },
   {
     "objectID": "perfiles.html#estructura-básica",
     "href": "perfiles.html#estructura-básica",
-    "title": "5  5. Perfiles Personalizados",
-    "section": "5.2 Estructura básica",
-    "text": "5.2 Estructura básica\n# Mi Perfil Profesional\n\n## Quién soy\n[Nombre]\n[Profesión/Rol]\n[Industria]\n\n## Qué hago\n[Descripción de tu trabajo]\n\n## Mis objetivos\n- Objetivo 1\n- Objetivo 2\n- Objetivo 3\n\n## Cómo prefiero que me ayudes\n[Estilo preferido]\n[Nivel de detalle]\n[Formato de respuesta]",
+    "title": "6  Perfiles Personalizados",
+    "section": "7.2 Estructura básica",
+    "text": "7.2 Estructura básica\n# Mi Perfil Profesional\n\n## Quién soy\n[Nombre]\n[Profesión/Rol]\n[Industria]\n\n## Qué hago\n[Descripción de tu trabajo]\n\n## Mis objetivos\n- Objetivo 1\n- Objetivo 2\n- Objetivo 3\n\n## Cómo prefiero que me ayudes\n[Estilo preferido]\n[Nivel de detalle]\n[Formato de respuesta]",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>5. Perfiles Personalizados</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Perfiles Personalizados</span>"
     ]
   },
   {
     "objectID": "perfiles.html#precedencia-de-configuración",
     "href": "perfiles.html#precedencia-de-configuración",
-    "title": "5  5. Perfiles Personalizados",
-    "section": "5.3 Precedencia de configuración",
-    "text": "5.3 Precedencia de configuración\nOpenCode sigue este orden de prioridad para cargar configuraciones:\n\nAGENTS.md local (./AGENTS.md) — el más específico\nAGENTS.md global (~/.config/opencode/AGENTS.md) — tu configuración personal\nClasificación del proyecto — detección automática\nFallback de Claude Code — configuración por defecto\n\n\nEsto significa que puedes tener múltiples perfiles para diferentes proyectos.",
+    "title": "6  Perfiles Personalizados",
+    "section": "7.3 Precedencia de configuración",
+    "text": "7.3 Precedencia de configuración\nOpenCode sigue este orden de prioridad para cargar configuraciones:\n\nAGENTS.md local (./AGENTS.md) — el más específico\nAGENTS.md global (~/.config/opencode/AGENTS.md) — tu configuración personal\nClasificación del proyecto — detección automática\nFallback de Claude Code — configuración por defecto\n\n\nEsto significa que puedes tener múltiples perfiles para diferentes proyectos.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>5. Perfiles Personalizados</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Perfiles Personalizados</span>"
+    ]
+  },
+  {
+    "objectID": "perfiles.html#prompts-genéricos-para-tu-perfil-copia-y-pega",
+    "href": "perfiles.html#prompts-genéricos-para-tu-perfil-copia-y-pega",
+    "title": "6  Perfiles Personalizados",
+    "section": "7.4 Prompts genéricos para tu perfil — ¡Copia y pega!",
+    "text": "7.4 Prompts genéricos para tu perfil — ¡Copia y pega!\n\n7.4.1 Prompt 1: Crear tu AGENTS.md desde cero\nSoy [TU PROFESIÓN, ej: \"contador\", \"profesora\", \"periodista\"].\nTrabajo en [TU INDUSTRIA, ej: \"sector retail\", \"educación secundaria\", \"medios de comunicación\"].\nTengo [X] años de experiencia.\n\nCrea mi archivo AGENTS.md en ~/.config/opencode/ con:\n- Mi nombre: [TU NOMBRE]\n- Mi profesión y sector\n- Mis 3 principales responsabilidades\n- Mis objetivos al usar IA (máximo 4)\n- Mi estilo preferido: [ej: \"respuestas detalladas con ejemplos\" o \"respuestas concisas y directas\"]\n- Mis herramientas principales: [ej: \"Excel, Google Workspace, email\"]\n- Que siempre responda en español\n\n\n7.4.2 Prompt 2: Actualizar tu perfil existente\nLee mi archivo ~/.config/opencode/AGENTS.md actualizado.\n\nAhora necesito que lo actualices con estos cambios:\n- Agrega que ahora tengo experiencia en [NUEVA ÁREA, ej: \"análisis de datos\"]\n- Cambia mi estilo preferido a [NUEVO ESTILO, ej: \"más visual, con tablas y listas\"]\n- Agrega que uso [NUEVA HERRAMIENTA, ej: \"Power BI\"]\n- Actualiza mis objetivos a:\n  1. [OBJETIVO 1]\n  2. [OBJETIVO 2]\n  3. [OBJETIVO 3]\n\nMuestra el archivo completo actualizado antes de guardarlo.\n\n\n7.4.3 Prompt 3: Crear un perfil para un rol diferente\nQuiero crear un SEGUNDO perfil profesional para cuando trabajo como [OTRO ROL, ej: \"marketer\", \"formador\", \"consultor\"].\n\nEste perfil debe reflejar:\n- Rol: [DESCRIPCIÓN DEL ROL]\n- Herramientas que uso en este rol: [LISTA]\n- Cómo quiero que me hable la IA en este contexto: [TONO]\n- Objetivos específicos: [LISTA DE 2-3 OBJETIVOS]\n\nGuárdalo como un perfil separado y dime cómo cambiar entre ambos.\n\n\n7.4.4 Prompt 4: Mejorar mi perfil actual con IA\nRevisa mi AGENTS.md actual y:\n1. Identifica qué información falta o es muy vaga\n2. Sugiere mejoras específicas para obtener mejores respuestas de la IA\n3. Corrige errores de redacción o formato\n4. Recomienda agregar alguna sección que no tenga (como \"valores\", \"audiencia\", \"no me gusta\")\n\nNo cambies nada sin mostrarme primero qué cambiarías y por qué.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Perfiles Personalizados</span>"
     ]
   },
   {
     "objectID": "perfiles.html#ejemplo-perfil-de-educator",
     "href": "perfiles.html#ejemplo-perfil-de-educator",
-    "title": "5  5. Perfiles Personalizados",
-    "section": "5.4 Ejemplo: Perfil de Educator",
-    "text": "5.4 Ejemplo: Perfil de Educator\n# Mi Perfil Profesional\n\n## Quién soy\nMaría García\nProfesora de matemáticas\nEducación secundaria\n\n## Qué hago\nClases de bachillerato.\nEvaluaciones.\nTutorías.\nPreparación de materiales.\n\n## Mis objetivos\n- Crear planes de clase efectivos\n- Generar evaluaciones equilibradas\n- Adaptar contenidos a diferentes niveles",
+    "title": "6  Perfiles Personalizados",
+    "section": "7.5 Ejemplo: Perfil de Educator",
+    "text": "7.5 Ejemplo: Perfil de Educator\n# Mi Perfil Profesional\n\n## Quién soy\nMaría García\nProfesora de matemáticas\nEducación secundaria\n\n## Qué hago\nClases de bachillerato.\nEvaluaciones.\nTutorías.\nPreparación de materiales.\n\n## Mis objetivos\n- Crear planes de clase efectivos\n- Generar evaluaciones equilibradas\n- Adaptar contenidos a diferentes niveles\n\n## Cómo prefiero que me ayudes\n- Responde en español\n- Dame ejemplos prácticos para el aula\n- Incluye referencias pedagógicas cuando sea posible\n- Formato preferido: listas numeradas y tablas",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>5. Perfiles Personalizados</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Perfiles Personalizados</span>"
     ]
   },
   {
     "objectID": "perfiles.html#ejemplo-perfil-de-administrador",
     "href": "perfiles.html#ejemplo-perfil-de-administrador",
-    "title": "5  5. Perfiles Personalizados",
-    "section": "5.5 Ejemplo: Perfil de Administrador",
-    "text": "5.5 Ejemplo: Perfil de Administrador\n# Mi Perfil Profesional\n\n## Quién soy\nJuan Pérez\nGerente de operaciones\nSector: Retail\n\n## Qué hago\nCoordinación logística.\nGestión de inventario.\nReportes semanales.\nReuniones de equipo.\n\n## Mis objetivos\n- Automatizar reportes repetitivos\n- Mejorar análisis de datos\n- Reducir tiempo en tareas administrativas",
+    "title": "6  Perfiles Personalizados",
+    "section": "7.6 Ejemplo: Perfil de Administrador",
+    "text": "7.6 Ejemplo: Perfil de Administrador\n# Mi Perfil Profesional\n\n## Quién soy\nJuan Pérez\nGerente de operaciones\nSector: Retail\n\n## Qué hago\nCoordinación logística.\nGestión de inventario.\nReportes semanales.\nReuniones de equipo.\n\n## Mis objetivos\n- Automatizar reportes repetitivos\n- Mejorar análisis de datos\n- Reducir tiempo en tareas administrativas\n\n## Cómo prefiero que me ayudes\n- Responde de forma directa y estructurada\n- Prioriza datos concretos sobre opiniones\n- Si algo requiere investigación, dilo antes de inventar datos",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>5. Perfiles Personalizados</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Perfiles Personalizados</span>"
     ]
   },
   {
     "objectID": "perfiles.html#ejemplo-perfil-de-marketing",
     "href": "perfiles.html#ejemplo-perfil-de-marketing",
-    "title": "5  5. Perfiles Personalizados",
-    "section": "5.6 Ejemplo: Perfil de Marketing",
-    "text": "5.6 Ejemplo: Perfil de Marketing\n# Mi Perfil Profesional\n\n## Quién soy\nAna López\nCoordinadora de Marketing Digital\nSector: Tecnología B2B\n\n## Qué hago\nGestión de redes sociales.\nCreación de contenido.\nCampañas de email marketing.\nAnálisis de métricas.\n\n## Mis objetivos\n- Generar contenido consistente\n- Aumentar engagement\n- Medir ROI de campañas",
+    "title": "6  Perfiles Personalizados",
+    "section": "7.7 Ejemplo: Perfil de Marketing",
+    "text": "7.7 Ejemplo: Perfil de Marketing\n# Mi Perfil Profesional\n\n## Quién soy\nAna López\nCoordinadora de Marketing Digital\nSector: Tecnología B2B\n\n## Qué hago\nGestión de redes sociales.\nCreación de contenido.\nCampañas de email marketing.\nAnálisis de métricas.\n\n## Mis objetivos\n- Generar contenido consistente\n- Aumentar engagement\n- Medir ROI de campañas\n\n## Cómo prefiero que me ayudes\n- Tono creativo pero profesional\n- Sugiere hashtags y tendencias\n- Adapta el lenguaje al público B2B\n- Siempre que sugieras publicaciones, incluye llamada a la acción",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>5. Perfiles Personalizados</span>"
-    ]
-  },
-  {
-    "objectID": "perfiles.html#perfiles-incluidos-en-opencode",
-    "href": "perfiles.html#perfiles-incluidos-en-opencode",
-    "title": "5  5. Perfiles Personalizados",
-    "section": "5.7 Perfiles Incluidos en OpenCode",
-    "text": "5.7 Perfiles Incluidos en OpenCode\n\n\n\nPerfil\nDescripción\n\n\n\n\nDeveloper\nProgramación general, código limpio\n\n\nEducator\nEnseñanza, explicaciones claras\n\n\nAdmin\nTareas administrativas, documentos\n\n\nMarketing\nContenido, redes sociales\n\n\nResearcher\nBúsqueda, análisis, papers\n\n\nSecurity\nAuditorías, pentesting, CVE",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>5. Perfiles Personalizados</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Perfiles Personalizados</span>"
     ]
   },
   {
     "objectID": "perfiles.html#tips-para-tu-perfil",
     "href": "perfiles.html#tips-para-tu-perfil",
-    "title": "5  5. Perfiles Personalizados",
-    "section": "5.8 Tips para tu perfil",
-    "text": "5.8 Tips para tu perfil\n\nSé específico: Cuanto más contexto, mejor ayuda\nIncluye tu industria: Contexto específico vale oro\nDefine el formato: ¿Prefieres listas? ¿Textos largos?\nMenciona herramientas: Qué software usas habitualmente\nActualiza regularmente: Tu perfil debe evolucionar contigo",
+    "title": "6  Perfiles Personalizados",
+    "section": "7.8 Tips para tu perfil",
+    "text": "7.8 Tips para tu perfil\n\n\n\n\n\n\n\n✅ Buena práctica\n❌ Evita esto\n\n\n\n\n“Soy contador en una empresa de retail con 10 años de experiencia”\n“Soy profesional” (demasiado vago)\n\n\n“Prefiero respuestas con ejemplos del sector salud”\nNo especificar tu industria\n\n\n“Quiero que uses tablas cuando compares datos”\n“Responde bien” (no dice cómo)\n\n\n“Mi jefe no es técnico: explica sin tecnicismos”\nNo mencionar a tu audiencia\n\n\n“Trabajo con Excel y Google Sheets”\nNo mencionar tus herramientas\n\n\n\n\n💡 Recuerda: Cuanto más específico y honesto seas en tu perfil, mejor te entenderá la IA y mejores serán sus respuestas.\n\n\n7.8.1 ¿Qué pasa si mi perfil ya es viejo?\nActualiza mi AGENTS.md. Pregúntame sobre mis responsabilidades actuales,\nherramientas que uso ahora y objetivos del próximo trimestre.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>5. Perfiles Personalizados</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Perfiles Personalizados</span>"
+    ]
+  },
+  {
+    "objectID": "perfiles.html#perfiles-incluidos-en-opencode",
+    "href": "perfiles.html#perfiles-incluidos-en-opencode",
+    "title": "6  Perfiles Personalizados",
+    "section": "7.9 Perfiles Incluidos en OpenCode",
+    "text": "7.9 Perfiles Incluidos en OpenCode\n\n\n\nPerfil\nDescripción\n\n\n\n\nDeveloper\nProgramación general, código limpio\n\n\nEducator\nEnseñanza, explicaciones claras\n\n\nAdmin\nTareas administrativas, documentos\n\n\nMarketing\nContenido, redes sociales\n\n\nResearcher\nBúsqueda, análisis, papers\n\n\nSecurity\nAuditorías, pentesting, CVE",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Perfiles Personalizados</span>"
     ]
   },
   {
     "objectID": "mcp-skills.html",
     "href": "mcp-skills.html",
-    "title": "6  6. MCP y Skills",
+    "title": "7  MCP y Skills",
     "section": "",
-    "text": "6.1 ¿Qué es MCP?\nMCP (Model Context Protocol) es un protocolo que permite a OpenCode conectarse con herramientas externas como bases de datos, APIs, y servicios.",
+    "text": "8 MCP y Skills",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>6. MCP y Skills</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>MCP y Skills</span>"
     ]
   },
   {
     "objectID": "mcp-skills.html#qué-es-mcp",
     "href": "mcp-skills.html#qué-es-mcp",
-    "title": "6  6. MCP y Skills",
-    "section": "",
-    "text": "6.1.1 ¿Por qué usar MCP?\nLos MCP permiten que OpenCode acceda a información y herramientas que no están en su contexto base:\n\nNotebookLM: Análisis de documentos y PDFs\nGitHub: Repositorios y issues\nJira: Gestión de proyectos\nSlack: Comunicación de equipo\nBases de datos: Consultas SQL\n\n\n\n6.1.2 ⚠️ Precaución con tokens\n\nMCP añade tokens a cada consulta. Un solo MCP como GitHub puede añadir 20,000 tokens. Sé selectivo: solo conecta los MCP que realmente uses.",
+    "title": "7  MCP y Skills",
+    "section": "8.1 ¿Qué es MCP?",
+    "text": "8.1 ¿Qué es MCP?\nMCP (Model Context Protocol) es un protocolo que permite a OpenCode conectarse con herramientas externas como bases de datos, APIs, y servicios.\n\n8.1.1 ¿Por qué usar MCP?\nLos MCP permiten que OpenCode acceda a información y herramientas que no están en su contexto base:\n\nNotebookLM: Análisis de documentos y PDFs\nGitHub: Repositorios y issues\nJira: Gestión de proyectos\nSlack: Comunicación de equipo\nBases de datos: Consultas SQL\n\n\n\n8.1.2 ⚠️ Precaución con tokens\n\nMCP añade tokens a cada consulta. Un solo MCP como GitHub puede añadir 20,000 tokens. Sé selectivo: solo conecta los MCP que realmente uses.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>6. MCP y Skills</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>MCP y Skills</span>"
     ]
   },
   {
     "objectID": "mcp-skills.html#mcps-recomendados",
     "href": "mcp-skills.html#mcps-recomendados",
-    "title": "6  6. MCP y Skills",
-    "section": "6.2 MCPs Recomendados",
-    "text": "6.2 MCPs Recomendados\n\n\n\nMCP\nFunción\nTokens estimados\n\n\n\n\nFilesystem\nLeer y escribir archivos\n~2K\n\n\nGit\nControl de versiones\n~5K\n\n\nSearch\nBúsqueda en proyecto\n~3K\n\n\nDatabase\nConsultas SQL\n~4K\n\n\nWeb\nNavegación web\n~8K\n\n\nNotion\nIntegración con notas\n~6K\n\n\nSlack\nMensajería team\n~5K",
+    "title": "7  MCP y Skills",
+    "section": "8.2 MCPs Recomendados",
+    "text": "8.2 MCPs Recomendados\n\n\n\nMCP\nFunción\nTokens estimados\n\n\n\n\nFilesystem\nLeer y escribir archivos\n~2K\n\n\nGit\nControl de versiones\n~5K\n\n\nSearch\nBúsqueda en proyecto\n~3K\n\n\nDatabase\nConsultas SQL\n~4K\n\n\nWeb\nNavegación web\n~8K\n\n\nNotion\nIntegración con notas\n~6K\n\n\nSlack\nMensajería team\n~5K",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>6. MCP y Skills</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>MCP y Skills</span>"
     ]
   },
   {
-    "objectID": "mcp-skills.html#configurar-un-mcp",
-    "href": "mcp-skills.html#configurar-un-mcp",
-    "title": "6  6. MCP y Skills",
-    "section": "6.3 Configurar un MCP",
-    "text": "6.3 Configurar un MCP\n\n6.3.1 Archivo mcp.json\n{\n  \"mcpServers\": {\n    \"filesystem\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-filesystem\", \".\"]\n    },\n    \"git\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-git\"]\n    }\n  }\n}",
+    "objectID": "mcp-skills.html#prompts-reutilizables-para-mcp-copia-personaliza-y-pega-en-opencode",
+    "href": "mcp-skills.html#prompts-reutilizables-para-mcp-copia-personaliza-y-pega-en-opencode",
+    "title": "7  MCP y Skills",
+    "section": "8.3 Prompts reutilizables para MCP — Copia, personaliza y pega en OpenCode",
+    "text": "8.3 Prompts reutilizables para MCP — Copia, personaliza y pega en OpenCode\n\n8.3.1 Prompt 1: Instalar y configurar un MCP\nQuiero conectar OpenCode con [NOMBRE DE LA HERRAMIENTA, ej: \"GitHub\" o \"Notion\"].\n\nHaz lo siguiente:\n1. Verifica si ya existe un MCP para [NOMBRE] en mi configuración\n2. Si no existe, genera la configuración en mcp.json con todos los campos necesarios\n3. Si existe, muéstrame cómo activarlo\n4. Explica en 3 puntos simples:\n   - Qué hace este MCP\n   - Cuántos tokens consume (aproximadamente)\n   - Un ejemplo de cómo lo usaría yo en mi trabajo\n5. Pregúntame antes de instalar cualquier dependencia nueva\n\n\n8.3.2 Prompt 2: Explorar qué MCPs me convienen\nSoy [TU PROFESIÓN] y trabajo principalmente con [HERRAMIENTAS QUE USAS].\n\nAnaliza mi perfil (AGENTS.md) y recomiéndame:\n1. Los 3 MCPs más útiles para mi trabajo\n2. Los 2 MCPs que NO necesito (para no sobrecargar mi contexto)\n3. Para cada MCP recomendado:\n   - Qué hace exactamente\n   - Cuántos tokens añade\n   - Si es gratis o de pago\n   - Un ejemplo real de uso en mi profesión\n\nSi hay alguno que ya tenga, dime que ya lo tengo.\n\n\n8.3.3 Prompt 3: Optimizar tokens de MCP\nRevisa mi archivo mcp.json y:\n1. Calcula cuántos tokens se añaden al contexto con cada MCP activo\n2. Identifica cuáles puedo desactivar sin perder funcionalidad\n3. Sugiere un orden de prioridad según mi uso frecuente\n4. Muestra un resumen tipo tabla:\n   | MCP | Tokens | Uso frecuente | Prioridad |\n   |-----|--------|---------------|-----------|\n   | ... | ...    | ...           | Alta/Baja |\n\nRecuerda: GitHub solo puede añadir ~20,000 tokens.\n\n\n8.3.4 Prompt 4: Agregar un MCP nuevo a mi configuración\nQuiero agregar el MCP de [SERVICIO] a mi configuración.\n\nHaz lo siguiente:\n1. Verifica si el MCP de [SERVICIO] está disponible en el repositorio de MCPs\n2. Si existe, genera la configuración y agrégala a mcp.json\n3. Si no existe, búscame la alternativa más parecida\n4. Muéstrame los cambios exactos que harás antes de aplicarlos\n5. Pregúntame si quiero proceder",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>6. MCP y Skills</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>MCP y Skills</span>"
     ]
   },
   {
     "objectID": "mcp-skills.html#qué-son-las-skills",
     "href": "mcp-skills.html#qué-son-las-skills",
-    "title": "6  6. MCP y Skills",
-    "section": "6.4 ¿Qué son las Skills?",
-    "text": "6.4 ¿Qué son las Skills?\nLas skills son habilidades pre-configuradas que puedes agregar a OpenCode para tareas específicas. A diferencia de los MCP que conectan servicios externos, las skills extienden las capacidades de IA.\n\n6.4.1 Sistema de nomenclatura\nLas skills siguen un formato estricto:\n\nMinúsculas: code-review, no Code-Review\nUn solo guión: entre palabras\nMáximo 64 caracteres: nombre completo\nUbicación: ~/.claude/skills/",
+    "title": "7  MCP y Skills",
+    "section": "8.4 ¿Qué son las Skills?",
+    "text": "8.4 ¿Qué son las Skills?\nLas skills son habilidades pre-configuradas que puedes agregar a OpenCode para tareas específicas. A diferencia de los MCP que conectan servicios externos, las skills extienden las capacidades de IA.\n\n8.4.1 Sistema de nomenclatura\nLas skills siguen un formato estricto:\n\nMinúsculas: code-review, no Code-Review\nUn solo guión: entre palabras\nMáximo 64 caracteres: nombre completo\nUbicación: ~/.claude/skills/",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>6. MCP y Skills</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>MCP y Skills</span>"
     ]
   },
   {
-    "objectID": "mcp-skills.html#skills-recomendadas",
-    "href": "mcp-skills.html#skills-recomendadas",
-    "title": "6  6. MCP y Skills",
-    "section": "6.5 Skills Recomendadas",
-    "text": "6.5 Skills Recomendadas\n\n6.5.1 Investigación y Escritura\n\n\n\nSkill\nDescripción\n\n\n\n\nbusqueda-cientifica\nIEEE, ACM, arXiv, Q1/Q2\n\n\nredaccion-cientifica\nEstructura IMRAD, APA/IEEE\n\n\nestructura-paper\nSecciones de paper\n\n\ncitacion-normas\nNormas de citación\n\n\ncientifico\nOrquestador de investigación\n\n\n\n\n\n6.5.2 Desarrollo y Código\n\n\n\nSkill\nDescripción\n\n\n\n\ncode-review\nRevisión automática\n\n\ntesting\nGeneración de tests\n\n\nsecurity-scan\nVulnerabilidades OWASP\n\n\nbest-practices\nSeguridad, compatibilidad\n\n\n\n\n\n6.5.3 Presentación y Docs\n\n\n\nSkill\nDescripción\n\n\n\n\ndocs\nDocumentación automática\n\n\npptx-generator\nPresentaciones PowerPoint\n\n\npdf-generator\nDocumentos PDF\n\n\nrevealjs-presenter\nSlides HTML",
+    "objectID": "mcp-skills.html#skills-recomendadas-para-no-informáticos",
+    "href": "mcp-skills.html#skills-recomendadas-para-no-informáticos",
+    "title": "7  MCP y Skills",
+    "section": "8.5 Skills Recomendadas para No Informáticos",
+    "text": "8.5 Skills Recomendadas para No Informáticos\n\n8.5.1 🔍 Investigación y Escritura\n\n\n\n\n\n\n\n\nSkill\nDescripción\nCuándo usarla\n\n\n\n\nbusqueda-cientifica\nIEEE, ACM, arXiv, Q1/Q2\nCuando necesites fuentes académicas\n\n\nredaccion-cientifica\nEstructura IMRAD, APA/IEEE\nPara documentos formales\n\n\nestructura-paper\nSecciones de paper\nAl escribir artículos\n\n\ncitacion-normas\nNormas de citación\nPara referenciar correctamente\n\n\ncientifico\nOrquestador de investigación\nPara proyectos de investigación completos\n\n\n\n\n\n8.5.2 💻 Desarrollo y Código\n\n\n\n\n\n\n\n\nSkill\nDescripción\nCuándo usarla\n\n\n\n\ncode-review\nRevisión automática\nAntes de ejecutar código\n\n\ntesting\nGeneración de tests\nPara verificar tu trabajo\n\n\nsecurity-scan\nVulnerabilidades OWASP\nSeguridad de tus proyectos\n\n\nbest-practices\nSeguridad, compatibilidad\nPara cualquier proyecto\n\n\n\n\n\n8.5.3 📊 Presentación y Docs\n\n\n\nSkill\nDescripción\nCuándo usarla\n\n\n\n\ndocs\nDocumentación automática\nPara registrar procesos\n\n\npptx-generator\nPresentaciones\nCuando necesites slides\n\n\npdf-generator\nDocumentos PDF\nPara entregables formales",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>6. MCP y Skills</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>MCP y Skills</span>"
     ]
   },
   {
-    "objectID": "mcp-skills.html#instalar-una-skill",
-    "href": "mcp-skills.html#instalar-una-skill",
-    "title": "6  6. MCP y Skills",
-    "section": "6.6 Instalar una Skill",
-    "text": "6.6 Instalar una Skill\n\nVe a la configuración de OpenCode\nSelecciona “Skills”\nBusca la skill que necesitas\nHaz clic en “Instalar”",
+    "objectID": "mcp-skills.html#prompts-reutilizables-para-skills",
+    "href": "mcp-skills.html#prompts-reutilizables-para-skills",
+    "title": "7  MCP y Skills",
+    "section": "8.6 Prompts reutilizables para Skills",
+    "text": "8.6 Prompts reutilizables para Skills\n\n8.6.1 Prompt 1: Descubrir e instalar skills\nBusca skills que me ayuden con [ÁREA DE TRABAJO, ej: \"redacción de informes\" o \"análisis de datos\"].\n\nPara cada skill que encuentres:\n1. Nombre y qué hace (máximo 2 líneas)\n2. Cómo instalarla paso a paso\n3. Un ejemplo de prompt que podría usar con ella\n\nSelecciona las 3 más relevantes para mi profesión: [TU PROFESIÓN]\ne instálalas PREGUNTÁNDOME antes de cada una.\n\n\n8.6.2 Prompt 2: Usar skills para una tarea específica\nNecesito [DESCRIPCIÓN DE LO QUE NECESITO, ej: \"resumir 15 PDFs sobre cambio climático\"].\n\nHaz lo siguiente:\n1. Revisa qué skills tengo instaladas que puedan servir\n2. Identifica la más adecuada y úsala\n3. Si no hay ninguna adecuada, búscame una nueva en el repositorio\n4. Muéstrame el resultado y explica qué skill usaste y por qué\n\n\n8.6.3 Prompt 3: Combinar MCP + Skills para un workflow completo\nNecesito hacer [TAREA COMPLETA, ej: \"investigar un tema y escribir un reporte de 2 páginas\"].\n\nMi workflow ideal sería:\n1. Buscar fuentes → Skill: busqueda_cientifica\n2. Analizar documentos → MCP: NotebookLM\n3. Escribir el reporte → Skill: redaccion_cientifica\n4. Formatear en PDF → Skill: pdf-generator\n5. Revisar calidad → Skill: code-review\n\n¿Puedes verificar que tengo todas estas capacidades instaladas?\nSi falta alguna, indícame cuál y cómo instalarla.\n\n\n8.6.4 Prompt 4: Agregar una skill nueva\nQuiero instalar la skill [NOMBRE DE LA SKILL].\n\nHaz lo siguiente:\n1. Verifica si ya está instalada\n2. Si no, búscala en ~/.claude/skills/ o en el repositorio\n3. Instálala siguiendo el procedimiento correcto\n4. Prueba que funciona con un ejemplo básico\n5. Si hay conflicto con otra skill existente, avísame",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>6. MCP y Skills</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>MCP y Skills</span>"
     ]
   },
   {
-    "objectID": "mcp-skills.html#combinar-mcp-skills",
-    "href": "mcp-skills.html#combinar-mcp-skills",
-    "title": "6  6. MCP y Skills",
-    "section": "6.7 Combinar MCP + Skills",
-    "text": "6.7 Combinar MCP + Skills\nEl verdadero poder viene de combinar ambos:\n┌──────────────────────────────────────┐\n│  Skill: búsqueda científica           │\n│  ↓                                   │\n│  MCP: Web (para buscar)              │\n│  ↓                                   │\n│  MCP: NotebookLM (para analizar)      │\n│  ↓                                   │\n│  Skill: redacción científica         │\n│  ↓                                   │\n│  Skill: citación normas              │\n└──────────────────────────────────────┘",
+    "objectID": "mcp-skills.html#combinar-mcp-skills-el-poder-real",
+    "href": "mcp-skills.html#combinar-mcp-skills-el-poder-real",
+    "title": "7  MCP y Skills",
+    "section": "8.7 Combinar MCP + Skills — El poder real",
+    "text": "8.7 Combinar MCP + Skills — El poder real\nEl verdadero poder viene de combinar ambos:\n┌──────────────────────────────────────┐\n│  Skill: búsqueda científica           │\n│  ↓                                   │\n│  MCP: Web (para buscar)              │\n│  ↓                                   │\n│  MCP: NotebookLM (para analizar)      │\n│  ↓                                   │\n│  Skill: redacción científica         │\n│  ↓                                   │\n│  Skill: citación normas              │\n└──────────────────────────────────────┘",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>6. MCP y Skills</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>MCP y Skills</span>"
     ]
   },
   {
-    "objectID": "mcp-skills.html#ejemplo-investigación-académica",
-    "href": "mcp-skills.html#ejemplo-investigación-académica",
-    "title": "6  6. MCP y Skills",
-    "section": "6.8 Ejemplo: Investigación académica",
-    "text": "6.8 Ejemplo: Investigación académica\n# 1. Buscar con skill de investigación\nopencode \"/busqueda_cientifica machine learning educación\"\n\n# 2. Analizar documentos con NotebookLM\nopencode \"Analiza estos papers y genera un resumen\"\n\n# 3. Redactar con estructura IMRAD\nopencode \"Redacta la introducción siguiendo estructura IMRAD\"\n\n# 4. Citar correctamente\nopencode \"Genera las citas en formato APA 7ma edición\"",
+    "objectID": "mcp-skills.html#ejemplo-investigación-académica-completa",
+    "href": "mcp-skills.html#ejemplo-investigación-académica-completa",
+    "title": "7  MCP y Skills",
+    "section": "8.8 Ejemplo: Investigación académica completa",
+    "text": "8.8 Ejemplo: Investigación académica completa\n# 1. Buscar fuentes\nopencode \"/busqueda_cientifica machine learning educación\"\n\n# 2. Analizar documentos\nopencode \"Analiza estos papers y genera un resumen ejecutivo\"\n\n# 3. Redactar con estructura IMRAD\nopencode \"Redacta la introducción siguiendo estructura IMRAD\"\n\n# 4. Citar correctamente\nopencode \"Genera las citas en formato APA 7ma edición\"\n\n# 5. Generar PDF del documento\nopencode \"Exporta este documento como PDF\"",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>6. MCP y Skills</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>MCP y Skills</span>"
+    ]
+  },
+  {
+    "objectID": "mcp-skills.html#solución-de-problemas-con-mcp-y-skills",
+    "href": "mcp-skills.html#solución-de-problemas-con-mcp-y-skills",
+    "title": "7  MCP y Skills",
+    "section": "8.9 🔧 Solución de problemas con MCP y Skills",
+    "text": "8.9 🔧 Solución de problemas con MCP y Skills\n\n8.9.1 Problema: “No encuentro el MCP de [SERVICIO]”\nBusca alternativas en Smithery (smithery.ai) o en el repositorio oficial\nde MCP servers. Si no existe, puedes:\n1. Usar el MCP de Web como alternativa temporal\n2. Crear un MCP personalizado (avanzado)\n3. Copiar los datos manualmente en tu conversación\n\n\n8.9.2 Problema: “La skill no funciona”\n1. Verifica que está instalada: /skills\n2. Revisa que sea compatible con mi versión de OpenCode\n3. Prueba desinstalándola y reinstalándola\n4. Busca actualizaciones o alternativas\n\n\n8.9.3 Problema: “Hay demasiados tokens en mi contexto”\n1. Revisa qué MCPs están activos con: opencode config list\n2. Desactiva los que no uses con frecuencia\n3. Prioriza los esenciales: Filesystem + Git\n4. Pide a OpenCode un resumen del uso de tokens",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>MCP y Skills</span>"
     ]
   },
   {
     "objectID": "casos-uso.html",
     "href": "casos-uso.html",
-    "title": "7  7. Casos de Uso por Profesión",
+    "title": "8  Casos de Uso",
     "section": "",
-    "text": "7.1 Caso 1: Educator / Docente\nEsta sección muestra cómo diferentes profesionales pueden usar OpenCode en su trabajo diario. Cada caso incluye el perfil recomendado, las acciones específicas y las herramientas complementarias.\nPerfil: Profesora de historia en bachillerato\nNecesidad: Crear plan de unidad sobre la Edad Media\nCon OpenCode:\nResultado: Plan de unidad completo en 15 minutos vs 3 horas manual\nHerramientas útiles:",
+    "text": "9 Casos de Uso por Profesión\nEsta sección muestra cómo diferentes profesionales pueden usar OpenCode en su trabajo diario.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-1-educator-docente",
     "href": "casos-uso.html#caso-1-educator-docente",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "",
-    "text": "Configura tu perfil de educator\nEscribe: “Crea un plan de unidad sobre la Edad Media para 3er año”\nRecibes estructura con objetivos, contenidos, actividades\nPide: “Genera una evaluación con 10 preguntas”\nRecibes preguntas con rúbrica de corrección\nPide: “Busca fuentes actualizadas sobre [tema específico]”\n\n\n\n\nOpenCode para generación de contenido\nNotebookLM para analizar recursos educativos",
+    "title": "8  Casos de Uso",
+    "section": "9.1 Caso 1: Educator / Docente",
+    "text": "9.1 Caso 1: Educator / Docente\nPerfil: Profesora de historia en bachillerato Necesidad: Crear plan de unidad sobre la Edad Media\nCon OpenCode:\n\nConfigura tu perfil de educator\nEscribe: “Crea un plan de unidad sobre la Edad Media para 3er año”\nRecibes estructura con objetivos, contenidos, actividades\nPide: “Genera una evaluación con 10 preguntas”\nRecibes preguntas con rúbrica de corrección\nPide: “Busca fuentes actualizadas sobre [tema específico]”\n\n\n\n\n\n\n\nResultado: Plan de unidad completo en 15 minutos vs 3 horas manual\n\nOpenCode para generación de contenido\nNotebookLM para analizar recursos educativos",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-2-administrador-de-empresas",
     "href": "casos-uso.html#caso-2-administrador-de-empresas",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.2 Caso 2: Administrador de Empresas",
-    "text": "7.2 Caso 2: Administrador de Empresas\nPerfil: Gerente de recursos humanos\nNecesidad: Elaborar informe de rotación de personal\nCon OpenCode:\n\nConfigura tu perfil de RRHH\nEscribe: “Ayúdame a estructurar un informe de rotación de personal”\nRecibes plantilla con métricas clave\nProporciona tus datos\nPide: “Análisis de las causas principales”\nRecibes recomendaciones basadas en datos\n\nResultado: Informe profesional con insights accionables\nHerramientas:\n\nOpenCode para estructuración\nGemini para análisis de hojas de cálculo",
+    "title": "8  Casos de Uso",
+    "section": "9.2 Caso 2: Administrador de Empresas",
+    "text": "9.2 Caso 2: Administrador de Empresas\nPerfil: Gerente de recursos humanos Necesidad: Elaborar informe de rotación de personal\nCon OpenCode:\n\nConfigura tu perfil de RRHH\nEscribe: “Ayúdame a estructurar un informe de rotación de personal”\nRecibes plantilla con métricas clave\nProporciona tus datos\nPide: “Análisis de las causas principales”\nRecibes recomendaciones basadas en datos\n\n\n\n\nHerramienta\nUso\n\n\n\n\nOpenCode\nEstructuración\n\n\nGemini\nAnálisis de hojas de cálculo",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-3-profesional-de-marketing",
     "href": "casos-uso.html#caso-3-profesional-de-marketing",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.3 Caso 3: Profesional de Marketing",
-    "text": "7.3 Caso 3: Profesional de Marketing\nPerfil: Coordinador de marketing digital\nNecesidad: Calendario de contenido para redes sociales\nCon OpenCode:\n\nConfigura perfil de marketing\nEscribe: “Crea un calendario de contenido para Instagram para el próximo mes”\nRecibes 30 publicaciones con temas, horarios, hashtags\nPide: “Analiza las redes de [competidor]”\nRecibes análisis de competidores\nPide: “Genera captions para 5 publicaciones”\n\nResultado: Contenido para un mes en 30 minutos",
+    "title": "8  Casos de Uso",
+    "section": "9.3 Caso 3: Profesional de Marketing",
+    "text": "9.3 Caso 3: Profesional de Marketing\nPerfil: Coordinador de marketing digital Necesidad: Calendario de contenido para redes sociales\nCon OpenCode:\n\nConfigura perfil de marketing\nEscribe: “Crea un calendario de contenido para Instagram para el próximo mes”\nRecibes 30 publicaciones con temas, horarios, hashtags\nPide: “Analiza las redes de [competidor]”\nRecibes análisis de competidores\nPide: “Genera captions para 5 publicaciones”\n\nResultado: Contenido para un mes en 30 minutos.\nHerramienta complementaria: Amp para automatización.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-4-profesional-de-salud",
     "href": "casos-uso.html#caso-4-profesional-de-salud",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.4 Caso 4: Profesional de Salud",
-    "text": "7.4 Caso 4: Profesional de Salud\nPerfil: Médico general en centro de salud\nNecesidad: Mantenerse actualizado en protocolos\nCon Ollama + NotebookLM:\n\nConfigura Ollama (trabajo offline)\nBusca: “Protocolos actualizados diabetes tipo 2 2026”\nEn NotebookLM: Agrega artículos de revistas médicas\nPide: “Resume los hallazgos principales”\nVerifica siempre con fuentes primarias\n\nPrivacidad: Datos de pacientes nunca dejan la institución",
+    "title": "8  Casos de Uso",
+    "section": "9.4 Caso 4: Profesional de Salud",
+    "text": "9.4 Caso 4: Profesional de Salud\nPerfil: Médico general en centro de salud Necesidad: Mantenerse actualizado en protocolos\nCon Ollama + NotebookLM:\n\nConfigura Ollama (trabajo offline)\nBusca: “Protocolos actualizados diabetes tipo 2 2025”\nEn NotebookLM: Agrega artículos de revistas médicas\nPide: “Resume los hallazgos principales”\nVerifica siempre con fuentes primarias\n\n\n\n\n\n\n\nPrivacidad: Datos de pacientes nunca dejan la institución.\n\n\n\nHerramientas: - Ollama (privacidad, offline) - NotebookLM (análisis de papers)",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-5-abogado-legal",
     "href": "casos-uso.html#caso-5-abogado-legal",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.5 Caso 5: Abogado / Legal",
-    "text": "7.5 Caso 5: Abogado / Legal\nPerfil: Lawyer en bufete mediano\nNecesidad: Investigar precedentes judiciales\nCon OpenCode:\n\nConfigura perfil legal\nEscribe: “Busca precedentes sobre [tema jurídico]”\nRecibes casos relevantes con citas\nPide: “Resume los argumentos principales”\nVerifica siempre con fuentes oficiales",
+    "title": "8  Casos de Uso",
+    "section": "9.5 Caso 5: Abogado / Legal",
+    "text": "9.5 Caso 5: Abogado / Legal\nPerfil: Lawyer en bufete mediano Necesidad: Investigar precedentes judiciales\nCon OpenCode:\n\nConfigura perfil legal\nEscribe: “Busca precedentes sobre [tema jurídico]”\nRecibes casos relevantes con citas\nPide: “Resume los argumentos principales”\nVerifica siempre con fuentes oficiales\n\nHerramienta: OpenCode + normas de citación profesional.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-6-contador-contador-público",
     "href": "casos-uso.html#caso-6-contador-contador-público",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.6 Caso 6: Contador / Contador Público",
-    "text": "7.6 Caso 6: Contador / Contador Público\nPerfil: Contador en empresa comercial\nNecesidad: Entender nuevas regulaciones fiscales\nCon OpenCode:\n\nConfigura perfil contable\nEscribe: “Explica las reformas tributarias 2026”\nRecibes resumen en lenguaje claro\nPide: “¿Cómo afecta a empresas del sector retail?”\nRecibes análisis específico",
+    "title": "8  Casos de Uso",
+    "section": "9.6 Caso 6: Contador / Contador Público",
+    "text": "9.6 Caso 6: Contador / Contador Público\nPerfil: Contador en empresa comercial Necesidad: Entender nuevas regulaciones fiscales\nCon OpenCode:\n\nConfigura perfil contable\nEscribe: “Explica las reformas tributarias 2025”\nRecibes resumen en lenguaje claro\nPide: “¿Cómo afecta a empresas del sector retail?”\nRecibes análisis específico\n\nHerramientas: - OpenCode para explicación - Gemini para hojas de cálculo",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-7-periodista-comunicador",
     "href": "casos-uso.html#caso-7-periodista-comunicador",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.7 Caso 7: Periodista / Comunicador",
-    "text": "7.7 Caso 7: Periodista / Comunicador\nPerfil: Periodista de investigación\nNecesidad: Investigar tema complejo\nCon OpenCode:\n\nConfigura perfil de periodista\nEscribe: “Investiga sobre [tema]”\nRecibes fuentes confiables\nPide: “Resume en 5 oraciones”\nPide: “¿Qué ángulos no han sido explorados?”",
+    "title": "8  Casos de Uso",
+    "section": "9.7 Caso 7: Periodista / Comunicador",
+    "text": "9.7 Caso 7: Periodista / Comunicador\nPerfil: Periodista de investigación Necesidad: Investigar tema complejo\nCon OpenCode:\n\nConfigura perfil de periodista\nEscribe: “Investiga sobre [tema]”\nRecibes fuentes confiables\nPide: “Resume en 5 oraciones”\nPide: “¿Qué ángulos no han sido explorados?”\n\nHerramientas: - OpenCode para investigación - NotebookLM para analizar documentos",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-8-ingeniero-no-de-software",
     "href": "casos-uso.html#caso-8-ingeniero-no-de-software",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.8 Caso 8: Ingeniero (No de Software)",
-    "text": "7.8 Caso 8: Ingeniero (No de Software)\nPerfil: Ingeniero civil en constructora\nNecesidad: Revisar normativas de construcción\nCon OpenCode:\n\nConfigura perfil de ingeniería civil\nEscribe: “¿Cuáles son los requisitos sísmicos para muros de concreto?”\nRecibes norma con parámetros\nPide: “Busca ejemplos de aplicación”\nRecibes casos de estudio",
+    "title": "8  Casos de Uso",
+    "section": "9.8 Caso 8: Ingeniero (No de Software)",
+    "text": "9.8 Caso 8: Ingeniero (No de Software)\nPerfil: Ingeniero civil en constructora Necesidad: Revisar normativas de construcción\nCon OpenCode:\n\nConfigura perfil de ingeniería civil\nEscribe: “¿Cuáles son los requisitos sísmicos para muros de concreto?”\nRecibes norma con parámetros\nPide: “Busca ejemplos de aplicación”\nRecibes casos de estudio\n\nHerramienta: OpenCode para normativa.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-9-arquitecto",
     "href": "casos-uso.html#caso-9-arquitecto",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.9 Caso 9: Arquitecto",
-    "text": "7.9 Caso 9: Arquitecto\nPerfil: Arquitecto en estudio de diseño\nNecesidad: Investigar tendencias sostenibles\nCon OpenCode:\n\nConfigura perfil de arquitectura\nEscribe: “Tendencias en materiales sostenibles 2026”\nRecibes lista de materiales con propiedades\nPide: “Proyectos ejemplo que los usen”\nRecibes casos reales",
+    "title": "8  Casos de Uso",
+    "section": "9.9 Caso 9: Arquitecto",
+    "text": "9.9 Caso 9: Arquitecto\nPerfil: Arquitecto en estudio de diseño Necesidad: Investigar tendencias sostenibles\nCon OpenCode:\n\nConfigura perfil de arquitectura\nEscribe: “Tendencias en materiales sostenibles 2025”\nRecibes lista de materiales con propiedades\nPide: “Proyectos ejemplo que los usen”\nRecibes casos reales con fotos\n\nHerramienta: OpenCode.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-10-investigador-académico",
     "href": "casos-uso.html#caso-10-investigador-académico",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.10 Caso 10: Investigador Académico",
-    "text": "7.10 Caso 10: Investigador Académico\nPerfil: Profesor investigador universitario\nNecesidad: Revisión bibliográfica para artículo\nCon OpenCode:\n\nConfigura perfil de investigador\nEscribe: “/busqueda_cientifica [tu tema]”\nRecibes 20+ fuentes Q1/Q2\nVerifica en NotebookLM\nPide: “Resume el estado del arte”\nSolicita: “Genera debate entre autores”\n\nResultado: Revisión de literatura completa en horas vs semanas",
+    "title": "8  Casos de Uso",
+    "section": "9.10 Caso 10: Investigador Académico",
+    "text": "9.10 Caso 10: Investigador Académico\nPerfil: Profesor investigador universitario Necesidad: Revisión bibliográfica para artículo\nCon OpenCode:\n\nConfigura perfil de investigador\nEscribe: “/busqueda_cientifica [tu tema]”\nRecibes 20+ fuentes Q1/Q2\nVerifica en NotebookLM\nPide: “Resume el estado del arte”\nSolicita: “Genera debate entre autores”\n\nResultado: Revisión de literatura completa en horas vs semanas.\nHerramientas: - OpenCode para búsqueda y análisis - NotebookLM para verificación",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-11-estudiante-universitario",
     "href": "casos-uso.html#caso-11-estudiante-universitario",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.11 Caso 11: Estudiante Universitario",
-    "text": "7.11 Caso 11: Estudiante Universitario\nPerfil: Estudiante de maestría\nNecesidad: Completar trabajo de investigación\nCon OpenCode:\n\nConfigura tu perfil de estudiante\nEscribe: “Ayúdame a estructurar mi TFM sobre [tema]”\nRecibes estructura IMRAD\nProporciona avances\nPide: “Revisa mi redacción”\nRecibes correcciones",
+    "title": "8  Casos de Uso",
+    "section": "9.11 Caso 11: Estudiante Universitario",
+    "text": "9.11 Caso 11: Estudiante Universitario\nPerfil: Estudiante de maestría Necesidad: Completar trabajo de investigación\nCon OpenCode:\n\nConfigura tu perfil de estudiante\nEscribe: “Ayúdame a estructurar mi TFM sobre [tema]”\nRecibes estructura IMRAD\nProporciona avances\nPide: “Revisa mi redacción”\nRecibes correcciones\n\nHerramientas: - OpenCode para estructura - NotebookLM para estudiar",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "casos-uso.html#caso-12-emprendedor-pequeño-empresario",
     "href": "casos-uso.html#caso-12-emprendedor-pequeño-empresario",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.12 Caso 12: Emprendedor / Pequeño empresario",
-    "text": "7.12 Caso 12: Emprendedor / Pequeño empresario\nPerfil: Owner de tienda online\nNecesidad: Mejorar rentabilidad\nCon OpenCode:\n\nConfigura perfil de negocio\nEscribe: “Analiza mis ventas del último mes [comparte datos]”\nRecibes análisis de patrones\nPide: “Recomienda productos a ordenar”\nPide: “Estrategia de precios”",
+    "title": "8  Casos de Uso",
+    "section": "9.12 Caso 12: Emprendedor / Pequeño empresario",
+    "text": "9.12 Caso 12: Emprendedor / Pequeño empresario\nPerfil: Owner de tienda online Necesidad: Mejorar rentabilidad\nCon OpenCode:\n\nConfigura perfil de negocio\nEscribe: “Analiza mis ventas del último mes [comparte datos]”\nRecibes análisis de patrones\nPide: “Recomienda productos a ordenar”\nPide: “Estrategia de precios”",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
-    "objectID": "casos-uso.html#resumen-de-herramientas-por-profesión",
-    "href": "casos-uso.html#resumen-de-herramientas-por-profesión",
-    "title": "7  7. Casos de Uso por Profesión",
-    "section": "7.13 Resumen de herramientas por profesión",
-    "text": "7.13 Resumen de herramientas por profesión\n\n\n\nProfesión\nHerramienta Principal\nComplementaria\n\n\n\n\nEducator\nOpenCode\nNotebookLM\n\n\nAdministrador\nOpenCode\nGemini\n\n\nMarketing\nOpenCode\nAmp\n\n\nSalud\nOllama\nNotebookLM\n\n\nLegal\nOpenCode\n—\n\n\nContador\nOpenCode\nGemini\n\n\nPeriodista\nOpenCode\nNotebookLM\n\n\nIngeniero\nOpenCode\n—\n\n\nArquitecto\nOpenCode\n—\n\n\nInvestigador\nOpenCode\nNotebookLM\n\n\nEstudiante\nOpenCode\nNotebookLM\n\n\nEmprendedor\nOpenCode\nGemini",
+    "objectID": "casos-uso.html#resumen-por-profesión",
+    "href": "casos-uso.html#resumen-por-profesión",
+    "title": "8  Casos de Uso",
+    "section": "9.13 Resumen por profesión",
+    "text": "9.13 Resumen por profesión\n\n\n\nProfesión\nHerramienta Principal\nComplementaria\n\n\n\n\nEducator\nOpenCode\nNotebookLM\n\n\nAdministrador\nOpenCode\nGemini\n\n\nMarketing\nOpenCode\nAmp\n\n\nSalud\nOllama\nNotebookLM\n\n\nLegal\nOpenCode\n—\n\n\nContador\nOpenCode\nGemini\n\n\nPeriodista\nOpenCode\nNotebookLM\n\n\nIngeniero\nOpenCode\n—\n\n\nArquitecto\nOpenCode\n—\n\n\nInvestigador\nOpenCode\nNotebookLM\n\n\nEstudiante\nOpenCode\nNotebookLM\n\n\nEmprendedor\nOpenCode\nGemini",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>7. Casos de Uso por Profesión</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Casos de Uso</span>"
     ]
   },
   {
     "objectID": "labs.html",
     "href": "labs.html",
-    "title": "8  8. Labs Prácticos",
+    "title": "9  Labs Prácticos",
     "section": "",
-    "text": "8.1 5 Labs para dominar OpenCode en 2 horas\nCada lab está diseñado para completarse en 15-30 minutos. Puedes hacerlos en orden o seleccionar el que necesites.",
+    "text": "10 Labs Prácticos",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>8. Labs Prácticos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Labs Prácticos</span>"
+    ]
+  },
+  {
+    "objectID": "labs.html#labs-para-dominar-opencode-en-2-horas",
+    "href": "labs.html#labs-para-dominar-opencode-en-2-horas",
+    "title": "9  Labs Prácticos",
+    "section": "10.1 5 Labs para dominar OpenCode en 2 horas",
+    "text": "10.1 5 Labs para dominar OpenCode en 2 horas\nCada lab está diseñado para completarse en 15-30 minutos. Puedes hacerlos en orden o seleccionar el que necesites.\n\n💡 Tip clave: En cada lab, copia los prompts genéricos, reemplaza los campos marcados con [TUS DATOS] y pégalo directamente en OpenCode. ¡Así de fácil!",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Labs Prácticos</span>"
     ]
   },
   {
     "objectID": "labs.html#lab-1-instalación-y-verificación-15-minutos",
     "href": "labs.html#lab-1-instalación-y-verificación-15-minutos",
-    "title": "8  8. Labs Prácticos",
-    "section": "8.2 LAB 1: Instalación y Verificación (15 minutos)",
-    "text": "8.2 LAB 1: Instalación y Verificación (15 minutos)\n\n8.2.1 Objetivo\nInstalar OpenCode y verificar que funciona correctamente.\n\n\n8.2.2 Paso 1: Verificar instalación de npm/Node.js\nAbre tu terminal (PowerShell en Windows, Terminal en Mac/Linux):\n# Verificar que Node.js está instalado\nnode --version\n\n# Verificar que npm está instalado\nnpm --version\nDeberías ver algo como: v20.x.x y 10.x.x\n\n\n8.2.3 Paso 2: Instalar OpenCode\n# Instalar globalmente\nnpm install -g opencode-ai\n\n# O si prefieres con permisos de administrador (Linux)\nsudo npm install -g opencode-ai\n\n\n8.2.4 Paso 3: Verificar instalación\n# Verificar versión instalada\nopencode --version\n\n# Verificar que responde\nopencode --help\n\n\n8.2.5 Paso 4: Primeros comandos\n# Ver configuración actual\nopencode config list\n\n# Ver plugins instalados\nopencode plugins list\n\n# Ver agentes disponibles\nopencode agents list\n\n\n8.2.6 Checklist de verificación\n\nnode --version muestra v18 o superior\nopencode --version muestra la versión\nopencode --help muestra la ayuda\nSin errores de permisos",
+    "title": "9  Labs Prácticos",
+    "section": "10.2 Lab 1: Instalación y Verificación (15 minutos)",
+    "text": "10.2 Lab 1: Instalación y Verificación (15 minutos)\n\n10.2.1 Objetivo\nInstalar OpenCode y verificar que funciona correctamente.\n\n\n10.2.2 Paso 1: Verificar instalación de npm/Node.js\nAbre tu terminal (PowerShell en Windows, Terminal en Mac/Linux):\n# Verificar que Node.js está instalado\nnode --version\n\n# Verificar que npm está instalado\nnpm --version\nDeberías ver algo como: v20.x.x y 10.x.x\n\n\n10.2.3 Paso 2: Instalar OpenCode\n# Instalar globalmente\nnpm install -g opencode-ai\n\n# O si prefieres con permisos de administrador (Linux)\nsudo npm install -g opencode-ai\n\n\n10.2.4 Paso 3: Verificar instalación\n# Verificar versión instalada\nopencode --version\n\n# Verificar que responde\nopencode --help\n\n\n10.2.5 Paso 4: Primeros comandos\n# Ver configuración actual\nopencode config list\n\n# Ver plugins instalados\nopencode plugins list\n\n# Ver agentes disponibles\nopencode agents list\n\n\n10.2.6 Checklist de verificación\n\nnode --version muestra v18 o superior\nopencode --version muestra la versión\nopencode --help muestra la ayuda\nSin errores de permisos",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>8. Labs Prácticos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Labs Prácticos</span>"
     ]
   },
   {
-    "objectID": "labs.html#lab-2-configuración-de-perfil-personal-20-minutos",
-    "href": "labs.html#lab-2-configuración-de-perfil-personal-20-minutos",
-    "title": "8  8. Labs Prácticos",
-    "section": "8.3 LAB 2: Configuración de Perfil Personal (20 minutos)",
-    "text": "8.3 LAB 2: Configuración de Perfil Personal (20 minutos)\n\n8.3.1 Objetivo\nCrear tu archivo AGENTS.md con tu información profesional.\n\n\n8.3.2 Paso 1: Crear directorio de configuración\n# Crear estructura de directorios\nmkdir -p ~/.config/opencode\n\n\n8.3.3 Paso 2: Crear tu AGENTS.md\nCrea el archivo ~/.config/opencode/AGENTS.md con este contenido:\n# Mi Perfil Profesional\n\n## Quién soy\n\n[Tu nombre completo]\n[Tu profesión]\n[Tu industria o sector]\n[Años de experiencia]\n\n## Sobre mi trabajo\n\n[Describe brevemente qué haces]\n[Qué tipo de proyectos manejas]\n[Qué herramientas usas]\n\n## Mis objetivos con IA\n\n- [Objetivo 1]\n- [Objetivo 2]\n- [Objetivo 3]\n\n## Cómo prefiero que me ayudes\n\n[Estilo: detallado, conciso, etc.]\n[Formato preferido: listas, párrafos, etc.]\n[Idioma: español con tecnicismos]\n\n\n8.3.4 Paso 3: Personaliza según tu profesión\nEdita las secciones con tu información real. Cuanto más específico, mejor ayuda.\n\n\n8.3.5 Paso 4: Probar tu perfil\nopencode \"Hola, ¿puedes presentarme qué sabes sobre mí?\"\n\n\n8.3.6 Checklist\n\nArchivo AGENTS.md creado en ~/.config/opencode/\nContiene tu nombre y profesión\nDescribe tus objetivos con IA\nDefine tu estilo preferido\nLa IA reconoce tu perfil",
+    "objectID": "labs.html#lab-2-perfil-personalizado-con-prompts-20-minutos",
+    "href": "labs.html#lab-2-perfil-personalizado-con-prompts-20-minutos",
+    "title": "9  Labs Prácticos",
+    "section": "10.3 Lab 2: Perfil Personalizado con Prompts (20 minutos)",
+    "text": "10.3 Lab 2: Perfil Personalizado con Prompts (20 minutos)\n\n10.3.1 Objetivo\nCrear y actualizar tu perfil profesional con prompts directos a OpenCode.\n\n\n10.3.2 Prompts genéricos para tu perfil\n\n📋 Copia y personaliza: Reemplaza [TU PROFESIÓN], [TU INDUSTRIA], etc.\n\n\n10.3.2.1 Prompt 1: Crear tu AGENTS.md inicial\nCrea mi archivo AGENTS.md con el siguiente perfil:\n\nSoy [TU PROFESIÓN] en [TU INDUSTRIA / SECTOR].\nTrabajo en [EMPRESA O TIPO DE ORGANIZACIÓN].\nMis principales responsabilidades son:\n- [Responsabilidad 1]\n- [Responsabilidad 2]\n- [Responsabilidad 3]\n\nMis objetivos al usar IA son:\n- Automatizar tareas repetitivas\n- Mejorar la calidad de mis documentos\n- Investigar temas de mi campo más rápido\n\nMis herramientas principales son:\n- Microsoft Office / Google Workspace\n- [Herramienta específica de tu trabajo]\n\nPrefiero que me respondas:\n- En español\n- Con ejemplos prácticos\n- Con formato de listas cuando sea posible\n- Cita las fuentes cuando investigues\n\n\n10.3.2.2 Prompt 2: Actualizar tu perfil con información específica\nActualiza mi AGENTS.md con esta información adicional:\n\n- Agrega que tengo experiencia de [X AÑOS] años\n- Menciona que me especializo en [ESPECIALIZACIÓN]\n- Agrega que trabajo con [HERRAMIENTA 1] y [HERRAMIENTA 2]\n- Indica que prefiero análisis detallados sobre resúmenes breves\n- Agrega un estilo de comunicación formal pero cercano\n\n\n10.3.2.3 Prompt 3: Agregar un perfil diferente para otro rol\nCrea un segundo perfil profesional en mi AGENTS.md para cuando trabaje en [OTRO ÁREA, ej: marketing / finanzas / educación].\n\nEn este perfil:\n- Rol: [DESCRIPCIÓN DEL ROL]\n- Herramientas: [LISTA DE HERRAMIENTAS]\n- Estilo: [CÓMO QUIERES QUE TE HABLE]\n- Objetivos: [QUÉ QUIERES LOGRAR]\n\n\n\n10.3.3 🔬 Buenas prácticas de prompting para perfiles\n\n\n\n\n\n\n\n✅ Buena práctica\n❌ Evita esto\n\n\n\n\n“Soy contador en una empresa de retail”\n“Hazme un perfil” (muy vago)\n\n\n“Prefiero respuestas en español con ejemplos”\nNo especificar idioma ni formato\n\n\n“Quiero 3 objetivos claros y medibles”\n“Quiero objetivos” (incompleto)\n\n\n“Mi audiencia son gerentes sin tecnia”\nNo mencionar a quién va dirigido\n\n\n\n\n\n10.3.4 Checklist\n\nArchivo AGENTS.md creado con tu profesión\nContiene objetivos claros\nDefine tu estilo de comunicación preferido\nOpenCode reconoce y usa tu perfil\n\n\n10.3.5 🤖 ¿Sabías que puedes decirle a OpenCode que se actualice solo?\nPrueba este prompt:\nRevisa mi AGENTS.md actual y sugiere mejoras para hacerlo más efectivo.\nLuego, actualízalo con los cambios.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>8. Labs Prácticos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Labs Prácticos</span>"
     ]
   },
   {
-    "objectID": "labs.html#lab-3-agentes-especializados-25-minutos",
-    "href": "labs.html#lab-3-agentes-especializados-25-minutos",
-    "title": "8  8. Labs Prácticos",
-    "section": "8.4 LAB 3: Agentes Especializados (25 minutos)",
-    "text": "8.4 LAB 3: Agentes Especializados (25 minutos)\n\n8.4.1 Objetivo\nCrear un agente especializado para tu profesión.\n\n\n8.4.2 Paso 1: Diseñar el perfil del agente\nDefine:\n\nNombre del agente: e.g., educator, marketer\nRol: Qué hace este agente\nHerramientas: Qué capacidades tiene\nInstrucciones: Cómo debe comportarse\n\n\n\n8.4.3 Paso 2: Crear directorio de agentes\nmkdir -p ~/.config/opencode/agents\n\n\n8.4.4 Paso 3: Crear archivo del agente\nCrea ~/.config/opencode/agents/mi-agente.md:\n# Mi Agente [Nombre]\n\n## Rol\n[Describe el rol del agente]\n\n## Experiencia\n[Años de experiencia]\n[Especializaciones]\n\n## Herramientas disponibles\n- [Herramienta 1]\n- [Herramienta 2]\n\n## Instrucciones del sistema\n\n1. [Regla 1]\n2. [Regla 2]\n3. [Regla 3]\n\n## Patrón de proyecto\n[Cómo estructurar el trabajo]\n\n\n8.4.5 Paso 4: Probar el agente\nopencode --agent mi-agente \"Tu primera tarea\"\n\n\n8.4.6 Checklist\n\nDirectorio agents/ creado\nArchivo de agente con rol definido\nHerramientas especificadas\nInstrucciones claras\nProbado con una tarea real",
+    "objectID": "labs.html#lab-3-agentes-especializados-con-prompts-25-minutos",
+    "href": "labs.html#lab-3-agentes-especializados-con-prompts-25-minutos",
+    "title": "9  Labs Prácticos",
+    "section": "10.4 Lab 3: Agentes Especializados con Prompts (25 minutos)",
+    "text": "10.4 Lab 3: Agentes Especializados con Prompts (25 minutos)\n\n10.4.1 Objetivo\nCrear y gestionar agentes especializados usando prompts directos.\n\n\n10.4.2 Prompts genéricos para agentes\n\n10.4.2.1 Prompt 1: Crear un agente especializado\nCrea un nuevo agente llamado \"mi-agente-[PROFESIÓN]\" en mi carpeta de agents/.\n\nEl agente debe:\n- Rol: [TU ROL PROFESIONAL]\n- Especialización: [ÁREA ESPECÍFICA, ej: \"análisis financiero\" o \"redacción académica\"]\n- Habilidades:\n  1. Generar [TIPO DE CONTENIDO que necesitas]\n  2. Analizar [TIPO DE DATOS que trabajas]\n  3. Resumir [TIPO DE DOCUMENTOS que manejas]\n- Herramientas que puede usar: filesystem, search\n- Restricciones de seguridad:\n  - Nunca compartir datos sensibles en prompts\n  - Siempre pedir confirmación antes de ejecutar comandos del sistema\n  - Verificar fuentes antes de dar información como cierta\n- Tono: [PROFESIONAL / AMIGABLE / TÉCNICO]\n- Idioma: español\n\nGenera el archivo completo y guárdalo.\n\n\n10.4.2.2 Prompt 2: Agregar instrucciones de seguridad a un agente\nLee el agente que tengo en agents/mi-agente-[PROFESIÓN].md\n\nY agrega estas reglas de seguridad:\n\n## Directrices de Seguridad\n1. NUNCA ejecutar comandos del sistema sin confirmación explícita del usuario\n2. NUNCA compartir contenido de archivos sensibles por nombre\n3. Si el usuario pide algo que parece peligroso, explicar los riesgos primero\n4. Si se pide investigar un tema, verificar al menos 2 fuentes antes de dar conclusiones\n5. Nunca asumir datos del usuario; siempre preguntar si falta información\n\nVerifica que el agente cumpla con estas reglas y actualízalo.\n\n\n10.4.2.3 Prompt 3: Crear un agente para una tarea específica\nQuiero un agente que me ayude a [TAREA ESPECÍFICA, ej: \"preparar presentaciones para mi equipo\"].\n\nEl agente debe:\n- Saber que trabajo en [TU PROFESIÓN]\n- Entender que mi audiencia es [QUIÉN ESCUCHA TUS PRESENTACIONES]\n- Poder crear diapositivas con estructura lógica\n- Sugerir visualizaciones de datos apropiadas\n- Usar un tono [PROFESIONAL / EDUCADO / MOTIVADOR]\n\nEscribe el archivo agents/presentaciones.md con estas instrucciones.\n\n\n10.4.2.4 Prompt 4: Listar y revisar tus agentes\nLista todos los agentes que tengo configurados y muestra:\n- Nombre de cada agente\n- Su rol principal\n- Qué herramientas usa\n- Cuándo fue creado o actualizado por última vez\n- Si detecta algún agente sin instrucciones claras, sugiere mejoras\n\n\n\n10.4.3 🔬 Buenas prácticas de prompting para agentes\n✅ ESPECÍFICO:\n\"Crea un agente que me ayude a escribir correos formales en alemán\npara negociaciones comerciales con clientes de la UE.\"\n\n❌ VAGO:\n\"Crea un agente para escribir correos.\"\n\n✅ CON RESTRICCIONES:\n\"Nunca sugiera precios sin antes consultar la tabla de costos.\nSi no tiene datos, pregunte al usuario antes de inventar cifras.\"\n\n❌ SIN CONTROL:\n\"Ayúdame a responder correos de clientes.\"\n\n\n10.4.4 Checklist\n\nDirectorio agents/ creado\nAl menos un agente creado con prompts genéricos\nInstrucciones de seguridad incluidas\nProbado con una tarea real del trabajo",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>8. Labs Prácticos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Labs Prácticos</span>"
     ]
   },
   {
-    "objectID": "labs.html#lab-4-mcps-y-skills-30-minutos",
-    "href": "labs.html#lab-4-mcps-y-skills-30-minutos",
-    "title": "8  8. Labs Prácticos",
-    "section": "8.5 LAB 4: MCPs y Skills (30 minutos)",
-    "text": "8.5 LAB 4: MCPs y Skills (30 minutos)\n\n8.5.1 Objetivo\nConectar extensiones y habilidades útiles.\n\n\n8.5.2 Paso 1: Instalar MCP de filesystem\n# Crear archivo de configuración MCP\nmkdir -p ~/.config/opencode\ntouch ~/.config/opencode/mcp.json\n\n\n8.5.3 Paso 2: Configurar MCP de filesystem\nEdita ~/.config/opencode/mcp.json:\n{\n  \"mcpServers\": {\n    \"filesystem\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-filesystem\", \".\"]\n    }\n  }\n}\n\n\n8.5.4 Paso 3: Explorar skills disponibles\nopencode \"/skills\"\n\n\n8.5.5 Paso 4: Instalar una skill útil\n\nIdentifica una skill que necesites\nBusca en ~/.claude/skills/\nO instala desde la comunidad\n\n\n\n8.5.6 Paso 5: Usar una skill\nopencode \"Usa la skill de [nombre] para [tarea]\"\n\n\n8.5.7 Checklist\n\nArchivo mcp.json creado\nAl menos un MCP configurado\nAl menos una skill identificada\nUna skill probada con éxito",
+    "objectID": "labs.html#lab-4-mcps-y-skills-con-prompts-30-minutos",
+    "href": "labs.html#lab-4-mcps-y-skills-con-prompts-30-minutos",
+    "title": "9  Labs Prácticos",
+    "section": "10.5 Lab 4: MCPs y Skills con Prompts (30 minutos)",
+    "text": "10.5 Lab 4: MCPs y Skills con Prompts (30 minutos)\n\n10.5.1 Objetivo\nInstalar y configurar extensiones usando prompts directos.\n\n\n10.5.2 Prompts genéricos para MCP\n\n10.5.2.1 Prompt 1: Configurar un MCP nuevo\nNecesito conectar OpenCode con [NOMBRE DE LA HERRAMIENTA, ej: \"mi base de datos MySQL\" o \"mi cuenta de Notion\"].\n\nPor favor:\n1. Verifica si ya existe un MCP para [NOMBRE DE LA HERRAMIENTA]\n2. Si no existe, genera la configuración necesaria en mcp.json\n3. Si existe, muéstrame cómo activarlo\n4. Explica en 3 puntos qué hará este MCP y cuántos tokens consume aproximadamente\n5. Pregúntame antes de instalar cualquier dependencia nueva\n\n\n10.5.2.2 Prompt 2: Explorar y recomendar MCPs\nAnaliza mi perfil profesional (AGENTS.md actual) y recomiéndame:\n1. Los 3 MCPs más útiles para mi trabajo\n2. Los 2 MCPs que NO necesito (para no sobrecargar mi contexto)\n3. Para cada MCP recomendado, explica:\n   - Qué hace\n   - Cuántos tokens añade aproximadamente\n   - Si es gratis o de pago\n   - Un ejemplo de uso con mi profesión\n\n\n10.5.2.3 Prompt 3: Optimizar uso de MCPs (gestión de tokens)\nRevisa mi configuración actual de MCPs en mcp.json y:\n1. Calcula cuántos tokens se añaden al contexto por cada MCP activo\n2. Identifica cuáles puedo desactivar sin perder funcionalidad importante\n3. Sugiere un orden de prioridad basado en mi uso frecuente\n4. Muestra un resumen tipo tabla del impacto en tokens\n\nRecuerda: GitHub solo puede añadir ~20,000 tokens. Sé selectivo.\n\n\n\n10.5.3 Prompts genéricos para Skills\n\n10.5.3.1 Prompt 4: Descubrir e instalar skills\nBusca e instala skills que me ayuden con [ÁREA DE TRABAJO, ej: \"redacción de informes\" o \"análisis de datos\"].\n\nPara cada skill que encuentres:\n1. Nombre y versión\n2. Qué hace (máximo 2 líneas)\n3. Cómo instalarla\n4. Un ejemplo de prompt para usarla\n\nInstala las 3 más relevantes para mi perfil, pero PREGÚNTAME antes de cada instalación.\n\n\n10.5.3.2 Prompt 5: Usar skills para una tarea específica\nTengo que [TAREA, ej: \"resumir 15 artículos científicos sobre cambio climático\"].\n\nBusca en mis skills instaladas cuál es la más adecuada y úsala para:\n1. Hacer un resumen ejecutivo de cada artículo (máximo 50 palabras por uno)\n2. Crear una tabla comparativa con: título, autores, año, hallazgo principal\n3. Identificar los 3 artículos más relevantes para mi investigación\n\nSi no hay una skill adecuada, búscame una nueva que pueda instalar.\n\n\n\n10.5.4 🔬 Buenas prácticas de prompting para MCP y Skills\n✅ PREGUNTA PRIMERO:\n\"¿Quieres que instale el MCP de GitHub? Añade ~20K tokens. ¿Procedo?\"\n\n❌ NO INSTALES SIN PERMISO:\n\"Instalé GitHub, Notion, Slack, Jira y Database sin preguntarte.\nAhora tu contexto está lleno de tokens innecesarios.\"\n\n✅ EXPLICA EL IMPACTO:\n\"Este skill consume 2K de memoria extra. ¿Lo activo?\"\n\n❌ NO EXPLIQUES:\n\"Done. [sin explicar qué hizo]\"\n\n\n10.5.5 Checklist\n\nArchivo mcp.json creado o actualizado\nAl menos 1 MCP configurado y probado\nPrompts de descubrimiento de skills usados\nImpacto en tokens revisado y aceptado\nAl menos 1 skill instalada y probada\n\n\n10.5.6 🤖 ¿Sabías que puedes pedirle a OpenCode que te enseñe a usarlo?\nPrueba estos prompts:\n\"¿Qué MCPs tengo instalados y para qué sirve cada uno?\"\n\"¿Qué skills me recomiendas instalar para [MI TRABAJO]?\"\n\"Muestra una tabla con todos mis plugins, sus versiones y estado\"",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>8. Labs Prácticos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Labs Prácticos</span>"
     ]
   },
   {
-    "objectID": "labs.html#lab-5-proyecto-completo-40-minutos",
-    "href": "labs.html#lab-5-proyecto-completo-40-minutos",
-    "title": "8  8. Labs Prácticos",
-    "section": "8.6 LAB 5: Proyecto Completo (40 minutos)",
-    "text": "8.6 LAB 5: Proyecto Completo (40 minutos)\n\n8.6.1 Objetivo\nAplicar todo lo aprendido en un caso real de tu trabajo.\n\n\n8.6.2 Paso 1: Define tu proyecto\nElige una tarea real de tu trabajo que puedas completar con OpenCode:\n\nRedactar un informe\nInvestigar un tema\nCrear contenido\nAnalizar datos\nEstructurar un documento\n\n\n\n8.6.3 Paso 2: Configura tu entorno\n\nAsegúrate de que tu AGENTS.md está actualizado\nActiva los MCP necesarios\nCarga las skills relevantes\n\n\n\n8.6.4 Paso 3: Implementa con ayuda de OpenCode\nopencode \"Necesito [tu tarea]. Empecemos.\"\n\n\n8.6.5 Paso 4: Itera y refina\n\nPide mejoras\nSolicita variaciones\nVerifica el trabajo\n\n\n\n8.6.6 Paso 5: Documenta lo aprendido\nCrea un resumen de:\n\nQué funcionó bien\nQué necesitas mejorar\nQué commands usaste\nQué configuración fue útil\n\n\n\n8.6.7 Checklist\n\nTarea real seleccionada\nEntorno configurado\nTrabajo completado\nDocumentación creada\nPróximos pasos definidos",
+    "objectID": "labs.html#lab-5-proyecto-completo-ponlo-todo-junto-40-minutos",
+    "href": "labs.html#lab-5-proyecto-completo-ponlo-todo-junto-40-minutos",
+    "title": "9  Labs Prácticos",
+    "section": "10.6 Lab 5: Proyecto Completo — Ponlo Todo Junto (40 minutos)",
+    "text": "10.6 Lab 5: Proyecto Completo — Ponlo Todo Junto (40 minutos)\n\n10.6.1 Objetivo\nAplicar todo lo aprendido en un caso real de tu trabajo usando prompts reutilizables.\n\n\n10.6.2 Prompts genéricos para tu proyecto\n\n10.6.2.1 Prompt 1: Investigación y análisis\nNecesito investigar sobre [TEMA DE TU TRABAJO, ej: \"las nuevas regulaciones fiscales para PYMEs en 2026\"].\n\nHaz lo siguiente:\n1. Busca las 5 fuentes más relevantes y actualizadas (2024-2026)\n2. Resume cada fuente en máximo 3 puntos clave\n3. Crea una tabla comparativa con: Fuente | Año | Hallazgo principal | Relevancia para mi trabajo\n4. Identifica las 2 tendencias más importantes que debería conocer\n5. Genera 3 preguntas que podría hacerle a un experto en el tema\n\nUsa NotebookLM si es necesario para analizar documentos que encuentres.\n\n\n10.6.2.2 Prompt 2: Crear un documento profesional\nRedacta un [TIPO DE DOCUMENTO, ej: \"informe trimestral\" / \"propuesta de proyecto\" / \"correo a un cliente\"] sobre:\n\nTema: [TEMA PRINCIPAL]\nAudiencia: [A QUIÉN VA DIRIGIDO, ej: \"directivos de mi empresa\" / \"clientes potenciales\"]\nExtensión: [LONGITUD, ej: \"máximo 2 páginas\" / \"500 palabras\"]\nIdioma: español\nTono: [PROFESIONAL / CORDIAL / TÉCNICO]\n\nIncluye:\n- Un resumen ejecutivo al inicio\n- Secciones claramente organizadas\n- Datos o cifras cuando sea posible (indica si inventas o si buscas datos reales)\n- Una sección de conclusiones o próximos pasos\n\nAntes de redactarlo, pregúntame si hay algún punto que deba incluir o evitar.\n\n\n10.6.2.3 Prompt 3: Automatizar una tarea repetitiva\nNecesito automatizar esta tarea que hago semanalmente:\n\n[TU TAREA REPETITIVA, ej: \"Cada lunes envío un resumen de ventas a mi jefe\"]\n\nActualmente lo hago así:\n[PASOS ACTUALES]\n\n¿Puedes ayudarme a:\n1. Crear una plantilla o script que automatice esto\n2. Identificar qué herramientas de OpenCode pueden ayudarme\n3. Si necesito algún MCP o skill adicional, indícame cuál y cómo instalarlo\n4. Crear un checklist mensual para que no se me olvide nada\n\n\n10.6.2.4 Prompt 4: Revisión y mejora de tu trabajo\nRevisa este texto/redacción/diapositiva que preparé sobre [TEMA]:\n\n[TU TRABAJO AQUÍ — pégalo]\n\nEvalúa:\n1. ¿El contenido es claro y está bien estructurado?\n2. ¿Hay errores de ortografía, gramática o lógica?\n3. ¿El tono es apropiado para la audiencia?\n4. ¿Falta información importante?\n5. ¿Hay alguna mejora que puedas sugerir?\n\nNo reformules sin preguntarme primero. Solo sugiere cambios y explica por qué.\n\n\n10.6.2.5 Prompt 5: Preparar una presentación\nNecesito preparar una presentación de [NÚMERO] minutos sobre [TEMA] para [AUDIENCIA].\n\nPor favor:\n1. Crea un esquema con los puntos clave (máximo 5 secciones)\n2. Sugiere un gancho de apertura (dato sorprendente, pregunta, historia breve)\n3. Para cada sección, dame:\n   - Puntos de viñeta\n   - Una visualización sugerida (gráfico, imagen, ejemplo)\n   - Tiempo estimado de presentación\n4. Cierra con un call-to-action claro\n\nMi estilo preferido: [NARRATIVO / DATOS / VISUAL / INTERACTIVO]\n\n\n\n10.6.3 🎯 Integración completa — Tu flujo de trabajo diario\nAquí tienes un flujo completo que puedes copiar y adaptar:\nPaso 1: Investigar\n\"Busca información sobre [TEMA]. Dame las 5 mejores fuentes.\"\n\nPaso 2: Analizar\n\"Lee estos documentos y genera un resumen ejecutivo de máximo 200 palabras.\"\n\nPaso 3: Crear\n\"Redacta un informe con los datos anteriores. Tono profesional, formato de reporte.\"\n\nPaso 4: Revisar\n\"Revisa mi informe. ¿Es coherente? ¿Falta algo? ¿Hay errores?\"\n\nPaso 5: Presentar\n\"Crea las diapositivas para presentar este informe a [AUDIENCIA].\"\n\nPaso 6: Seguir aprendiendo\n\"¿Qué podría mejorar en mi proceso? ¿Qué nuevas features de OpenCode\npodría usar para hacer esto más eficiente?\"\n\n\n10.6.4 Checklist final del taller\n\n\n\nLab\n✅\n\n\n\n\nLab 1: Instalación y verificación\n[ ]\n\n\nLab 2: AGENTS.md personalizado\n[ ]\n\n\nLab 3: Agentes especializados\n[ ]\n\n\nLab 4: MCPs y Skills\n[ ]\n\n\nLab 5: Proyecto completo\n[ ]",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>8. Labs Prácticos</span>"
-    ]
-  },
-  {
-    "objectID": "labs.html#plan-post-labs",
-    "href": "labs.html#plan-post-labs",
-    "title": "8  8. Labs Prácticos",
-    "section": "8.7 Plan post-labs",
-    "text": "8.7 Plan post-labs\n\n\n\nSemana\nAcción\n\n\n\n\n1ra\nPersonaliza tu AGENTS.md\n\n\n2da\nExplora 2-3 skills\n\n\n3ra\nIntegra en tu flujo de trabajo\n\n\n4ta\nComparte con colegas",
-    "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>8. Labs Prácticos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Labs Prácticos</span>"
     ]
   },
   {
     "objectID": "labs.html#recursos-adicionales",
     "href": "labs.html#recursos-adicionales",
-    "title": "8  8. Labs Prácticos",
-    "section": "8.8 Recursos adicionales",
-    "text": "8.8 Recursos adicionales\n\nDocumentación: opencode.dev/docs\nGitHub: github.com/opencode-ai/opencode\nDiscord: discord.gg/opencode",
+    "title": "9  Labs Prácticos",
+    "section": "10.7 Recursos adicionales",
+    "text": "10.7 Recursos adicionales\n\n10.7.1 Prompts útiles para recordar\n\n\n\n\n\n\n\nQuiero hacer…\nPrompt para copiar\n\n\n\n\nActualizar mi perfil\n“Actualiza mi AGENTS.md con [CAMBIO]”\n\n\nAgregar un MCP\n“Instala el MCP de [SERVICIO] en mcp.json”\n\n\nBuscar una skill\n“¿Qué skills tengo para [ÁREA]?”\n\n\nResumir un documento\n“Resume este texto en [X] palabras”\n\n\nTraducir algo\n“Traduce esto a [IDIOMA] manteniendo el tono profesional”\n\n\nGenerar código\n“Genera un script en Python que [HAGA ALGO]”\n\n\nCorregir texto\n“Revisa este texto y corrige errores”\n\n\nExplicar algo simple\n“Explícame [CONCEPTO] como si tuviera 10 años”\n\n\n\n\n\n10.7.2 Plan post-labs\n\n\n\nSemana\nAcción\n\n\n\n\n1ra\nPersonaliza tu AGENTS.md con los prompts\n\n\n2da\nExplora 2-3 skills con el Lab 4\n\n\n3ra\nIntegra en tu flujo de trabajo diario\n\n\n4ta\nComparte con colegas y forma un grupo de práctica",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>8. Labs Prácticos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Labs Prácticos</span>"
+    ]
+  },
+  {
+    "objectID": "labs.html#qué-sigue",
+    "href": "labs.html#qué-sigue",
+    "title": "9  Labs Prácticos",
+    "section": "10.8 🎓 ¿Qué sigue?",
+    "text": "10.8 🎓 ¿Qué sigue?\n¡Ya dominas los fundamentos! Ahora puedes:\n\nPracticar diario: Usa un prompt al día\nExplorar más: Revisa la documentación de OpenCode\nCompartir: Enseña a un colega lo que aprendiste\nAvanzar: Prueba con proyectos más complejos\n\n\nMaterial preparado para el Taller de IA para No Informáticos “No necesitas ser informático para ser productivo con IA”",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Labs Prácticos</span>"
     ]
   },
   {
     "objectID": "comparativa.html",
     "href": "comparativa.html",
-    "title": "9  9. Análisis Comparativo",
+    "title": "10  Análisis Comparativo",
     "section": "",
-    "text": "9.1 Comparativa de herramientas",
+    "text": "11 Análisis Comparativo",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>9. Análisis Comparativo</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis Comparativo</span>"
     ]
   },
   {
     "objectID": "comparativa.html#comparativa-de-herramientas",
     "href": "comparativa.html#comparativa-de-herramientas",
-    "title": "9  9. Análisis Comparativo",
-    "section": "",
-    "text": "Característica\nCopilot\nOpenCode\nOllama\nGemini\nNotebookLM\n\n\n\n\nCosto\nFreemium\nFreemium\nGratis\nFreemium\nGratis\n\n\nCurva de aprendizaje\nMedia\nBaja\nMedia\nBaja\nBaja\n\n\nMemoria persistente\nNo\nSí\nSí\nLimitada\nSí\n\n\nPersonalización\nLimitada\nProfunda\nMedia\nLimitada\nLimitada\n\n\nRequiere internet\nSí\nSí\nNo\nSí\nSí\n\n\nDatos locales\nNo\nNo\nSí\nNo\nParcial\n\n\nAcceso a archivos\nIDE\nTerminal\nTerminal\nGoogle\nGoogle\n\n\nSkills/Extensiones\nVS Code\nSistema\nSistema\nGoogle\nGoogle\n\n\nMCP\nNo\nSí\nLimitado\nNo\nNo",
+    "title": "10  Análisis Comparativo",
+    "section": "11.1 Comparativa de herramientas",
+    "text": "11.1 Comparativa de herramientas\n\n\n\n\n\n\n\n\n\n\n\nCaracterística\nCopilot\nOpenCode\nOllama\nGemini\nNotebookLM\n\n\n\n\nCosto\nFreemium\nFreemium\nGratis\nFreemium\nGratis\n\n\nCurva de aprendizaje\nMedia\nBaja\nMedia\nBaja\nBaja\n\n\nMemoria persistente\nNo\nSí\nSí\nLimitada\nSí\n\n\nPersonalización\nLimitada\nProfunda\nMedia\nLimitada\nLimitada\n\n\nRequiere internet\nSí\nSí\nNo\nSí\nSí\n\n\nDatos locales\nNo\nNo\nSí\nNo\nParcial\n\n\nAcceso a archivos\nIDE\nTerminal\nTerminal\nGoogle\nGoogle\n\n\nSkills/Extensiones\nVS Code\nSistema\nSistema\nGoogle\nGoogle\n\n\nMCP\nNo\nSí\nLimitado\nNo\nNo",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>9. Análisis Comparativo</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis Comparativo</span>"
     ]
   },
   {
     "objectID": "comparativa.html#comparativa-detallada",
     "href": "comparativa.html#comparativa-detallada",
-    "title": "9  9. Análisis Comparativo",
-    "section": "9.2 Comparativa detallada",
-    "text": "9.2 Comparativa detallada\n\n9.2.1 OpenCode vs Copilot\n\n\n\nAspecto\nOpenCode\nCopilot\n\n\n\n\nDónde funciona\nTerminal + cualquier editor\nSolo VS Code\n\n\nMemoria\nConversaciones completas\nNo\n\n\nPrecio base\nGratis (usa tu API key)\n$10/mes\n\n\nExtensible\nSí, con MCP y Skills\nLimitado\n\n\nPara quién\nProfesionales diversos\nDesarrolladores\n\n\n\n\n\n9.2.2 OpenCode vs Ollama\n\n\n\n\n\n\n\n\nAspecto\nOpenCode\nOllama\n\n\n\n\nInternet\nRequiere\nNo\n\n\nPrivacidad\nDatos van a la nube\nTodo local\n\n\nModelos\nCualquiera (OpenAI, Anthropic…)\nSolo modelos locales\n\n\nFacilidad\nMás fácil de usar\nRequiere más configuración\n\n\nCosto\nCosto de API\nGratis (hardware propio)\n\n\n\n\n\n9.2.3 Cuándo usar cada uno\n\n9.2.3.1 Usa OpenCode cuando:\n\nQuieres máxima flexibilidad\nTrabajas con múltiples archivos\nNecesitas memoria persistente\nUsas diferentes editores\nQuieres personalizar profundamente\n\n\n\n9.2.3.2 Usa Ollama cuando:\n\nTrabajas con datos sensibles\nNecesitas privacidad total\nNo tienes internet confiable\nQuieres modelos personalizados\nTienes hardware potente\n\n\n\n9.2.3.3 Usa Copilot cuando:\n\nSolo programas en VS Code\nNo quieres configurar nada\nTienes budget para $10/mes\nSolo necesitas sugerencias de código\n\n\n\n9.2.3.4 Usa Gemini cuando:\n\nUsas el ecosistema Google\nTrabajas con Sheets y Docs\nQuieres integración nativa\nUsas Android\n\n\n\n9.2.3.5 Usa NotebookLM cuando:\n\nSolo analizas documentos\nNecesitas resumir PDFs\nQuieres generar quizzes\nEstudias para exámenes",
+    "title": "10  Análisis Comparativo",
+    "section": "11.2 Comparativa detallada",
+    "text": "11.2 Comparativa detallada\n\n11.2.1 OpenCode vs Copilot\n\n\n\nAspecto\nOpenCode\nCopilot\n\n\n\n\nDónde funciona\nTerminal + cualquier editor\nSolo VS Code\n\n\nMemoria\nConversaciones completas\nNo\n\n\nPrecio base\nGratis (usa tu API key)\n$10/mes\n\n\nExtensible\nSí, con MCP y Skills\nLimitado\n\n\nPara quién\nProfesionales diversos\nDesarrolladores\n\n\n\n\n\n11.2.2 OpenCode vs Ollama\n\n\n\n\n\n\n\n\nAspecto\nOpenCode\nOllama\n\n\n\n\nInternet\nRequiere\nNo\n\n\nPrivacidad\nDatos van a la nube\nTodo local\n\n\nModelos\nCualquiera (OpenAI, Anthropic…)\nSolo modelos locales\n\n\nFacilidad\nMás fácil de usar\nRequiere más configuración\n\n\nCosto\nCosto de API\nGratis (hardware propio)\n\n\n\n\n\n11.2.3 Cuándo usar cada uno\n\n\n\n\n\n\nUsa OpenCode cuando: - Quieres máxima flexibilidad - Trabajas con múltiples archivos - Necesitas memoria persistente - Usas diferentes editores - Quieres personalizar profundamente\n\n\n\n\n\n\n\n\n\nUsa Ollama cuando: - Trabajas con datos sensibles - Necesitas privacidad total - No tienes internet confiable - Quieres modelos personalizados - Tienes hardware potente",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>9. Análisis Comparativo</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis Comparativo</span>"
     ]
   },
   {
     "objectID": "comparativa.html#recomendaciones-por-presupuesto",
     "href": "comparativa.html#recomendaciones-por-presupuesto",
-    "title": "9  9. Análisis Comparativo",
-    "section": "9.3 Recomendaciones por presupuesto",
-    "text": "9.3 Recomendaciones por presupuesto\n\n\n\nPresupuesto\nHerramienta(s)\n\n\n\n\n$0\nOpenCode (API gratuita) + Ollama\n\n\n$10/mes\nOpenCode (API) + Copilot\n\n\n$20+/mes\nOpenCode + Copilot + Gemini",
+    "title": "10  Análisis Comparativo",
+    "section": "11.3 Recomendaciones por presupuesto",
+    "text": "11.3 Recomendaciones por presupuesto\n\n\n\nPresupuesto\nHerramienta(s)\n\n\n\n\n$0\nOpenCode (API gratuita) + Ollama\n\n\n$10/mes\nOpenCode (API) + Copilot\n\n\n$20+/mes\nOpenCode + Copilot + Gemini",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>9. Análisis Comparativo</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis Comparativo</span>"
     ]
   },
   {
     "objectID": "comparativa.html#recomendaciones-por-nivel-técnico",
     "href": "comparativa.html#recomendaciones-por-nivel-técnico",
-    "title": "9  9. Análisis Comparativo",
-    "section": "9.4 Recomendaciones por nivel técnico",
-    "text": "9.4 Recomendaciones por nivel técnico\n\n\n\nNivel\nHerramienta(s)\n\n\n\n\nPrincipiante\nOpenCode + NotebookLM\n\n\nIntermedio\nOpenCode + Ollama + NotebookLM\n\n\nAvanzado\nOpenCode + Ollama + MCPs",
+    "title": "10  Análisis Comparativo",
+    "section": "11.4 Recomendaciones por nivel técnico",
+    "text": "11.4 Recomendaciones por nivel técnico\n\n\n\nNivel\nHerramienta(s)\n\n\n\n\nPrincipiante\nOpenCode + NotebookLM\n\n\nIntermedio\nOpenCode + Ollama + NotebookLM\n\n\nAvanzado\nOpenCode + Ollama + MCPs",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>9. Análisis Comparativo</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis Comparativo</span>"
     ]
   },
   {
     "objectID": "comparativa.html#el-ecosistema-ideal",
     "href": "comparativa.html#el-ecosistema-ideal",
-    "title": "9  9. Análisis Comparativo",
-    "section": "9.5 El ecosistema ideal",
-    "text": "9.5 El ecosistema ideal\nPara la mayoría de profesionales no informáticos:\n┌─────────────────────────────────────┐\n│         OpenCode                     │\n│    (Asistente principal)            │\n│                                      │\n│    + NotebookLM                      │\n│    (Análisis de documentos)          │\n│                                      │\n│    + Gemini                         │\n│    (Ecosistema Google)               │\n└─────────────────────────────────────┘\nPara máxima privacidad:\n┌─────────────────────────────────────┐\n│         Ollama                       │\n│    (Asistente local)                │\n│                                      │\n│    + NotebookLM (local)              │\n│    (Análisis de documentos)          │\n└─────────────────────────────────────┘",
+    "title": "10  Análisis Comparativo",
+    "section": "11.5 El ecosistema ideal",
+    "text": "11.5 El ecosistema ideal\nPara la mayoría de profesionales no informáticos:\n┌─────────────────────────────────────┐\n│         OpenCode                     │\n│    (Asistente principal)            │\n│                                      │\n│    + NotebookLM                      │\n│    (Análisis de documentos)          │\n│                                      │\n│    + Gemini                         │\n│    (Ecosistema Google)               │\n└─────────────────────────────────────┘\nPara máxima privacidad:\n┌─────────────────────────────────────┐\n│         Ollama                       │\n│    (Asistente local)                │\n│                                      │\n│    + NotebookLM (local)              │\n│    (Análisis de documentos)          │\n└─────────────────────────────────────┘",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>9. Análisis Comparativo</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis Comparativo</span>"
     ]
   },
   {
     "objectID": "proximos-pasos.html",
     "href": "proximos-pasos.html",
-    "title": "10  10. Resumen y Próximos Pasos",
+    "title": "11  Próximos Pasos",
     "section": "",
-    "text": "10.1 Lo que aprendiste",
+    "text": "12 Resumen y Próximos Pasos",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>10. Resumen y Próximos Pasos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Próximos Pasos</span>"
     ]
   },
   {
     "objectID": "proximos-pasos.html#lo-que-aprendiste",
     "href": "proximos-pasos.html#lo-que-aprendiste",
-    "title": "10  10. Resumen y Próximos Pasos",
-    "section": "",
-    "text": "Evidencia científica: Los estudios demuestran beneficios reales\nEcosistema IA: Herramientas disponibles en 2026\nOpenCode: Instalación y configuración básica\nPerfiles: Personalización con AGENTS.md\nMCP y Skills: Extensiones de capacidades\nCasos de uso: 12 profesiones cubiertas\nLabs prácticos: 5 ejercicios guiados",
+    "title": "11  Próximos Pasos",
+    "section": "12.1 Lo que aprendiste",
+    "text": "12.1 Lo que aprendiste\n\nEvidencia científica: Los estudios demuestran beneficios reales\nEcosistema IA: Herramientas disponibles en 2026\nOpenCode: Instalación y configuración básica\nPerfiles: Personalización con AGENTS.md\nMCP y Skills: Extensiones de capacidades\nCasos de uso: 12 profesiones cubiertas\nLabs prácticos: 5 ejercicios guiados",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>10. Resumen y Próximos Pasos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Próximos Pasos</span>"
     ]
   },
   {
     "objectID": "proximos-pasos.html#plan-de-acción-post-taller",
     "href": "proximos-pasos.html#plan-de-acción-post-taller",
-    "title": "10  10. Resumen y Próximos Pasos",
-    "section": "10.2 Plan de acción post-taller",
-    "text": "10.2 Plan de acción post-taller\n\n10.2.1 Semana 1: Fondation\n\nInstala OpenCode en tu computadora\nCrea tu primer AGENTS.md\nHaz tu primera pregunta\n\n\n\n10.2.2 Semana 2: Exploración\n\nExplora 2-3 skills útiles\nConfigura al menos un MCP\nPrueba en una tarea real\n\n\n\n10.2.3 Semana 3: Integración\n\nIntegra OpenCode en tu flujo de trabajo\nUsa NotebookLM para documentos\nDocumenta qué funciona para ti\n\n\n\n10.2.4 Semana 4: Compartición\n\nComparte con colegas\nCrea tu biblioteca de prompts\nContribuye a la comunidad",
+    "title": "11  Próximos Pasos",
+    "section": "12.2 Plan de acción post-taller",
+    "text": "12.2 Plan de acción post-taller\n\n12.2.1 Semana 1: Fundamentos\n\nInstala OpenCode en tu computadora\nCrea tu primer AGENTS.md\nHaz tu primera pregunta a la IA\n\n\n\n12.2.2 Semana 2: Exploración\n\nExplora 2-3 skills útiles\nConfigura al menos un MCP\nPrueba en una tarea real\n\n\n\n12.2.3 Semana 3: Integración\n\nIntegra OpenCode en tu flujo de trabajo\nUsa NotebookLM para documentos\nDocumenta qué funciona para ti\n\n\n\n12.2.4 Semana 4: Compartición\n\nComparte con colegas\nCrea tu biblioteca de prompts\nContribuye a la comunidad",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>10. Resumen y Próximos Pasos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Próximos Pasos</span>"
     ]
   },
   {
     "objectID": "proximos-pasos.html#recursos-oficiales",
     "href": "proximos-pasos.html#recursos-oficiales",
-    "title": "10  10. Resumen y Próximos Pasos",
-    "section": "10.3 Recursos oficiales",
-    "text": "10.3 Recursos oficiales\n\n10.3.1 Documentación\n\nOpenCode Docs: opencode.dev/docs\nGitHub: github.com/opencode-ai/opencode\nDiscord: discord.gg/opencode\n\n\n\n10.3.2 Comunidad\n\nDiscord de OpenCode: Preguntas y soporte\nGitHub Discussions: Ideas y features\nTwitter/X: Novedades y tips\n\n\n\n10.3.3 Aprendizaje continuo\n\nPractica diariamente — Usa OpenCode en tu trabajo\nExplora features — Lee la documentación completa\nÚnete a la comunidad — Participa en Discord\nComparte conocimiento — Enseña a tus colegas\nContribuye — Reporta bugs y sugiere features",
+    "title": "11  Próximos Pasos",
+    "section": "12.3 Recursos oficiales",
+    "text": "12.3 Recursos oficiales\n\nDocumentación: opencode.dev/docs\nGitHub: github.com/opencode-ai/opencode\nDiscord: discord.gg/opencode",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>10. Resumen y Próximos Pasos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Próximos Pasos</span>"
     ]
   },
   {
     "objectID": "proximos-pasos.html#errores-comunes-a-evitar",
     "href": "proximos-pasos.html#errores-comunes-a-evitar",
-    "title": "10  10. Resumen y Próximos Pasos",
-    "section": "10.4 Errores comunes a evitar",
-    "text": "10.4 Errores comunes a evitar\n\nNo compartas tu API key con nadie. Es como una contraseña.\nVerifica el código antes de ejecutarlo. La IA puede cometer errores.\nNo subas archivos sensibles a repos públicos.\nUsa variables de entorno para guardar secretos.",
+    "title": "11  Próximos Pasos",
+    "section": "12.4 Errores comunes a evitar",
+    "text": "12.4 Errores comunes a evitar\n\n\n\n\n\n\nNo compartas tu API key con nadie. Es como una contraseña.\nVerifica el código antes de ejecutarlo. La IA puede cometer errores.\nNo subas archivos sensibles a repos públicos.\nUsa variables de entorno para guardar secretos.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>10. Resumen y Próximos Pasos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Próximos Pasos</span>"
     ]
   },
   {
-    "objectID": "proximos-pasos.html#tips-para-usar-opencode-efectivamente",
-    "href": "proximos-pasos.html#tips-para-usar-opencode-efectivamente",
-    "title": "10  10. Resumen y Próximos Pasos",
-    "section": "10.5 Tips para usar OpenCode efectivamente",
-    "text": "10.5 Tips para usar OpenCode efectivamente\n\n10.5.1 Sé específico\nCuanto más contexto, mejor ayuda. En lugar de:\n\n“Ayúdame con mi proyecto”\n\nEscribe:\n\n“Trabajo en marketing B2B. Necesito crear un calendario de contenido para LinkedIn del próximo mes sobre IA generativa. Mi audiencia son CTOs de empresas de 50-200 empleados.”\n\n\n\n10.5.2 Divide problemas grandes\nEn lugar de:\n\n“Hazme una aplicación completa”\n\nPide:\n\n“Primero, diseña la arquitectura. Después, crea el modelo de datos. Luego, implementa el frontend.”\n\n\n\n10.5.3 Itera y refina\n\nPide una primera versión\nSolicita mejoras específicas\nRepite hasta estar satisfecho",
+    "objectID": "proximos-pasos.html#tips-para-usar-opencode-eficientemente",
+    "href": "proximos-pasos.html#tips-para-usar-opencode-eficientemente",
+    "title": "11  Próximos Pasos",
+    "section": "12.5 Tips para usar OpenCode eficientemente",
+    "text": "12.5 Tips para usar OpenCode eficientemente\n\n12.5.1 Sé específico\nCuanto más contexto, mejor ayuda. En lugar de:\n\n“Ayúdame con mi proyecto”\n\nEscribe:\n\n“Trabajo en marketing B2B. Necesito crear un calendario de contenido para LinkedIn del próximo mes sobre IA generativa. Mi audiencia son CTOs de empresas de 50-200 empleados.”\n\n\n\n12.5.2 Divide problemas grandes\nEn lugar de:\n\n“Hazme una aplicación completa”\n\nPide:\n\n“Primero, diseña la arquitectura. Después, crea el modelo de datos. Luego, implementa el frontend.”\n\n\n\n12.5.3 Itera y refina\n\nPide una primera versión\nSolicita mejoras específicas\nRepite hasta estar satisfecho",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>10. Resumen y Próximos Pasos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Próximos Pasos</span>"
     ]
   },
   {
     "objectID": "proximos-pasos.html#mantente-actualizado",
     "href": "proximos-pasos.html#mantente-actualizado",
-    "title": "10  10. Resumen y Próximos Pasos",
-    "section": "10.6 Mantente actualizado",
-    "text": "10.6 Mantente actualizado\nLa IA evoluciona rápidamente. Para estar al día:\n\nSigue las releases de OpenCode\nLee el blog de Anthropic/OpenAI\nÚnete a comunidades de práctica\nExperimenta con nuevas features\n\n\n\nEste material se actualiza continuamente. Última actualización: Mayo 2026",
+    "title": "11  Próximos Pasos",
+    "section": "12.6 Mantente actualizado",
+    "text": "12.6 Mantente actualizado\nLa IA evoluciona rápidamente. Para estar al día:\n\nSigue las releases de OpenCode\nLee el blog de Anthropic/OpenAI\nÚnete a comunidades de práctica\nExperimenta con nuevas features\n\n\nMaterial preparado para el Taller de IA para No Informáticos Última actualización: Mayo 2026",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>10. Resumen y Próximos Pasos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Próximos Pasos</span>"
     ]
   },
   {
     "objectID": "referencias.html",
     "href": "referencias.html",
-    "title": "11  Referencias Científicas",
+    "title": "12  Referencias Científicas",
     "section": "",
-    "text": "11.1 Estudios citados",
+    "text": "13 Referencias Científicas",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Referencias Científicas</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Referencias Científicas</span>"
     ]
   },
   {
     "objectID": "referencias.html#estudios-citados",
     "href": "referencias.html#estudios-citados",
-    "title": "11  Referencias Científicas",
-    "section": "",
-    "text": "Repsol (2024). Estudio sobre Microsoft 365 Copilot. MIT Technology Review España.\n\nEvaluó Copilot durante 4 meses con 300 empleados\nHallazgo: 96.8 horas/año de ahorro por empleado\n\nMárquez-Romero, J.M. et al. (2025). Impacto de asistentes de IA en productividad en empresas comerciales de El Oro, Ecuador. Revista de Finanzas.\n\nMuestra de 900 empleados\nOdds ratio de productividad: 2.34\n\nYaranga, R. & Olortiga, S. (2025). IA y productividad empresarial: Un estudio bibliométrico. Ecuador.\n\n40% de reducción en tareas administrativas\n\nLópez, M. et al. (2025). Asistentes virtuales en educación superior: una experiencia latinoamericana. Revista EDU-INNA.\n\nMás del 75% de satisfacción en docentes y estudiantes\n\nJardón, P. et al. (2024). Asistentes IA en universidades latinoamericanas: implementación y resultados. Ecuador, Perú, Colombia.\n\nReducción significativa de carga administrativa\n\nHidalgo Toledo, C.A. (2025). Productividad y creatividad con IA generativa en México. SciELO México.\n\n327 usuarios encuestados\n7.02 horas semanales de ahorro promedio",
+    "title": "12  Referencias Científicas",
+    "section": "13.1 Estudios citados",
+    "text": "13.1 Estudios citados\n\nRepsol (2024). Estudio sobre Microsoft 365 Copilot. MIT Technology Review España.\n\nEvaluó Copilot durante 4 meses con 300 empleados\nHallazgo: 96.8 horas/año de ahorro por empleado\n\nMárquez-Romero, J.M. et al. (2025). “Impacto de asistentes de IA en productividad en empresas comerciales de El Oro, Ecuador.” Revista de Finanzas.\n\nMuestra de 900 empleados\nOdds ratio de productividad: 2.34\n\nYaranga, R. & Olortiga, S. (2025). “IA y productividad empresarial: Un estudio bibliométrico.” Ecuador.\n\n40% de reducción en tareas administrativas\n\nLópez, M. et al. (2025). “Asistentes virtuales en educación superior: una experiencia latinoamericana.” Revista EDU-INNOVA.\n\nMás del 75% de satisfacción\n\nJardón, P. et al. (2024). “Asistentes IA en universidades latinoamericanas: implementación y resultados.” Ecuador, Perú, Colombia.\n\nReducción significativa de carga administrativa\n\nHidalgo Toledo, C.A. (2025). “Productividad y creatividad con IA generativa en México.” SciELO México.\n\n327 usuarios encuestados\n7.02 horas semanales de ahorro promedio",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Referencias Científicas</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Referencias Científicas</span>"
     ]
   },
   {
     "objectID": "referencias.html#herramientas-mencionadas",
     "href": "referencias.html#herramientas-mencionadas",
-    "title": "11  Referencias Científicas",
-    "section": "11.2 Herramientas mencionadas",
-    "text": "11.2 Herramientas mencionadas\n\n11.2.1 OpenCode\n\nWeb: opencode.dev\nGitHub: github.com/opencode-ai/opencode\nDocs: opencode.dev/docs\n\n\n\n11.2.2 Herramientas complementarias\n\nNotebookLM: notebooklm.google.com\nOllama: ollama.com\nCopilot: github.com/features/copilot\nGemini: gemini.google.com\n\n\n\n11.2.3 MCP y Skills\n\nModel Context Protocol: modelcontextprotocol.io\nSmithery (MCP registry): smithery.ai",
+    "title": "12  Referencias Científicas",
+    "section": "13.2 Herramientas mencionadas",
+    "text": "13.2 Herramientas mencionadas\n\n13.2.1 OpenCode\n\nWeb: opencode.dev\nGitHub: github.com/opencode-ai/opencode\n\n\n\n13.2.2 Herramientas complementarias\n\nNotebookLM: notebooklm.google.com\nOllama: ollama.com\nCopilot: github.com/features/copilot\nGemini: gemini.google.com\n\n\n\n13.2.3 MCP y Skills\n\nModel Context Protocol: modelcontextprotocol.io\nSmithery (registro MCP): smithery.ai",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Referencias Científicas</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Referencias Científicas</span>"
     ]
   },
   {
     "objectID": "referencias.html#lecturas-recomendadas",
     "href": "referencias.html#lecturas-recomendadas",
-    "title": "11  Referencias Científicas",
-    "section": "11.3 Lecturas recomendadas",
-    "text": "11.3 Lecturas recomendadas\n\n11.3.1 Para profundizar en IA\n\n“AI Engineering” — Building Applications with Foundation Models\n“The AI Revolution in Software Development”\n“Prompt Engineering Guide” — disponible en línea\n\n\n\n11.3.2 Para productividad\n\n“Atomic Habits” — James Clear\n“Deep Work” — Cal Newport\n“The Manager’s Path” — Camille Fournier\n\n\n\n11.3.3 Comunidad\n\nDiscord de OpenCode\nReddit r/MachineLearning\nHacker News\n\n\n\nMaterial preparado para el Taller de IA para No Informáticos Diego Saavedra García | dsaavedra88@gmail.com",
+    "title": "12  Referencias Científicas",
+    "section": "13.3 Lecturas recomendadas",
+    "text": "13.3 Lecturas recomendadas\n\n13.3.1 Para profundizar en IA\n\n“AI Engineering” — Building Applications with Foundation Models\n“The AI Revolution in Software Development”\n“Prompt Engineering Guide” — disponible en línea\n\n\n\n13.3.2 Para productividad\n\n“Atomic Habits” — James Clear\n“Deep Work” — Cal Newport\n“The Manager’s Path” — Camille Fournier\n\n\nMaterial preparado para el Taller de IA para No Informáticos Diego Saavedra García · Taller de IA para No Informáticos · 2026",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Referencias Científicas</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Referencias Científicas</span>"
     ]
   },
   {
     "objectID": "apendice-cheatsheet.html",
     "href": "apendice-cheatsheet.html",
-    "title": "Apéndice A — Apéndice A: Cheatsheet",
+    "title": "Apéndice A — Cheatsheet",
     "section": "",
-    "text": "A.1 Comandos esenciales",
+    "text": "B Apéndice A: Cheatsheet",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Apéndice A: Cheatsheet</span>"
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Cheatsheet</span>"
     ]
   },
   {
     "objectID": "apendice-cheatsheet.html#comandos-esenciales",
     "href": "apendice-cheatsheet.html#comandos-esenciales",
-    "title": "Apéndice A — Apéndice A: Cheatsheet",
-    "section": "",
-    "text": "A.1.1 Instalación\n# Instalar OpenCode\nnpm install -g opencode-ai\n\n# Verificar instalación\nopencode --version\n\n# Ver ayuda\nopencode --help\n\n\nA.1.2 Configuración\n# Ver configuración actual\nopencode config list\n\n# Ver plugins instalados\nopencode plugins list\n\n# Ver agentes disponibles\nopencode agents list\n\n\nA.1.3 Uso básico\n# Iniciar conversación\nopencode\n\n# Ejecutar con prompt\nopencode \"tu pregunta aquí\"\n\n# Usar un agente específico\nopencode --agent nombre-agente \"tu pregunta\"",
+    "title": "Apéndice A — Cheatsheet",
+    "section": "B.1 Comandos esenciales",
+    "text": "B.1 Comandos esenciales\n\nB.1.1 Instalación\n# Instalar OpenCode\nnpm install -g opencode-cli\n\n# Verificar instalación\nopencode --version\n\n# Ver ayuda\nopencode --help\n\n\nB.1.2 Configuración\n# Ver configuración actual\nopencode config list\n\n# Ver plugins instalados\nopencode plugins list\n\n# Ver agentes disponibles\nopencode agents list\n\n\nB.1.3 Uso básico\n# Iniciar conversación\nopencode\n\n# Ejecutar con prompt\nopencode \"tu pregunta aquí\"\n\n# Usar un agente específico\nopencode --agent nombre-agente \"tu pregunta\"",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Apéndice A: Cheatsheet</span>"
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Cheatsheet</span>"
     ]
   },
   {
     "objectID": "apendice-cheatsheet.html#estructura-de-archivos",
     "href": "apendice-cheatsheet.html#estructura-de-archivos",
-    "title": "Apéndice A — Apéndice A: Cheatsheet",
-    "section": "A.2 Estructura de archivos",
-    "text": "A.2 Estructura de archivos\n~/.config/opencode/\n├── opencode.json      # Configuración principal\n├── AGENTS.md          # Tu perfil global\n└── agents/            # Agentes personalizados\n    └── mi-agente.md",
+    "title": "Apéndice A — Cheatsheet",
+    "section": "B.2 Estructura de archivos",
+    "text": "B.2 Estructura de archivos\n~/.config/opencode/\n├── opencode.json      # Configuración principal\n├── AGENTS.md          # Tu perfil global\n└── agents/            # Agentes personalizados\n    └── mi-agente.md",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Apéndice A: Cheatsheet</span>"
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Cheatsheet</span>"
     ]
   },
   {
     "objectID": "apendice-cheatsheet.html#skins-y-prompts-útiles",
     "href": "apendice-cheatsheet.html#skins-y-prompts-útiles",
-    "title": "Apéndice A — Apéndice A: Cheatsheet",
-    "section": "A.3 Skins y prompts útiles",
-    "text": "A.3 Skins y prompts útiles\n\nA.3.1 Presentarse\nHola, me llamo [nombre] y trabajo en [industria].\nAyúdame con [tarea específica].\n\n\nA.3.2 Pedir ayuda estructurada\nNecesito [resultado]. \nContexto: [información relevante].\nRestricciones: [límites si hay].\n\n\nA.3.3 Investigar\nBusca información sobre [tema].\nFiltros: [fuentes confiables, fechas, etc.].\nFormato: [cómo quieres la respuesta].",
+    "title": "Apéndice A — Cheatsheet",
+    "section": "B.3 Skins y prompts útiles",
+    "text": "B.3 Skins y prompts útiles\n\nB.3.1 Presentarse\nHola, me llamo [nombre] y trabajo en [industria].\nAyúdame con [tarea específica].\n\n\nB.3.2 Investigar\nBusca información sobre [tema].\nFiltros: [fuentes confiables, fechas, etc.].\nFormato: [cómo quieres la respuesta].",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Apéndice A: Cheatsheet</span>"
-    ]
-  },
-  {
-    "objectID": "apendice-cheatsheet.html#atajos-útiles",
-    "href": "apendice-cheatsheet.html#atajos-útiles",
-    "title": "Apéndice A — Apéndice A: Cheatsheet",
-    "section": "A.4 Atajos útiles",
-    "text": "A.4 Atajos útiles\n\n\n\nAcción\nCómo hacerlo\n\n\n\n\nNueva conversación\nCtrl+C para salir, luego opencode\n\n\nVer historial\nFlechas arriba/abajo\n\n\nCancelar\nCtrl+C\n\n\nLimpiar pantalla\nCtrl+L\n\n\nHelp\nopencode --help",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Apéndice A: Cheatsheet</span>"
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Cheatsheet</span>"
     ]
   },
   {
     "objectID": "apendice-cheatsheet.html#troubleshooting-rápido",
     "href": "apendice-cheatsheet.html#troubleshooting-rápido",
-    "title": "Apéndice A — Apéndice A: Cheatsheet",
-    "section": "A.5 Troubleshooting rápido",
-    "text": "A.5 Troubleshooting rápido\n\nA.5.1 Error: “command not found”\n# Verificar que npm está en PATH\nnpm --version\n\n# Reinstalar si es necesario\nnpm install -g opencode-ai\n\n\nA.5.2 Error: “API key inválida”\n\nVe a platform.openai.com\nVerifica tu API key\nActualiza ~/.config/opencode/opencode.json\n\n\n\nA.5.3 Error: “Permiso denegado”\n# Linux/Mac\nsudo npm install -g opencode-ai\n\n# O cambia el directorio\nmkdir -p ~/.npm-global\nnpm config set prefix '~/.npm-global'\nexport PATH=~/.npm-global/bin:$PATH",
+    "title": "Apéndice A — Cheatsheet",
+    "section": "B.4 Troubleshooting rápido",
+    "text": "B.4 Troubleshooting rápido\n\nB.4.1 Error: “command not found”\n# Verificar que npm está en PATH\nnpm --version\n# Reinstalar si es necesario\nnpm install -g opencode-cli\n\n\nB.4.2 Error: “API key inválida”\n\nVe a platform.openai.com\nVerifica tu API key\nActualiza ~/.config/opencode/opencode.json\n\n\n\nB.4.3 Error: “Permiso denegado”\n# Linux/Mac\nsudo npm install -g opencode-ai\n\n# O cambia el directorio\nnpm config set prefix '~/.npm-global'\nexport PATH=~/.npm-global/bin:$PATH",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Apéndice A: Cheatsheet</span>"
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Cheatsheet</span>"
     ]
   },
   {
     "objectID": "apendice-cheatsheet.html#recursos-rápidos",
     "href": "apendice-cheatsheet.html#recursos-rápidos",
-    "title": "Apéndice A — Apéndice A: Cheatsheet",
-    "section": "A.6 Recursos rápidos",
-    "text": "A.6 Recursos rápidos\n\n\n\nRecurso\nURL\n\n\n\n\nDocs\nopencode.dev/docs\n\n\nGitHub\ngithub.com/opencode-ai/opencode\n\n\nDiscord\ndiscord.gg/opencode\n\n\nnpm\nnpmjs.com/package/opencode-ai",
+    "title": "Apéndice A — Cheatsheet",
+    "section": "B.5 Recursos rápidos",
+    "text": "B.5 Recursos rápidos\n\n\n\nRecurso\nURL\n\n\n\n\nDocs\nopencode.dev/docs\n\n\nGitHub\ngithub.com/opencode-ai/opencode\n\n\nDiscord\ndiscord.gg/opencode\n\n\nnpm\nnpmjs.com/package/opencode-cli",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Apéndice A: Cheatsheet</span>"
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Cheatsheet</span>"
     ]
   },
   {
     "objectID": "apendice-faq.html",
     "href": "apendice-faq.html",
-    "title": "Apéndice B — Apéndice B: Preguntas Frecuentes",
+    "title": "Apéndice B — Preguntas Frecuentes",
     "section": "",
-    "text": "B.1 General",
+    "text": "C Apéndice B: Preguntas Frecuentes",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Apéndice B: Preguntas Frecuentes</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Preguntas Frecuentes</span>"
     ]
   },
   {
     "objectID": "apendice-faq.html#general",
     "href": "apendice-faq.html#general",
-    "title": "Apéndice B — Apéndice B: Preguntas Frecuentes",
-    "section": "",
-    "text": "B.1.1 ¿Necesito saber programar para usar OpenCode?\nNo, el taller es específicamente para profesionales sin conocimientos técnicos. OpenCode está diseñado para ser accesible para cualquier persona.\n\n\nB.1.2 ¿Cuánto cuesta OpenCode?\nOpenCode en sí es gratis (código abierto). Lo que puedes necesitar pagar es:\n\nTu propia API key (OpenAI, Anthropic, etc.) que tiene un costo según uso\nOpenAI tiene $5 de crédito gratuito para nuevos usuarios\nPara uso básico, el costo es mínimo (~$1-5/mes)\n\n\n\nB.1.3 ¿Es seguro usar estas herramientas?\nPara datos sensibles (médicos, legales, financieros): - Usa Ollama (trabaja 100% offline) - No compartas información de clientes - Usa VPN si es posible\nPara datos generales: - Las herramientas estándar son seguras - Lee los términos de servicio - Mantén backups de tu trabajo\n\n\nB.1.4 ¿Reemplazará la IA mi trabajo?\nNo. La IA es una herramienta que amplifica tus capacidades. No reemplaza:\n\nTu juicio profesional\nTus relaciones interpersonales\nTu creatividad y experiencia\nTu responsabilidad legal/ética",
+    "title": "Apéndice B — Preguntas Frecuentes",
+    "section": "C.1 General",
+    "text": "C.1 General\n\nC.1.1 ¿Necesito saber programar para usar OpenCode?\nNo, el taller es específicamente para profesionales sin conocimientos técnicos. OpenCode está diseñado para ser accesible para cualquier persona.\n\n\nC.1.2 ¿Cuánto cuesta OpenCode?\nOpenCode en sí es gratis (código abierto). Lo que puedes necesitar pagar es:\n\nTu propia API key (OpenAI, Anthropic, etc.) — costo según uso\nOpenAI ofrece $5 de crédito gratuito para nuevos usuarios\nPara uso básico, el costo es mínimo (~$1-5/mes)\n\n\n\nC.1.3 ¿Es seguro usar estas herramientas?\nPara datos sensibles (médicos, legales, financieros): - Usa Ollama (trabaja 100% offline) - No compartas información de clientes - Usa VPN si es posible\nPara datos generales: - Las herramientas estándar son seguras - Lee los términos de servicio - Mantén backups de tu trabajo\n\n\nC.1.4 ¿Reemplazará la IA mi trabajo?\nNo. La IA es una herramienta que amplifica tus capacidades. No reemplaza:\n\nTu juicio profesional\nTus relaciones interpersonales\nTu creatividad y experiencia\nTu responsabilidad legal/ética",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Apéndice B: Preguntas Frecuentes</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Preguntas Frecuentes</span>"
     ]
   },
   {
     "objectID": "apendice-faq.html#instalación",
     "href": "apendice-faq.html#instalación",
-    "title": "Apéndice B — Apéndice B: Preguntas Frecuentes",
-    "section": "B.2 Instalación",
-    "text": "B.2 Instalación\n\nB.2.1 Node.js no está instalado. ¿Qué hago?\n\nVe a nodejs.org\nDescarga la versión LTS (recomendada)\nInstala con valores por defecto\nReinicia tu terminal\nVerifica: node --version\n\n\n\nB.2.2 ¿Puedo usar OpenCode en un Chromebook?\nTécnicamente sí, pero requiere: - Linux (Crostini) habilitado - O usar la versión web de otras herramientas - Mejor opción: usa NotebookLM para documentos\n\n\nB.2.3 ¿Funciona en teléfono?\nNo directamente. Pero puedes: - Usar la app de terminal en iOS/Android - Acceder desde otra computadora - Usar herramientas web como ChatGPT/Claude",
+    "title": "Apéndice B — Preguntas Frecuentes",
+    "section": "C.2 Instalación",
+    "text": "C.2 Instalación\n\nC.2.1 Node.js no está instalado. ¿Qué hago?\n\nVe a nodejs.org\nDescarga la versión LTS (recomendada)\nInstala con valores por defecto\nReinicia tu terminal\nVerifica: node --version\n\n\n\nC.2.2 ¿Puedo usar OpenCode en un Chromebook?\nTécnicamente sí, pero requiere: - Linux (Crostini) habilitado - O usar la versión web de otras herramientas - Mejor opción: usa NotebookLM para documentos\n\n\nC.2.3 ¿Funciona en teléfono?\nNo directamente. Pero puedes: - Usar la app de terminal en iOS/Android - Acceder desde otra computadora - Usar herramientas web como ChatGPT/Claude",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Apéndice B: Preguntas Frecuentes</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Preguntas Frecuentes</span>"
     ]
   },
   {
     "objectID": "apendice-faq.html#configuración",
     "href": "apendice-faq.html#configuración",
-    "title": "Apéndice B — Apéndice B: Preguntas Frecuentes",
-    "section": "B.3 Configuración",
-    "text": "B.3 Configuración\n\nB.3.1 ¿Dónde está mi archivo AGENTS.md?\n\nGlobal: ~/.config/opencode/AGENTS.md\nLocal (por proyecto): ./AGENTS.md en tu carpeta de proyecto\n\n\n\nB.3.2 ¿Puedo tener múltiples perfiles?\n¡Sí! Puedes:\n\nTener un perfil global en ~/.config/opencode/AGENTS.md\nTener perfiles de proyecto en ./AGENTS.md\nCrear agentes especializados en ~/.config/opencode/agents/\n\n\n\nB.3.3 ¿Cómo cambio el modelo de IA?\nEdita ~/.config/opencode/opencode.json:\n{\n  \"provider\": \"anthropic\",\n  \"model\": \"claude-3-5-sonnet\"\n}",
+    "title": "Apéndice B — Preguntas Frecuentes",
+    "section": "C.3 Configuración",
+    "text": "C.3 Configuración\n\nC.3.1 ¿Dónde está mi archivo AGENTS.md?\n\nGlobal: ~/.config/opencode/AGENTS.md\nLocal (por proyecto): ./AGENTS.md en tu carpeta de proyecto\n\n\n\nC.3.2 ¿Puedo tener múltiples perfiles?\n¡Sí! Puedes:\n\nTener un perfil global en ~/.config/opencode/AGENTS.md\nTener perfiles de proyecto en ./AGENTS.md\nCrear agentes especializados en ~/.config/opencode/agents/\n\n\n\nC.3.3 ¿Cómo cambio el modelo de IA?\nEdita ~/.config/opencode/opencode.json:\n{\n  \"provider\": \"anthropic\",\n  \"model\": \"claude-3-5-sonnet\"\n}",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Apéndice B: Preguntas Frecuentes</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Preguntas Frecuentes</span>"
     ]
   },
   {
     "objectID": "apendice-faq.html#uso",
     "href": "apendice-faq.html#uso",
-    "title": "Apéndice B — Apéndice B: Preguntas Frecuentes",
-    "section": "B.4 Uso",
-    "text": "B.4 Uso\n\nB.4.1 ¿Por qué la IA no recuerda nuestra conversación?\nPorque cada sesión es independiente. Para recordar:\n\nUsa memoria persistente (Engram, Notion)\nMantén tu AGENTS.md actualizado\nCopia información importante al inicio de nuevas sesiones\n\n\n\nB.4.2 ¿Puede OpenCode acceder a internet?\nSí, con el MCP de web puedes: - Buscar información actualizada - Navegar páginas web - Acceder a APIs\n\n\nB.4.3 ¿Puede ver mis archivos?\nSolo si: 1. Lo autorizas explícitamente 2. Tienes MCP de filesystem instalado 3. Estás en el directorio correcto",
+    "title": "Apéndice B — Preguntas Frecuentes",
+    "section": "C.4 Uso",
+    "text": "C.4 Uso\n\nC.4.1 ¿Por qué la IA no recuerda nuestra conversación?\nCada sesión es independiente. Para recordar:\n\nUsa memoria persistente (Engram, Notion)\nMantén tu AGENTS.md actualizado\nCopia información importante al inicio de nuevas sesiones\n\n\n\nC.4.2 ¿Puede OpenCode acceder a internet?\nSí, con el MCP de web puedes: - Buscar información actualizada - Navegar páginas web - Acceder a APIs\n\n\nC.4.3 ¿Puede ver mis archivos?\nSolo si: 1. Lo autorizas explícitamente 2. Tienes MCP de filesystem instalado 3. Estás en el directorio correcto",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Apéndice B: Preguntas Frecuentes</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Preguntas Frecuentes</span>"
     ]
   },
   {
     "objectID": "apendice-faq.html#privacidad",
     "href": "apendice-faq.html#privacidad",
-    "title": "Apéndice B — Apéndice B: Preguntas Frecuentes",
-    "section": "B.5 Privacidad",
-    "text": "B.5 Privacidad\n\nB.5.1 ¿Quién puede ver mis conversaciones?\nDepende del proveedor:\n\nOpenAI: Pueden ver datos (aunque匿名izados) para entrenar\nAnthropic: No usa datos para entrenar\nOllama: 100% local, nadie ve nada\n\n\n\nB.5.2 ¿Debería preocuparme por filtrar datos?\nPara trabajo profesional general: no demasiado.\nPara datos sensibles (médicos, legales, financieros): sí, sé cauteloso.\n\n\nB.5.3 ¿Cómo protejo información sensible?\n\nNo compartas nombres de clientes\nUsa Ollama para datos muy sensibles\nRevisa antes de enviar\nUsa variables de entorno, no hardcodees secrets",
+    "title": "Apéndice B — Preguntas Frecuentes",
+    "section": "C.5 Privacidad",
+    "text": "C.5 Privacidad\n\nC.5.1 ¿Quién puede ver mis conversaciones?\nDepende del proveedor:\n\nOpenAI: Pueden ver datos (anonimizados) para entrenamiento\nAnthropic: No usa datos para entrenamiento\nOllama: 100% local, nadie ve nada\n\n\n\nC.5.2 ¿Cómo protejo información sensible?\n\nNo compartas nombres de clientes\nUsa Ollama para datos muy sensibles\nRevisa antes de enviar\nUsa variables de entorno, no hardcodes",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Apéndice B: Preguntas Frecuentes</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Preguntas Frecuentes</span>"
     ]
   },
   {
     "objectID": "apendice-faq.html#troubleshooting",
     "href": "apendice-faq.html#troubleshooting",
-    "title": "Apéndice B — Apéndice B: Preguntas Frecuentes",
-    "section": "B.6 Troubleshooting",
-    "text": "B.6 Troubleshooting\n\nB.6.1 La respuesta está en inglés, ¿puedo cambiarla?\nSí, tu AGENTS.md puede especificar:\n## Preferencias\n- Siempre responde en español\n- Usa terminología técnica de mi industria\n\n\nB.6.2 Las respuestas son muy largas o muy cortas\nPuedes pedir explícitamente:\n\"Responde en máximo 3 oraciones\"\n\"Sé muy detallado en la sección de métodos\"\n\n\nB.6.3 No entiendo algo de la respuesta\n¡Pregunta! La IA puede:\n\nExplicar de otra forma\nDar ejemplos\nDividir en pasos más simples\n\n\n\nB.6.4 ¿Cómo reporto un bug?\n\nDiscord de OpenCode\nGitHub Issues\nDocumenta los pasos para reproducirlo",
+    "title": "Apéndice B — Preguntas Frecuentes",
+    "section": "C.6 Troubleshooting",
+    "text": "C.6 Troubleshooting\n\nC.6.1 La respuesta está en inglés, ¿puedo cambiarla?\nSí, tu AGENTS.md puede especificar:\n## Preferencias\n- Siempre responde en español\n- Usa terminología técnica de mi industria\n\n\nC.6.2 Las respuestas son muy largas o muy cortas\nPuedes pedir explícitamente:\n\"Responde en máximo 3 oraciones\"\n\"Sé muy detallado en la sección de métodos\"\n\n\nC.6.3 No entiendo algo de la respuesta\n¡Pregunta! La IA puede:\n\nExplicar de otra forma\nDar ejemplos\nDividir en pasos más simples\n\n\n\nC.6.4 ¿Cómo reporto un bug?\n\nDiscord de OpenCode\nGitHub Issues\nDocumenta los pasos para reproducirlo",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Apéndice B: Preguntas Frecuentes</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Preguntas Frecuentes</span>"
     ]
   },
   {
     "objectID": "apendice-faq.html#comunidad",
     "href": "apendice-faq.html#comunidad",
-    "title": "Apéndice B — Apéndice B: Preguntas Frecuentes",
-    "section": "B.7 Comunidad",
-    "text": "B.7 Comunidad\n\nB.7.1 ¿Dónde puedo pedir ayuda?\n\nDiscord de OpenCode — Mejor para ayuda rápida\nGitHub Discussions — Para preguntas detalladas\nEste taller — Para aprender conceptos\n\n\n\nB.7.2 ¿Cómo contribuyó a OpenCode?\n\nReporta bugs\nSugiere features\nContribuye código (si sabes programar)\nComparte tu experiencia\nAyúdanos a traducir docs\n\n\n\n¿Tu pregunta no está aquí? Pregunta en Discord o crea un issue en GitHub.",
+    "title": "Apéndice B — Preguntas Frecuentes",
+    "section": "C.7 Comunidad",
+    "text": "C.7 Comunidad\n\nC.7.1 ¿Dónde puedo pedir ayuda?\n\nDiscord de OpenCode — Mejor para ayuda rápida\nGitHub Discussions — Para preguntas detalladas\n\n\n\nC.7.2 ¿Cómo contribuyo?\n\nReporta bugs\nSugiere features\nComparte tu experiencia\nAyúdanos a traducir docs",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Apéndice B: Preguntas Frecuentes</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Preguntas Frecuentes</span>"
+    ]
+  },
+  {
+    "objectID": "apendice-gentle-ai.html",
+    "href": "apendice-gentle-ai.html",
+    "title": "Apéndice C — Apéndice C: Gentleman Programming — Gentle AI",
+    "section": "",
+    "text": "C.1 ¿Qué es Gentleman Programming?\nGentleman Programming (o Gentle AI) es una filosofía de trabajo con inteligencia artificial basada en respeto, precisión y elegancia en el uso de herramientas de IA. No se trata solo de usar IA — se trata de hacerlo bien.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Apéndice C: Gentleman Programming — Gentle AI</span>"
+    ]
+  },
+  {
+    "objectID": "apendice-gentle-ai.html#los-10-principios-de-gentleman-programming",
+    "href": "apendice-gentle-ai.html#los-10-principios-de-gentleman-programming",
+    "title": "Apéndice C — Apéndice C: Gentleman Programming — Gentle AI",
+    "section": "C.2 Los 10 Principios de Gentleman Programming",
+    "text": "C.2 Los 10 Principios de Gentleman Programming\n\nC.2.1 1. 🎩 Elegante, nunca grosero\n\nNunca uses prompts agresivos o despectivos. La IA responde mejor a la cortesía.\n\n❌ Mal:\nDame la respuesta ya, no pierdas mi tiempo.\n✅ Bien:\n¿Podrías ayudarme con esto? Agradecería una respuesta clara y concisa.\n\n\nC.2.2 2. 📐 Preciso en los requerimientos\n\nUn caballero se prepara antes de pedir. Define bien tu problema antes de preguntar.\n\nTécnica: FRAME - F — Facts: Hechos relevantes - R — Role: El rol que desempeñas - A — Action: Qué quieres que haga - M — Medium: En qué formato - E — Extras: Restricciones adicionales\n\n\nC.2.3 3. 🗝️ Maestro de llaves\n\nProtege siempre tus claves API, datos personales y secretos.\n\n# ❌ NUNCA hagas esto:\n\"Mi API key es sk-proj-abc123... por favor guárdala\"\n\n# ✅ Usa variables de entorno:\nexport OPENAI_API_KEY=\"tu-key-aqui\"\n\n\nC.2.4 4. 📚 Cita tus fuentes\n\nCuando la IA te ayuda, reconócelo. Da crédito a las herramientas que usaste.\n\n*Esta sección fue asistida con OpenCode y NotebookLM.\nLos datos científicos provienen de: [Referencia]*\n\n\nC.2.5 5. 🔍 Verifica antes de confiar\n\nUn caballero nunca da por sentado. Verifica la información recibida.\n\nChecklist de verificación: - [ ] Los datos son correctos y actualizados - [ ] Las citas son verificables - [ ] El código se ejecuta sin errores - [ ] El análisis tiene sentido lógico - [ ] No hay sesgos evidentes\n\n\nC.2.6 6. 🧹 Limpia después de ti\n\nSi generaste código o archivos, asegúrate de que sean comprensibles y limpios.\n\n# ❌ Código generado sin revisar\nx = do_stuff(a,b,c,True,None,\"test\",1)\n\n# ✅ Código limpiado y comentado\nresultado = procesar_datos(\n    datos=ventas,\n    filtro=activo,\n    categoria=\"tech\",\n    incluir_testimonios=True\n)\n\n\nC.2.7 7. 🤝 Colabora, no reemplaces\n\nLa IA es tu compañera de equipo, no tu sustituto.\n\nDónde la IA EXCELLE: - Generar borradores rápidos - Resumir documentos largos - Buscar patrones en datos - Traducir contenido - Generar ideas creativas\nDónde TÚ debes liderar: - Toma de decisiones finales - Relaciones humanas - Responsabilidad ética y legal - Contexto específico de tu industria - Creatividad estratégica\n\n\nC.2.8 8. 🔄 Itera y mejora\n\nUn buen caballero no se conforma con el primer borrador.\n\nConversación de ejemplo:\n\nYo: \"Redacta una introducción sobre IA\"\nIA: [Borrador inicial]\nYo: \"Mejor, pero necesito un tono más formal y citar 3 estudios\"\nIA: [Versión mejorada]\nYo: \"Ahora agrega una referencia a la IA en educación latinoamericana\"\nIA: [Versión final]\nYo: \"Perfecto, gracias\"\n\n\nC.2.9 9. 📏 Sé honesto sobre las limitaciones\n\nNo finjas que el trabajo fue 100% tuyo ni 100% de la IA.\n\nTransparencia profesional:\n✓ \"Usé IA para generar un borrador inicial y lo revisé personalmente\"\n✗ \"Todo lo escribí yo solo\" (si usaste IA)\n✗ \"La IA lo hizo todo\" (si pusiste tu criterio profesional)\n\n\nC.2.10 10. 🌱 Aprende continuamente\n\nEl mundo de la IA cambia rápidamente. Mantente actualizado.\n\n\nLee los changelogs de tus herramientas\nPrueba nuevas features\nComparte lo que aprendes con otros\nContribuye a la comunidad de código abierto",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Apéndice C: Gentleman Programming — Gentle AI</span>"
+    ]
+  },
+  {
+    "objectID": "apendice-gentle-ai.html#el-ciclo-gentleman-ai",
+    "href": "apendice-gentle-ai.html#el-ciclo-gentleman-ai",
+    "title": "Apéndice C — Apéndice C: Gentleman Programming — Gentle AI",
+    "section": "C.3 El Ciclo Gentleman AI",
+    "text": "C.3 El Ciclo Gentleman AI\n┌──────────────────────────────────────────┐\n│                                          │\n│  1. 🧠 PREPARA tu prompt                │\n│     Define contexto, rol y formato       │\n│                     ↓                    │\n│  2. 🎩 GENERA con cortesía               │\n│     Pide con precisión y respeto          │\n│                     ↓                    │\n│  3. 🔍 VERIFICA todo                     │\n│     Datos, lógica, citas, código         │\n│                     ↓                    │\n│  4. ✍️ REFINA con iteración              │\n│     Pide mejoras específicas             │\n│                     ↓                    │\n│  5. 🧹 LIMPIA el resultado               │\n│     Formatea, comenta, organiza          │\n│                     ↓                    │\n│  6. 🙏 DA CRÉDITO                       │\n│     Cita herramientas y fuentes          │\n│                     ↓                    │\n│  7. 📤 COMPARTE con otros               │\n│     Contribuye a la comunidad            │\n│                                          │\n└──────────────────────────────────────────┘",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Apéndice C: Gentleman Programming — Gentle AI</span>"
+    ]
+  },
+  {
+    "objectID": "apendice-gentle-ai.html#gentleman-ai-en-la-práctica",
+    "href": "apendice-gentle-ai.html#gentleman-ai-en-la-práctica",
+    "title": "Apéndice C — Apéndice C: Gentleman Programming — Gentle AI",
+    "section": "C.4 Gentleman AI en la Práctica",
+    "text": "C.4 Gentleman AI en la Práctica\n\nC.4.1 Ejemplo 1: Escritura profesional\n🧠 Preparación:\n- Necesito un correo formal para un cliente\n- Tono: profesional, cordial, directo\n- Idioma: español formal\n- Longitud: máximo 200 palabras\n\n🎩 Prompt:\n\"Redacta un correo profesional para un cliente importante\nsolicitando una reunión para presentar resultados del Q1.\nTono formal, cordial, directo. Máximo 200 palabras.\"\n\n🔍 Verificación:\n- ✅ No incluye datos ficticios del cliente\n- ✅ Tono apropiado para contexto formal\n- ✅ Dentro del límite de palabras\n\n\nC.4.2 Ejemplo 2: Análisis de datos\n🧠 Preparación:\n- Tengo datos de ventas en un CSV\n- Necesito un análisis de tendencias\n- Quiero recomendaciones accionables\n\n🎩 Prompt:\n\"Analiza estos datos de ventas y genera:\n1. Resumen de tendencias principales\n2. 3 recomendaciones basadas en datos\n3. Visualización sugerida para presentar\"\n\n🔍 Verificación:\n- ✅ Las cifras coinciden con el archivo original\n- ✅ Las recomendaciones son realistas\n- ✅ La visualización es apropiada para la audiencia",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Apéndice C: Gentleman Programming — Gentle AI</span>"
+    ]
+  },
+  {
+    "objectID": "apendice-gentle-ai.html#recursos-adicionales",
+    "href": "apendice-gentle-ai.html#recursos-adicionales",
+    "title": "Apéndice C — Apéndice C: Gentleman Programming — Gentle AI",
+    "section": "C.5 Recursos Adicionales",
+    "text": "C.5 Recursos Adicionales\n\nC.5.1 Libros recomendados\n\n\n\nLibro\nAutor\nEnfoque\n\n\n\n\nCo-Intelligence\nEthan Mollick\nUso efectivo de IA\n\n\nThe AI Engineer\nswyx\nIngeniería de IA\n\n\nAI for Everyone\nAndrew Ng (Coursera)\nFundamentos accesibles\n\n\n\n\n\nC.5.2 Cursos y talleres\n\nEste taller — Taller de IA para No Informáticos\nAI Academy — cursos avanzados de IA\nDeepLearning.AI — especializaciones en IA\n\n\n\nC.5.3 Comunidades\n\nOpenCode Discord\nr/MachineLearning\nHacker News\n\n\n\n“La tecnología más poderosa es la que se usa con sabiduría y elegancia.” — Filosofía Gentleman Programming\n\nApéndice C · Taller de IA para No Informáticos · Diego Saavedra García · 2026",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Apéndice C: Gentleman Programming — Gentle AI</span>"
     ]
   }
 ]

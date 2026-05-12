@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="keywords" content="inteligencia artificial, opencode, productivity, no-code, tutorial">
-<meta name="description" content="Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar.">
+<meta name="keywords" content="inteligencia artificial, opencode, notebooklm, ollama, productivity, no-code, tutorial">
+<meta name="description" content="Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar. Taller virtual gratuito de 2 horas.">
 
-<title>Apéndice A — Apéndice A: Cheatsheet – Taller de IA para No Informáticos</title>
+<title>Apéndice A — Cheatsheet – Taller de IA para No Informáticos</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -64,7 +64,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -81,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-367522ac618891c39d4b2ae87ea7600e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c38393dfc485b7557db906cd7eda2179.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -112,6 +111,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Taller de IA para No Informáticos">
+<meta property="og:description" content="Guía completa para aprender IA sin programar — 2 horas, 100% gratis">
+<meta property="og:image" content="https://github.com/statick88/taller-ia-no-informaticos/images/taller-ia-cover.svg">
+<meta property="og:site_name" content="Taller de IA para No Informáticos">
+<meta property="og:image:alt" content="Taller de IA para No Informáticos">
+<meta name="twitter:title" content="Taller de IA para No Informáticos">
+<meta name="twitter:description" content="Guía completa para profesionales no informáticos">
+<meta name="twitter:image" content="https://github.com/statick88/taller-ia-no-informaticos/images/taller-ia-cover.svg">
+<meta name="twitter:image:alt" content="Taller de IA para No Informáticos">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -123,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./apendice-cheatsheet.html">Appendices</a></li><li class="breadcrumb-item"><a href="./apendice-cheatsheet.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Apéndice A: Cheatsheet</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./apendice-cheatsheet.html">Appendices</a></li><li class="breadcrumb-item"><a href="./apendice-cheatsheet.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Cheatsheet</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -136,9 +146,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="https://via.placeholder.com/150/00cc33/000000?text=IA" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://via.placeholder.com/150/00cc33/000000?text=IA" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Taller de IA para No Informáticos</a> 
+      <a href="./">📚 Taller de IA</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/statick88/taller-ia-no-informaticos" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Taller-de-IA-para-No-Informáticos.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Taller-de-IA-para-No-Informáticos.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -151,73 +207,73 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prefacio</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">🤖 Taller de IA para No Informáticos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">1. Fundamentos: ¿Por qué usar IA?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fundamentos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2. El Ecosistema de IA en 2026</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ecosistema IA 2026</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./opencode.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">3. OpenCode: Tu Asistente Personal</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">OpenCode</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./instalacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">4. Instalación de OpenCode</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Instalación</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./perfiles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">5. Perfiles Personalizados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Perfiles Personalizados</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mcp-skills.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">6. MCP y Skills</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">MCP y Skills</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./casos-uso.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">7. Casos de Uso por Profesión</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Casos de Uso</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./labs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">8. Labs Prácticos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Labs Prácticos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comparativa.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">9. Análisis Comparativo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis Comparativo</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./proximos-pasos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">10. Resumen y Próximos Pasos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Próximos Pasos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./referencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Referencias Científicas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Referencias Científicas</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -232,13 +288,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apendice-cheatsheet.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Apéndice A: Cheatsheet</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Cheatsheet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apendice-faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Apéndice B: Preguntas Frecuentes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Preguntas Frecuentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./apendice-gentle-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Apéndice C: Gentleman Programming — Gentle AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -253,36 +315,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#comandos-esenciales" id="toc-comandos-esenciales" class="nav-link active" data-scroll-target="#comandos-esenciales"><span class="header-section-number">A.1</span> Comandos esenciales</a>
+  <li><a href="#apéndice-a-cheatsheet" id="toc-apéndice-a-cheatsheet" class="nav-link active" data-scroll-target="#apéndice-a-cheatsheet"><span class="header-section-number">B</span> Apéndice A: Cheatsheet</a>
   <ul class="collapse">
-  <li><a href="#instalación" id="toc-instalación" class="nav-link" data-scroll-target="#instalación"><span class="header-section-number">A.1.1</span> Instalación</a></li>
-  <li><a href="#configuración" id="toc-configuración" class="nav-link" data-scroll-target="#configuración"><span class="header-section-number">A.1.2</span> Configuración</a></li>
-  <li><a href="#uso-básico" id="toc-uso-básico" class="nav-link" data-scroll-target="#uso-básico"><span class="header-section-number">A.1.3</span> Uso básico</a></li>
-  </ul></li>
-  <li><a href="#estructura-de-archivos" id="toc-estructura-de-archivos" class="nav-link" data-scroll-target="#estructura-de-archivos"><span class="header-section-number">A.2</span> Estructura de archivos</a></li>
-  <li><a href="#skins-y-prompts-útiles" id="toc-skins-y-prompts-útiles" class="nav-link" data-scroll-target="#skins-y-prompts-útiles"><span class="header-section-number">A.3</span> Skins y prompts útiles</a>
+  <li><a href="#comandos-esenciales" id="toc-comandos-esenciales" class="nav-link" data-scroll-target="#comandos-esenciales"><span class="header-section-number">B.1</span> Comandos esenciales</a>
   <ul class="collapse">
-  <li><a href="#presentarse" id="toc-presentarse" class="nav-link" data-scroll-target="#presentarse"><span class="header-section-number">A.3.1</span> Presentarse</a></li>
-  <li><a href="#pedir-ayuda-estructurada" id="toc-pedir-ayuda-estructurada" class="nav-link" data-scroll-target="#pedir-ayuda-estructurada"><span class="header-section-number">A.3.2</span> Pedir ayuda estructurada</a></li>
-  <li><a href="#investigar" id="toc-investigar" class="nav-link" data-scroll-target="#investigar"><span class="header-section-number">A.3.3</span> Investigar</a></li>
+  <li><a href="#instalación" id="toc-instalación" class="nav-link" data-scroll-target="#instalación"><span class="header-section-number">B.1.1</span> Instalación</a></li>
+  <li><a href="#configuración" id="toc-configuración" class="nav-link" data-scroll-target="#configuración"><span class="header-section-number">B.1.2</span> Configuración</a></li>
+  <li><a href="#uso-básico" id="toc-uso-básico" class="nav-link" data-scroll-target="#uso-básico"><span class="header-section-number">B.1.3</span> Uso básico</a></li>
   </ul></li>
-  <li><a href="#atajos-útiles" id="toc-atajos-útiles" class="nav-link" data-scroll-target="#atajos-útiles"><span class="header-section-number">A.4</span> Atajos útiles</a></li>
-  <li><a href="#troubleshooting-rápido" id="toc-troubleshooting-rápido" class="nav-link" data-scroll-target="#troubleshooting-rápido"><span class="header-section-number">A.5</span> Troubleshooting rápido</a>
+  <li><a href="#estructura-de-archivos" id="toc-estructura-de-archivos" class="nav-link" data-scroll-target="#estructura-de-archivos"><span class="header-section-number">B.2</span> Estructura de archivos</a></li>
+  <li><a href="#skins-y-prompts-útiles" id="toc-skins-y-prompts-útiles" class="nav-link" data-scroll-target="#skins-y-prompts-útiles"><span class="header-section-number">B.3</span> Skins y prompts útiles</a>
   <ul class="collapse">
-  <li><a href="#error-command-not-found" id="toc-error-command-not-found" class="nav-link" data-scroll-target="#error-command-not-found"><span class="header-section-number">A.5.1</span> Error: “command not found”</a></li>
-  <li><a href="#error-api-key-inválida" id="toc-error-api-key-inválida" class="nav-link" data-scroll-target="#error-api-key-inválida"><span class="header-section-number">A.5.2</span> Error: “API key inválida”</a></li>
-  <li><a href="#error-permiso-denegado" id="toc-error-permiso-denegado" class="nav-link" data-scroll-target="#error-permiso-denegado"><span class="header-section-number">A.5.3</span> Error: “Permiso denegado”</a></li>
+  <li><a href="#presentarse" id="toc-presentarse" class="nav-link" data-scroll-target="#presentarse"><span class="header-section-number">B.3.1</span> Presentarse</a></li>
+  <li><a href="#investigar" id="toc-investigar" class="nav-link" data-scroll-target="#investigar"><span class="header-section-number">B.3.2</span> Investigar</a></li>
   </ul></li>
-  <li><a href="#recursos-rápidos" id="toc-recursos-rápidos" class="nav-link" data-scroll-target="#recursos-rápidos"><span class="header-section-number">A.6</span> Recursos rápidos</a></li>
+  <li><a href="#troubleshooting-rápido" id="toc-troubleshooting-rápido" class="nav-link" data-scroll-target="#troubleshooting-rápido"><span class="header-section-number">B.4</span> Troubleshooting rápido</a>
+  <ul class="collapse">
+  <li><a href="#error-command-not-found" id="toc-error-command-not-found" class="nav-link" data-scroll-target="#error-command-not-found"><span class="header-section-number">B.4.1</span> Error: “command not found”</a></li>
+  <li><a href="#error-api-key-inválida" id="toc-error-api-key-inválida" class="nav-link" data-scroll-target="#error-api-key-inválida"><span class="header-section-number">B.4.2</span> Error: “API key inválida”</a></li>
+  <li><a href="#error-permiso-denegado" id="toc-error-permiso-denegado" class="nav-link" data-scroll-target="#error-permiso-denegado"><span class="header-section-number">B.4.3</span> Error: “Permiso denegado”</a></li>
+  </ul></li>
+  <li><a href="#recursos-rápidos" id="toc-recursos-rápidos" class="nav-link" data-scroll-target="#recursos-rápidos"><span class="header-section-number">B.5</span> Recursos rápidos</a></li>
+  </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/statick88/taller-ia-no-informaticos/edit/main/apendice-cheatsheet.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/statick88/taller-ia-no-informaticos/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./apendice-cheatsheet.html">Appendices</a></li><li class="breadcrumb-item"><a href="./apendice-cheatsheet.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Apéndice A: Cheatsheet</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./apendice-cheatsheet.html">Appendices</a></li><li class="breadcrumb-item"><a href="./apendice-cheatsheet.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Cheatsheet</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Apéndice A — Apéndice A: Cheatsheet</h1>
+<h1 class="title">Apéndice A — Cheatsheet</h1>
+<p class="subtitle lead">Referencia rápida de comandos y atajos</p>
 </div>
 
 
@@ -298,19 +362,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div>
   <div class="keywords">
     <div class="block-title">Palabras clave</div>
-    <p>inteligencia artificial, opencode, productivity, no-code, tutorial</p>
+    <p>inteligencia artificial, opencode, notebooklm, ollama, productivity, no-code, tutorial</p>
   </div>
 </div>
 
 </header>
 
 
-<section id="comandos-esenciales" class="level2" data-number="A.1">
-<h2 data-number="A.1" class="anchored" data-anchor-id="comandos-esenciales"><span class="header-section-number">A.1</span> Comandos esenciales</h2>
-<section id="instalación" class="level3" data-number="A.1.1">
-<h3 data-number="A.1.1" class="anchored" data-anchor-id="instalación"><span class="header-section-number">A.1.1</span> Instalación</h3>
+<section id="apéndice-a-cheatsheet" class="level1" data-number="B">
+<h1 data-number="B"><span class="header-section-number">B</span> Apéndice A: Cheatsheet</h1>
+<section id="comandos-esenciales" class="level2" data-number="B.1">
+<h2 data-number="B.1" class="anchored" data-anchor-id="comandos-esenciales"><span class="header-section-number">B.1</span> Comandos esenciales</h2>
+<section id="instalación" class="level3" data-number="B.1.1">
+<h3 data-number="B.1.1" class="anchored" data-anchor-id="instalación"><span class="header-section-number">B.1.1</span> Instalación</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instalar OpenCode</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> install <span class="at">-g</span> opencode-ai</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> install <span class="at">-g</span> opencode-cli</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar instalación</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span> <span class="at">--version</span></span>
@@ -318,8 +384,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver ayuda</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span> <span class="at">--help</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="configuración" class="level3" data-number="A.1.2">
-<h3 data-number="A.1.2" class="anchored" data-anchor-id="configuración"><span class="header-section-number">A.1.2</span> Configuración</h3>
+<section id="configuración" class="level3" data-number="B.1.2">
+<h3 data-number="B.1.2" class="anchored" data-anchor-id="configuración"><span class="header-section-number">B.1.2</span> Configuración</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver configuración actual</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span> config list</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -329,8 +395,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver agentes disponibles</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span> agents list</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="uso-básico" class="level3" data-number="A.1.3">
-<h3 data-number="A.1.3" class="anchored" data-anchor-id="uso-básico"><span class="header-section-number">A.1.3</span> Uso básico</h3>
+<section id="uso-básico" class="level3" data-number="B.1.3">
+<h3 data-number="B.1.3" class="anchored" data-anchor-id="uso-básico"><span class="header-section-number">B.1.3</span> Uso básico</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Iniciar conversación</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -341,98 +407,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">opencode</span> <span class="at">--agent</span> nombre-agente <span class="st">"tu pregunta"</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
-<section id="estructura-de-archivos" class="level2" data-number="A.2">
-<h2 data-number="A.2" class="anchored" data-anchor-id="estructura-de-archivos"><span class="header-section-number">A.2</span> Estructura de archivos</h2>
+<section id="estructura-de-archivos" class="level2" data-number="B.2">
+<h2 data-number="B.2" class="anchored" data-anchor-id="estructura-de-archivos"><span class="header-section-number">B.2</span> Estructura de archivos</h2>
 <pre><code>~/.config/opencode/
 ├── opencode.json      # Configuración principal
 ├── AGENTS.md          # Tu perfil global
 └── agents/            # Agentes personalizados
     └── mi-agente.md</code></pre>
 </section>
-<section id="skins-y-prompts-útiles" class="level2" data-number="A.3">
-<h2 data-number="A.3" class="anchored" data-anchor-id="skins-y-prompts-útiles"><span class="header-section-number">A.3</span> Skins y prompts útiles</h2>
-<section id="presentarse" class="level3" data-number="A.3.1">
-<h3 data-number="A.3.1" class="anchored" data-anchor-id="presentarse"><span class="header-section-number">A.3.1</span> Presentarse</h3>
+<section id="skins-y-prompts-útiles" class="level2" data-number="B.3">
+<h2 data-number="B.3" class="anchored" data-anchor-id="skins-y-prompts-útiles"><span class="header-section-number">B.3</span> Skins y prompts útiles</h2>
+<section id="presentarse" class="level3" data-number="B.3.1">
+<h3 data-number="B.3.1" class="anchored" data-anchor-id="presentarse"><span class="header-section-number">B.3.1</span> Presentarse</h3>
 <pre><code>Hola, me llamo [nombre] y trabajo en [industria].
 Ayúdame con [tarea específica].</code></pre>
 </section>
-<section id="pedir-ayuda-estructurada" class="level3" data-number="A.3.2">
-<h3 data-number="A.3.2" class="anchored" data-anchor-id="pedir-ayuda-estructurada"><span class="header-section-number">A.3.2</span> Pedir ayuda estructurada</h3>
-<pre><code>Necesito [resultado]. 
-Contexto: [información relevante].
-Restricciones: [límites si hay].</code></pre>
-</section>
-<section id="investigar" class="level3" data-number="A.3.3">
-<h3 data-number="A.3.3" class="anchored" data-anchor-id="investigar"><span class="header-section-number">A.3.3</span> Investigar</h3>
+<section id="investigar" class="level3" data-number="B.3.2">
+<h3 data-number="B.3.2" class="anchored" data-anchor-id="investigar"><span class="header-section-number">B.3.2</span> Investigar</h3>
 <pre><code>Busca información sobre [tema].
 Filtros: [fuentes confiables, fechas, etc.].
 Formato: [cómo quieres la respuesta].</code></pre>
 </section>
 </section>
-<section id="atajos-útiles" class="level2" data-number="A.4">
-<h2 data-number="A.4" class="anchored" data-anchor-id="atajos-útiles"><span class="header-section-number">A.4</span> Atajos útiles</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Acción</th>
-<th>Cómo hacerlo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nueva conversación</td>
-<td><code>Ctrl+C</code> para salir, luego <code>opencode</code></td>
-</tr>
-<tr class="even">
-<td>Ver historial</td>
-<td>Flechas arriba/abajo</td>
-</tr>
-<tr class="odd">
-<td>Cancelar</td>
-<td><code>Ctrl+C</code></td>
-</tr>
-<tr class="even">
-<td>Limpiar pantalla</td>
-<td><code>Ctrl+L</code></td>
-</tr>
-<tr class="odd">
-<td>Help</td>
-<td><code>opencode --help</code></td>
-</tr>
-</tbody>
-</table>
+<section id="troubleshooting-rápido" class="level2" data-number="B.4">
+<h2 data-number="B.4" class="anchored" data-anchor-id="troubleshooting-rápido"><span class="header-section-number">B.4</span> Troubleshooting rápido</h2>
+<section id="error-command-not-found" class="level3" data-number="B.4.1">
+<h3 data-number="B.4.1" class="anchored" data-anchor-id="error-command-not-found"><span class="header-section-number">B.4.1</span> Error: “command not found”</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar que npm está en PATH</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> <span class="at">--version</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Reinstalar si es necesario</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> install <span class="at">-g</span> opencode-cli</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="troubleshooting-rápido" class="level2" data-number="A.5">
-<h2 data-number="A.5" class="anchored" data-anchor-id="troubleshooting-rápido"><span class="header-section-number">A.5</span> Troubleshooting rápido</h2>
-<section id="error-command-not-found" class="level3" data-number="A.5.1">
-<h3 data-number="A.5.1" class="anchored" data-anchor-id="error-command-not-found"><span class="header-section-number">A.5.1</span> Error: “command not found”</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar que npm está en PATH</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> <span class="at">--version</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Reinstalar si es necesario</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> install <span class="at">-g</span> opencode-ai</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="error-api-key-inválida" class="level3" data-number="A.5.2">
-<h3 data-number="A.5.2" class="anchored" data-anchor-id="error-api-key-inválida"><span class="header-section-number">A.5.2</span> Error: “API key inválida”</h3>
+<section id="error-api-key-inválida" class="level3" data-number="B.4.2">
+<h3 data-number="B.4.2" class="anchored" data-anchor-id="error-api-key-inválida"><span class="header-section-number">B.4.2</span> Error: “API key inválida”</h3>
 <ol type="1">
 <li>Ve a platform.openai.com</li>
 <li>Verifica tu API key</li>
 <li>Actualiza ~/.config/opencode/opencode.json</li>
 </ol>
 </section>
-<section id="error-permiso-denegado" class="level3" data-number="A.5.3">
-<h3 data-number="A.5.3" class="anchored" data-anchor-id="error-permiso-denegado"><span class="header-section-number">A.5.3</span> Error: “Permiso denegado”</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Linux/Mac</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> npm install <span class="at">-g</span> opencode-ai</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># O cambia el directorio</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> ~/.npm-global</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> config set prefix <span class="st">'~/.npm-global'</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=</span>~/.npm-global/bin:<span class="va">$PATH</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="error-permiso-denegado" class="level3" data-number="B.4.3">
+<h3 data-number="B.4.3" class="anchored" data-anchor-id="error-permiso-denegado"><span class="header-section-number">B.4.3</span> Error: “Permiso denegado”</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Linux/Mac</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> npm install <span class="at">-g</span> opencode-ai</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># O cambia el directorio</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> config set prefix <span class="st">'~/.npm-global'</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=</span>~/.npm-global/bin:<span class="va">$PATH</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
-<section id="recursos-rápidos" class="level2" data-number="A.6">
-<h2 data-number="A.6" class="anchored" data-anchor-id="recursos-rápidos"><span class="header-section-number">A.6</span> Recursos rápidos</h2>
+<section id="recursos-rápidos" class="level2" data-number="B.5">
+<h2 data-number="B.5" class="anchored" data-anchor-id="recursos-rápidos"><span class="header-section-number">B.5</span> Recursos rápidos</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -455,12 +480,13 @@ Formato: [cómo quieres la respuesta].</code></pre>
 </tr>
 <tr class="even">
 <td>npm</td>
-<td>npmjs.com/package/opencode-ai</td>
+<td>npmjs.com/package/opencode-cli</td>
 </tr>
 </tbody>
 </table>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -537,7 +563,7 @@ Formato: [cómo quieres la respuesta].</code></pre>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/statick88\.github\.io\/taller-ia-no-informaticos\/");
+        var filterRegex = new RegExp("https:\/\/github\.com\/statick88\/taller-ia-no-informaticos");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -872,16 +898,29 @@ Formato: [cómo quieres la respuesta].</code></pre>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./referencias.html" class="pagination-link" aria-label="Referencias Científicas">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Referencias Científicas</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Referencias Científicas</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./apendice-faq.html" class="pagination-link" aria-label="Apéndice B: Preguntas Frecuentes">
-        <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Apéndice B: Preguntas Frecuentes</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./apendice-faq.html" class="pagination-link" aria-label="Preguntas Frecuentes">
+        <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Preguntas Frecuentes</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 <strong>Diego Saavedra García</strong>. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>Material educativo para <strong>Taller de IA para No Informáticos</strong></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/statick88/taller-ia-no-informaticos/edit/main/apendice-cheatsheet.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/statick88/taller-ia-no-informaticos/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+</div>
+  </div>
+</footer>
 
 
 

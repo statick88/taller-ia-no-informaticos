@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Diego Saavedra García">
-<meta name="keywords" content="inteligencia artificial, opencode, productivity, no-code, tutorial">
-<meta name="description" content="Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar.">
+<meta name="keywords" content="inteligencia artificial, opencode, notebooklm, ollama, productivity, no-code, tutorial">
+<meta name="description" content="Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar. Taller virtual gratuito de 2 horas.">
 
 <title>Taller de IA para No Informáticos</title>
 <style>
@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -46,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-367522ac618891c39d4b2ae87ea7600e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c38393dfc485b7557db906cd7eda2179.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -77,6 +76,17 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Taller de IA para No Informáticos">
+<meta property="og:description" content="Guía completa para aprender IA sin programar — 2 horas, 100% gratis">
+<meta property="og:image" content="https://github.com/statick88/taller-ia-no-informaticos/images/taller-ia-cover.svg">
+<meta property="og:site_name" content="Taller de IA para No Informáticos">
+<meta property="og:image:alt" content="Taller de IA para No Informáticos">
+<meta name="twitter:title" content="Taller de IA para No Informáticos">
+<meta name="twitter:description" content="Guía completa para profesionales no informáticos">
+<meta name="twitter:image" content="https://github.com/statick88/taller-ia-no-informaticos/images/taller-ia-cover.svg">
+<meta name="twitter:image:alt" content="Taller de IA para No Informáticos">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -88,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Prefacio</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">🤖 Taller de IA para No Informáticos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -101,9 +111,55 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="https://via.placeholder.com/150/00cc33/000000?text=IA" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://via.placeholder.com/150/00cc33/000000?text=IA" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Taller de IA para No Informáticos</a> 
+      <a href="./">📚 Taller de IA</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/statick88/taller-ia-no-informaticos" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Taller-de-IA-para-No-Informáticos.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Taller-de-IA-para-No-Informáticos.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -116,94 +172,100 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Prefacio</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">🤖 Taller de IA para No Informáticos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">1. Fundamentos: ¿Por qué usar IA?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fundamentos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2. El Ecosistema de IA en 2026</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ecosistema IA 2026</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./opencode.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">3. OpenCode: Tu Asistente Personal</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">OpenCode</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./instalacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">4. Instalación de OpenCode</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Instalación</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./perfiles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">5. Perfiles Personalizados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Perfiles Personalizados</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mcp-skills.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">6. MCP y Skills</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">MCP y Skills</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./casos-uso.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">7. Casos de Uso por Profesión</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Casos de Uso</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./labs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">8. Labs Prácticos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Labs Prácticos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comparativa.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">9. Análisis Comparativo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis Comparativo</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./proximos-pasos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">10. Resumen y Próximos Pasos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Próximos Pasos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./referencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Referencias Científicas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Referencias Científicas</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apendice-cheatsheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Apéndice A: Cheatsheet</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Cheatsheet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apendice-faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Apéndice B: Preguntas Frecuentes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Preguntas Frecuentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./apendice-gentle-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Apéndice C: Gentleman Programming — Gentle AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -218,15 +280,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link active" data-scroll-target="#prefacio">Prefacio</a>
+  <li><a href="#taller-de-ia-para-no-informáticos" id="toc-taller-de-ia-para-no-informáticos" class="nav-link active" data-scroll-target="#taller-de-ia-para-no-informáticos"><span class="header-section-number">1</span> 🤖 Taller de IA para No Informáticos</a>
   <ul class="collapse">
-  <li><a href="#qué-es-este-taller" id="toc-qué-es-este-taller" class="nav-link" data-scroll-target="#qué-es-este-taller">¿Qué es este taller?</a></li>
-  <li><a href="#qué-aprenderás" id="toc-qué-aprenderás" class="nav-link" data-scroll-target="#qué-aprenderás">¿Qué aprenderás?</a></li>
-  <li><a href="#estructura-del-ebook" id="toc-estructura-del-ebook" class="nav-link" data-scroll-target="#estructura-del-ebook">Estructura del Ebook</a></li>
-  <li><a href="#requisitos-previos" id="toc-requisitos-previos" class="nav-link" data-scroll-target="#requisitos-previos">Requisitos Previos</a></li>
+  <li><a href="#domina-opencode-notebooklm-y-la-inteligencia-artificial" id="toc-domina-opencode-notebooklm-y-la-inteligencia-artificial" class="nav-link" data-scroll-target="#domina-opencode-notebooklm-y-la-inteligencia-artificial"><span class="header-section-number">1.1</span> Domina OpenCode, NotebookLM y la Inteligencia Artificial</a>
+  <ul class="collapse">
+  <li><a href="#sin-saber-programar-100-gratuito" id="toc-sin-saber-programar-100-gratuito" class="nav-link" data-scroll-target="#sin-saber-programar-100-gratuito"><span class="header-section-number">1.1.1</span> Sin saber programar — 100% gratuito</a></li>
+  </ul></li>
+  <li><a href="#descripción-del-curso" id="toc-descripción-del-curso" class="nav-link" data-scroll-target="#descripción-del-curso"><span class="header-section-number">1.2</span> 📋 Descripción del Curso</a>
+  <ul class="collapse">
+  <li><a href="#qué-aprenderás" id="toc-qué-aprenderás" class="nav-link" data-scroll-target="#qué-aprenderás"><span class="header-section-number">1.2.1</span> ¿Qué aprenderás?</a></li>
+  </ul></li>
+  <li><a href="#estructura-del-libro" id="toc-estructura-del-libro" class="nav-link" data-scroll-target="#estructura-del-libro"><span class="header-section-number">1.3</span> 📚 Estructura del Libro</a></li>
+  <li><a href="#requisitos-previos" id="toc-requisitos-previos" class="nav-link" data-scroll-target="#requisitos-previos"><span class="header-section-number">1.4</span> ⚡ Requisitos Previos</a></li>
+  <li><a href="#por-qué-este-taller" id="toc-por-qué-este-taller" class="nav-link" data-scroll-target="#por-qué-este-taller"><span class="header-section-number">1.5</span> 🎯 ¿Por qué este taller?</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/statick88/taller-ia-no-informaticos/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/statick88/taller-ia-no-informaticos/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -239,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar.
+    Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar. Taller virtual gratuito de 2 horas.
   </div>
 </div>
 
@@ -251,6 +320,9 @@ ul.task-list li input[type="checkbox"] {
     <p class="author">Diego Saavedra García </p>
   </div>
   <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Taller de IA para No Informáticos
+          </p>
         <p class="affiliation">
             OpenCode Community
           </p>
@@ -277,97 +349,199 @@ ul.task-list li input[type="checkbox"] {
 <div>
   <div class="keywords">
     <div class="block-title">Palabras clave</div>
-    <p>inteligencia artificial, opencode, productivity, no-code, tutorial</p>
+    <p>inteligencia artificial, opencode, notebooklm, ollama, productivity, no-code, tutorial</p>
   </div>
 </div>
 
 </header>
 
 
-
-<section id="prefacio" class="level1 unnumbered">
-<h1 class="unnumbered">Prefacio</h1><p><embed src="_cover.md" title="Taller de IA para No Informáticos" class="quarto-cover-image nolightbox img-fluid"></p>
-<div style="text-align: center; padding: 40px 0; background: linear-gradient(135deg, #0a0a0f, #1a1a25); margin: 0 -20px; border-radius: 8px;">
-  <h1 style="color: #00cc33; font-size: 2.5em; margin: 0;">Taller de IA<br>para No Informáticos</h1>
-  <p style="color: #a0a0b0; font-size: 1.3em; margin-top: 15px;">Guía Práctica para Profesionales 2026</p>
-  <p style="color: #606070; margin-top: 30px;">Diego Saavedra García</p>
+<section id="taller-de-ia-para-no-informáticos" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 🤖 Taller de IA para No Informáticos</h1>
+<section id="domina-opencode-notebooklm-y-la-inteligencia-artificial" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="domina-opencode-notebooklm-y-la-inteligencia-artificial"><span class="header-section-number">1.1</span> Domina OpenCode, NotebookLM y la Inteligencia Artificial</h2>
+<section id="sin-saber-programar-100-gratuito" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="sin-saber-programar-100-gratuito"><span class="header-section-number">1.1.1</span> Sin saber programar — 100% gratuito</h3>
+<hr>
+<div style="text-align: center; margin: 2rem 0;">
+<div style="background: linear-gradient(135deg, #00cc33 0%, #00b4e6 100%); border-radius: 12px; padding: 3rem 2rem; margin: 0;">
+  <h1 style="color: white; font-size: 2.8em; margin-bottom: 0.5rem;">
+    Taller de IA para No Informáticos
+  </h1>
+  <p style="color: rgba(255,255,255,0.9); font-size: 1.3em; margin-bottom: 1.5rem;">
+    Guía Práctica Completa — 2 Horas, 12 Secciones, 5 Labs
+  </p>
+  <p style="color: rgba(255,255,255,0.7); font-size: 1em;">
+    © 2026 · Diego Saavedra García<br>
+    <a href="#" style="color: white; text-decoration: underline;">Taller de IA para No Informáticos</a>
+  </p>
+</div>
 </div>
 <hr>
-<section id="qué-es-este-taller" class="level2">
-<h2 class="anchored" data-anchor-id="qué-es-este-taller">¿Qué es este taller?</h2>
-<p>Este taller gratuito de 2 horas te enseñará a usar <strong>OpenCode</strong> y herramientas de inteligencia artificial para aumentar tu productividad profesional, <strong>sin necesidad de saber programar</strong>.</p>
 </section>
-<section id="qué-aprenderás" class="level2">
-<h2 class="anchored" data-anchor-id="qué-aprenderás">¿Qué aprenderás?</h2>
-<p>Al finalizar este taller podrás:</p>
+</section>
+<section id="descripción-del-curso" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="descripción-del-curso"><span class="header-section-number">1.2</span> 📋 Descripción del Curso</h2>
+<p>Este taller gratuito de <strong>2 horas</strong> te enseñará a usar herramientas de inteligencia artificial para <strong>aumentar tu productividad profesional</strong>, sin importar tu área de trabajo.</p>
+<section id="qué-aprenderás" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="qué-aprenderás"><span class="header-section-number">1.2.1</span> ¿Qué aprenderás?</h3>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>📌 <strong>Al finalizar serás capaz de:</strong></p>
 <ul>
-<li><strong>Usar OpenCode</strong> para tareas profesionales</li>
-<li><strong>Personalizar tu asistente</strong> con tu perfil</li>
-<li><strong>Instalar habilidades adicionales</strong> (Skills)</li>
-<li><strong>Conectar extensiones</strong> (MCP)</li>
-<li><strong>Crear agentes especializados</strong></li>
-<li><strong>Elegir la mejor herramienta</strong> para cada trabajo</li>
+<li>✅ Usar <strong>OpenCode</strong> para tareas profesionales</li>
+<li>✅ <strong>Personalizar tu asistente</strong> con perfiles personalizados</li>
+<li>✅ Instalar <strong>habilidades adicionales</strong> (Skills)</li>
+<li>✅ Conectar <strong>extensiones</strong> (MCP)</li>
+<li>✅ Crear <strong>agentes especializados</strong></li>
+<li>✅ Elegir la <strong>mejor herramienta</strong> para cada trabajo</li>
+<li>✅ Aplicar todo en <strong>5 labs prácticos</strong></li>
 </ul>
+</div>
+</div>
+</div>
 </section>
-<section id="estructura-del-ebook" class="level2">
-<h2 class="anchored" data-anchor-id="estructura-del-ebook">Estructura del Ebook</h2>
-<p>Este ebook está organizado en secciones que puedes leer en orden o seleccionar según tu necesidad:</p>
+</section>
+<section id="estructura-del-libro" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="estructura-del-libro"><span class="header-section-number">1.3</span> 📚 Estructura del Libro</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 28%">
+<col style="width: 36%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Sección</th>
-<th>Contenido</th>
+<th>Temas</th>
+<th>Páginas</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Fundamentos</strong></td>
-<td>Por qué la IA importa, evidencia científica</td>
+<td>Cap. 1</td>
+<td>Introducción y fundamentos de IA</td>
+<td>Conceptos básicos + evidencia científica</td>
 </tr>
 <tr class="even">
-<td><strong>OpenCode</strong></td>
-<td>Qué es, cómo funciona, por qué elegirlo</td>
+<td>Cap. 2</td>
+<td>Ecosistema IA 2026</td>
+<td>OpenCode, Copilot, Gemini, Ollama, NotebookLM</td>
 </tr>
 <tr class="odd">
-<td><strong>Instalación</strong></td>
-<td>Pasos detallados para Windows, Mac, Linux</td>
+<td>Cap. 3</td>
+<td>OpenCode a fondo</td>
+<td>Arquitectura, características, ventajas</td>
 </tr>
 <tr class="even">
-<td><strong>Perfiles</strong></td>
-<td>Cómo personalizar tu asistente con AGENTS.md</td>
+<td>Cap. 4</td>
+<td>Instalación</td>
+<td>Windows, macOS, Linux — paso a paso</td>
 </tr>
 <tr class="odd">
-<td><strong>MCP y Skills</strong></td>
-<td>Extensiones y capacidades adicionales</td>
+<td>Cap. 5</td>
+<td>Perfiles personalizados</td>
+<td>AGENTS.md, JSON, agentes</td>
 </tr>
 <tr class="even">
-<td><strong>Casos de Uso</strong></td>
-<td>12 profesiones, con ejemplos concretos</td>
+<td>Cap. 6</td>
+<td>MCP y Skills</td>
+<td>Extensiones, protocolo, habilidades</td>
 </tr>
 <tr class="odd">
-<td><strong>Labs Prácticos</strong></td>
-<td>5 ejercicios guiados paso a paso</td>
+<td>Cap. 7</td>
+<td>Casos de uso</td>
+<td>12 profesiones con ejemplos reales</td>
 </tr>
 <tr class="even">
-<td><strong>Comparativa</strong></td>
-<td>OpenCode vs Copilot vs Ollama vs Gemini</td>
+<td>Cap. 8</td>
+<td>Labs prácticos</td>
+<td>5 labs guiados (2 horas)</td>
+</tr>
+<tr class="odd">
+<td>Cap. 9</td>
+<td>Comparativa</td>
+<td>Herramientas vs.&nbsp;profesión vs.&nbsp;presupuesto</td>
+</tr>
+<tr class="even">
+<td>Cap. 10</td>
+<td>Próximos pasos</td>
+<td>Plan de acción 4 semanas</td>
+</tr>
+<tr class="odd">
+<td>+ Apéndice</td>
+<td>Cheatsheet, FAQ, Gentleman AI</td>
+<td>Referencia rápida</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="requisitos-previos" class="level2">
-<h2 class="anchored" data-anchor-id="requisitos-previos">Requisitos Previos</h2>
-<p>Antes de empezar, asegúrate de tener:</p>
-<ol type="1">
-<li><strong>Cuenta de Google</strong> (para NotebookLM, gratis)</li>
-<li><strong>Editor de texto</strong> (Bloc de notas o TextEdit)</li>
-<li><strong>Navegador actualizado</strong> (Chrome, Firefox o Edge)</li>
-<li><strong>Conexión a internet</strong> estable</li>
-</ol>
 <hr>
-<div class="text-center">
-<p><em>Material preparado para el Taller de IA para No Informáticos</em></p>
+</section>
+<section id="requisitos-previos" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="requisitos-previos"><span class="header-section-number">1.4</span> ⚡ Requisitos Previos</h2>
+<p>Antes de empezar, asegúrate de tener:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Requisito</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🌐 Cuenta de Google</td>
+<td>Para NotebookLM (gratis)</td>
+</tr>
+<tr class="even">
+<td>💻 Editor de texto</td>
+<td>Bloc de notas, VS Code o similar</td>
+</tr>
+<tr class="odd">
+<td>🌍 Navegador actualizado</td>
+<td>Chrome, Firefox o Edge</td>
+</tr>
+<tr class="even">
+<td>📶 Conexión a internet</td>
+<td>Estable y confiable</td>
+</tr>
+<tr class="odd">
+<td>☕ Ganas de aprender</td>
+<td>¡Lo más importante!</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
+<div class="callout-body-container">
+<p>💡 <strong>Este curso es para profesionales de cualquier área</strong> — educación, salud, derecho, administración, marketing, ingeniería, etc. <strong>No se requieren conocimientos técnicos previos.</strong></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="por-qué-este-taller" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="por-qué-este-taller"><span class="header-section-number">1.5</span> 🎯 ¿Por qué este taller?</h2>
+<blockquote class="blockquote">
+<p><em>“El uso frecuente de IA incrementa la productividad con un odds ratio de 2.34. Los empleados que usan IA generativa ahorran en promedio 96.8 horas al año.”</em> — Estudio Repsol/MIT (2024) + Estudio Ecuador (2025)</p>
+</blockquote>
+<p>La IA ya no es ciencia ficción. <strong>Es una herramienta real</strong> que puedes usar hoy para:</p>
+<ul>
+<li>🤖 Crear contenido 10x más rápido</li>
+<li>📊 Analizar datos sin ser data scientist</li>
+<li>📝 Resumir documentos complejos</li>
+<li>💡 Generar ideas creativas</li>
+<li>⏰ Ahorrar horas de trabajo repetitivo</li>
+</ul>
+<hr>
+<p><em>Material preparado para el Taller de IA para No Informáticos</em> <em>Por Diego Saavedra García · Taller de IA para No Informáticos · 2026</em></p>
 
 
 </section>
@@ -447,7 +621,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/statick88\.github\.io\/taller-ia-no-informaticos\/");
+        var filterRegex = new RegExp("https:\/\/github\.com\/statick88\/taller-ia-no-informaticos");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -783,12 +957,25 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="1. Fundamentos: ¿Por qué usar IA?">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">1. Fundamentos: ¿Por qué usar IA?</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./intro.html" class="pagination-link" aria-label="Introducción">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 <strong>Diego Saavedra García</strong>. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>Material educativo para <strong>Taller de IA para No Informáticos</strong></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/statick88/taller-ia-no-informaticos/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/statick88/taller-ia-no-informaticos/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+</div>
+  </div>
+</footer>
 
 
 

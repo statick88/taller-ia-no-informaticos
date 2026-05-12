@@ -8,14 +8,71 @@ book:
   author:
     - name: "Diego Saavedra García"
       affiliations:
+        - "Taller de IA para No Informáticos"
         - "OpenCode Community"
         - "Docente Universitario"
   date: "2026-05-12"
   version: "1.0"
-  cover-image: _cover.md
-  site-url: "https://statick88.github.io/taller-ia-no-informaticos/"
-  description: "Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar."
+  site-url: "https://github.com/statick88/taller-ia-no-informaticos"
+  description: "Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar. Taller virtual gratuito de 2 horas."
 
+  # Professional navigation features
+  reader-mode: true
+  back-to-top-navigation: true
+  page-navigation: true
+  search: true
+
+  # Sidebar config
+  sidebar:
+    title: "📚 Taller de IA"
+    search: true
+    collapse-level: 1
+    pinned: true
+    style: "floating"
+    logo: "https://via.placeholder.com/150/00cc33/000000?text=IA"
+
+  # Repository info
+  repo-url: https://github.com/statick88/taller-ia-no-informaticos
+  repo-branch: main
+  repo-actions:
+    - edit
+    - issue
+
+  # Sharing and downloads
+  sharing:
+    - twitter
+    - linkedin
+  downloads:
+    - pdf
+    - epub
+
+  # Cover image
+  # cover-image: images/cover.svg
+
+  # Professional footer (estandar del taller)
+  page-footer:
+    border: true
+    left: |
+      © 2026 **Diego Saavedra García**. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+    center: |
+      Material educativo para **Taller de IA para No Informáticos**
+    right: |
+      Built with [Quarto](https://quarto.org/)
+
+  # Open Graph / Social Media
+  open-graph:
+    image: images/taller-ia-cover.svg
+    image-alt: "Taller de IA para No Informáticos"
+    title: "Taller de IA para No Informáticos"
+    description: "Guía completa para aprender IA sin programar — 2 horas, 100% gratis"
+
+  twitter-card:
+    image: images/taller-ia-cover.svg
+    image-alt: "Taller de IA para No Informáticos"
+    title: "Taller de IA para No Informáticos"
+    description: "Guía completa para profesionales no informáticos"
+
+  # Chapters — Main ebook content
   chapters:
     - index.qmd
     - intro.qmd
@@ -30,19 +87,30 @@ book:
     - proximos-pasos.qmd
     - referencias.qmd
 
+  # Appendices
   appendices:
     - apendice-cheatsheet.qmd
     - apendice-faq.qmd
+    - apendice-gentle-ai.qmd
 
 format:
   html:
     theme: cosmo
+    css: styles.css
+    fontsize: 1.1em
     toc: true
     toc-depth: 3
     number-sections: true
     code-copy: true
     smooth-scroll: true
     link-external-newwindow: true
+    anchor-sections: true
+    section-numbering: "1.0"
+    grid:
+      sidebar-width: 280px
+      body-width: 800px
+      margin-width: 60px
+      gutter-width: 30px
 
   pdf:
     documentclass: scrbook
@@ -55,7 +123,7 @@ format:
       - left=30mm
       - right=25mm
     fontsize: 11pt
-    linestretch: 1.3
+    linestretch: 1.4
     toc: true
     toc-depth: 3
     number-sections: true
@@ -64,10 +132,12 @@ format:
     citecolor: "violet"
     filecolor: "olive"
     papersize: a4
+    keep-tex: false
 
   epub:
     toc: true
     toc-depth: 3
+    css: styles.css
 
 execute:
   echo: false
@@ -78,6 +148,8 @@ metadata:
   keywords:
     - inteligencia artificial
     - opencode
+    - notebooklm
+    - ollama
     - productivity
     - no-code
     - tutorial

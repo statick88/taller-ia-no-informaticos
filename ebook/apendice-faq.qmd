@@ -1,3 +1,8 @@
+---
+title: "Preguntas Frecuentes"
+subtitle: "FAQ — Respuestas a las dudas más comunes"
+---
+
 # Apéndice B: Preguntas Frecuentes
 
 ## General
@@ -10,8 +15,8 @@
 
 OpenCode en sí es **gratis** (código abierto). Lo que puedes necesitar pagar es:
 
-- Tu propia API key (OpenAI, Anthropic, etc.) que tiene un costo según uso
-- OpenAI tiene $5 de crédito gratuito para nuevos usuarios
+- Tu propia API key (OpenAI, Anthropic, etc.) — costo según uso
+- OpenAI ofrece $5 de crédito gratuito para nuevos usuarios
 - Para uso básico, el costo es mínimo (~$1-5/mes)
 
 ### ¿Es seguro usar estas herramientas?
@@ -89,7 +94,7 @@ Edita `~/.config/opencode/opencode.json`:
 
 ### ¿Por qué la IA no recuerda nuestra conversación?
 
-Porque cada sesión es independiente. Para recordar:
+Cada sesión es independiente. Para recordar:
 
 1. Usa memoria persistente (Engram, Notion)
 2. Mantén tu AGENTS.md actualizado
@@ -115,22 +120,16 @@ Solo si:
 
 Depende del proveedor:
 
-- **OpenAI**: Pueden ver datos (aunque匿名izados) para entrenar
-- **Anthropic**: No usa datos para entrenar
+- **OpenAI**: Pueden ver datos (anonimizados) para entrenamiento
+- **Anthropic**: No usa datos para entrenamiento
 - **Ollama**: 100% local, nadie ve nada
-
-### ¿Debería preocuparme por filtrar datos?
-
-Para trabajo profesional general: **no demasiado**.
-
-Para datos sensibles (médicos, legales, financieros): **sí, sé cauteloso**.
 
 ### ¿Cómo protejo información sensible?
 
 1. No compartas nombres de clientes
 2. Usa Ollama para datos muy sensibles
 3. Revisa antes de enviar
-4. Usa variables de entorno, no hardcodees secrets
+4. Usa variables de entorno, no hardcodes
 
 ## Troubleshooting
 
@@ -173,18 +172,10 @@ Puedes pedir explícitamente:
 
 1. **Discord de OpenCode** — Mejor para ayuda rápida
 2. **GitHub Discussions** — Para preguntas detalladas
-3. **Este taller** — Para aprender conceptos
 
-### ¿Cómo contribuyó a OpenCode?
+### ¿Cómo contribuyo?
 
 - Reporta bugs
 - Sugiere features
-- Contribuye código (si sabes programar)
 - Comparte tu experiencia
 - Ayúdanos a traducir docs
-
----
-
-::: {.text-center}
-*¿Tu pregunta no está aquí? Pregunta en Discord o crea un issue en GitHub.*
-:::

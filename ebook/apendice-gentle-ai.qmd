@@ -1,0 +1,222 @@
+# Apéndice C: Gentleman Programming — Gentle AI
+
+## ¿Qué es Gentleman Programming?
+
+Gentleman Programming (o **Gentle AI**) es una filosofía de trabajo con inteligencia artificial basada en **respeto, precisión y elegancia** en el uso de herramientas de IA. No se trata solo de usar IA — se trata de **hacerlo bien**.
+
+## Los 10 Principios de Gentleman Programming
+
+### 1. 🎩 Elegante, nunca grosero
+> Nunca uses prompts agresivos o despectivos. La IA responde mejor a la cortesía.
+
+**❌ Mal:**
+```
+Dame la respuesta ya, no pierdas mi tiempo.
+```
+
+**✅ Bien:**
+```
+¿Podrías ayudarme con esto? Agradecería una respuesta clara y concisa.
+```
+
+### 2. 📐 Preciso en los requerimientos
+> Un caballero se prepara antes de pedir. Define bien tu problema antes de preguntar.
+
+**Técnica: FRAME**
+- **F** — Facts: Hechos relevantes
+- **R** — Role: El rol que desempeñas
+- **A** — Action: Qué quieres que haga
+- **M** — Medium: En qué formato
+- **E** — Extras: Restricciones adicionales
+
+### 3. 🗝️ Maestro de llaves
+> Protege siempre tus claves API, datos personales y secretos.
+
+```bash
+# ❌ NUNCA hagas esto:
+"Mi API key es sk-proj-abc123... por favor guárdala"
+
+# ✅ Usa variables de entorno:
+export OPENAI_API_KEY="tu-key-aqui"
+```
+
+### 4. 📚 Cita tus fuentes
+> Cuando la IA te ayuda, reconócelo. Da crédito a las herramientas que usaste.
+
+```
+*Esta sección fue asistida con OpenCode y NotebookLM.
+Los datos científicos provienen de: [Referencia]*
+```
+
+### 5. 🔍 Verifica antes de confiar
+> Un caballero nunca da por sentado. Verifica la información recibida.
+
+**Checklist de verificación:**
+- [ ] Los datos son correctos y actualizados
+- [ ] Las citas son verificables
+- [ ] El código se ejecuta sin errores
+- [ ] El análisis tiene sentido lógico
+- [ ] No hay sesgos evidentes
+
+### 6. 🧹 Limpia después de ti
+> Si generaste código o archivos, asegúrate de que sean comprensibles y limpios.
+
+```python
+# ❌ Código generado sin revisar
+x = do_stuff(a,b,c,True,None,"test",1)
+
+# ✅ Código limpiado y comentado
+resultado = procesar_datos(
+    datos=ventas,
+    filtro=activo,
+    categoria="tech",
+    incluir_testimonios=True
+)
+```
+
+### 7. 🤝 Colabora, no reemplaces
+> La IA es tu compañera de equipo, no tu sustituto.
+
+**Dónde la IA EXCELLE:**
+- Generar borradores rápidos
+- Resumir documentos largos
+- Buscar patrones en datos
+- Traducir contenido
+- Generar ideas creativas
+
+**Dónde TÚ debes liderar:**
+- Toma de decisiones finales
+- Relaciones humanas
+- Responsabilidad ética y legal
+- Contexto específico de tu industria
+- Creatividad estratégica
+
+### 8. 🔄 Itera y mejora
+> Un buen caballero no se conforma con el primer borrador.
+
+```
+Conversación de ejemplo:
+
+Yo: "Redacta una introducción sobre IA"
+IA: [Borrador inicial]
+Yo: "Mejor, pero necesito un tono más formal y citar 3 estudios"
+IA: [Versión mejorada]
+Yo: "Ahora agrega una referencia a la IA en educación latinoamericana"
+IA: [Versión final]
+Yo: "Perfecto, gracias"
+```
+
+### 9. 📏 Sé honesto sobre las limitaciones
+> No finjas que el trabajo fue 100% tuyo ni 100% de la IA.
+
+**Transparencia profesional:**
+```
+✓ "Usé IA para generar un borrador inicial y lo revisé personalmente"
+✗ "Todo lo escribí yo solo" (si usaste IA)
+✗ "La IA lo hizo todo" (si pusiste tu criterio profesional)
+```
+
+### 10. 🌱 Aprende continuamente
+> El mundo de la IA cambia rápidamente. Mantente actualizado.
+
+- Lee los changelogs de tus herramientas
+- Prueba nuevas features
+- Comparte lo que aprendes con otros
+- Contribuye a la comunidad de código abierto
+
+## El Ciclo Gentleman AI
+
+```
+┌──────────────────────────────────────────┐
+│                                          │
+│  1. 🧠 PREPARA tu prompt                │
+│     Define contexto, rol y formato       │
+│                     ↓                    │
+│  2. 🎩 GENERA con cortesía               │
+│     Pide con precisión y respeto          │
+│                     ↓                    │
+│  3. 🔍 VERIFICA todo                     │
+│     Datos, lógica, citas, código         │
+│                     ↓                    │
+│  4. ✍️ REFINA con iteración              │
+│     Pide mejoras específicas             │
+│                     ↓                    │
+│  5. 🧹 LIMPIA el resultado               │
+│     Formatea, comenta, organiza          │
+│                     ↓                    │
+│  6. 🙏 DA CRÉDITO                       │
+│     Cita herramientas y fuentes          │
+│                     ↓                    │
+│  7. 📤 COMPARTE con otros               │
+│     Contribuye a la comunidad            │
+│                                          │
+└──────────────────────────────────────────┘
+```
+
+## Gentleman AI en la Práctica
+
+### Ejemplo 1: Escritura profesional
+
+```
+🧠 Preparación:
+- Necesito un correo formal para un cliente
+- Tono: profesional, cordial, directo
+- Idioma: español formal
+- Longitud: máximo 200 palabras
+
+🎩 Prompt:
+"Redacta un correo profesional para un cliente importante
+solicitando una reunión para presentar resultados del Q1.
+Tono formal, cordial, directo. Máximo 200 palabras."
+
+🔍 Verificación:
+- ✅ No incluye datos ficticios del cliente
+- ✅ Tono apropiado para contexto formal
+- ✅ Dentro del límite de palabras
+```
+
+### Ejemplo 2: Análisis de datos
+
+```
+🧠 Preparación:
+- Tengo datos de ventas en un CSV
+- Necesito un análisis de tendencias
+- Quiero recomendaciones accionables
+
+🎩 Prompt:
+"Analiza estos datos de ventas y genera:
+1. Resumen de tendencias principales
+2. 3 recomendaciones basadas en datos
+3. Visualización sugerida para presentar"
+
+🔍 Verificación:
+- ✅ Las cifras coinciden con el archivo original
+- ✅ Las recomendaciones son realistas
+- ✅ La visualización es apropiada para la audiencia
+```
+
+## Recursos Adicionales
+
+### Libros recomendados
+| Libro | Autor | Enfoque |
+|-------|-------|---------|
+| *Co-Intelligence* | Ethan Mollick | Uso efectivo de IA |
+| *The AI Engineer* | swyx | Ingeniería de IA |
+| *AI for Everyone* | Andrew Ng (Coursera) | Fundamentos accesibles |
+
+### Cursos y talleres
+- **Este taller** — Taller de IA para No Informáticos
+- **AI Academy** — cursos avanzados de IA
+- **DeepLearning.AI** — especializaciones en IA
+
+### Comunidades
+- [OpenCode Discord](https://discord.gg/opencode)
+- [r/MachineLearning](https://reddit.com/r/MachineLearning)
+- [Hacker News](https://news.ycombinator.com)
+
+---
+
+> *"La tecnología más poderosa es la que se usa con sabiduría y elegancia."*
+> — Filosofía Gentleman Programming
+
+*Apéndice C · Taller de IA para No Informáticos · Diego Saavedra García · 2026*

@@ -9,7 +9,7 @@
 <meta name="keywords" content="inteligencia artificial, opencode, notebooklm, ollama, productivity, no-code, tutorial">
 <meta name="description" content="Manual completo para aprender a usar herramientas de inteligencia artificial sin saber programar. Taller virtual gratuito de 2 horas.">
 
-<title>10&nbsp; Análisis Comparativo – Taller de IA para No Informáticos</title>
+<title>Apéndice C — Apéndice C: Gentleman Programming — Gentle AI – Taller de IA para No Informáticos</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,6 +25,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -34,8 +69,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./proximos-pasos.html" rel="next">
-<link href="./labs.html" rel="prev">
+<link href="./apendice-faq.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -98,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./comparativa.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis Comparativo</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./apendice-cheatsheet.html">Appendices</a></li><li class="breadcrumb-item"><a href="./apendice-gentle-ai.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Apéndice C: Gentleman Programming — Gentle AI</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -225,7 +259,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./comparativa.html" class="sidebar-item-text sidebar-link active">
+  <a href="./comparativa.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis Comparativo</span></span></a>
   </div>
 </li>
@@ -243,13 +277,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apendice-cheatsheet.html" class="sidebar-item-text sidebar-link">
@@ -264,7 +298,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./apendice-gentle-ai.html" class="sidebar-item-text sidebar-link">
+  <a href="./apendice-gentle-ai.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Apéndice C: Gentleman Programming — Gentle AI</span></span></a>
   </div>
 </li>
@@ -280,29 +314,41 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#análisis-comparativo" id="toc-análisis-comparativo" class="nav-link active" data-scroll-target="#análisis-comparativo"><span class="header-section-number">11</span> Análisis Comparativo</a>
+  <li><a href="#qué-es-gentleman-programming" id="toc-qué-es-gentleman-programming" class="nav-link active" data-scroll-target="#qué-es-gentleman-programming"><span class="header-section-number">C.1</span> ¿Qué es Gentleman Programming?</a></li>
+  <li><a href="#los-10-principios-de-gentleman-programming" id="toc-los-10-principios-de-gentleman-programming" class="nav-link" data-scroll-target="#los-10-principios-de-gentleman-programming"><span class="header-section-number">C.2</span> Los 10 Principios de Gentleman Programming</a>
   <ul class="collapse">
-  <li><a href="#comparativa-de-herramientas" id="toc-comparativa-de-herramientas" class="nav-link" data-scroll-target="#comparativa-de-herramientas"><span class="header-section-number">11.1</span> Comparativa de herramientas</a></li>
-  <li><a href="#comparativa-detallada" id="toc-comparativa-detallada" class="nav-link" data-scroll-target="#comparativa-detallada"><span class="header-section-number">11.2</span> Comparativa detallada</a>
-  <ul class="collapse">
-  <li><a href="#opencode-vs-copilot" id="toc-opencode-vs-copilot" class="nav-link" data-scroll-target="#opencode-vs-copilot"><span class="header-section-number">11.2.1</span> OpenCode vs Copilot</a></li>
-  <li><a href="#opencode-vs-ollama" id="toc-opencode-vs-ollama" class="nav-link" data-scroll-target="#opencode-vs-ollama"><span class="header-section-number">11.2.2</span> OpenCode vs Ollama</a></li>
-  <li><a href="#cuándo-usar-cada-uno" id="toc-cuándo-usar-cada-uno" class="nav-link" data-scroll-target="#cuándo-usar-cada-uno"><span class="header-section-number">11.2.3</span> Cuándo usar cada uno</a></li>
+  <li><a href="#elegante-nunca-grosero" id="toc-elegante-nunca-grosero" class="nav-link" data-scroll-target="#elegante-nunca-grosero"><span class="header-section-number">C.2.1</span> 1. 🎩 Elegante, nunca grosero</a></li>
+  <li><a href="#preciso-en-los-requerimientos" id="toc-preciso-en-los-requerimientos" class="nav-link" data-scroll-target="#preciso-en-los-requerimientos"><span class="header-section-number">C.2.2</span> 2. 📐 Preciso en los requerimientos</a></li>
+  <li><a href="#maestro-de-llaves" id="toc-maestro-de-llaves" class="nav-link" data-scroll-target="#maestro-de-llaves"><span class="header-section-number">C.2.3</span> 3. 🗝️ Maestro de llaves</a></li>
+  <li><a href="#cita-tus-fuentes" id="toc-cita-tus-fuentes" class="nav-link" data-scroll-target="#cita-tus-fuentes"><span class="header-section-number">C.2.4</span> 4. 📚 Cita tus fuentes</a></li>
+  <li><a href="#verifica-antes-de-confiar" id="toc-verifica-antes-de-confiar" class="nav-link" data-scroll-target="#verifica-antes-de-confiar"><span class="header-section-number">C.2.5</span> 5. 🔍 Verifica antes de confiar</a></li>
+  <li><a href="#limpia-después-de-ti" id="toc-limpia-después-de-ti" class="nav-link" data-scroll-target="#limpia-después-de-ti"><span class="header-section-number">C.2.6</span> 6. 🧹 Limpia después de ti</a></li>
+  <li><a href="#colabora-no-reemplaces" id="toc-colabora-no-reemplaces" class="nav-link" data-scroll-target="#colabora-no-reemplaces"><span class="header-section-number">C.2.7</span> 7. 🤝 Colabora, no reemplaces</a></li>
+  <li><a href="#itera-y-mejora" id="toc-itera-y-mejora" class="nav-link" data-scroll-target="#itera-y-mejora"><span class="header-section-number">C.2.8</span> 8. 🔄 Itera y mejora</a></li>
+  <li><a href="#sé-honesto-sobre-las-limitaciones" id="toc-sé-honesto-sobre-las-limitaciones" class="nav-link" data-scroll-target="#sé-honesto-sobre-las-limitaciones"><span class="header-section-number">C.2.9</span> 9. 📏 Sé honesto sobre las limitaciones</a></li>
+  <li><a href="#aprende-continuamente" id="toc-aprende-continuamente" class="nav-link" data-scroll-target="#aprende-continuamente"><span class="header-section-number">C.2.10</span> 10. 🌱 Aprende continuamente</a></li>
   </ul></li>
-  <li><a href="#recomendaciones-por-presupuesto" id="toc-recomendaciones-por-presupuesto" class="nav-link" data-scroll-target="#recomendaciones-por-presupuesto"><span class="header-section-number">11.3</span> Recomendaciones por presupuesto</a></li>
-  <li><a href="#recomendaciones-por-nivel-técnico" id="toc-recomendaciones-por-nivel-técnico" class="nav-link" data-scroll-target="#recomendaciones-por-nivel-técnico"><span class="header-section-number">11.4</span> Recomendaciones por nivel técnico</a></li>
-  <li><a href="#el-ecosistema-ideal" id="toc-el-ecosistema-ideal" class="nav-link" data-scroll-target="#el-ecosistema-ideal"><span class="header-section-number">11.5</span> El ecosistema ideal</a></li>
+  <li><a href="#el-ciclo-gentleman-ai" id="toc-el-ciclo-gentleman-ai" class="nav-link" data-scroll-target="#el-ciclo-gentleman-ai"><span class="header-section-number">C.3</span> El Ciclo Gentleman AI</a></li>
+  <li><a href="#gentleman-ai-en-la-práctica" id="toc-gentleman-ai-en-la-práctica" class="nav-link" data-scroll-target="#gentleman-ai-en-la-práctica"><span class="header-section-number">C.4</span> Gentleman AI en la Práctica</a>
+  <ul class="collapse">
+  <li><a href="#ejemplo-1-escritura-profesional" id="toc-ejemplo-1-escritura-profesional" class="nav-link" data-scroll-target="#ejemplo-1-escritura-profesional"><span class="header-section-number">C.4.1</span> Ejemplo 1: Escritura profesional</a></li>
+  <li><a href="#ejemplo-2-análisis-de-datos" id="toc-ejemplo-2-análisis-de-datos" class="nav-link" data-scroll-target="#ejemplo-2-análisis-de-datos"><span class="header-section-number">C.4.2</span> Ejemplo 2: Análisis de datos</a></li>
+  </ul></li>
+  <li><a href="#recursos-adicionales" id="toc-recursos-adicionales" class="nav-link" data-scroll-target="#recursos-adicionales"><span class="header-section-number">C.5</span> Recursos Adicionales</a>
+  <ul class="collapse">
+  <li><a href="#libros-recomendados" id="toc-libros-recomendados" class="nav-link" data-scroll-target="#libros-recomendados"><span class="header-section-number">C.5.1</span> Libros recomendados</a></li>
+  <li><a href="#cursos-y-talleres" id="toc-cursos-y-talleres" class="nav-link" data-scroll-target="#cursos-y-talleres"><span class="header-section-number">C.5.2</span> Cursos y talleres</a></li>
+  <li><a href="#comunidades" id="toc-comunidades" class="nav-link" data-scroll-target="#comunidades"><span class="header-section-number">C.5.3</span> Comunidades</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/statick88/taller-ia-no-informaticos/edit/main/comparativa.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/statick88/taller-ia-no-informaticos/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/statick88/taller-ia-no-informaticos/edit/main/apendice-gentle-ai.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/statick88/taller-ia-no-informaticos/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./apendice-cheatsheet.html">Appendices</a></li><li class="breadcrumb-item"><a href="./apendice-gentle-ai.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Apéndice C: Gentleman Programming — Gentle AI</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis Comparativo</span></h1>
-<p class="subtitle lead">Herramientas vs.&nbsp;Profesión vs.&nbsp;Presupuesto</p>
+<h1 class="title">Apéndice C — Apéndice C: Gentleman Programming — Gentle AI</h1>
 </div>
 
 
@@ -325,285 +371,234 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="análisis-comparativo" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Análisis Comparativo</h1>
-<section id="comparativa-de-herramientas" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="comparativa-de-herramientas"><span class="header-section-number">11.1</span> Comparativa de herramientas</h2>
+<section id="qué-es-gentleman-programming" class="level2" data-number="C.1">
+<h2 data-number="C.1" class="anchored" data-anchor-id="qué-es-gentleman-programming"><span class="header-section-number">C.1</span> ¿Qué es Gentleman Programming?</h2>
+<p>Gentleman Programming (o <strong>Gentle AI</strong>) es una filosofía de trabajo con inteligencia artificial basada en <strong>respeto, precisión y elegancia</strong> en el uso de herramientas de IA. No se trata solo de usar IA — se trata de <strong>hacerlo bien</strong>.</p>
+</section>
+<section id="los-10-principios-de-gentleman-programming" class="level2" data-number="C.2">
+<h2 data-number="C.2" class="anchored" data-anchor-id="los-10-principios-de-gentleman-programming"><span class="header-section-number">C.2</span> Los 10 Principios de Gentleman Programming</h2>
+<section id="elegante-nunca-grosero" class="level3" data-number="C.2.1">
+<h3 data-number="C.2.1" class="anchored" data-anchor-id="elegante-nunca-grosero"><span class="header-section-number">C.2.1</span> 1. 🎩 Elegante, nunca grosero</h3>
+<blockquote class="blockquote">
+<p>Nunca uses prompts agresivos o despectivos. La IA responde mejor a la cortesía.</p>
+</blockquote>
+<p><strong>❌ Mal:</strong></p>
+<pre><code>Dame la respuesta ya, no pierdas mi tiempo.</code></pre>
+<p><strong>✅ Bien:</strong></p>
+<pre><code>¿Podrías ayudarme con esto? Agradecería una respuesta clara y concisa.</code></pre>
+</section>
+<section id="preciso-en-los-requerimientos" class="level3" data-number="C.2.2">
+<h3 data-number="C.2.2" class="anchored" data-anchor-id="preciso-en-los-requerimientos"><span class="header-section-number">C.2.2</span> 2. 📐 Preciso en los requerimientos</h3>
+<blockquote class="blockquote">
+<p>Un caballero se prepara antes de pedir. Define bien tu problema antes de preguntar.</p>
+</blockquote>
+<p><strong>Técnica: FRAME</strong> - <strong>F</strong> — Facts: Hechos relevantes - <strong>R</strong> — Role: El rol que desempeñas - <strong>A</strong> — Action: Qué quieres que haga - <strong>M</strong> — Medium: En qué formato - <strong>E</strong> — Extras: Restricciones adicionales</p>
+</section>
+<section id="maestro-de-llaves" class="level3" data-number="C.2.3">
+<h3 data-number="C.2.3" class="anchored" data-anchor-id="maestro-de-llaves"><span class="header-section-number">C.2.3</span> 3. 🗝️ Maestro de llaves</h3>
+<blockquote class="blockquote">
+<p>Protege siempre tus claves API, datos personales y secretos.</p>
+</blockquote>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ❌ NUNCA hagas esto:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="st">"Mi API key es sk-proj-abc123... por favor guárdala"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ✅ Usa variables de entorno:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">OPENAI_API_KEY</span><span class="op">=</span><span class="st">"tu-key-aqui"</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="cita-tus-fuentes" class="level3" data-number="C.2.4">
+<h3 data-number="C.2.4" class="anchored" data-anchor-id="cita-tus-fuentes"><span class="header-section-number">C.2.4</span> 4. 📚 Cita tus fuentes</h3>
+<blockquote class="blockquote">
+<p>Cuando la IA te ayuda, reconócelo. Da crédito a las herramientas que usaste.</p>
+</blockquote>
+<pre><code>*Esta sección fue asistida con OpenCode y NotebookLM.
+Los datos científicos provienen de: [Referencia]*</code></pre>
+</section>
+<section id="verifica-antes-de-confiar" class="level3" data-number="C.2.5">
+<h3 data-number="C.2.5" class="anchored" data-anchor-id="verifica-antes-de-confiar"><span class="header-section-number">C.2.5</span> 5. 🔍 Verifica antes de confiar</h3>
+<blockquote class="blockquote">
+<p>Un caballero nunca da por sentado. Verifica la información recibida.</p>
+</blockquote>
+<p><strong>Checklist de verificación:</strong> - [ ] Los datos son correctos y actualizados - [ ] Las citas son verificables - [ ] El código se ejecuta sin errores - [ ] El análisis tiene sentido lógico - [ ] No hay sesgos evidentes</p>
+</section>
+<section id="limpia-después-de-ti" class="level3" data-number="C.2.6">
+<h3 data-number="C.2.6" class="anchored" data-anchor-id="limpia-después-de-ti"><span class="header-section-number">C.2.6</span> 6. 🧹 Limpia después de ti</h3>
+<blockquote class="blockquote">
+<p>Si generaste código o archivos, asegúrate de que sean comprensibles y limpios.</p>
+</blockquote>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ❌ Código generado sin revisar</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> do_stuff(a,b,c,<span class="va">True</span>,<span class="va">None</span>,<span class="st">"test"</span>,<span class="dv">1</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ✅ Código limpiado y comentado</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> procesar_datos(</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    datos<span class="op">=</span>ventas,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    filtro<span class="op">=</span>activo,</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    categoria<span class="op">=</span><span class="st">"tech"</span>,</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    incluir_testimonios<span class="op">=</span><span class="va">True</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="colabora-no-reemplaces" class="level3" data-number="C.2.7">
+<h3 data-number="C.2.7" class="anchored" data-anchor-id="colabora-no-reemplaces"><span class="header-section-number">C.2.7</span> 7. 🤝 Colabora, no reemplaces</h3>
+<blockquote class="blockquote">
+<p>La IA es tu compañera de equipo, no tu sustituto.</p>
+</blockquote>
+<p><strong>Dónde la IA EXCELLE:</strong> - Generar borradores rápidos - Resumir documentos largos - Buscar patrones en datos - Traducir contenido - Generar ideas creativas</p>
+<p><strong>Dónde TÚ debes liderar:</strong> - Toma de decisiones finales - Relaciones humanas - Responsabilidad ética y legal - Contexto específico de tu industria - Creatividad estratégica</p>
+</section>
+<section id="itera-y-mejora" class="level3" data-number="C.2.8">
+<h3 data-number="C.2.8" class="anchored" data-anchor-id="itera-y-mejora"><span class="header-section-number">C.2.8</span> 8. 🔄 Itera y mejora</h3>
+<blockquote class="blockquote">
+<p>Un buen caballero no se conforma con el primer borrador.</p>
+</blockquote>
+<pre><code>Conversación de ejemplo:
+
+Yo: "Redacta una introducción sobre IA"
+IA: [Borrador inicial]
+Yo: "Mejor, pero necesito un tono más formal y citar 3 estudios"
+IA: [Versión mejorada]
+Yo: "Ahora agrega una referencia a la IA en educación latinoamericana"
+IA: [Versión final]
+Yo: "Perfecto, gracias"</code></pre>
+</section>
+<section id="sé-honesto-sobre-las-limitaciones" class="level3" data-number="C.2.9">
+<h3 data-number="C.2.9" class="anchored" data-anchor-id="sé-honesto-sobre-las-limitaciones"><span class="header-section-number">C.2.9</span> 9. 📏 Sé honesto sobre las limitaciones</h3>
+<blockquote class="blockquote">
+<p>No finjas que el trabajo fue 100% tuyo ni 100% de la IA.</p>
+</blockquote>
+<p><strong>Transparencia profesional:</strong></p>
+<pre><code>✓ "Usé IA para generar un borrador inicial y lo revisé personalmente"
+✗ "Todo lo escribí yo solo" (si usaste IA)
+✗ "La IA lo hizo todo" (si pusiste tu criterio profesional)</code></pre>
+</section>
+<section id="aprende-continuamente" class="level3" data-number="C.2.10">
+<h3 data-number="C.2.10" class="anchored" data-anchor-id="aprende-continuamente"><span class="header-section-number">C.2.10</span> 10. 🌱 Aprende continuamente</h3>
+<blockquote class="blockquote">
+<p>El mundo de la IA cambia rápidamente. Mantente actualizado.</p>
+</blockquote>
+<ul>
+<li>Lee los changelogs de tus herramientas</li>
+<li>Prueba nuevas features</li>
+<li>Comparte lo que aprendes con otros</li>
+<li>Contribuye a la comunidad de código abierto</li>
+</ul>
+</section>
+</section>
+<section id="el-ciclo-gentleman-ai" class="level2" data-number="C.3">
+<h2 data-number="C.3" class="anchored" data-anchor-id="el-ciclo-gentleman-ai"><span class="header-section-number">C.3</span> El Ciclo Gentleman AI</h2>
+<pre><code>┌──────────────────────────────────────────┐
+│                                          │
+│  1. 🧠 PREPARA tu prompt                │
+│     Define contexto, rol y formato       │
+│                     ↓                    │
+│  2. 🎩 GENERA con cortesía               │
+│     Pide con precisión y respeto          │
+│                     ↓                    │
+│  3. 🔍 VERIFICA todo                     │
+│     Datos, lógica, citas, código         │
+│                     ↓                    │
+│  4. ✍️ REFINA con iteración              │
+│     Pide mejoras específicas             │
+│                     ↓                    │
+│  5. 🧹 LIMPIA el resultado               │
+│     Formatea, comenta, organiza          │
+│                     ↓                    │
+│  6. 🙏 DA CRÉDITO                       │
+│     Cita herramientas y fuentes          │
+│                     ↓                    │
+│  7. 📤 COMPARTE con otros               │
+│     Contribuye a la comunidad            │
+│                                          │
+└──────────────────────────────────────────┘</code></pre>
+</section>
+<section id="gentleman-ai-en-la-práctica" class="level2" data-number="C.4">
+<h2 data-number="C.4" class="anchored" data-anchor-id="gentleman-ai-en-la-práctica"><span class="header-section-number">C.4</span> Gentleman AI en la Práctica</h2>
+<section id="ejemplo-1-escritura-profesional" class="level3" data-number="C.4.1">
+<h3 data-number="C.4.1" class="anchored" data-anchor-id="ejemplo-1-escritura-profesional"><span class="header-section-number">C.4.1</span> Ejemplo 1: Escritura profesional</h3>
+<pre><code>🧠 Preparación:
+- Necesito un correo formal para un cliente
+- Tono: profesional, cordial, directo
+- Idioma: español formal
+- Longitud: máximo 200 palabras
+
+🎩 Prompt:
+"Redacta un correo profesional para un cliente importante
+solicitando una reunión para presentar resultados del Q1.
+Tono formal, cordial, directo. Máximo 200 palabras."
+
+🔍 Verificación:
+- ✅ No incluye datos ficticios del cliente
+- ✅ Tono apropiado para contexto formal
+- ✅ Dentro del límite de palabras</code></pre>
+</section>
+<section id="ejemplo-2-análisis-de-datos" class="level3" data-number="C.4.2">
+<h3 data-number="C.4.2" class="anchored" data-anchor-id="ejemplo-2-análisis-de-datos"><span class="header-section-number">C.4.2</span> Ejemplo 2: Análisis de datos</h3>
+<pre><code>🧠 Preparación:
+- Tengo datos de ventas en un CSV
+- Necesito un análisis de tendencias
+- Quiero recomendaciones accionables
+
+🎩 Prompt:
+"Analiza estos datos de ventas y genera:
+1. Resumen de tendencias principales
+2. 3 recomendaciones basadas en datos
+3. Visualización sugerida para presentar"
+
+🔍 Verificación:
+- ✅ Las cifras coinciden con el archivo original
+- ✅ Las recomendaciones son realistas
+- ✅ La visualización es apropiada para la audiencia</code></pre>
+</section>
+</section>
+<section id="recursos-adicionales" class="level2" data-number="C.5">
+<h2 data-number="C.5" class="anchored" data-anchor-id="recursos-adicionales"><span class="header-section-number">C.5</span> Recursos Adicionales</h2>
+<section id="libros-recomendados" class="level3" data-number="C.5.1">
+<h3 data-number="C.5.1" class="anchored" data-anchor-id="libros-recomendados"><span class="header-section-number">C.5.1</span> Libros recomendados</h3>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 24%">
-<col style="width: 14%">
-<col style="width: 16%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 19%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Característica</th>
-<th>Copilot</th>
-<th>OpenCode</th>
-<th>Ollama</th>
-<th>Gemini</th>
-<th>NotebookLM</th>
+<th>Libro</th>
+<th>Autor</th>
+<th>Enfoque</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Costo</strong></td>
-<td>Freemium</td>
-<td>Freemium</td>
-<td>Gratis</td>
-<td>Freemium</td>
-<td>Gratis</td>
+<td><em>Co-Intelligence</em></td>
+<td>Ethan Mollick</td>
+<td>Uso efectivo de IA</td>
 </tr>
 <tr class="even">
-<td><strong>Curva de aprendizaje</strong></td>
-<td>Media</td>
-<td>Baja</td>
-<td>Media</td>
-<td>Baja</td>
-<td>Baja</td>
+<td><em>The AI Engineer</em></td>
+<td>swyx</td>
+<td>Ingeniería de IA</td>
 </tr>
 <tr class="odd">
-<td><strong>Memoria persistente</strong></td>
-<td>No</td>
-<td>Sí</td>
-<td>Sí</td>
-<td>Limitada</td>
-<td>Sí</td>
-</tr>
-<tr class="even">
-<td><strong>Personalización</strong></td>
-<td>Limitada</td>
-<td>Profunda</td>
-<td>Media</td>
-<td>Limitada</td>
-<td>Limitada</td>
-</tr>
-<tr class="odd">
-<td><strong>Requiere internet</strong></td>
-<td>Sí</td>
-<td>Sí</td>
-<td>No</td>
-<td>Sí</td>
-<td>Sí</td>
-</tr>
-<tr class="even">
-<td><strong>Datos locales</strong></td>
-<td>No</td>
-<td>No</td>
-<td>Sí</td>
-<td>No</td>
-<td>Parcial</td>
-</tr>
-<tr class="odd">
-<td><strong>Acceso a archivos</strong></td>
-<td>IDE</td>
-<td>Terminal</td>
-<td>Terminal</td>
-<td>Google</td>
-<td>Google</td>
-</tr>
-<tr class="even">
-<td><strong>Skills/Extensiones</strong></td>
-<td>VS Code</td>
-<td>Sistema</td>
-<td>Sistema</td>
-<td>Google</td>
-<td>Google</td>
-</tr>
-<tr class="odd">
-<td><strong>MCP</strong></td>
-<td>No</td>
-<td>Sí</td>
-<td>Limitado</td>
-<td>No</td>
-<td>No</td>
+<td><em>AI for Everyone</em></td>
+<td>Andrew Ng (Coursera)</td>
+<td>Fundamentos accesibles</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="comparativa-detallada" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="comparativa-detallada"><span class="header-section-number">11.2</span> Comparativa detallada</h2>
-<section id="opencode-vs-copilot" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="opencode-vs-copilot"><span class="header-section-number">11.2.1</span> OpenCode vs Copilot</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Aspecto</th>
-<th>OpenCode</th>
-<th>Copilot</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Dónde funciona</strong></td>
-<td>Terminal + cualquier editor</td>
-<td>Solo VS Code</td>
-</tr>
-<tr class="even">
-<td><strong>Memoria</strong></td>
-<td>Conversaciones completas</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td><strong>Precio base</strong></td>
-<td>Gratis (usa tu API key)</td>
-<td>$10/mes</td>
-</tr>
-<tr class="even">
-<td><strong>Extensible</strong></td>
-<td>Sí, con MCP y Skills</td>
-<td>Limitado</td>
-</tr>
-<tr class="odd">
-<td><strong>Para quién</strong></td>
-<td>Profesionales diversos</td>
-<td>Desarrolladores</td>
-</tr>
-</tbody>
-</table>
+<section id="cursos-y-talleres" class="level3" data-number="C.5.2">
+<h3 data-number="C.5.2" class="anchored" data-anchor-id="cursos-y-talleres"><span class="header-section-number">C.5.2</span> Cursos y talleres</h3>
+<ul>
+<li><strong>Este taller</strong> — Taller de IA para No Informáticos</li>
+<li><strong>AI Academy</strong> — cursos avanzados de IA</li>
+<li><strong>DeepLearning.AI</strong> — especializaciones en IA</li>
+</ul>
 </section>
-<section id="opencode-vs-ollama" class="level3" data-number="11.2.2">
-<h3 data-number="11.2.2" class="anchored" data-anchor-id="opencode-vs-ollama"><span class="header-section-number">11.2.2</span> OpenCode vs Ollama</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 37%">
-<col style="width: 29%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Aspecto</th>
-<th>OpenCode</th>
-<th>Ollama</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Internet</strong></td>
-<td>Requiere</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td><strong>Privacidad</strong></td>
-<td>Datos van a la nube</td>
-<td>Todo local</td>
-</tr>
-<tr class="odd">
-<td><strong>Modelos</strong></td>
-<td>Cualquiera (OpenAI, Anthropic…)</td>
-<td>Solo modelos locales</td>
-</tr>
-<tr class="even">
-<td><strong>Facilidad</strong></td>
-<td>Más fácil de usar</td>
-<td>Requiere más configuración</td>
-</tr>
-<tr class="odd">
-<td><strong>Costo</strong></td>
-<td>Costo de API</td>
-<td>Gratis (hardware propio)</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="cuándo-usar-cada-uno" class="level3" data-number="11.2.3">
-<h3 data-number="11.2.3" class="anchored" data-anchor-id="cuándo-usar-cada-uno"><span class="header-section-number">11.2.3</span> Cuándo usar cada uno</h3>
-<div class="callout callout-style-simple callout-none no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><strong>Usa OpenCode cuando:</strong> - Quieres máxima flexibilidad - Trabajas con múltiples archivos - Necesitas memoria persistente - Usas diferentes editores - Quieres personalizar profundamente</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-simple callout-none no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><strong>Usa Ollama cuando:</strong> - Trabajas con datos sensibles - Necesitas privacidad total - No tienes internet confiable - Quieres modelos personalizados - Tienes hardware potente</p>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="recomendaciones-por-presupuesto" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="recomendaciones-por-presupuesto"><span class="header-section-number">11.3</span> Recomendaciones por presupuesto</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Presupuesto</th>
-<th>Herramienta(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>$0</strong></td>
-<td>OpenCode (API gratuita) + Ollama</td>
-</tr>
-<tr class="even">
-<td><strong>$10/mes</strong></td>
-<td>OpenCode (API) + Copilot</td>
-</tr>
-<tr class="odd">
-<td><strong>$20+/mes</strong></td>
-<td>OpenCode + Copilot + Gemini</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="recomendaciones-por-nivel-técnico" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="recomendaciones-por-nivel-técnico"><span class="header-section-number">11.4</span> Recomendaciones por nivel técnico</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Nivel</th>
-<th>Herramienta(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Principiante</strong></td>
-<td>OpenCode + NotebookLM</td>
-</tr>
-<tr class="even">
-<td><strong>Intermedio</strong></td>
-<td>OpenCode + Ollama + NotebookLM</td>
-</tr>
-<tr class="odd">
-<td><strong>Avanzado</strong></td>
-<td>OpenCode + Ollama + MCPs</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="el-ecosistema-ideal" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="el-ecosistema-ideal"><span class="header-section-number">11.5</span> El ecosistema ideal</h2>
-<p>Para la mayoría de profesionales no informáticos:</p>
-<pre><code>┌─────────────────────────────────────┐
-│         OpenCode                     │
-│    (Asistente principal)            │
-│                                      │
-│    + NotebookLM                      │
-│    (Análisis de documentos)          │
-│                                      │
-│    + Gemini                         │
-│    (Ecosistema Google)               │
-└─────────────────────────────────────┘</code></pre>
-<p>Para máxima privacidad:</p>
-<pre><code>┌─────────────────────────────────────┐
-│         Ollama                       │
-│    (Asistente local)                │
-│                                      │
-│    + NotebookLM (local)              │
-│    (Análisis de documentos)          │
-└─────────────────────────────────────┘</code></pre>
+<section id="comunidades" class="level3" data-number="C.5.3">
+<h3 data-number="C.5.3" class="anchored" data-anchor-id="comunidades"><span class="header-section-number">C.5.3</span> Comunidades</h3>
+<ul>
+<li><a href="https://discord.gg/opencode">OpenCode Discord</a></li>
+<li><a href="https://reddit.com/r/MachineLearning">r/MachineLearning</a></li>
+<li><a href="https://news.ycombinator.com">Hacker News</a></li>
+</ul>
+<hr>
+<blockquote class="blockquote">
+<p><em>“La tecnología más poderosa es la que se usa con sabiduría y elegancia.”</em> — Filosofía Gentleman Programming</p>
+</blockquote>
+<p><em>Apéndice C · Taller de IA para No Informáticos · Diego Saavedra García · 2026</em></p>
 
 
 </section>
@@ -1017,14 +1012,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./labs.html" class="pagination-link" aria-label="Labs Prácticos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Labs Prácticos</span></span>
+      <a href="./apendice-faq.html" class="pagination-link" aria-label="Preguntas Frecuentes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Preguntas Frecuentes</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./proximos-pasos.html" class="pagination-link" aria-label="Próximos Pasos">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Próximos Pasos</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -1035,7 +1027,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
 <p>Material educativo para <strong>Taller de IA para No Informáticos</strong></p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/statick88/taller-ia-no-informaticos/edit/main/comparativa.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/statick88/taller-ia-no-informaticos/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/statick88/taller-ia-no-informaticos/edit/main/apendice-gentle-ai.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/statick88/taller-ia-no-informaticos/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org/">Quarto</a></p>
 </div>

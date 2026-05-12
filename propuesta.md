@@ -126,7 +126,7 @@ No necesitas instalar nada antes. Lo haremos juntos.
 **Diego Medardo Saavedra García**
 
 - Software Developer FullStack, Móvil e IA (+10 años)
-- Docente universitario (ESPE, UIDE, Abacom, IST JM, Codings Academy)
+- Docente universitario
 - MSc(c) Ciberseguridad — Universidad Complutense de Madrid
 - Especializado en Ethical Hacking y Seguridad Ofensiva
 - Creador de cursos, eBooks y contenido práctico

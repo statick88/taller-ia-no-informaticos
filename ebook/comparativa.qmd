@@ -1,4 +1,9 @@
-# 9. Análisis Comparativo
+---
+title: "Análisis Comparativo"
+subtitle: "Herramientas vs. Profesión vs. Presupuesto"
+---
+
+# Análisis Comparativo
 
 ## Comparativa de herramientas
 
@@ -38,42 +43,23 @@
 
 ### Cuándo usar cada uno
 
-#### Usa OpenCode cuando:
-
+::: {.callout .callout-note}
+**Usa OpenCode cuando:**
 - Quieres máxima flexibilidad
 - Trabajas con múltiples archivos
 - Necesitas memoria persistente
 - Usas diferentes editores
 - Quieres personalizar profundamente
+:::
 
-#### Usa Ollama cuando:
-
+::: {.callout .callout-note}
+**Usa Ollama cuando:**
 - Trabajas con datos sensibles
 - Necesitas privacidad total
 - No tienes internet confiable
 - Quieres modelos personalizados
 - Tienes hardware potente
-
-#### Usa Copilot cuando:
-
-- Solo programas en VS Code
-- No quieres configurar nada
-- Tienes budget para $10/mes
-- Solo necesitas sugerencias de código
-
-#### Usa Gemini cuando:
-
-- Usas el ecosistema Google
-- Trabajas con Sheets y Docs
-- Quieres integración nativa
-- Usas Android
-
-#### Usa NotebookLM cuando:
-
-- Solo analizas documentos
-- Necesitas resumir PDFs
-- Quieres generar quizzes
-- Estudias para exámenes
+:::
 
 ## Recomendaciones por presupuesto
 

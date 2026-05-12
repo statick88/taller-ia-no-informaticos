@@ -1,13 +1,17 @@
-# 7. Casos de Uso por Profesión
+---
+title: "Casos de Uso"
+subtitle: "12 profesiones con ejemplos reales"
+---
 
-Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su trabajo diario. Cada caso incluye el perfil recomendado, las acciones específicas y las herramientas complementarias.
+# Casos de Uso por Profesión
+
+Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su trabajo diario.
 
 ---
 
 ## Caso 1: Educator / Docente
 
 **Perfil**: Profesora de historia en bachillerato
-
 **Necesidad**: Crear plan de unidad sobre la Edad Media
 
 **Con OpenCode**:
@@ -19,19 +23,18 @@ Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su 
 5. Recibes preguntas con rúbrica de corrección
 6. Pide: "Busca fuentes actualizadas sobre [tema específico]"
 
+::: {.callout .callout-note}
 **Resultado**: Plan de unidad completo en 15 minutos vs 3 horas manual
-
-**Herramientas útiles**:
 
 - OpenCode para generación de contenido
 - NotebookLM para analizar recursos educativos
+:::
 
 ---
 
 ## Caso 2: Administrador de Empresas
 
 **Perfil**: Gerente de recursos humanos
-
 **Necesidad**: Elaborar informe de rotación de personal
 
 **Con OpenCode**:
@@ -43,19 +46,16 @@ Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su 
 5. Pide: "Análisis de las causas principales"
 6. Recibes recomendaciones basadas en datos
 
-**Resultado**: Informe profesional con insights accionables
-
-**Herramientas**:
-
-- OpenCode para estructuración
-- Gemini para análisis de hojas de cálculo
+| Herramienta | Uso |
+|------------|-----|
+| OpenCode | Estructuración |
+| Gemini | Análisis de hojas de cálculo |
 
 ---
 
 ## Caso 3: Profesional de Marketing
 
 **Perfil**: Coordinador de marketing digital
-
 **Necesidad**: Calendario de contenido para redes sociales
 
 **Con OpenCode**:
@@ -67,32 +67,38 @@ Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su 
 5. Recibes análisis de competidores
 6. Pide: "Genera captions para 5 publicaciones"
 
-**Resultado**: Contenido para un mes en 30 minutos
+**Resultado**: Contenido para un mes en 30 minutos.
+
+**Herramienta complementaria**: Amp para automatización.
 
 ---
 
 ## Caso 4: Profesional de Salud
 
 **Perfil**: Médico general en centro de salud
-
 **Necesidad**: Mantenerse actualizado en protocolos
 
 **Con Ollama + NotebookLM**:
 
 1. Configura Ollama (trabajo offline)
-2. Busca: "Protocolos actualizados diabetes tipo 2 2026"
+2. Busca: "Protocolos actualizados diabetes tipo 2 2025"
 3. En NotebookLM: Agrega artículos de revistas médicas
 4. Pide: "Resume los hallazgos principales"
 5. Verifica siempre con fuentes primarias
 
-**Privacidad**: Datos de pacientes nunca dejan la institución
+::: {.callout .callout-warning}
+**Privacidad**: Datos de pacientes nunca dejan la institución.
+:::
+
+**Herramientas**:
+- Ollama (privacidad, offline)
+- NotebookLM (análisis de papers)
 
 ---
 
 ## Caso 5: Abogado / Legal
 
 **Perfil**: Lawyer en bufete mediano
-
 **Necesidad**: Investigar precedentes judiciales
 
 **Con OpenCode**:
@@ -103,28 +109,32 @@ Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su 
 4. Pide: "Resume los argumentos principales"
 5. Verifica siempre con fuentes oficiales
 
+**Herramienta**: OpenCode + normas de citación profesional.
+
 ---
 
 ## Caso 6: Contador / Contador Público
 
 **Perfil**: Contador en empresa comercial
-
 **Necesidad**: Entender nuevas regulaciones fiscales
 
 **Con OpenCode**:
 
 1. Configura perfil contable
-2. Escribe: "Explica las reformas tributarias 2026"
+2. Escribe: "Explica las reformas tributarias 2025"
 3. Recibes resumen en lenguaje claro
 4. Pide: "¿Cómo afecta a empresas del sector retail?"
 5. Recibes análisis específico
+
+**Herramientas**:
+- OpenCode para explicación
+- Gemini para hojas de cálculo
 
 ---
 
 ## Caso 7: Periodista / Comunicador
 
 **Perfil**: Periodista de investigación
-
 **Necesidad**: Investigar tema complejo
 
 **Con OpenCode**:
@@ -135,12 +145,15 @@ Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su 
 4. Pide: "Resume en 5 oraciones"
 5. Pide: "¿Qué ángulos no han sido explorados?"
 
+**Herramientas**:
+- OpenCode para investigación
+- NotebookLM para analizar documentos
+
 ---
 
 ## Caso 8: Ingeniero (No de Software)
 
 **Perfil**: Ingeniero civil en constructora
-
 **Necesidad**: Revisar normativas de construcción
 
 **Con OpenCode**:
@@ -151,28 +164,30 @@ Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su 
 4. Pide: "Busca ejemplos de aplicación"
 5. Recibes casos de estudio
 
+**Herramienta**: OpenCode para normativa.
+
 ---
 
 ## Caso 9: Arquitecto
 
 **Perfil**: Arquitecto en estudio de diseño
-
 **Necesidad**: Investigar tendencias sostenibles
 
 **Con OpenCode**:
 
 1. Configura perfil de arquitectura
-2. Escribe: "Tendencias en materiales sostenibles 2026"
+2. Escribe: "Tendencias en materiales sostenibles 2025"
 3. Recibes lista de materiales con propiedades
 4. Pide: "Proyectos ejemplo que los usen"
-5. Recibes casos reales
+5. Recibes casos reales con fotos
+
+**Herramienta**: OpenCode.
 
 ---
 
 ## Caso 10: Investigador Académico
 
 **Perfil**: Profesor investigador universitario
-
 **Necesidad**: Revisión bibliográfica para artículo
 
 **Con OpenCode**:
@@ -184,14 +199,17 @@ Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su 
 5. Pide: "Resume el estado del arte"
 6. Solicita: "Genera debate entre autores"
 
-**Resultado**: Revisión de literatura completa en horas vs semanas
+**Resultado**: Revisión de literatura completa en horas vs semanas.
+
+**Herramientas**:
+- OpenCode para búsqueda y análisis
+- NotebookLM para verificación
 
 ---
 
 ## Caso 11: Estudiante Universitario
 
 **Perfil**: Estudiante de maestría
-
 **Necesidad**: Completar trabajo de investigación
 
 **Con OpenCode**:
@@ -203,12 +221,15 @@ Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su 
 5. Pide: "Revisa mi redacción"
 6. Recibes correcciones
 
+**Herramientas**:
+- OpenCode para estructura
+- NotebookLM para estudiar
+
 ---
 
 ## Caso 12: Emprendedor / Pequeño empresario
 
 **Perfil**: Owner de tienda online
-
 **Necesidad**: Mejorar rentabilidad
 
 **Con OpenCode**:
@@ -221,7 +242,7 @@ Esta sección muestra cómo diferentes profesionales pueden usar OpenCode en su 
 
 ---
 
-## Resumen de herramientas por profesión
+## Resumen por profesión
 
 | Profesión | Herramienta Principal | Complementaria |
 |-----------|----------------------|----------------|
