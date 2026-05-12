@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empoderamiento Digital 2026: OpenCode Profesional - Parte 2</title>
+  
+  <!-- RevealJS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/white.min.css">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-primary: #0a0e17;
+      --bg-secondary: #111827;
+      --bg-dark: #000000;
+      --text-primary: #00cc33;
+      --text-secondary: #00992a;
+      --text-muted: #006622;
+      --text-on-dark: #00cc33;
+      --accent-1: #00cc33;
+      --accent-2: #00b4e6;
+      --accent-3: #e60033;
+      --accent-4: #ffcc00;
+      --accent-orange: #ff9500;
+      --accent-purple: #9333ea;
+      --accent-pink: #ec4899;
+      --font-display: 'JetBrains Mono', 'Courier New', monospace;
+      --font-body: 'JetBrains Mono', 'Courier New', monospace;
+      --font-mono: 'JetBrains Mono', monospace;
+      --size-stat: clamp(4rem, 10vw, 8rem);
+      --size-h1: clamp(3rem, 6vw, 5rem);
+      --size-h2: clamp(2rem, 4vw, 3rem);
+      --size-h3: clamp(1.5rem, 2.5vw, 2rem);
+      --size-body: clamp(0.9rem, 1.5vw, 1.3rem);
+      --size-body-lg: clamp(1.1rem, 2vw, 1.5rem);
+      --size-label: clamp(0.75rem, 1.25vw, 0.9rem);
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2rem;
+      --bar-width: 120px;
+      --bar-height: 4px;
+    }
+
+    body { background: #0a0e17; }
+
+    .reveal { 
+      font-family: var(--font-body); 
+      color: var(--text-primary); 
+      background: var(--bg-primary);
+      filter: brightness(0.95);
+    }
+      
+    .reveal h1, .reveal h2, .reveal h3 { 
+      font-family: var(--font-display); 
+      font-weight: 800; 
+      letter-spacing: -0.03em; 
+      line-height: 1.15; 
+      text-shadow: 0 0 20px var(--accent-1);
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: brightness(0.9);
+    }
+      
+    .reveal h1 { 
+      font-size: var(--size-h1); 
+      text-shadow: 0 0 30px var(--accent-1);
+    }
+      
+    .reveal h2 { 
+      font-size: var(--size-h2); 
+      margin: 0 0 0.7em 0; 
+      color: var(--accent-2);
+      -webkit-text-fill-color: var(--accent-2);
+    }
+      
+    .reveal h3 { 
+      font-size: var(--size-h3); 
+      color: var(--accent-1);
+      margin: 0 0 0.5em 0;
+      -webkit-text-fill-color: var(--accent-1);
+    }
+      
+    .reveal p { 
+      font-size: var(--size-body); 
+      line-height: 1.6; 
+      margin: 0 0 1em 0; 
+      color: var(--text-primary);
+    }
+      
+    .reveal .slides section { 
+      text-align: left; 
+      padding: 40px 60px; 
+      background: var(--bg-primary);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+    }
+      
+    .reveal .slides section.centered { 
+      text-align: center; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .reveal .label { 
+      font-family: var(--font-mono); 
+      font-size: var(--size-label); 
+      text-transform: uppercase; 
+      letter-spacing: 0.25em; 
+      color: var(--accent-3); 
+      font-weight: 700;
+      background: rgba(230, 0, 51, 0.1);
+      padding: 5px 12px;
+      border-radius: 4px;
+      border: 1px solid var(--accent-3);
+      box-shadow: 0 0 10px rgba(230, 0, 51, 0.3);
+      display: inline-block;
+    }
+      
+    .reveal .lead { 
+      font-size: var(--size-body-lg); 
+      color: var(--text-secondary); 
+      line-height: 1.6;
+      font-weight: 400;
+      text-shadow: 0 0 5px rgba(0, 153, 42, 0.3);
+    }
+      
+    .reveal .text-muted { color: var(--text-muted); }
+    .reveal .text-accent-1 { color: var(--accent-1); }
+    .reveal .text-accent-2 { color: var(--accent-2); }
+    .reveal .text-accent-3 { color: var(--accent-3); }
+    .reveal .text-accent-4 { color: var(--accent-4); }
+    .reveal .text-accent-purple { color: var(--accent-purple); }
+    .reveal .text-on-dark { color: var(--text-on-dark); }
+
+    .bar { 
+      width: var(--bar-width); 
+      height: var(--bar-height); 
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2)); 
+      margin-bottom: var(--space-md); 
+      box-shadow: 0 0 10px rgba(0, 204, 51, 0.4);
+    }
+      
+    .centered .bar { margin-left: auto; margin-right: auto; }
+    .bar-accent-2 { background: linear-gradient(90deg, var(--accent-2), var(--accent-purple)); }
+    .bar-accent-3 { background: linear-gradient(90deg, var(--accent-3), var(--accent-4)); }
+    .bar-accent-4 { background: linear-gradient(90deg, var(--accent-4), var(--accent-orange)); }
+    .bar-purple { background: linear-gradient(90deg, var(--accent-purple), var(--accent-pink)); }
+    .bar-orange { background: linear-gradient(90deg, var(--accent-orange), var(--accent-1)); }
+
+    .reveal .stat { 
+      font-family: var(--font-mono); 
+      font-size: var(--size-stat); 
+      font-weight: 700; 
+      line-height: 1; 
+      color: var(--accent-1); 
+      margin-bottom: 0.25em;
+      text-shadow: 0 0 20px var(--accent-1);
+    }
+      
+    .reveal .stat-label { 
+      font-size: var(--size-body); 
+      color: var(--text-secondary); 
+    }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-md); }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md); }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-sm); }
+
+    .card { 
+      background: rgba(17, 24, 39, 0.95); 
+      border-radius: 12px; 
+      padding: var(--space-md); 
+      border-left: 4px solid var(--accent-1);
+      border: 1px solid rgba(0, 204, 51, 0.3);
+      box-shadow: 0 4px 20px rgba(0, 204, 51, 0.15);
+      backdrop-filter: blur(10px);
+      margin-bottom: 10px;
+    }
+        
+    .card h3 { 
+      font-size: var(--size-body); 
+      margin-bottom: 0.5em; 
+      color: var(--accent-1);
+      font-weight: 700;
+    }
+        
+    .card p { 
+      font-size: var(--size-body); 
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+      
+    .card-accent-2 { 
+      border-left-color: var(--accent-2); 
+      border-color: var(--accent-2);
+      box-shadow: 0 0 15px rgba(0,180,222,0.15);
+    }
+    .card-accent-3 { 
+      border-left-color: var(--accent-3); 
+      border-color: var(--accent-3);
+      box-shadow: 0 0 15px rgba(230,0,51,0.15);
+    }
+    .card-accent-4 { 
+      border-left-color: var(--accent-4); 
+      border-color: var(--accent-4);
+      box-shadow: 0 0 15px rgba(255,204,0,0.1);
+    }
+    .card-purple { 
+      border-left-color: var(--accent-purple); 
+      border-color: var(--accent-purple);
+      box-shadow: 0 0 15px rgba(147,51,234,0.15);
+    }
+
+    .reveal ul, .reveal ol { 
+      margin: 0; 
+      padding: 0; 
+      list-style-position: outside; 
+      margin-left: 1.5em; 
+    }
+      
+    .reveal li { 
+      margin-bottom: 0.5em; 
+      line-height: 1.5; 
+      font-size: var(--size-body); 
+    }
+      
+    .reveal li::marker { color: var(--accent-1); }
+
+    .content-wrap { max-width: 900px; margin: 0 auto; }
+    .centered .content-wrap { text-align: center; }
+
+    .highlight { 
+      background: linear-gradient(120deg, var(--accent-1), var(--accent-2)); 
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+      background-clip: text; 
+    }
+      
+    .highlight-2 { 
+      background: linear-gradient(120deg, var(--accent-2), var(--accent-orange)); 
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+      background-clip: text; 
+    }
+    
+    .highlight-purple { 
+      background: linear-gradient(120deg, var(--accent-purple), var(--accent-pink)); 
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+      background-clip: text; 
+    }
+
+    section[data-background-color] { padding: 40px 60px !important; }
+
+    /* Code blocks */
+    .code-block { 
+      background: #000000; 
+      color: var(--accent-1); 
+      padding: var(--space-md); 
+      border-radius: 8px; 
+      font-family: var(--font-mono); 
+      font-size: var(--size-body); 
+      text-align: left; 
+      overflow-x: auto;
+      border: 1px solid var(--accent-1);
+      box-shadow: inset 0 0 20px rgba(0,255,65,0.1);
+    }
+    
+    .code-block-2 { 
+      border-color: var(--accent-2);
+      box-shadow: inset 0 0 20px rgba(0,180,222,0.1);
+    }
+    
+    .code-block-3 { 
+      border-color: var(--accent-purple);
+      box-shadow: inset 0 0 20px rgba(147,51,234,0.1);
+    }
+      
+    .code-block .comment { color: #008f11; }
+    .code-block .keyword { color: #00d4ff; }
+    .code-block .string { color: #ffcc00; }
+    .code-block .variable { color: var(--accent-purple); }
+
+    /* Timeline */
+    .timeline { 
+      border-left: 3px solid var(--accent-1); 
+      padding-left: 30px; 
+      margin-left: 20px; 
+      margin-top: 20px;
+    }
+      
+    .timeline-item { 
+      position: relative; 
+      margin-bottom: var(--space-lg); 
+      padding-left: 10px;
+    }
+      
+    .timeline-item::before { 
+      content: '▸'; 
+      position: absolute; 
+      left: -39px; 
+      top: 5px; 
+      width: 16px; 
+      height: 16px; 
+      color: var(--accent-1);
+      font-size: 1.2rem; 
+    }
+      
+    .timeline-item.accent-2::before { color: var(--accent-2); }
+    .timeline-item.accent-3::before { color: var(--accent-3); }
+    .timeline-item.purple::before { color: var(--accent-purple); }
+
+    .scrollable-content {
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent-1) var(--bg-secondary);
+    }
+      
+    .scrollable-content::-webkit-scrollbar {
+      width: 6px;
+    }
+      
+    .scrollable-content::-webkit-scrollbar-track {
+      background: var(--bg-secondary);
+      border-radius: 3px;
+    }
+      
+    .scrollable-content::-webkit-scrollbar-thumb {
+      background: var(--accent-1);
+      border-radius: 3px;
+    }
+
+    /* Step cards */
+    .step-card { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px; }
+    .step-number { 
+      background: var(--accent-1); 
+      color: #000; 
+      width: 40px; 
+      height: 40px; 
+      border-radius: 50%; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      font-family: var(--font-mono); 
+      font-weight: 700; 
+      flex-shrink: 0;
+    }
+    .step-content { flex: 1; }
+
+    /* Box quotes */
+    .quote-box { 
+      border-left: 4px solid var(--accent-orange); 
+      padding-left: 20px; 
+      font-style: italic; 
+      color: var(--text-secondary); 
+      margin: 20px 0;
+      background: rgba(255, 149, 0, 0.1);
+      padding: 20px;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .quote-box-purple { 
+      border-left-color: var(--accent-purple); 
+      background: rgba(147, 51, 234, 0.1);
+    }
+
+    /* File tree */
+    .file-tree { 
+      font-family: var(--font-mono); 
+      font-size: 0.9rem; 
+      background: #000; 
+      padding: 20px; 
+      border-radius: 8px; 
+      border: 1px solid var(--accent-1);
+    }
+    
+    .file-tree .folder { color: var(--accent-2); }
+    .file-tree .file { color: var(--accent-1); }
+    .file-tree .comment { color: #008f11; }
+    .file-tree .indent { margin-left: 20px; }
+
+    /* Badge */
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    
+    .badge-green { background: var(--accent-1); color: #000; }
+    .badge-blue { background: var(--accent-2); color: #000; }
+    .badge-purple { background: var(--accent-purple); color: #fff; }
+    .badge-orange { background: var(--accent-orange); color: #000; }
+
+    /* Terminal cursor blink */
+    @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+    .cursor { animation: blink 1s infinite; color: var(--accent-1); }
+
+    /* Icon card */
+    .icon-card {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px;
+      background: rgba(17, 24, 39, 0.8);
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .icon-card .icon {
+      font-size: 2rem;
+      width: 50px;
+      text-align: center;
+    }
+    
+    .icon-card .text { flex: 1; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      
+      <!-- Slide 1: Título -->
+      <section class="centered">
+        <p class="label">📊 Taller Virtual • Parte 2</p>
+        <h1>🚀 OpenCode <span class="highlight-purple">Profesional</span></h1>
+        <h2 style="font-size: var(--size-h3); color: var(--text-secondary); margin-top: 0.5em;">⚙️ Perfiles, Agentes, MCP y Skills</h2>
+        <div class="bar bar-purple"></div>
+        <p class="lead">💡 De usuario básico a usuario avanzado</p>
+        
+        <p class="text-muted" style="margin-top: var(--space-md);">Diego Saavedra García | Estudiante de Máster en Ciberseguridad UCM</p>
+        
+        <aside class="notes">
+          BIENVENIDOS a la segunda parte del taller.
+          
+          En esta sesión vamos a profundizar en OpenCode:
+          - Configuración avanzada de perfiles
+          - Sistema de agentes
+          - MCP (Model Context Protocol)
+          - Skills y extensiones
+          
+          Asume que ya tienes OpenCode instalado de la sesión anterior.
+        </aside>
+      </section>
+
+      <!-- Slide 2: Agenda -->
+      <section>
+        <h2>📋 Agenda de Hoy</h2>
+        <div class="bar bar-purple"></div>
+        
+        <div class="scrollable-content" style="max-height: 70vh; overflow-y: auto;">
+          <div class="grid-2" style="margin-top: var(--space-lg); gap: 25px;">
+            <div class="card card-purple">
+              <h3 class="text-accent-purple">📦 Instalación Actualizada</h3>
+              <p>Todos los métodos de instalación 2026</p>
+              <p class="text-muted">curl, npm, brew, desktop app</p>
+            </div>
+            <div class="card">
+              <h3>👤 Perfiles (AGENTS.md)</h3>
+              <p>Tu tarjeta de presentación para la IA</p>
+              <p class="text-muted">Personalización por profesión</p>
+            </div>
+            <div class="card card-accent-2">
+              <h3>🤖 Agentes y Subagentes</h3>
+              <p>Especialistas para cada tarea</p>
+              <p class="text-muted">SDD orchestrator, researcher, coder</p>
+            </div>
+            <div class="card card-accent-3">
+              <h3>🔌 MCP y Skills</h3>
+              <p>Extiende las capacidades</p>
+              <p class="text-muted">Context7, NotebookLM, Engram</p>
+            </div>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Esta sesión está estructurada en 4 bloques principales.
+          
+          Vamos desde la instalación hasta la configuración avanzada.
+          
+          Al final tendrán un OpenCode personalizado para su profesión.
+        </aside>
+      </section>
+
+      <!-- Slide 3: Repaso Instalación -->
+      <section class="centered">
+        <h2>📦 Instalación de OpenCode <span class="highlight-2">2026</span></h2>
+        <div class="bar"></div>
+        <p class="lead">Método rápido: una sola línea</p>
+        
+        <aside class="notes">
+          Empecemos con la instalación actualizada para 2026.
+          
+          OpenCode ha evolucionado y ahora tiene más métodos de instalación.
+        </aside>
+      </section>
+
+      <!-- Slide 4: Quick Install -->
+      <section>
+        <h2>⚡ Instalación Rápida</h2>
+        <div class="bar"></div>
+        <p class="lead">Mac / Linux — Una línea en tu terminal:</p>
+        
+        <div class="code-block" style="margin-top: var(--space-md);">
+          <span class="comment"># Instalación rápida recomendada</span><br>
+          curl -fsSL https://opencode.ai/install | bash
+        </div>
+        
+        <p style="margin-top: var(--space-md);">Verifica la instalación:</p>
+        
+        <div class="code-block code-block-2">
+          opencode --version
+        </div>
+        
+        <aside class="notes">
+          Este es el método más simple para Mac y Linux.
+          
+          Si ves un número de versión, ¡ya está!
+          
+          [PAUSE]
+          
+          Ahora veamos Windows...
+        </aside>
+      </section>
+
+      <!-- Slide 5: Windows -->
+      <section>
+        <h2>🪟 Instalación en Windows</h2>
+        <div class="bar bar-accent-2"></div>
+        
+        <div class="grid-2" style="margin-top: var(--space-lg);">
+          <div>
+            <h3 class="text-accent-2">⚡ Opción 1: WSL2 (Recomendado)</h3>
+            <p>Linux dentro de Windows</p>
+            <div class="code-block code-block-2">
+              <span class="comment"># En WSL2 (Linux)</span><br>
+              curl -fsSL https://opencode.ai/install | bash
+            </div>
+          </div>
+          <div>
+            <h3 class="text-accent-1">📦 Opción 2: Package Managers</h3>
+            <p>Múltiples opciones disponibles</p>
+            <div class="code-block">
+              <span class="comment"># PowerShell</span><br>
+              irm https://opencode.ai/install.ps1 | iex<br><br>
+              <span class="comment"># Chocolatey</span><br>
+              choco install opencode<br><br>
+              <span class="comment"># Scoop</span><br>
+              scoop install opencode
+            </div>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          En Windows tienes múltiples opciones.
+          
+          WSL2 es recomendado porque te da una experiencia Linux completa.
+          
+          Pero si prefieres PowerShell puro, también funciona.
+        </aside>
+      </section>
+
+      <!-- Slide 6: Desktop App -->
+      <section>
+        <h2>🖥️ OpenCowork — App de Escritorio</h2>
+        <div class="bar bar-purple"></div>
+        <p class="lead">Instalación con un clic — Sin terminal</p>
+        
+        <div class="scrollable-content" style="max-height: 60vh; overflow-y: auto;">
+          <div class="grid-3" style="margin-top: var(--space-lg); gap: 15px;">
+            <div class="card card-purple">
+              <h3>🍎 macOS</h3>
+              <div class="code-block code-block-3" style="font-size: 0.8rem;">
+                brew install --cask opencode-desktop
+              </div>
+              <p class="text-muted" style="font-size: 0.8rem;">Apple Silicon + Intel</p>
+            </div>
+            <div class="card">
+              <h3>🪟 Windows</h3>
+              <p class="text-muted">Descarga directa</p>
+              <p class="text-accent-1">opencode.ai/download</p>
+              <p class="text-muted" style="font-size: 0.8rem;">.exe installer</p>
+            </div>
+            <div class="card card-accent-2">
+              <h3>🐧 Linux</h3>
+              <div class="code-block code-block-2" style="font-size: 0.8rem;">
+                snap install opencode
+              </div>
+              <p class="text-muted" style="font-size: 0.8rem;">Debian, Ubuntu, Fedora</p>
+            </div>
+          </div>
+          
+          <div class="card" style="margin-top: var(--space-md); border-left-color: var(--accent-orange);">
+            <h3 class="text-accent-4">✨ Características OpenCowork</h3>
+            <ul>
+              <li>🔒 Aislamiento VM (WSL2/Lima)</li>
+              <li>📄 Genera PPTX, DOCX, XLSX, PDF</li>
+              <li>🔌 MCP connectors (Notion, Browser)</li>
+              <li>🎮 Control GUI automatizado</li>
+              <li>📱 Remote control (Slack, Feishu)</li>
+            </ul>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          OpenCowork es la alternativa desktop.
+          
+          Ideal si no te sientes cómodo con la terminal.
+          
+          Tiene todas las features de la CLI + GUI.
+        </aside>
+      </section>
+
+      <!-- Slide 7: Configuración Inicial -->
+      <section>
+        <h2>🔧 Configuración Inicial</h2>
+        <div class="bar"></div>
+        <p class="lead">Elegir tu proveedor de IA</p>
+        
+        <div class="scrollable-content" style="max-height: 65vh; overflow-y: auto;">
+          <div class="grid-2" style="margin-top: var(--space-lg);">
+            <div>
+              <h3 class="text-accent-2">📋 Paso 1: Crear config</h3>
+              <div class="code-block code-block-2">
+                <span class="comment"># ~/.config/opencode/opencode.json</span><br>
+                {<br>
+                &nbsp;&nbsp;<span class="string">"provider"</span>: <span class="string">"openrouter"</span>,<br>
+                &nbsp;&nbsp;<span class="string">"model"</span>: <span class="string">"anthropic/claude-sonnet-4"</span>,<br>
+                &nbsp;&nbsp;<span class="string">"apiKey"</span>: <span class="string">"your-api-key"</span><br>
+                }
+              </div>
+            </div>
+            <div>
+              <h3 class="text-accent-purple">🔑 Paso 2: Obtener API Key</h3>
+              <div class="icon-card">
+                <span class="icon">🔮</span>
+                <div class="text">
+                  <strong>OpenRouter</strong> (Recomendado)
+                  <p class="text-muted">openrouter.ai — Multi-proveedor</p>
+                </div>
+              </div>
+              <div class="icon-card">
+                <span class="icon">🤖</span>
+                <div class="text">
+                  <strong>OpenAI</strong>
+                  <p class="text-muted">platform.openai.com</p>
+                </div>
+              </div>
+              <div class="icon-card">
+                <span class="icon">🌐</span>
+                <div class="text">
+                  <strong>Google Gemini</strong>
+                  <p class="text-muted">ai.google.dev</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card card-accent-3" style="margin-top: var(--space-md);">
+            <h3 class="text-accent-3">⚠️ Importante 2026</h3>
+            <p>Anthropic bloqueó OpenCode de usar Claude directamente en enero 2026.</p>
+            <p>Usa alternativas: <strong>GPT-5.4</strong>, <strong>Gemini 3.1 Pro</strong>, o <strong>OpenRouter</strong></p>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          La configuración es simple: un archivo JSON.
+          
+          IMPORTANTE: Nota sobre el cambio en 2026 con Anthropic.
+          
+          OpenRouter es la mejor alternativa porque te da acceso a múltiples modelos.
+        </aside>
+      </section>
+
+      <!-- Slide 8: AGENTS.md Introducción -->
+      <section class="centered">
+        <h2>👤 Tu Perfil: <span class="highlight">AGENTS.md</span></h2>
+        <div class="bar bar-purple"></div>
+        <p class="lead">La tarjeta de presentación para tu asistente de IA</p>
+        
+        <aside class="notes">
+          Ahora llegamos a la personalización.
+          
+          AGENTS.md es el archivo que define quién eres para OpenCode.
+          
+          Sin él, te ayuda de forma genérica. Con él, se adapta a ti.
+        </aside>
+      </section>
+
+      <!-- Slide 9: Qué es AGENTS.md -->
+      <section>
+        <h2>📝 ¿Qué es AGENTS.md?</h2>
+        <div class="bar"></div>
+        
+        <div class="grid-2" style="margin-top: var(--space-lg);">
+          <div>
+            <h3 class="text-accent-2">Sin AGENTS.md</h3>
+            <div class="card card-accent-3" style="opacity: 0.7;">
+              <p>🤖 "Buenos días, ¿en qué puedo ayudarte?"</p>
+              <p class="text-muted">Respuestas genéricas</p>
+              <p class="text-muted">Sin contexto de tu trabajo</p>
+              <p class="text-muted">Tienes que explicar todo cada vez</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-accent-1">Con AGENTS.md</h3>
+            <div class="card">
+              <p>🤖 "Buenos días Diego. Veo que trabajas en educación universitaria y necesitas crear materiales sobre ciberseguridad."</p>
+              <p class="text-accent-1">Respuestas contextualizadas</p>
+              <p class="text-accent-1">Recuerda tu profesión y preferencias</p>
+              <p class="text-accent-1">Menos repetir, más producir</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="quote-box quote-box-purple" style="margin-top: var(--space-lg);">
+          "AGENTS.md es tu <strong>memoria persistente de contexto</strong>. Le dice a la IA quién eres, qué haces, y cómo prefieres trabajar."
+        </div>
+        
+        <aside class="notes">
+          La diferencia es enorme.
+          
+          Sin contexto, la IA es unstratégico. Con tu perfil, se convierte en tu asistente personal.
+        </aside>
+      </section>
+
+      <!-- Slide 10: Estructura AGENTS.md -->
+      <section>
+        <h2>📐 Estructura de AGENTS.md</h2>
+        <div class="bar"></div>
+        
+        <div class="scrollable-content" style="max-height: 65vh; overflow-y: auto;">
+          <div class="code-block" style="margin-top: var(--space-md); font-size: 0.85rem;">
+            <span class="comment"># AGENTS.md — Mi Perfil Profesional</span><br><br>
+            <span class="comment">## 🎯 Identidad</span><br>
+            **Nombre**: [Tu nombre]<br>
+            **Rol**: [Tu profesión]<br>
+            **Industria**: [Tu sector]<br><br>
+            <span class="comment">## 📋 Responsabilidades</span><br>
+            [Descripción de tu trabajo principal]<br>
+            [Tipos de tareas que realizas]<br><br>
+            <span class="comment">## 🎯 Objetivos</span><br>
+            - [Objetivo profesional 1]<br>
+            - [Objetivo profesional 2]<br><br>
+            <span class="comment">## 💬 Preferencias de Comunicación</span><br>
+            [Cómo prefieres que se comunique contigo]<br>
+            [Nivel de detalle deseado]<br><br>
+            <span class="comment">## 🔧 Herramientas y Stack</span><br>
+            [Software que usas regularmente]<br>
+            [APIs o servicios externos]<br>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Esta es la estructura básica.
+          
+          Puedes adaptarla a tu profesión.
+          
+          Veamos ejemplos concretos...
+        </aside>
+      </section>
+
+      <!-- Slide 11: Ejemplo Educador -->
+      <section>
+        <h2>👩‍🏫 Ejemplo: Perfil para Educator</h2>
+        <div class="bar bar-accent-2"></div>
+        
+        <div class="scrollable-content" style="max-height: 65vh; overflow-y: auto;">
+          <div class="code-block code-block-2" style="margin-top: var(--space-md); font-size: 0.8rem;">
+            <span class="comment"># AGENTS.md — Profesora María García</span><br><br>
+            ## 🎯 Identidad<br>
+            **Nombre**: María García<br>
+            **Rol**: Profesora de Matemáticas<br>
+            **Industria**: Educación Secundaria<br><br>
+            ## 📋 Responsabilidades<br>
+            - Imparto clases de álgebra y geometría<br>
+            - Preparo evaluaciones y materiales didácticos<br>
+            - Brindo tutorías individualizadas<br><br>
+            ## 🎯 Objetivos<br>
+            - Crear planes de clase efectivos<br>
+            - Generar evaluaciones equilibradas<br>
+            - Encontrar recursos pedagógicos actualizados<br><br>
+            ## 💬 Preferencias de Comunicación<br>
+            - Lenguaje claro y directo<br>
+            - Estructura organizada con listas<br>
+            - Ejemplos prácticos incluidos<br><br>
+            ## 📚 Recursos<br>
+            - Libro de texto: "Matemáticas 3er año"<br>
+            - Plataforma: Google Classroom<br>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Este es un ejemplo real y útil.
+          
+          María puede copiar esto y adaptarlo a su situación.
+          
+          [PAUSE]
+          
+          Veamos más ejemplos...
+        </aside>
+      </section>
+
+      <!-- Slide 12: Ejemplo Administrador -->
+      <section>
+        <h2>💼 Ejemplo: Perfil para Administrador</h2>
+        <div class="bar bar-accent-4"></div>
+        
+        <div class="scrollable-content" style="max-height: 65vh; overflow-y: auto;">
+          <div class="code-block code-block-3" style="margin-top: var(--space-md); font-size: 0.8rem;">
+            <span class="comment"># AGENTS.md — Gerente Juan Pérez</span><br><br>
+            ## 🎯 Identidad<br>
+            **Nombre**: Juan Pérez<br>
+            **Rol**: Gerente de Operaciones<br>
+            **Industria**: Retail / Ropa<br><br>
+            ## 📋 Responsabilidades<br>
+            - Coordino logística y proveedores<br>
+            - Gestiono inventario de 500 SKUs<br>
+            - Preparo reportes semanales para dirección<br><br>
+            ## 🎯 Objetivos<br>
+            - Automatizar reportes rutinarios<br>
+            - Mejorar análisis de datos<br>
+            - Reducir tiempos de gestión en 30%<br><br>
+            ## 💬 Preferencias de Comunicación<br>
+            - Formato estructurado con tablas<br>
+            - Resúmenes ejecutivos<br>
+            - Listas de acción concretas<br><br>
+            ## 📊 Herramientas<br>
+            - Excel avanzado (macros, tablas dinámicas)<br>
+            - ERP: SAP Business One<br>
+            - Email: Outlook<br>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          El administrador necesita estructura y datos.
+          
+          Su perfil refleja eso: reportes, métricas, tablas.
+          
+          Veamos un perfil más técnico...
+        </aside>
+      </section>
+
+      <!-- Slide 13: Ejemplo Desarrollador -->
+      <section>
+        <h2>👨‍💻 Ejemplo: Perfil para Desarrollador</h2>
+        <div class="bar"></div>
+        
+        <div class="scrollable-content" style="max-height: 65vh; overflow-y: auto;">
+          <div class="code-block" style="margin-top: var(--space-md); font-size: 0.8rem;">
+            <span class="comment"># AGENTS.md — Desarrollador Diego</span><br><br>
+            ## 🎯 Identidad<br>
+            **Nombre**: Diego Saavedra<br>
+            **Rol**: Full Stack Developer<br>
+            **Industria**: Desarrollo Web / Ciberseguridad<br><br>
+            ## 🏗️ Stack Técnico<br>
+            - **Frontend**: React, Next.js, TailwindCSS<br>
+            - **Backend**: Node.js, Python, FastAPI<br>
+            - **Base de datos**: PostgreSQL, MongoDB<br>
+            - **DevOps**: Docker, GitHub Actions<br><br>
+            ## 📁 Estructura de Proyecto<br>
+            /src<br>
+            &nbsp;&nbsp;/components — Componentes UI<br>
+            &nbsp;&nbsp;/hooks — Lógica reutilizable<br>
+            &nbsp;&nbsp;/pages — Rutas (o /app en Next.js)<br>
+            &nbsp;&nbsp;/services — Llamadas API<br><br>
+            ## 🎯 Reglas de Código<br>
+            - TypeScript strict mode siempre<br>
+            - Nombres descriptivos en español<br>
+            - Tests antes de commit<br>
+            - Clean Architecture<br>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Para desarrolladores, el perfil incluye stack técnico y convenciones.
+          
+          Esto permite que OpenCode escriba código consistente con tu proyecto.
+        </aside>
+      </section>
+
+      <!-- Slide 14: Cómo usar AGENTS.md -->
+      <section>
+        <h2>🔄 Cómo usar AGENTS.md</h2>
+        <div class="bar bar-purple"></div>
+        
+        <div class="grid-3" style="margin-top: var(--space-lg);">
+          <div class="card">
+            <h3>📁 Opción 1</h3>
+            <p class="text-muted">Por proyecto</p>
+            <div class="code-block" style="font-size: 0.8rem; margin-top: 10px;">
+              mi-proyecto/<br>
+              &nbsp;&nbsp;├── AGENTS.md<br>
+              &nbsp;&nbsp;├── src/<br>
+              &nbsp;&nbsp;└── package.json
+            </div>
+            <p class="text-accent-1">Solo afecta este proyecto</p>
+          </div>
+          <div class="card card-accent-2">
+            <h3>🏠 Opción 2</h3>
+            <p class="text-muted">Global (home)</p>
+            <div class="code-block code-block-2" style="font-size: 0.8rem; margin-top: 10px;">
+              ~/.config/opencode/<br>
+              &nbsp;&nbsp;├── opencode.json<br>
+              &nbsp;&nbsp;└── AGENTS.md
+            </div>
+            <p class="text-accent-2">Afecta todos los proyectos</p>
+          </div>
+          <div class="card card-purple">
+            <h3>📋 Opción 3</h3>
+            <p class="text-muted">Pegar en chat</p>
+            <div class="code-block code-block-3" style="font-size: 0.8rem; margin-top: 10px;">
+              > [pegar contenido]<br>
+              > Basado en este perfil,<br>
+              &nbsp;&nbsp;ayúdame con...
+            </div>
+            <p class="text-accent-purple">Sesión única</p>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Tienes 3 formas de usar AGENTS.md:
+          
+          1. Por proyecto: específico y controlado
+          2. Global: siempre presente
+          3. Pegar: para sesiones ad-hoc
+          
+          Recomendación: usa opción 1 para proyectos importantes.
+        </aside>
+      </section>
+
+      <!-- Slide 15: opencode.json -->
+      <section>
+        <h2>⚙️ opencode.json — Configuración Técnica</h2>
+        <div class="bar bar-accent-2"></div>
+        
+        <div class="scrollable-content" style="max-height: 60vh; overflow-y: auto;">
+          <div class="code-block code-block-2" style="margin-top: var(--space-md); font-size: 0.85rem;">
+            <span class="comment"># ~/.config/opencode/opencode.json</span><br><br>
+            {<br>
+            &nbsp;&nbsp;<span class="string">"provider"</span>: <span class="string">"openrouter"</span>,<br>
+            &nbsp;&nbsp;<span class="string">"model"</span>: <span class="string">"anthropic/claude-sonnet-4-20250514"</span>,<br>
+            &nbsp;&nbsp;<span class="string">"apiKey"</span>: <span class="string">"sk-or-v1-..."</span>,<br>
+            &nbsp;&nbsp;<span class="string">"temperature"</span>: <span class="variable">0.7</span>,<br><br>
+            &nbsp;&nbsp;<span class="string">"agent"</span>: {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"gentle-orchestrator"</span>: {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"model"</span>: <span class="string">"openai/gpt-5.4"</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"maxTokens"</span>: <span class="variable">4096</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;},<br><br>
+            &nbsp;&nbsp;<span class="string">"mcp"</span>: {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"engram"</span>: { <span class="string">"enabled"</span>: <span class="variable">true</span> },<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"context7"</span>: { <span class="string">"enabled"</span>: <span class="variable">true</span> }<br>
+            &nbsp;&nbsp;}<br>
+            }
+          </div>
+        </div>
+        
+        <div class="card" style="margin-top: var(--space-md);">
+          <h3>🔑 Variables de Entorno (Recomendado)</h3>
+          <div class="code-block">
+            <span class="comment"># .env o shell profile</span><br>
+            export OPENAI_API_KEY=<span class="string">"sk-..."</span><br>
+            export OPENCODE_PROVIDER=<span class="string">"openrouter"</span>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          opencode.json es para configuración técnica.
+          
+          Incluye proveedor, modelo, API keys.
+          
+          IMPORTANTE: usa variables de entorno para API keys, no las pongas en texto plano.
+        </aside>
+      </section>
+
+      <!-- Slide 16: Sistema de Agentes -->
+      <section class="centered">
+        <h2>🤖 Sistema de <span class="highlight-purple">Agentes</span></h2>
+        <div class="bar bar-purple"></div>
+        <p class="lead">Agentes especializados para diferentes tareas</p>
+        
+        <aside class="notes">
+          Ahora hablamos del sistema de agentes.
+          
+          Los agentes son especializados: cada uno hace una cosa bien.
+        </aside>
+      </section>
+
+      <!-- Slide 17: Qué son los Agentes -->
+      <section>
+        <h2>🎭 ¿Qué son los Agentes?</h2>
+        <div class="bar"></div>
+        
+        <div class="quote-box quote-box-purple">
+          "Un <strong>agente</strong> es un especializado que tiene su propia configuración, habilidades, y flujos de trabajo."
+        </div>
+        
+        <div class="grid-2" style="margin-top: var(--space-lg);">
+          <div class="card card-purple">
+            <h3 class="text-accent-purple">🤖 Orchestrator</h3>
+            <p>El coordinador principal</p>
+            <p class="text-muted">Delega tareas a sub-agentes</p>
+            <p class="text-muted">Mantiene contexto global</p>
+            <p class="text-muted">Usa SDD workflow</p>
+          </div>
+          <div class="card">
+            <h3>👥 Sub-agentes</h3>
+            <p>Especialistas por área</p>
+            <p class="text-muted">SDD apply, verify</p>
+            <p class="text-muted">Research, coding</p>
+            <p class="text-muted">Code review</p>
+          </div>
+        </div>
+        
+        <div class="timeline" style="margin-top: var(--space-lg);">
+          <div class="timeline-item purple">
+            <h3>📁 Agentes.json</h3>
+            <p>Define cada agente: nombre, modelo, skills asociadas</p>
+          </div>
+          <div class="timeline-item">
+            <h3>📂 agentes/*.md</h3>
+            <p>Instrucciones específicas de cada agente</p>
+          </div>
+          <div class="timeline-item accent-2">
+            <h3>⚙️ SDD Workflow</h3>
+            <p>Cómo se comunican y delegan</p>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          El orchestrator es el cerebro principal.
+          
+          Los sub-agentes son especialistas.
+          
+          Todo está conectado por el workflow SDD.
+        </aside>
+      </section>
+
+      <!-- Slide 18: Estructura de Agentes -->
+      <section>
+        <h2>📂 Estructura de Agentes</h2>
+        <div class="bar bar-accent-2"></div>
+        
+        <div class="scrollable-content" style="max-height: 60vh; overflow-y: auto;">
+          <div class="file-tree">
+            <span class="folder">📁 ~/.config/opencode/</span><br>
+            <div class="indent">
+              <span class="file">📄 opencode.json</span><br>
+              <span class="file">📄 agents.json</span><br>
+              <span class="file">📄 AGENTS.md</span><br>
+              <span class="folder">📁 agents/</span><br>
+              <div class="indent">
+                <span class="file">📄 gentle-orchestrator.md</span><br>
+                <span class="file">📄 sdd-explore.md</span><br>
+                <span class="file">📄 sdd-propose.md</span><br>
+                <span class="file">📄 sdd-spec.md</span><br>
+                <span class="file">📄 sdd-design.md</span><br>
+                <span class="file">📄 sdd-apply.md</span><br>
+                <span class="file">📄 sdd-verify.md</span><br>
+                <span class="file">📄 code-reviewer.md</span><br>
+                <span class="file">📄 researcher.md</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="grid-3" style="margin-top: var(--space-md);">
+          <div class="card">
+            <h3>📄 agents.json</h3>
+            <p class="text-muted">Lista de agentes activos</p>
+            <p class="text-accent-1">Modelos y configs</p>
+          </div>
+          <div class="card card-accent-2">
+            <h3>📂 agents/*.md</h3>
+            <p class="text-muted">Instrucciones</p>
+            <p class="text-accent-2">Quién es, qué hace</p>
+          </div>
+          <div class="card card-purple">
+            <h3>🔄 Workflow</h3>
+            <p class="text-muted">Conexiones</p>
+            <p class="text-accent-purple">Cómo delegan</p>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Así se organiza la estructura de agentes.
+          
+          agents.json lista los agentes.
+          agents/*.md tiene las instrucciones de cada uno.
+          
+          Veamos cómo crear un agente personalizado...
+        </aside>
+      </section>
+
+      <!-- Slide 19: Crear Agente Personalizado -->
+      <section>
+        <h2>✨ Crear un Agente Personalizado</h2>
+        <div class="bar bar-purple"></div>
+        
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>📝 Crear archivo en agents/</h3>
+            <div class="code-block code-block-3">
+              <span class="comment"># agents/mi-agente.md</span><br><br>
+              ## Identidad<br>
+              **Nombre**: Mi Agente Especializado<br><br>
+              ## Especialidad<br>
+              [Qué hace mejor que nadie]<br><br>
+              ## Reglas de Operation<br>
+              [Cómo opera, limitaciones]
+            </div>
+          </div>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>📋 Registrar en agents.json</h3>
+            <div class="code-block">
+              {<br>
+              &nbsp;&nbsp;<span class="string">"name"</span>: <span class="string">"mi-agente"</span>,<br>
+              &nbsp;&nbsp;<span class="string">"file"</span>: <span class="string">"agents/mi-agente.md"</span>,<br>
+              &nbsp;&nbsp;<span class="string">"model"</span>: <span class="string">"gpt-5.4"</span><br>
+              }
+            </div>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Crear un agente es simple:
+          
+          1. Crear el archivo .md con instrucciones
+          2. Registrarlo en agents.json
+          
+          El agente hereda capacidades del orchestrator.
+        </aside>
+      </section>
+
+      <!-- Slide 20: MCP Introducción -->
+      <section class="centered">
+        <h2>🔌 Model Context Protocol <span class="highlight-2">(MCP)</span></h2>
+        <div class="bar bar-accent-2"></div>
+        <p class="lead">Conecta OpenCode con herramientas externas</p>
+        
+        <aside class="notes">
+          MCP es lo que hace a OpenCode realmente potente.
+          
+          Le permite conectar con servicios externos.
+        </aside>
+      </section>
+
+      <!-- Slide 21: Qué es MCP -->
+      <section>
+        <h2>🔗 ¿Qué es MCP?</h2>
+        <div class="bar"></div>
+        
+        <div class="quote-box">
+          "MCP (Model Context Protocol) es un <strong>protocolo estándar</strong> que permite a los asistentes de IA conectarse con herramientas y servicios externos."
+        </div>
+        
+        <div class="grid-3" style="margin-top: var(--space-lg);">
+          <div class="card">
+            <h3>📓 NotebookLM</h3>
+            <p>Análisis de documentos</p>
+            <p class="text-muted">Sube fuentes, genera resúmenes</p>
+            <p class="text-muted">Audio Overview, Video Overview</p>
+          </div>
+          <div class="card card-accent-2">
+            <h3>📚 Context7</h3>
+            <p>Documentación</p>
+            <p class="text-muted">Docs de frameworks y librerías</p>
+            <p class="text-muted">Actualizaciones en tiempo real</p>
+          </div>
+          <div class="card card-purple">
+            <h3>🧠 Engram</h3>
+            <p>Memoria persistente</p>
+            <p class="text-muted">Recuerda entre sesiones</p>
+            <p class="text-muted">Contexto cross-proyecto</p>
+          </div>
+        </div>
+        
+        <div class="card card-accent-3" style="margin-top: var(--space-md);">
+          <h3 class="text-accent-3">🎯 Beneficio Principal</h3>
+          <p>Tu asistente de IA puede <strong>acceder a información específica</strong> de tu contexto: documentos, código, APIs externas.</p>
+        </div>
+        
+        <aside class="notes">
+          MCP es como los plugins de un navegador.
+          
+          Cada MCP añade una habilidad específica.
+          
+          Los 3 más importantes: NotebookLM, Context7, Engram.
+        </aside>
+      </section>
+
+      <!-- Slide 22: Configurar MCP -->
+      <section>
+        <h2>⚙️ Configurar MCPs</h2>
+        <div class="bar bar-accent-2"></div>
+        
+        <div class="scrollable-content" style="max-height: 60vh; overflow-y: auto;">
+          <div class="code-block code-block-2" style="margin-top: var(--space-md); font-size: 0.85rem;">
+            <span class="comment"># opencode.json</span><br><br>
+            {<br>
+            &nbsp;&nbsp;<span class="string">"mcp"</span>: {<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// NotebookLM</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"notebooklm"</span>: {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"enabled"</span>: <span class="variable">true</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"notebook_id"</span>: <span class="string">"tu-notebook-id"</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;},<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Context7 - Documentación</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"context7"</span>: {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"enabled"</span>: <span class="variable">true</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;},<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Engram - Memoria</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"engram"</span>: {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"enabled"</span>: <span class="variable">true</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"project"</span>: <span class="string">"mi-proyecto"</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;},<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Playwright - Browser</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"playwright"</span>: {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"enabled"</span>: <span class="variable">true</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;}<br>
+            }
+          </div>
+        </div>
+        
+        <div class="card" style="margin-top: var(--space-md);">
+          <h3>📋 Habilitar MCPs por Proyecto</h3>
+          <p>También puedes crear <code>opencode.json</code> en cada proyecto con configs específicas.</p>
+        </div>
+        
+        <aside class="notes">
+          La configuración es simple y centralizada.
+          
+          Cada MCP tiene sus propios parámetros.
+          
+          Veamos los skills ahora...
+        </aside>
+      </section>
+
+      <!-- Slide 23: Skills -->
+      <section class="centered">
+        <h2>🛠️ Skills — Extiende OpenCode</h2>
+        <div class="bar bar-accent-4"></div>
+        <p class="lead">Skills pre-built para diferentes profesiones</p>
+        
+        <aside class="notes">
+          Skills son flujos de trabajo pre-configurados.
+          
+          No necesitas saber cómo funcionan, solo los usas.
+        </aside>
+      </section>
+
+      <!-- Slide 24: Qué son Skills -->
+      <section>
+        <h2>📦 ¿Qué son las Skills?</h2>
+        <div class="bar"></div>
+        
+        <div class="grid-3" style="margin-top: var(--space-lg);">
+          <div class="card">
+            <h3>📄 Documentos</h3>
+            <ul>
+              <li>PPTX — Presentaciones</li>
+              <li>DOCX — Documentos Word</li>
+              <li>PDF — PDFs</li>
+              <li>XLSX — Hojas de cálculo</li>
+            </ul>
+          </div>
+          <div class="card card-accent-2">
+            <h3>🎓 Académicos</h3>
+            <ul>
+              <li>Escritura científica</li>
+              <li>Investigación bibliográfica</li>
+              <li>Estructura IMRAD</li>
+              <li>Normas APA/IEEE</li>
+            </ul>
+          </div>
+          <div class="card card-purple">
+            <h3>💼 Profesionales</h3>
+            <ul>
+              <li>Marketing digital</li>
+              <li>Análisis de datos</li>
+              <li>Automatización</li>
+              <li>Reporting</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card card-accent-3" style="margin-top: var(--space-md);">
+          <h3 class="text-accent-3">✨ Skill Creator</h3>
+          <p>Crea tus propias skills personalizadas con la herramienta integrada.</p>
+          <div class="code-block code-block-3">
+            <span class="comment"># En OpenCode</span><br>
+            /skill-creator<br>
+            <span class="comment"># Sigue el wizard para crear tu skill</span>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Skills están organizadas por categoría.
+          
+          Los más útiles para no informáticos: documentos y académicos.
+          
+          También puedes crear los tuyos.
+        </aside>
+      </section>
+
+      <!-- Slide 25: Skills por Profesión -->
+      <section>
+        <h2>🎯 Skills por Profesión</h2>
+        <div class="bar bar-purple"></div>
+        
+        <div class="scrollable-content" style="max-height: 60vh; overflow-y: auto;">
+          <table style="width: 100%; font-size: 0.85rem; border-collapse: collapse;">
+            <tr style="border-bottom: 1px solid var(--accent-1);">
+              <th style="text-align: left; padding: 10px;">Profesión</th>
+              <th style="text-align: left; padding: 10px;">Skills Recomendadas</th>
+            </tr>
+            <tr>
+              <td style="padding: 10px;">👩‍🏫 Educator</td>
+              <td style="padding: 10px;"><span class="badge badge-green">Escritura académica</span> <span class="badge badge-blue">Estructura paper</span> <span class="badge badge-purple">Redacción científica</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 10px;">💼 Administrador</td>
+              <td style="padding: 10px;"><span class="badge badge-green">PPT Generator</span> <span class="badge badge-blue">Data Analysis</span> <span class="badge badge-orange">Reporting</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 10px;">⚖️ Abogado</td>
+              <td style="padding: 10px;"><span class="badge badge-purple">Research</span> <span class="badge badge-green">Escritura formal</span> <span class="badge badge-blue">Citación normas</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 10px;">🏥 Salud</td>
+              <td style="padding: 10px;"><span class="badge badge-green">Búsqueda científica</span> <span class="badge badge-blue">IMRAD</span> <span class="badge badge-purple">CV Builder</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 10px;">📊 Contador</td>
+              <td style="padding: 10px;"><span class="badge badge-green">XLSX Generator</span> <span class="badge badge-blue">Financial Analysis</span> <span class="badge badge-orange">Reporting</span></td>
+            </tr>
+          </table>
+        </div>
+        
+        <aside class="notes">
+          Cada profesión tiene skills específicas.
+          
+          Usa /skills para ver todas las disponibles.
+          
+          Veamos cómo activar una skill...
+        </aside>
+      </section>
+
+      <!-- Slide 26: Usar Skills -->
+      <section>
+        <h2>🔄 Cómo usar Skills</h2>
+        <div class="bar bar-accent-2"></div>
+        
+        <div class="grid-2" style="margin-top: var(--space-lg);">
+          <div>
+            <h3 class="text-accent-1">📋 Ver Skills Disponibles</h3>
+            <div class="code-block">
+              <span class="comment"># En OpenCode</span><br>
+              /skills
+            </div>
+          </div>
+          <div>
+            <h3 class="text-accent-2">🎯 Activar Skill</h3>
+            <div class="code-block code-block-2">
+              <span class="comment"># Simplemente pídelo</span><br>
+              "Necesito ayuda con<br>
+              &nbsp;&nbsp;escritura académica<br>
+              &nbsp;&nbsp;para un paper"
+            </div>
+          </div>
+        </div>
+        
+        <div class="step-card" style="margin-top: var(--space-lg);">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>🗣️ Describe tu necesidad</h3>
+            <p>OpenCode detecta la skill más apropiada automáticamente</p>
+          </div>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>📝 Proporciona contexto</h3>
+            <p>Pega tu AGENTS.md si no lo tienes global</p>
+          </div>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>✅ Recibe resultado</h3>
+            <p>La skill genera el output estructurado</p>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Usar skills es simple: solo describe lo que necesitas.
+          
+          OpenCode elige la skill correcta.
+          
+          No necesitas saber qué skill usar.
+        </aside>
+      </section>
+
+      <!-- Slide 27: Demo Práctica -->
+      <section class="centered">
+        <h2>🎬 <span class="highlight">Demo</span> Práctica</h2>
+        <div class="bar bar-purple"></div>
+        <p class="lead">Vamos a configurar tu perfil juntos</p>
+        
+        <div class="grid-3" style="margin-top: var(--space-lg);">
+          <div class="card">
+            <p class="stat text-accent-1">5</p>
+            <p>minutos</p>
+          </div>
+          <div class="card card-accent-2">
+            <p class="stat text-accent-2">3</p>
+            <p>archivos</p>
+          </div>
+          <div class="card card-purple">
+            <p class="stat text-accent-purple">1</p>
+            <p>perfil listo</p>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Vamos a la demo.
+          
+          Tiempo: 5 minutos<br>
+          Archivos: opencode.json, AGENTS.md, agents.json<br>
+          Resultado: tu perfil personalizado
+          
+          [Abre terminal]
+        </aside>
+      </section>
+
+      <!-- Slide 28: Práctica Guiada -->
+      <section>
+        <h2>👨‍💻 Práctica: Crea tu Config</h2>
+        <div class="bar"></div>
+        
+        <div class="scrollable-content" style="max-height: 60vh; overflow-y: auto;">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>📁 Crear estructura</h3>
+              <div class="code-block">
+                mkdir -p ~/.config/opencode/agents
+              </div>
+            </div>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>⚙️ Crear opencode.json</h3>
+              <div class="code-block code-block-2">
+                <span class="comment"># ~/.config/opencode/opencode.json</span><br>
+                {<br>
+                &nbsp;&nbsp;<span class="string">"provider"</span>: <span class="string">"openrouter"</span>,<br>
+                &nbsp;&nbsp;<span class="string">"model"</span>: <span class="string">"anthropic/claude-sonnet-4"</span><br>
+                }
+              </div>
+            </div>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>👤 Crear AGENTS.md</h3>
+              <div class="code-block code-block-3">
+                <span class="comment"># ~/.config/opencode/AGENTS.md</span><br><br>
+                ## Identidad<br>
+                **Nombre**: Tu Nombre<br>
+                **Rol**: Tu Profesión
+              </div>
+            </div>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>🧪 Probar</h3>
+              <div class="code-block">
+                opencode<br>
+                <span class="comment"># Escribe: "Hola, soy [tu nombre]"</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Hands-on time.
+          
+          [Pausa para que practiquen]
+          
+          Si alguien tiene problemas, levanta la mano.
+        </aside>
+      </section>
+
+      <!-- Slide 29: Recursos -->
+      <section>
+        <h2>📚 Recursos Adicionales</h2>
+        <div class="bar bar-accent-2"></div>
+        
+        <div class="grid-2" style="margin-top: var(--space-lg);">
+          <div>
+            <h3 class="text-accent-1">📖 Documentación</h3>
+            <ul>
+              <li><a href="https://opencode.ai/docs" class="text-accent-1">opencode.ai/docs</a> — Docs oficiales</li>
+              <li><a href="https://github.com/sst/opencode" class="text-accent-1">GitHub Repo</a> — Código fuente</li>
+              <li><a href="https://discord.gg/opencode" class="text-accent-1">Discord</a> — Comunidad</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-accent-2">🎓 Skills Library</h3>
+            <ul>
+              <li><a href="https://opencode.ai/skills" class="text-accent-2">opencode.ai/skills</a></li>
+              <li>~400+ skills disponibles</li>
+              <li>Actualizaciones semanales</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card card-purple" style="margin-top: var(--space-md);">
+          <h3 class="text-accent-purple">📓 NotebookLM del Taller</h3>
+          <p>Escanea el QR en la presentación Parte 1</p>
+          <p class="text-muted">Contiene todos los ejemplos y plantillas</p>
+        </div>
+        
+        <aside class="notes">
+          Aquí tienes todos los recursos.
+          
+          La documentación oficial es excelente.
+          
+          El Discord es muy activo y responden rápido.
+        </aside>
+      </section>
+
+      <!-- Slide 30: Plan de Acción -->
+      <section>
+        <h2>🎯 Tu Plan de Acción</h2>
+        <div class="bar bar-purple"></div>
+        
+        <div class="scrollable-content" style="max-height: 60vh; overflow-y: auto;">
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>📅 Hoy</h3>
+              <p class="text-accent-1">Completar configuración básica</p>
+              <ul>
+                <li>✅ opencode.json</li>
+                <li>✅ AGENTS.md</li>
+                <li>✅ Habilitar 1 MCP</li>
+              </ul>
+            </div>
+            <div class="timeline-item accent-2">
+              <h3>📅 Esta semana</h3>
+              <p class="text-accent-2">Personalizar tu perfil</p>
+              <ul>
+                <li>📝 Agregar detalles de tu profesión</li>
+                <li>🔧 Configurar herramientas que usas</li>
+                <li>🎯 Probar 1 skill</li>
+              </ul>
+            </div>
+            <div class="timeline-item purple">
+              <h3>📅 Este mes</h3>
+              <p class="text-accent-purple">Optimizar flujo</p>
+              <ul>
+                <li>📊 Crear agent personalizado</li>
+                <li>🔗 Integrar más MCPs</li>
+                <li>📚 Explorar skills avanzadas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <aside class="notes">
+          Plan gradual para dominar OpenCode.
+          
+          No intentes hacer todo de golpe.
+          
+          Cada semana, una mejora.
+        </aside>
+      </section>
+
+      <!-- Slide 31: Cierre -->
+      <section class="centered" data-background-color="#0a0e17">
+        <h1 class="text-on-dark">🙏 ¡Gracias!</h1>
+        <div class="bar bar-accent-2"></div>
+        <p class="lead text-on-dark">Ahora tienes OpenCode configurado para ti</p>
+        
+        <div class="grid-3" style="margin-top: var(--space-lg); text-align: left; max-width: 800px;">
+          <div>
+            <p class="label text-on-dark">📦 Instalación</p>
+            <p class="text-on-dark" style="font-size: 0.9rem;">curl | bash</p>
+          </div>
+          <div>
+            <p class="label text-on-dark">👤 Perfil</p>
+            <p class="text-on-dark" style="font-size: 0.9rem;">AGENTS.md</p>
+          </div>
+          <div>
+            <p class="label text-on-dark">🔌 Extender</p>
+            <p class="text-on-dark" style="font-size: 0.9rem;">MCP + Skills</p>
+          </div>
+        </div>
+        
+        <p style="margin-top: var(--space-lg);">
+          <em class="text-muted">"La IA no reemplaza al profesional, pero el profesional que usa IA reemplazará al que no lo hace"</em>
+        </p>
+        
+        <p class="text-muted" style="margin-top: var(--space-md);">👨‍💻 Diego Saavedra García</p>
+        <p class="text-muted">📧 dsaavedra88@gmail.com</p>
+        
+        <aside class="notes">
+          Gracias por asistir.
+          
+          Ahora tienes las herramientas para usar OpenCode como un profesional.
+          
+          ¿Preguntas?
+        </aside>
+      </section>
+
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      center: true,
+      transition: 'fade',
+      transitionSpeed: 'fast',
+      backgroundTransition: 'fade',
+      width: 1920,
+      height: 1080,
+      margin: 0.08,
+      minScale: 0.2,
+      maxScale: 2.0
+    });
+  </script>
+</body>
+</html>
