@@ -1,5 +1,5 @@
 # Deploy ebook to GitHub Pages
-# Runs on push to main, builds _book/ and deploys to gh-pages branch
+# Runs on push to main, builds with build.py and deploys to gh-pages
 
 name: Deploy to GitHub Pages
 
@@ -39,87 +39,10 @@ jobs:
           ehthumbs.db
           EOF
 
-      - name: Render ebook (HTML only)
+      - name: Build ebook (HTML + PDF + EPUB + organize)
         run: |
           cd ebook
-          quarto render --to html
-
-      - name: Post-procesamiento y reorganización
-        run: |
-          set -e
-          cd ebook
-          echo "=== Ejecutando post-procesamiento ==="
-          python3 post_process.py
-
-      - name: Generar landing page raíz
-        run: |
-          cd ebook/_book
-          cat > index.html << 'LANDING'
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taller de IA para No Informáticos</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-      background: #0a0a0f;
-      color: #e0e0e0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .container { max-width: 800px; padding: 2rem; text-align: center; }
-    h1 { font-size: 2.5rem; color: #00cc33; margin-bottom: 0.5rem; }
-    .subtitle { font-size: 1.2rem; color: #888; margin-bottom: 3rem; }
-    .menu-grid { display: grid; gap: 1.5rem; margin-top: 2rem; }
-    .menu-card {
-      background: #12121a; border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 12px; padding: 2rem; text-decoration: none;
-      color: inherit; transition: all 0.2s; display: block;
-    }
-    .menu-card:hover { border-color: #00cc33; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,204,51,0.15); }
-    .menu-card h2 { font-size: 1.4rem; color: #00b4e6; margin-bottom: 0.5rem; }
-    .menu-card p { font-size: 0.95rem; color: #888; }
-    .footer { margin-top: 4rem; color: #555; font-size: 0.85rem; }
-    @media (min-width: 600px) { .menu-grid { grid-template-columns: repeat(2, 1fr); } }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div style="font-size:4rem;margin-bottom:1rem">🤖</div>
-    <h1>Taller de IA para No Informáticos</h1>
-    <p class="subtitle">Guía práctica — 2 horas, 100% gratis</p>
-    <div class="menu-grid">
-      <a class="menu-card" href="libro/index.html">
-        <h2>📖 Libro Electrónico</h2>
-        <p>15 capítulos + 3 apéndices — navegación completa</p>
-      </a>
-      <a class="menu-card" href="libro/Taller-de-IA-para-No-Informáticos.pdf" download>
-        <h2>📄 Descargar PDF</h2>
-        <p>Formato A4 profesional — ideal para imprimir</p>
-      </a>
-      <a class="menu-card" href="libro/Taller-de-IA-para-No-Informáticos.epub" download>
-        <h2>📱 Descargar EPUB</h2>
-        <p>Compatible con Kindle, Apple Books, etc.</p>
-      </a>
-      <a class="menu-card" href="https://github.com/statick88/taller-ia-no-informaticos">
-        <h2>📂 Repositorio</h2>
-        <p>Código fuente y materiales del taller</p>
-      </a>
-    </div>
-    <div class="footer">
-      <p>Diego Saavedra García — CC BY-NC-SA 4.0</p>
-      <p><a href="https://github.com/statick88/taller-ia-no-informaticos" style="color:#00b4e6;text-decoration:none;">github.com/statick88/taller-ia-no-informaticos</a></p>
-    </div>
-  </div>
-</body>
-</html>
-LANDING
-          echo "✅ Landing page generada"
+          python3 build.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -14,15 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
       var hide = document.body.classList.toggle('sidebar-hidden');
       localStorage.setItem('taller-sidebar', hide ? 'hidden' : 'shown');
     });
-    // Restaurar preferencia
+    // Restaurar preferencia previa
     if (localStorage.getItem('taller-sidebar') === 'hidden') {
       document.body.classList.add('sidebar-hidden');
     }
-  }
-});
-  }
-  // Restaurar preferencia previa
-  if (localStorage.getItem('taller-sidebar') === 'open') {
-    document.body.classList.add('sidebar-visible');
   }
 });

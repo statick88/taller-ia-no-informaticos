@@ -68,23 +68,43 @@ El ebook completo está disponible en 3 formatos dentro de `ebook/_book/libro/`:
 ├── presentacion.html                   # Slides (Reveal.js)
 ├── propuesta.md                        # Propuesta del taller
 ├── manual.md                           # Manual del participante
-├── ebook/                              # Fuente del ebook
+├── ebook/                              # Fuente y build del ebook
 │   ├── _quarto.yml                    # Configuración Quarto
 │   ├── styles.css                     # CSS profesional dark
 │   ├── toggle-sidebar.js              # Toggle sidebar (JS)
-│   ├── post_process.py                # Post-procesamiento Python
+│   ├── post_process.py                # Post-procesamiento (legacy)
+│   ├── build.py                       # Pipeline completo de build
 │   ├── _book/                         # Build generado
-│   │   ├── index.html                # Página raíz del sitio
-│   │   └── libro/                    # Contenido del ebook
-│   │       ├── index.html            # Capítulo 1
-│   │       ├── styles.css            # CSS (inyectado con toggle)
-│   │       ├── search.json           # Búsqueda offline
-│   │       ├── Taller-de-IA...pdf    # PDF A4
-│   │       ├── Taller-de-IA...epub   # EPUB
-│   │       └── site_libs/            # Dependencias JS/CSS
+│   │   ├── index.html                # Landing page raíz del sitio
+│   │   ├── libro/                    # Contenido del ebook
+│   │   │   ├── index.html            # Capítulo 1
+│   │   │   ├── intro.html
+│   │   │   ├── fundamentos.html
+│   │   │   ├── opencode.html
+│   │   │   ├── instalacion.html
+│   │   │   ├── perfiles.html
+│   │   │   ├── mcp-skills.html
+│   │   │   ├── casos-uso.html
+│   │   │   ├── labs.html
+│   │   │   ├── comparativa.html
+│   │   │   ├── proximos-pasos.html
+│   │   │   ├── referencias.html
+│   │   │   ├── apendice-cheatsheet.html
+│   │   │   ├── apendice-faq.html
+│   │   │   ├── apendice-gentle-ai.html
+│   │   │   ├── styles.css            # CSS (con toggle inyectado)
+│   │   │   ├── search.json           # Búsqueda offline
+│   │   │   ├── robots.txt
+│   │   │   ├── sitemap.xml
+│   │   │   ├── Taller-de-IA-para-No-Informáticos.pdf
+│   │   │   ├── Taller-de-IA-para-No-Informáticos.epub
+│   │   │   ├── images/               # Assets del ebook
+│   │   │   └── site_libs/            # Dependencias JS/CSS
+│   │   └── presentacion/            # Slides desplegadas
+│   │       └── index.html
 │   └── images/
 │       └── taller-ia-cover.svg       # Cover del ebook
-├── .github/workflows/deploy.yml       # Pipeline CI/CD
+├── .github/workflows/deploy.yml       # Pipeline CI/CD (GitHub Actions)
 └── materiales/                        # Recursos adicionales
     ├── labs/labs-practicos.md
     ├── ejemplos/ejemplos-agentes.md
@@ -108,8 +128,7 @@ El ebook completo está disponible en 3 formatos dentro de `ebook/_book/libro/`:
 
 ### Para contribuidores
 - Editar archivos `.qmd` en `ebook/`
-- Ejecutar `quarto render` para reconstruir
-- Ejecutar `python3 ebook/post_process.py` para post-procesar
+- Ejecutar `python3 ebook/build.py` para reconstruir todo (HTML + PDF + EPUB + deploy structure)
 - Push automáticamente despliega vía GitHub Actions
 
 ---

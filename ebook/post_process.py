@@ -5,6 +5,7 @@ import os, shutil, glob
 BOOK_DIR = "_book"
 LIBRO_DIR = os.path.join(BOOK_DIR, "libro")
 PRESENTACION_DIR = os.path.join(BOOK_DIR, "presentacion")
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Crear directorios
 os.makedirs(LIBRO_DIR, exist_ok=True)
@@ -24,11 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
-    var open = document.body.classList.toggle('sidebar-visible');
-    localStorage.setItem('taller-sidebar', open ? 'open' : 'closed');
+    var hide = document.body.classList.toggle('sidebar-hidden');
+    localStorage.setItem('taller-sidebar', hide ? 'hidden' : 'shown');
   });
-  if (localStorage.getItem('taller-sidebar') === 'open') {
-    document.body.classList.add('sidebar-visible');
+  if (localStorage.getItem('taller-sidebar') === 'hidden') {
+    document.body.classList.add('sidebar-hidden');
   }
 });
 </script>'''
@@ -71,10 +72,14 @@ for ext in ['*.pdf', '*.epub']:
     for f in glob.glob(os.path.join(BOOK_DIR, ext)):
         shutil.move(f, LIBRO_DIR)
 
-# Copiar presentación
-presentacion_src = os.path.join(LIBRO_DIR, 'presentacion.html')
+# Copiar presentación desde el root del repo a presentacion/index.html
+presentacion_src = os.path.join(REPO_ROOT, 'presentacion.html')
 if os.path.exists(presentacion_src):
-    shutil.copy2(presentacion_src, PRESENTACION_DIR)
+    # Crear index.html dentro de presentacion/ para URL limpia
+    shutil.copy2(presentacion_src, os.path.join(PRESENTACION_DIR, 'index.html'))
+    print(f"  ✅ presentacion.html → presentacion/index.html")
+else:
+    print(f"  ⚠ presentacion.html no encontrado en {REPO_ROOT}")
 
 # Listar resultado
 total = len(glob.glob(os.path.join(LIBRO_DIR, "**/*"), recursive=True))
