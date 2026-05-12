@@ -29,20 +29,31 @@ jobs:
         with:
           version: 1.9.37
 
-      - name: Render ebook (HTML)
+      - name: Ensure DS_Store gitignore
+        run: |
+          cat >> .gitignore << 'EOF'
+          .DS_Store
+          .DS_Store?
+          ._*
+          Thumbs.db
+          ehthumbs.db
+          EOF
+
+      - name: Render ebook (HTML only)
         run: |
           cd ebook
-          quarto render
+          quarto render --to html
 
       - name: Post-procesamiento y reorganización
         run: |
+          set -e
           cd ebook
+          echo "=== Ejecutando post-procesamiento ==="
           python3 post_process.py
 
-      - name: Generar landing page del sitio
+      - name: Generar landing page raíz
         run: |
           cd ebook/_book
-
           cat > index.html << 'LANDING'
 <!DOCTYPE html>
 <html lang="es">
@@ -83,13 +94,9 @@ jobs:
     <h1>Taller de IA para No Informáticos</h1>
     <p class="subtitle">Guía práctica — 2 horas, 100% gratis</p>
     <div class="menu-grid">
-      <a class="menu-card" href="presentacion/index.html">
-        <h2>🎤 Presentación</h2>
-        <p>Slides interactivas — la experiencia del taller en vivo</p>
-      </a>
       <a class="menu-card" href="libro/index.html">
         <h2>📖 Libro Electrónico</h2>
-        <p>12 capítulos + 3 apéndices — navegación completa</p>
+        <p>15 capítulos + 3 apéndices — navegación completa</p>
       </a>
       <a class="menu-card" href="libro/Taller-de-IA-para-No-Informáticos.pdf" download>
         <h2>📄 Descargar PDF</h2>
@@ -98,6 +105,10 @@ jobs:
       <a class="menu-card" href="libro/Taller-de-IA-para-No-Informáticos.epub" download>
         <h2>📱 Descargar EPUB</h2>
         <p>Compatible con Kindle, Apple Books, etc.</p>
+      </a>
+      <a class="menu-card" href="https://github.com/statick88/taller-ia-no-informaticos">
+        <h2>📂 Repositorio</h2>
+        <p>Código fuente y materiales del taller</p>
       </a>
     </div>
     <div class="footer">
