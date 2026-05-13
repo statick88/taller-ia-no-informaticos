@@ -129,6 +129,17 @@ if os.path.exists(src):
 else:
     print(f"  ⚠ presentacion.html no encontrado en {src}")
 
+# 5b. Copiar archivos HTML de la raíz al _book/
+print("\n=== Copiando archivos de la raíz al _book/ ===")
+for fn in ('manual.html', 'propuesta.html', 'opencode-taller.html',
+            'presentacion.html', 'presentacion-parte2.html', 'presentacion-labs.html'):
+    src = os.path.join(REPO_ROOT, fn)
+    dst = os.path.join(BOOK_DIR, fn)
+    if os.path.exists(src):
+        shutil.copy2(src, dst)
+        print(f"  ✅ {fn} → _book/")
+    # No mostrar warning si no existe — es optional
+
 # 5. Reporte
 print("\n" + "=" * 60)
 print("  ✅ BUILD COMPLETADO EXITOSAMENTE")
