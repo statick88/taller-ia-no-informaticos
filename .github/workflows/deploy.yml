@@ -29,6 +29,9 @@ jobs:
         with:
           version: 1.9.37
 
+      - name: Install TinyTeX for PDF rendering
+        run: quarto install tinytex --quiet
+
       - name: Ensure DS_Store gitignore
         run: |
           cat >> .gitignore << 'EOF'
