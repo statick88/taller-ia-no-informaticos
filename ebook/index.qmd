@@ -1,0 +1,99 @@
+# 🤖 Taller de IA para No Informáticos
+
+## Domina OpenCode, NotebookLM y la Inteligencia Artificial
+### Sin saber programar — 100% gratuito
+
+---
+
+```{=html}
+<div style="text-align: center; margin: 2rem 0;">
+<div style="background: linear-gradient(135deg, #00cc33 0%, #00b4e6 100%); border-radius: 12px; padding: 3rem 2rem; margin: 0;">
+  <h1 style="color: white; font-size: 2.8em; margin-bottom: 0.5rem;">
+    Taller de IA para No Informáticos
+  </h1>
+  <p style="color: rgba(255,255,255,0.9); font-size: 1.3em; margin-bottom: 1.5rem;">
+    Guía Práctica Completa — 2 Horas, 12 Secciones, 5 Labs
+  </p>
+  <p style="color: rgba(255,255,255,0.7); font-size: 1em;">
+    © 2026 · Diego Saavedra García<br>
+    <a href="#" style="color: white; text-decoration: underline;">Taller de IA para No Informáticos</a>
+  </p>
+</div>
+</div>
+```
+
+---
+
+## 📋 Descripción del Curso
+
+Este taller gratuito de **2 horas** te enseñará a usar herramientas de inteligencia artificial para **aumentar tu productividad profesional**, sin importar tu área de trabajo.
+
+### ¿Qué aprenderás?
+
+::: {.callout .callout-note}
+📌 **Al finalizar serás capaz de:**
+
+- ✅ Usar **OpenCode** para tareas profesionales
+- ✅ **Personalizar tu asistente** con perfiles personalizados
+- ✅ Instalar **habilidades adicionales** (Skills)
+- ✅ Conectar **extensiones** (MCP)
+- ✅ Crear **agentes especializados**
+- ✅ Elegir la **mejor herramienta** para cada trabajo
+- ✅ Aplicar todo en **5 labs prácticos**
+:::
+
+## 📚 Estructura del Libro
+
+| Sección | Temas | Páginas |
+|---------|-------|---------|
+| Cap. 1 | Introducción y fundamentos de IA | Conceptos básicos + evidencia científica |
+| Cap. 2 | Ecosistema IA 2026 | OpenCode, Copilot, Gemini, Ollama, NotebookLM |
+| Cap. 3 | OpenCode a fondo | Arquitectura, características, ventajas |
+| Cap. 4 | Instalación | Windows, macOS, Linux — paso a paso |
+| Cap. 5 | Perfiles personalizados | AGENTS.md, JSON, agentes |
+| Cap. 6 | MCP y Skills | Extensiones, protocolo, habilidades |
+| Cap. 7 | Casos de uso | 12 profesiones con ejemplos reales |
+| Cap. 8 | Labs prácticos | 5 labs guiados (2 horas) |
+| Cap. 9 | Comparativa | Herramientas vs. profesión vs. presupuesto |
+| Cap. 10 | Próximos pasos | Plan de acción 4 semanas |
+| + Apéndice | Cheatsheet, FAQ, Gentleman AI | Referencia rápida |
+
+---
+
+## ⚡ Requisitos Previos
+
+Antes de empezar, asegúrate de tener:
+
+| Requisito | Detalle |
+|-----------|---------|
+| 🌐 Cuenta de Google | Para NotebookLM (gratis) |
+| 💻 Editor de texto | Bloc de notas, VS Code o similar |
+| 🌍 Navegador actualizado | Chrome, Firefox o Edge |
+| 📶 Conexión a internet | Estable y confiable |
+| ☕ Ganas de aprender | ¡Lo más importante! |
+
+---
+
+::: {.callout .callout-warning}
+💡 **Este curso es para profesionales de cualquier área** — educación, salud, derecho, administración, marketing, ingeniería, etc. **No se requieren conocimientos técnicos previos.**
+:::
+
+---
+
+## 🎯 ¿Por qué este taller?
+
+> *"El uso frecuente de IA incrementa la productividad con un odds ratio de 2.34. Los empleados que usan IA generativa ahorran en promedio 96.8 horas al año."*
+> — Estudio Repsol/MIT (2024) + Estudio Ecuador (2025)
+
+La IA ya no es ciencia ficción. **Es una herramienta real** que puedes usar hoy para:
+
+- 🤖 Crear contenido 10x más rápido
+- 📊 Analizar datos sin ser data scientist
+- 📝 Resumir documentos complejos
+- 💡 Generar ideas creativas
+- ⏰ Ahorrar horas de trabajo repetitivo
+
+---
+
+*Material preparado para el Taller de IA para No Informáticos*
+*Por Diego Saavedra García · Taller de IA para No Informáticos · 2026*

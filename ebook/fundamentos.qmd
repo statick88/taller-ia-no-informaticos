@@ -1,0 +1,38 @@
+---
+title: "Ecosistema IA 2026"
+subtitle: "Herramientas disponibles y cómo elegirlas"
+---
+
+# El Ecosistema de IA en 2026
+
+## Las principales herramientas
+
+| Herramienta | Para qué sirve | Ventaja principal |
+|------------|----------------|------------------|
+| **OpenCode** | Asistencia versátil | Memoria persistente y personalización |
+| **Copilot** | Programación | Integrado en VS Code |
+| **Gemini** | Ecosistema Google | Integrado con Sheets, Docs, Drive |
+| **Ollama** | Modelos locales | Trabaja sin internet |
+| **NotebookLM** | Análisis de documentos | Generación de contenido desde fuentes |
+
+## ¿Cuál elegir?
+
+| Si necesitas... | Elige... |
+|----------------|----------|
+| Flexibilidad sin programar | OpenCode |
+| Programar en VS Code | Copilot |
+| Usar el ecosistema Google | Gemini |
+| Privacidad total de datos | Ollama |
+| Solo analizar documentos | NotebookLM |
+
+## Por qué OpenCode en 2026
+
+OpenCode se ha convertido en una herramienta fundamental por varias razones:
+
+- **150K+ estrellas en GitHub** y 6.5M de desarrolladores mensuales
+- **Código abierto**: Puedes auditarlo y modificarlo
+- **Sin costos de licenciamiento**: Usa tu propia API key
+- **Privacidad**: Tus datos no se comparten con terceros
+- **Altamente personalizable**: Perfiles, agentes y skills adaptables
+- **Flexible**: Funciona con múltiples proveedores de IA (OpenAI, Anthropic, etc.)
+- **Extensible**: Sistema MCP para conectar con herramientas externas

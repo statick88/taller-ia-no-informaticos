@@ -1,0 +1,220 @@
+---
+title: "Perfiles Personalizados"
+subtitle: "Configura tu asistente con AGENTS.md usando prompts"
+---
+
+# Perfiles Personalizados
+
+## ¿Qué es AGENTS.md?
+
+Es una **tarjeta de presentación** para tu asistente. Le dice quién eres, qué necesitas y cómo prefieres trabajar. Se guarda en `~/.config/opencode/AGENTS.md`.
+
+## Estructura básica
+
+```markdown
+# Mi Perfil Profesional
+
+## Quién soy
+[Nombre]
+[Profesión/Rol]
+[Industria]
+
+## Qué hago
+[Descripción de tu trabajo]
+
+## Mis objetivos
+- Objetivo 1
+- Objetivo 2
+- Objetivo 3
+
+## Cómo prefiero que me ayudes
+[Estilo preferido]
+[Nivel de detalle]
+[Formato de respuesta]
+```
+
+## Precedencia de configuración
+
+OpenCode sigue este orden de prioridad para cargar configuraciones:
+
+1. **AGENTS.md local** (`./AGENTS.md`) — el más específico
+2. **AGENTS.md global** (`~/.config/opencode/AGENTS.md`) — tu configuración personal
+3. **Clasificación del proyecto** — detección automática
+4. **Fallback de Claude Code** — configuración por defecto
+
+> Esto significa que puedes tener múltiples perfiles para diferentes proyectos.
+
+## Prompts genéricos para tu perfil — ¡Copia y pega!
+
+### Prompt 1: Crear tu AGENTS.md desde cero
+
+```
+Soy [TU PROFESIÓN, ej: "contador", "profesora", "periodista"].
+Trabajo en [TU INDUSTRIA, ej: "sector retail", "educación secundaria", "medios de comunicación"].
+Tengo [X] años de experiencia.
+
+Crea mi archivo AGENTS.md en ~/.config/opencode/ con:
+- Mi nombre: [TU NOMBRE]
+- Mi profesión y sector
+- Mis 3 principales responsabilidades
+- Mis objetivos al usar IA (máximo 4)
+- Mi estilo preferido: [ej: "respuestas detalladas con ejemplos" o "respuestas concisas y directas"]
+- Mis herramientas principales: [ej: "Excel, Google Workspace, email"]
+- Que siempre responda en español
+```
+
+### Prompt 2: Actualizar tu perfil existente
+
+```
+Lee mi archivo ~/.config/opencode/AGENTS.md actualizado.
+
+Ahora necesito que lo actualices con estos cambios:
+- Agrega que ahora tengo experiencia en [NUEVA ÁREA, ej: "análisis de datos"]
+- Cambia mi estilo preferido a [NUEVO ESTILO, ej: "más visual, con tablas y listas"]
+- Agrega que uso [NUEVA HERRAMIENTA, ej: "Power BI"]
+- Actualiza mis objetivos a:
+  1. [OBJETIVO 1]
+  2. [OBJETIVO 2]
+  3. [OBJETIVO 3]
+
+Muestra el archivo completo actualizado antes de guardarlo.
+```
+
+### Prompt 3: Crear un perfil para un rol diferente
+
+```
+Quiero crear un SEGUNDO perfil profesional para cuando trabajo como [OTRO ROL, ej: "marketer", "formador", "consultor"].
+
+Este perfil debe reflejar:
+- Rol: [DESCRIPCIÓN DEL ROL]
+- Herramientas que uso en este rol: [LISTA]
+- Cómo quiero que me hable la IA en este contexto: [TONO]
+- Objetivos específicos: [LISTA DE 2-3 OBJETIVOS]
+
+Guárdalo como un perfil separado y dime cómo cambiar entre ambos.
+```
+
+### Prompt 4: Mejorar mi perfil actual con IA
+
+```
+Revisa mi AGENTS.md actual y:
+1. Identifica qué información falta o es muy vaga
+2. Sugiere mejoras específicas para obtener mejores respuestas de la IA
+3. Corrige errores de redacción o formato
+4. Recomienda agregar alguna sección que no tenga (como "valores", "audiencia", "no me gusta")
+
+No cambies nada sin mostrarme primero qué cambiarías y por qué.
+```
+
+## Ejemplo: Perfil de Educator
+
+```markdown
+# Mi Perfil Profesional
+
+## Quién soy
+María García
+Profesora de matemáticas
+Educación secundaria
+
+## Qué hago
+Clases de bachillerato.
+Evaluaciones.
+Tutorías.
+Preparación de materiales.
+
+## Mis objetivos
+- Crear planes de clase efectivos
+- Generar evaluaciones equilibradas
+- Adaptar contenidos a diferentes niveles
+
+## Cómo prefiero que me ayudes
+- Responde en español
+- Dame ejemplos prácticos para el aula
+- Incluye referencias pedagógicas cuando sea posible
+- Formato preferido: listas numeradas y tablas
+```
+
+## Ejemplo: Perfil de Administrador
+
+```markdown
+# Mi Perfil Profesional
+
+## Quién soy
+Juan Pérez
+Gerente de operaciones
+Sector: Retail
+
+## Qué hago
+Coordinación logística.
+Gestión de inventario.
+Reportes semanales.
+Reuniones de equipo.
+
+## Mis objetivos
+- Automatizar reportes repetitivos
+- Mejorar análisis de datos
+- Reducir tiempo en tareas administrativas
+
+## Cómo prefiero que me ayudes
+- Responde de forma directa y estructurada
+- Prioriza datos concretos sobre opiniones
+- Si algo requiere investigación, dilo antes de inventar datos
+```
+
+## Ejemplo: Perfil de Marketing
+
+```markdown
+# Mi Perfil Profesional
+
+## Quién soy
+Ana López
+Coordinadora de Marketing Digital
+Sector: Tecnología B2B
+
+## Qué hago
+Gestión de redes sociales.
+Creación de contenido.
+Campañas de email marketing.
+Análisis de métricas.
+
+## Mis objetivos
+- Generar contenido consistente
+- Aumentar engagement
+- Medir ROI de campañas
+
+## Cómo prefiero que me ayudes
+- Tono creativo pero profesional
+- Sugiere hashtags y tendencias
+- Adapta el lenguaje al público B2B
+- Siempre que sugieras publicaciones, incluye llamada a la acción
+```
+
+## Tips para tu perfil
+
+| ✅ Buena práctica | ❌ Evita esto |
+|------------------|--------------|
+| "Soy contador en una empresa de retail con 10 años de experiencia" | "Soy profesional" (demasiado vago) |
+| "Prefiero respuestas con ejemplos del sector salud" | No especificar tu industria |
+| "Quiero que uses tablas cuando compares datos" | "Responde bien" (no dice cómo) |
+| "Mi jefe no es técnico: explica sin tecnicismos" | No mencionar a tu audiencia |
+| "Trabajo con Excel y Google Sheets" | No mencionar tus herramientas |
+
+> 💡 **Recuerda**: Cuanto más específico y honesto seas en tu perfil, mejor te entenderá la IA y mejores serán sus respuestas.
+
+### ¿Qué pasa si mi perfil ya es viejo?
+
+```
+Actualiza mi AGENTS.md. Pregúntame sobre mis responsabilidades actuales,
+herramientas que uso ahora y objetivos del próximo trimestre.
+```
+
+## Perfiles Incluidos en OpenCode
+
+| Perfil | Descripción |
+|--------|-------------|
+| Developer | Programación general, código limpio |
+| Educator | Enseñanza, explicaciones claras |
+| Admin | Tareas administrativas, documentos |
+| Marketing | Contenido, redes sociales |
+| Researcher | Búsqueda, análisis, papers |
+| Security | Auditorías, pentesting, CVE |

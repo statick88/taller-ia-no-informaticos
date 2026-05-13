@@ -1,0 +1,62 @@
+---
+title: "Referencias Científicas"
+subtitle: "Fuentes y lecturas recomendadas"
+---
+
+# Referencias Científicas
+
+## Estudios citados
+
+1. **Repsol (2024)**. Estudio sobre Microsoft 365 Copilot. MIT Technology Review España.
+   - Evaluó Copilot durante 4 meses con 300 empleados
+   - Hallazgo: 96.8 horas/año de ahorro por empleado
+
+2. Márquez-Romero, J.M. et al. (2025). "Impacto de asistentes de IA en productividad en empresas comerciales de El Oro, Ecuador." Revista de Finanzas.
+   - Muestra de 900 empleados
+   - Odds ratio de productividad: 2.34
+
+3. Yaranga, R. & Olortiga, S. (2025). "IA y productividad empresarial: Un estudio bibliométrico." Ecuador.
+   - 40% de reducción en tareas administrativas
+
+4. López, M. et al. (2025). "Asistentes virtuales en educación superior: una experiencia latinoamericana." Revista EDU-INNOVA.
+   - Más del 75% de satisfacción
+
+5. Jardón, P. et al. (2024). "Asistentes IA en universidades latinoamericanas: implementación y resultados." Ecuador, Perú, Colombia.
+   - Reducción significativa de carga administrativa
+
+6. Hidalgo Toledo, C.A. (2025). "Productividad y creatividad con IA generativa en México." SciELO México.
+   - 327 usuarios encuestados
+   - 7.02 horas semanales de ahorro promedio
+
+## Herramientas mencionadas
+
+### OpenCode
+- Web: [opencode.dev](https://opencode.dev)
+- GitHub: [github.com/opencode-ai/opencode](https://github.com/opencode-ai/opencode)
+
+### Herramientas complementarias
+- **NotebookLM**: [notebooklm.google.com](https://notebooklm.google.com)
+- **Ollama**: [ollama.com](https://ollama.com)
+- **Copilot**: [github.com/features/copilot](https://github.com/features/copilot)
+- **Gemini**: [gemini.google.com](https://gemini.google.com)
+
+### MCP y Skills
+- Model Context Protocol: [modelcontextprotocol.io](https://modelcontextprotocol.io)
+- Smithery (registro MCP): [smithery.ai](https://smithery.ai)
+
+## Lecturas recomendadas
+
+### Para profundizar en IA
+1. *"AI Engineering"* — Building Applications with Foundation Models
+2. *"The AI Revolution in Software Development"*
+3. *"Prompt Engineering Guide"* — disponible en línea
+
+### Para productividad
+1. *"Atomic Habits"* — James Clear
+2. *"Deep Work"* — Cal Newport
+3. *"The Manager's Path"* — Camille Fournier
+
+---
+
+*Material preparado para el Taller de IA para No Informáticos*
+*Diego Saavedra García · Taller de IA para No Informáticos · 2026*

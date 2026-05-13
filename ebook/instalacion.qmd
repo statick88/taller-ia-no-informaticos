@@ -1,0 +1,111 @@
+---
+title: "Instalación"
+subtitle: "Guía paso a paso para Windows, Mac y Linux"
+---
+
+# Instalación de OpenCode
+
+## Requisitos Previos
+
+Antes de instalar, asegúrate de tener:
+
+1. **Node.js 18+** — Verifica con: `node --version`
+2. **Git** — Para control de versiones
+3. **Editor de texto** — VS Code recomendado
+4. **API Key** — De OpenAI, Anthropic u otro proveedor
+
+## Instalación en Windows
+
+### Paso 1: Instalar Node.js
+
+1. Ve a [nodejs.org](https://nodejs.org)
+2. Descarga la versión LTS (recomendada)
+3. Instala con valores por defecto
+4. Reinicia tu terminal
+
+### Paso 2: Instalar OpenCode
+
+```bash
+npm install -g opencode-ai
+```
+
+## Instalación en macOS
+
+```bash
+# Con Homebrew:
+brew install node
+npm install -g opencode-ai
+```
+
+## Instalación en Linux
+
+```bash
+sudo apt install nodejs npm
+npm install -g opencode-ai
+```
+
+## Verificación de instalación
+
+```bash
+# Verificar versión instalada
+opencode --version
+
+# Ver ayuda
+opencode --help
+
+# Ver configuración actual
+opencode config list
+
+# Ver plugins instalados
+opencode plugins list
+```
+
+## Configuración Inicial
+
+### Archivo opencode.json
+
+Crea el archivo `~/.config/opencode/opencode.json`:
+
+```json
+{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "apiKey": "tu-api-key-aqui"
+}
+```
+
+### Obtener tu API Key
+
+1. Ve a [platform.openai.com](https://platform.openai.com)
+2. Crea una cuenta o inicia sesión
+3. Ve a "API Keys"
+4. Crea una nueva clave
+5. **Importante**: Nunca compartas esta clave
+
+## Primeros Pasos
+
+### Iniciar conversación
+
+```bash
+opencode
+```
+
+### Ejemplos de conversación
+
+**Presentarte:**
+
+```
+Hola, me llamo [tu nombre] y trabajo en [tu industria]. Ayúdame con [tu tarea].
+```
+
+**Pedir ayuda:**
+
+```
+Tengo que escribir un proyecto sobre [tema]. ¿Puedes ayudarme a estructurarlo?
+```
+
+**Investigar:**
+
+```
+Busca información sobre [tu tema de interés]
+```

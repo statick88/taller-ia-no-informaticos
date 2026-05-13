@@ -1,0 +1,271 @@
+---
+title: "MCP y Skills"
+subtitle: "Extiende las capacidades de OpenCode con prompts reutilizables"
+---
+
+# MCP y Skills
+
+## ¿Qué es MCP?
+
+MCP (Model Context Protocol) es un protocolo que permite a OpenCode conectarse con herramientas externas como bases de datos, APIs, y servicios.
+
+### ¿Por qué usar MCP?
+
+Los MCP permiten que OpenCode acceda a información y herramientas que no están en su contexto base:
+
+- **NotebookLM**: Análisis de documentos y PDFs
+- **GitHub**: Repositorios y issues
+- **Jira**: Gestión de proyectos
+- **Slack**: Comunicación de equipo
+- **Bases de datos**: Consultas SQL
+
+### ⚠️ Precaución con tokens
+
+> MCP añade tokens a cada consulta. Un solo MCP como GitHub puede añadir 20,000 tokens. Sé selectivo: solo conecta los MCP que realmente uses.
+
+## MCPs Recomendados
+
+| MCP | Función | Tokens estimados |
+|-----|---------|-----------------|
+| Filesystem | Leer y escribir archivos | ~2K |
+| Git | Control de versiones | ~5K |
+| Search | Búsqueda en proyecto | ~3K |
+| Database | Consultas SQL | ~4K |
+| Web | Navegación web | ~8K |
+| Notion | Integración con notas | ~6K |
+| Slack | Mensajería team | ~5K |
+
+## Prompts reutilizables para MCP — Copia, personaliza y pega en OpenCode
+
+### Prompt 1: Instalar y configurar un MCP
+
+```
+Quiero conectar OpenCode con [NOMBRE DE LA HERRAMIENTA, ej: "GitHub" o "Notion"].
+
+Haz lo siguiente:
+1. Verifica si ya existe un MCP para [NOMBRE] en mi configuración
+2. Si no existe, genera la configuración en mcp.json con todos los campos necesarios
+3. Si existe, muéstrame cómo activarlo
+4. Explica en 3 puntos simples:
+   - Qué hace este MCP
+   - Cuántos tokens consume (aproximadamente)
+   - Un ejemplo de cómo lo usaría yo en mi trabajo
+5. Pregúntame antes de instalar cualquier dependencia nueva
+```
+
+### Prompt 2: Explorar qué MCPs me convienen
+
+```
+Soy [TU PROFESIÓN] y trabajo principalmente con [HERRAMIENTAS QUE USAS].
+
+Analiza mi perfil (AGENTS.md) y recomiéndame:
+1. Los 3 MCPs más útiles para mi trabajo
+2. Los 2 MCPs que NO necesito (para no sobrecargar mi contexto)
+3. Para cada MCP recomendado:
+   - Qué hace exactamente
+   - Cuántos tokens añade
+   - Si es gratis o de pago
+   - Un ejemplo real de uso en mi profesión
+
+Si hay alguno que ya tenga, dime que ya lo tengo.
+```
+
+### Prompt 3: Optimizar tokens de MCP
+
+```
+Revisa mi archivo mcp.json y:
+1. Calcula cuántos tokens se añaden al contexto con cada MCP activo
+2. Identifica cuáles puedo desactivar sin perder funcionalidad
+3. Sugiere un orden de prioridad según mi uso frecuente
+4. Muestra un resumen tipo tabla:
+   | MCP | Tokens | Uso frecuente | Prioridad |
+   |-----|--------|---------------|-----------|
+   | ... | ...    | ...           | Alta/Baja |
+
+Recuerda: GitHub solo puede añadir ~20,000 tokens.
+```
+
+### Prompt 4: Agregar un MCP nuevo a mi configuración
+
+```
+Quiero agregar el MCP de [SERVICIO] a mi configuración.
+
+Haz lo siguiente:
+1. Verifica si el MCP de [SERVICIO] está disponible en el repositorio de MCPs
+2. Si existe, genera la configuración y agrégala a mcp.json
+3. Si no existe, búscame la alternativa más parecida
+4. Muéstrame los cambios exactos que harás antes de aplicarlos
+5. Pregúntame si quiero proceder
+```
+
+---
+
+## ¿Qué son las Skills?
+
+Las skills son **habilidades pre-configuradas** que puedes agregar a OpenCode para tareas específicas. A diferencia de los MCP que conectan servicios externos, las skills extienden las capacidades de IA.
+
+### Sistema de nomenclatura
+
+Las skills siguen un formato estricto:
+
+- **Minúsculas**: `code-review`, no `Code-Review`
+- **Un solo guión**: entre palabras
+- **Máximo 64 caracteres**: nombre completo
+- **Ubicación**: `~/.claude/skills/`
+
+## Skills Recomendadas para No Informáticos
+
+### 🔍 Investigación y Escritura
+
+| Skill | Descripción | Cuándo usarla |
+|-------|-------------|---------------|
+| `busqueda-cientifica` | IEEE, ACM, arXiv, Q1/Q2 | Cuando necesites fuentes académicas |
+| `redaccion-cientifica` | Estructura IMRAD, APA/IEEE | Para documentos formales |
+| `estructura-paper` | Secciones de paper | Al escribir artículos |
+| `citacion-normas` | Normas de citación | Para referenciar correctamente |
+| `cientifico` | Orquestador de investigación | Para proyectos de investigación completos |
+
+### 💻 Desarrollo y Código
+
+| Skill | Descripción | Cuándo usarla |
+|-------|-------------|---------------|
+| `code-review` | Revisión automática | Antes de ejecutar código |
+| `testing` | Generación de tests | Para verificar tu trabajo |
+| `security-scan` | Vulnerabilidades OWASP | Seguridad de tus proyectos |
+| `best-practices` | Seguridad, compatibilidad | Para cualquier proyecto |
+
+### 📊 Presentación y Docs
+
+| Skill | Descripción | Cuándo usarla |
+|-------|-------------|---------------|
+| `docs` | Documentación automática | Para registrar procesos |
+| `pptx-generator` | Presentaciones | Cuando necesites slides |
+| `pdf-generator` | Documentos PDF | Para entregables formales |
+
+## Prompts reutilizables para Skills
+
+### Prompt 1: Descubrir e instalar skills
+
+```
+Busca skills que me ayuden con [ÁREA DE TRABAJO, ej: "redacción de informes" o "análisis de datos"].
+
+Para cada skill que encuentres:
+1. Nombre y qué hace (máximo 2 líneas)
+2. Cómo instalarla paso a paso
+3. Un ejemplo de prompt que podría usar con ella
+
+Selecciona las 3 más relevantes para mi profesión: [TU PROFESIÓN]
+e instálalas PREGUNTÁNDOME antes de cada una.
+```
+
+### Prompt 2: Usar skills para una tarea específica
+
+```
+Necesito [DESCRIPCIÓN DE LO QUE NECESITO, ej: "resumir 15 PDFs sobre cambio climático"].
+
+Haz lo siguiente:
+1. Revisa qué skills tengo instaladas que puedan servir
+2. Identifica la más adecuada y úsala
+3. Si no hay ninguna adecuada, búscame una nueva en el repositorio
+4. Muéstrame el resultado y explica qué skill usaste y por qué
+```
+
+### Prompt 3: Combinar MCP + Skills para un workflow completo
+
+```
+Necesito hacer [TAREA COMPLETA, ej: "investigar un tema y escribir un reporte de 2 páginas"].
+
+Mi workflow ideal sería:
+1. Buscar fuentes → Skill: busqueda_cientifica
+2. Analizar documentos → MCP: NotebookLM
+3. Escribir el reporte → Skill: redaccion_cientifica
+4. Formatear en PDF → Skill: pdf-generator
+5. Revisar calidad → Skill: code-review
+
+¿Puedes verificar que tengo todas estas capacidades instaladas?
+Si falta alguna, indícame cuál y cómo instalarla.
+```
+
+### Prompt 4: Agregar una skill nueva
+
+```
+Quiero instalar la skill [NOMBRE DE LA SKILL].
+
+Haz lo siguiente:
+1. Verifica si ya está instalada
+2. Si no, búscala en ~/.claude/skills/ o en el repositorio
+3. Instálala siguiendo el procedimiento correcto
+4. Prueba que funciona con un ejemplo básico
+5. Si hay conflicto con otra skill existente, avísame
+```
+
+---
+
+## Combinar MCP + Skills — El poder real
+
+El verdadero poder viene de combinar ambos:
+
+```
+┌──────────────────────────────────────┐
+│  Skill: búsqueda científica           │
+│  ↓                                   │
+│  MCP: Web (para buscar)              │
+│  ↓                                   │
+│  MCP: NotebookLM (para analizar)      │
+│  ↓                                   │
+│  Skill: redacción científica         │
+│  ↓                                   │
+│  Skill: citación normas              │
+└──────────────────────────────────────┘
+```
+
+## Ejemplo: Investigación académica completa
+
+```bash
+# 1. Buscar fuentes
+opencode "/busqueda_cientifica machine learning educación"
+
+# 2. Analizar documentos
+opencode "Analiza estos papers y genera un resumen ejecutivo"
+
+# 3. Redactar con estructura IMRAD
+opencode "Redacta la introducción siguiendo estructura IMRAD"
+
+# 4. Citar correctamente
+opencode "Genera las citas en formato APA 7ma edición"
+
+# 5. Generar PDF del documento
+opencode "Exporta este documento como PDF"
+```
+
+---
+
+## 🔧 Solución de problemas con MCP y Skills
+
+### Problema: "No encuentro el MCP de [SERVICIO]"
+
+```
+Busca alternativas en Smithery (smithery.ai) o en el repositorio oficial
+de MCP servers. Si no existe, puedes:
+1. Usar el MCP de Web como alternativa temporal
+2. Crear un MCP personalizado (avanzado)
+3. Copiar los datos manualmente en tu conversación
+```
+
+### Problema: "La skill no funciona"
+
+```
+1. Verifica que está instalada: /skills
+2. Revisa que sea compatible con mi versión de OpenCode
+3. Prueba desinstalándola y reinstalándola
+4. Busca actualizaciones o alternativas
+```
+
+### Problema: "Hay demasiados tokens en mi contexto"
+
+```
+1. Revisa qué MCPs están activos con: opencode config list
+2. Desactiva los que no uses con frecuencia
+3. Prioriza los esenciales: Filesystem + Git
+4. Pide a OpenCode un resumen del uso de tokens
+```

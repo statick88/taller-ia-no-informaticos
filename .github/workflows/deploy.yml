@@ -1,9 +1,11 @@
+# Deploy ebook to GitHub Pages
+# Runs on push to main, builds with build.py and deploys to gh-pages
+
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - v2-taller-parte2
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -17,21 +19,41 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.9.37
+
+      - name: Install TinyTeX for PDF rendering
+        run: quarto install tinytex --quiet
+
+      - name: Ensure DS_Store gitignore
+        run: |
+          cat >> .gitignore << 'EOF'
+          .DS_Store
+          .DS_Store?
+          ._*
+          Thumbs.db
+          ehthumbs.db
+          EOF
+
+      - name: Build ebook (HTML + PDF + EPUB + organize)
+        run: |
+          cd ebook
+          python3 build.py
+
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'ebook/_book'
 
       - name: Deploy to GitHub Pages
         id: deployment

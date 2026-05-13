@@ -1,0 +1,545 @@
+---
+title: "Labs Prácticos"
+subtitle: "5 ejercicios guiados paso a paso"
+---
+
+# Labs Prácticos
+
+## 5 Labs para dominar OpenCode en 2 horas
+
+Cada lab está diseñado para completarse en 15-30 minutos. Puedes hacerlos en orden o seleccionar el que necesites.
+
+> 💡 **Tip clave**: En cada lab, copia los prompts genéricos, reemplaza los campos marcados con `[TUS DATOS]` y pégalo directamente en OpenCode. ¡Así de fácil!
+
+---
+
+## Lab 1: Instalación y Verificación (15 minutos)
+
+### Objetivo
+
+Instalar OpenCode y verificar que funciona correctamente.
+
+### Paso 1: Verificar instalación de npm/Node.js
+
+Abre tu terminal (PowerShell en Windows, Terminal en Mac/Linux):
+
+```bash
+# Verificar que Node.js está instalado
+node --version
+
+# Verificar que npm está instalado
+npm --version
+```
+
+**Deberías ver algo como:** `v20.x.x` y `10.x.x`
+
+### Paso 2: Instalar OpenCode
+
+```bash
+# Instalar globalmente
+npm install -g opencode-ai
+
+# O si prefieres con permisos de administrador (Linux)
+sudo npm install -g opencode-ai
+```
+
+### Paso 3: Verificar instalación
+
+```bash
+# Verificar versión instalada
+opencode --version
+
+# Verificar que responde
+opencode --help
+```
+
+### Paso 4: Primeros comandos
+
+```bash
+# Ver configuración actual
+opencode config list
+
+# Ver plugins instalados
+opencode plugins list
+
+# Ver agentes disponibles
+opencode agents list
+```
+
+### Checklist de verificación
+
+- [ ] `node --version` muestra v18 o superior
+- [ ] `opencode --version` muestra la versión
+- [ ] `opencode --help` muestra la ayuda
+- [ ] Sin errores de permisos
+
+---
+
+## Lab 2: Perfil Personalizado con Prompts (20 minutos)
+
+### Objetivo
+
+Crear y actualizar tu perfil profesional con prompts directos a OpenCode.
+
+### Prompts genéricos para tu perfil
+
+> 📋 **Copia y personaliza**: Reemplaza `[TU PROFESIÓN]`, `[TU INDUSTRIA]`, etc.
+
+#### Prompt 1: Crear tu AGENTS.md inicial
+
+```
+Crea mi archivo AGENTS.md con el siguiente perfil:
+
+Soy [TU PROFESIÓN] en [TU INDUSTRIA / SECTOR].
+Trabajo en [EMPRESA O TIPO DE ORGANIZACIÓN].
+Mis principales responsabilidades son:
+- [Responsabilidad 1]
+- [Responsabilidad 2]
+- [Responsabilidad 3]
+
+Mis objetivos al usar IA son:
+- Automatizar tareas repetitivas
+- Mejorar la calidad de mis documentos
+- Investigar temas de mi campo más rápido
+
+Mis herramientas principales son:
+- Microsoft Office / Google Workspace
+- [Herramienta específica de tu trabajo]
+
+Prefiero que me respondas:
+- En español
+- Con ejemplos prácticos
+- Con formato de listas cuando sea posible
+- Cita las fuentes cuando investigues
+```
+
+#### Prompt 2: Actualizar tu perfil con información específica
+
+```
+Actualiza mi AGENTS.md con esta información adicional:
+
+- Agrega que tengo experiencia de [X AÑOS] años
+- Menciona que me especializo en [ESPECIALIZACIÓN]
+- Agrega que trabajo con [HERRAMIENTA 1] y [HERRAMIENTA 2]
+- Indica que prefiero análisis detallados sobre resúmenes breves
+- Agrega un estilo de comunicación formal pero cercano
+```
+
+#### Prompt 3: Agregar un perfil diferente para otro rol
+
+```
+Crea un segundo perfil profesional en mi AGENTS.md para cuando trabaje en [OTRO ÁREA, ej: marketing / finanzas / educación].
+
+En este perfil:
+- Rol: [DESCRIPCIÓN DEL ROL]
+- Herramientas: [LISTA DE HERRAMIENTAS]
+- Estilo: [CÓMO QUIERES QUE TE HABLE]
+- Objetivos: [QUÉ QUIERES LOGRAR]
+```
+
+### 🔬 Buenas prácticas de prompting para perfiles
+
+| ✅ Buena práctica | ❌ Evita esto |
+|------------------|--------------|
+| "Soy contador en una empresa de retail" | "Hazme un perfil" (muy vago) |
+| "Prefiero respuestas en español con ejemplos" | No especificar idioma ni formato |
+| "Quiero 3 objetivos claros y medibles" | "Quiero objetivos" (incompleto) |
+| "Mi audiencia son gerentes sin tecnia" | No mencionar a quién va dirigido |
+
+### Checklist
+
+- [ ] Archivo AGENTS.md creado con tu profesión
+- [ ] Contiene objetivos claros
+- [ ] Define tu estilo de comunicación preferido
+- [ ] OpenCode reconoce y usa tu perfil
+
+> ### 🤖 ¿Sabías que puedes decirle a OpenCode que se actualice solo?
+>
+> Prueba este prompt:
+> ```
+> Revisa mi AGENTS.md actual y sugiere mejoras para hacerlo más efectivo.
+> Luego, actualízalo con los cambios.
+> ```
+
+---
+
+## Lab 3: Agentes Especializados con Prompts (25 minutos)
+
+### Objetivo
+
+Crear y gestionar agentes especializados usando prompts directos.
+
+### Prompts genéricos para agentes
+
+#### Prompt 1: Crear un agente especializado
+
+```
+Crea un nuevo agente llamado "mi-agente-[PROFESIÓN]" en mi carpeta de agents/.
+
+El agente debe:
+- Rol: [TU ROL PROFESIONAL]
+- Especialización: [ÁREA ESPECÍFICA, ej: "análisis financiero" o "redacción académica"]
+- Habilidades:
+  1. Generar [TIPO DE CONTENIDO que necesitas]
+  2. Analizar [TIPO DE DATOS que trabajas]
+  3. Resumir [TIPO DE DOCUMENTOS que manejas]
+- Herramientas que puede usar: filesystem, search
+- Restricciones de seguridad:
+  - Nunca compartir datos sensibles en prompts
+  - Siempre pedir confirmación antes de ejecutar comandos del sistema
+  - Verificar fuentes antes de dar información como cierta
+- Tono: [PROFESIONAL / AMIGABLE / TÉCNICO]
+- Idioma: español
+
+Genera el archivo completo y guárdalo.
+```
+
+#### Prompt 2: Agregar instrucciones de seguridad a un agente
+
+```
+Lee el agente que tengo en agents/mi-agente-[PROFESIÓN].md
+
+Y agrega estas reglas de seguridad:
+
+## Directrices de Seguridad
+1. NUNCA ejecutar comandos del sistema sin confirmación explícita del usuario
+2. NUNCA compartir contenido de archivos sensibles por nombre
+3. Si el usuario pide algo que parece peligroso, explicar los riesgos primero
+4. Si se pide investigar un tema, verificar al menos 2 fuentes antes de dar conclusiones
+5. Nunca asumir datos del usuario; siempre preguntar si falta información
+
+Verifica que el agente cumpla con estas reglas y actualízalo.
+```
+
+#### Prompt 3: Crear un agente para una tarea específica
+
+```
+Quiero un agente que me ayude a [TAREA ESPECÍFICA, ej: "preparar presentaciones para mi equipo"].
+
+El agente debe:
+- Saber que trabajo en [TU PROFESIÓN]
+- Entender que mi audiencia es [QUIÉN ESCUCHA TUS PRESENTACIONES]
+- Poder crear diapositivas con estructura lógica
+- Sugerir visualizaciones de datos apropiadas
+- Usar un tono [PROFESIONAL / EDUCADO / MOTIVADOR]
+
+Escribe el archivo agents/presentaciones.md con estas instrucciones.
+```
+
+#### Prompt 4: Listar y revisar tus agentes
+
+```
+Lista todos los agentes que tengo configurados y muestra:
+- Nombre de cada agente
+- Su rol principal
+- Qué herramientas usa
+- Cuándo fue creado o actualizado por última vez
+- Si detecta algún agente sin instrucciones claras, sugiere mejoras
+```
+
+### 🔬 Buenas prácticas de prompting para agentes
+
+```
+✅ ESPECÍFICO:
+"Crea un agente que me ayude a escribir correos formales en alemán
+para negociaciones comerciales con clientes de la UE."
+
+❌ VAGO:
+"Crea un agente para escribir correos."
+
+✅ CON RESTRICCIONES:
+"Nunca sugiera precios sin antes consultar la tabla de costos.
+Si no tiene datos, pregunte al usuario antes de inventar cifras."
+
+❌ SIN CONTROL:
+"Ayúdame a responder correos de clientes."
+```
+
+### Checklist
+
+- [ ] Directorio `agents/` creado
+- [ ] Al menos un agente creado con prompts genéricos
+- [ ] Instrucciones de seguridad incluidas
+- [ ] Probado con una tarea real del trabajo
+
+---
+
+## Lab 4: MCPs y Skills con Prompts (30 minutos)
+
+### Objetivo
+
+Instalar y configurar extensiones usando prompts directos.
+
+### Prompts genéricos para MCP
+
+#### Prompt 1: Configurar un MCP nuevo
+
+```
+Necesito conectar OpenCode con [NOMBRE DE LA HERRAMIENTA, ej: "mi base de datos MySQL" o "mi cuenta de Notion"].
+
+Por favor:
+1. Verifica si ya existe un MCP para [NOMBRE DE LA HERRAMIENTA]
+2. Si no existe, genera la configuración necesaria en mcp.json
+3. Si existe, muéstrame cómo activarlo
+4. Explica en 3 puntos qué hará este MCP y cuántos tokens consume aproximadamente
+5. Pregúntame antes de instalar cualquier dependencia nueva
+```
+
+#### Prompt 2: Explorar y recomendar MCPs
+
+```
+Analiza mi perfil profesional (AGENTS.md actual) y recomiéndame:
+1. Los 3 MCPs más útiles para mi trabajo
+2. Los 2 MCPs que NO necesito (para no sobrecargar mi contexto)
+3. Para cada MCP recomendado, explica:
+   - Qué hace
+   - Cuántos tokens añade aproximadamente
+   - Si es gratis o de pago
+   - Un ejemplo de uso con mi profesión
+```
+
+#### Prompt 3: Optimizar uso de MCPs (gestión de tokens)
+
+```
+Revisa mi configuración actual de MCPs en mcp.json y:
+1. Calcula cuántos tokens se añaden al contexto por cada MCP activo
+2. Identifica cuáles puedo desactivar sin perder funcionalidad importante
+3. Sugiere un orden de prioridad basado en mi uso frecuente
+4. Muestra un resumen tipo tabla del impacto en tokens
+
+Recuerda: GitHub solo puede añadir ~20,000 tokens. Sé selectivo.
+```
+
+### Prompts genéricos para Skills
+
+#### Prompt 4: Descubrir e instalar skills
+
+```
+Busca e instala skills que me ayuden con [ÁREA DE TRABAJO, ej: "redacción de informes" o "análisis de datos"].
+
+Para cada skill que encuentres:
+1. Nombre y versión
+2. Qué hace (máximo 2 líneas)
+3. Cómo instalarla
+4. Un ejemplo de prompt para usarla
+
+Instala las 3 más relevantes para mi perfil, pero PREGÚNTAME antes de cada instalación.
+```
+
+#### Prompt 5: Usar skills para una tarea específica
+
+```
+Tengo que [TAREA, ej: "resumir 15 artículos científicos sobre cambio climático"].
+
+Busca en mis skills instaladas cuál es la más adecuada y úsala para:
+1. Hacer un resumen ejecutivo de cada artículo (máximo 50 palabras por uno)
+2. Crear una tabla comparativa con: título, autores, año, hallazgo principal
+3. Identificar los 3 artículos más relevantes para mi investigación
+
+Si no hay una skill adecuada, búscame una nueva que pueda instalar.
+```
+
+### 🔬 Buenas prácticas de prompting para MCP y Skills
+
+```
+✅ PREGUNTA PRIMERO:
+"¿Quieres que instale el MCP de GitHub? Añade ~20K tokens. ¿Procedo?"
+
+❌ NO INSTALES SIN PERMISO:
+"Instalé GitHub, Notion, Slack, Jira y Database sin preguntarte.
+Ahora tu contexto está lleno de tokens innecesarios."
+
+✅ EXPLICA EL IMPACTO:
+"Este skill consume 2K de memoria extra. ¿Lo activo?"
+
+❌ NO EXPLIQUES:
+"Done. [sin explicar qué hizo]"
+```
+
+### Checklist
+
+- [ ] Archivo mcp.json creado o actualizado
+- [ ] Al menos 1 MCP configurado y probado
+- [ ] Prompts de descubrimiento de skills usados
+- [ ] Impacto en tokens revisado y aceptado
+- [ ] Al menos 1 skill instalada y probada
+
+> ### 🤖 ¿Sabías que puedes pedirle a OpenCode que te enseñe a usarlo?
+>
+> Prueba estos prompts:
+> ```
+> "¿Qué MCPs tengo instalados y para qué sirve cada uno?"
+> "¿Qué skills me recomiendas instalar para [MI TRABAJO]?"
+> "Muestra una tabla con todos mis plugins, sus versiones y estado"
+> ```
+
+---
+
+## Lab 5: Proyecto Completo — Ponlo Todo Junto (40 minutos)
+
+### Objetivo
+
+Aplicar todo lo aprendido en un caso real de tu trabajo usando prompts reutilizables.
+
+### Prompts genéricos para tu proyecto
+
+#### Prompt 1: Investigación y análisis
+
+```
+Necesito investigar sobre [TEMA DE TU TRABAJO, ej: "las nuevas regulaciones fiscales para PYMEs en 2026"].
+
+Haz lo siguiente:
+1. Busca las 5 fuentes más relevantes y actualizadas (2024-2026)
+2. Resume cada fuente en máximo 3 puntos clave
+3. Crea una tabla comparativa con: Fuente | Año | Hallazgo principal | Relevancia para mi trabajo
+4. Identifica las 2 tendencias más importantes que debería conocer
+5. Genera 3 preguntas que podría hacerle a un experto en el tema
+
+Usa NotebookLM si es necesario para analizar documentos que encuentres.
+```
+
+#### Prompt 2: Crear un documento profesional
+
+```
+Redacta un [TIPO DE DOCUMENTO, ej: "informe trimestral" / "propuesta de proyecto" / "correo a un cliente"] sobre:
+
+Tema: [TEMA PRINCIPAL]
+Audiencia: [A QUIÉN VA DIRIGIDO, ej: "directivos de mi empresa" / "clientes potenciales"]
+Extensión: [LONGITUD, ej: "máximo 2 páginas" / "500 palabras"]
+Idioma: español
+Tono: [PROFESIONAL / CORDIAL / TÉCNICO]
+
+Incluye:
+- Un resumen ejecutivo al inicio
+- Secciones claramente organizadas
+- Datos o cifras cuando sea posible (indica si inventas o si buscas datos reales)
+- Una sección de conclusiones o próximos pasos
+
+Antes de redactarlo, pregúntame si hay algún punto que deba incluir o evitar.
+```
+
+#### Prompt 3: Automatizar una tarea repetitiva
+
+```
+Necesito automatizar esta tarea que hago semanalmente:
+
+[TU TAREA REPETITIVA, ej: "Cada lunes envío un resumen de ventas a mi jefe"]
+
+Actualmente lo hago así:
+[PASOS ACTUALES]
+
+¿Puedes ayudarme a:
+1. Crear una plantilla o script que automatice esto
+2. Identificar qué herramientas de OpenCode pueden ayudarme
+3. Si necesito algún MCP o skill adicional, indícame cuál y cómo instalarlo
+4. Crear un checklist mensual para que no se me olvide nada
+```
+
+#### Prompt 4: Revisión y mejora de tu trabajo
+
+```
+Revisa este texto/redacción/diapositiva que preparé sobre [TEMA]:
+
+[TU TRABAJO AQUÍ — pégalo]
+
+Evalúa:
+1. ¿El contenido es claro y está bien estructurado?
+2. ¿Hay errores de ortografía, gramática o lógica?
+3. ¿El tono es apropiado para la audiencia?
+4. ¿Falta información importante?
+5. ¿Hay alguna mejora que puedas sugerir?
+
+No reformules sin preguntarme primero. Solo sugiere cambios y explica por qué.
+```
+
+#### Prompt 5: Preparar una presentación
+
+```
+Necesito preparar una presentación de [NÚMERO] minutos sobre [TEMA] para [AUDIENCIA].
+
+Por favor:
+1. Crea un esquema con los puntos clave (máximo 5 secciones)
+2. Sugiere un gancho de apertura (dato sorprendente, pregunta, historia breve)
+3. Para cada sección, dame:
+   - Puntos de viñeta
+   - Una visualización sugerida (gráfico, imagen, ejemplo)
+   - Tiempo estimado de presentación
+4. Cierra con un call-to-action claro
+
+Mi estilo preferido: [NARRATIVO / DATOS / VISUAL / INTERACTIVO]
+```
+
+### 🎯 Integración completa — Tu flujo de trabajo diario
+
+Aquí tienes un flujo completo que puedes copiar y adaptar:
+
+```
+Paso 1: Investigar
+"Busca información sobre [TEMA]. Dame las 5 mejores fuentes."
+
+Paso 2: Analizar
+"Lee estos documentos y genera un resumen ejecutivo de máximo 200 palabras."
+
+Paso 3: Crear
+"Redacta un informe con los datos anteriores. Tono profesional, formato de reporte."
+
+Paso 4: Revisar
+"Revisa mi informe. ¿Es coherente? ¿Falta algo? ¿Hay errores?"
+
+Paso 5: Presentar
+"Crea las diapositivas para presentar este informe a [AUDIENCIA]."
+
+Paso 6: Seguir aprendiendo
+"¿Qué podría mejorar en mi proceso? ¿Qué nuevas features de OpenCode
+podría usar para hacer esto más eficiente?"
+```
+
+### Checklist final del taller
+
+| Lab | ✅ |
+|-----|---|
+| Lab 1: Instalación y verificación | [ ] |
+| Lab 2: AGENTS.md personalizado | [ ] |
+| Lab 3: Agentes especializados | [ ] |
+| Lab 4: MCPs y Skills | [ ] |
+| Lab 5: Proyecto completo | [ ] |
+
+---
+
+## Recursos adicionales
+
+### Prompts útiles para recordar
+
+| Quiero hacer... | Prompt para copiar |
+|----------------|-------------------|
+| Actualizar mi perfil | "Actualiza mi AGENTS.md con [CAMBIO]" |
+| Agregar un MCP | "Instala el MCP de [SERVICIO] en mcp.json" |
+| Buscar una skill | "¿Qué skills tengo para [ÁREA]?" |
+| Resumir un documento | "Resume este texto en [X] palabras" |
+| Traducir algo | "Traduce esto a [IDIOMA] manteniendo el tono profesional" |
+| Generar código | "Genera un script en Python que [HAGA ALGO]" |
+| Corregir texto | "Revisa este texto y corrige errores" |
+| Explicar algo simple | "Explícame [CONCEPTO] como si tuviera 10 años" |
+
+### Plan post-labs
+
+| Semana | Acción |
+|--------|--------|
+| **1ra** | Personaliza tu AGENTS.md con los prompts |
+| **2da** | Explora 2-3 skills con el Lab 4 |
+| **3ra** | Integra en tu flujo de trabajo diario |
+| **4ta** | Comparte con colegas y forma un grupo de práctica |
+
+## 🎓 ¿Qué sigue?
+
+¡Ya dominas los fundamentos! Ahora puedes:
+
+- **Practicar diario**: Usa un prompt al día
+- **Explorar más**: Revisa la documentación de OpenCode
+- **Compartir**: Enseña a un colega lo que aprendiste
+- **Avanzar**: Prueba con proyectos más complejos
+
+---
+
+*Material preparado para el Taller de IA para No Informáticos*
+*"No necesitas ser informático para ser productivo con IA"*

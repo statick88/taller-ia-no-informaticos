@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de IA para No Informáticos - Guía Completa 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+      background: #0a0a0f;
+    }
+    @page :first {
+      margin: 0;
+      background: #0a0a0f;
+    }
+    :root {
+      --primary: #00cc33;
+      --primary-dark: #00a828;
+      --secondary: #00b4e6;
+      --accent-purple: #9333ea;
+      --accent-orange: #ff9500;
+      --accent-pink: #ec4899;
+      --bg-dark: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a25;
+      --bg-code: #0d0d14;
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0b0;
+      --text-muted: #606070;
+      --border: rgba(255, 255, 255, 0.08);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      font-size: 10pt;
+      line-height: 1.5;
+      width: 210mm;
+      min-height: 297mm;
+      padding: 20mm;
+    }
+    .cover {
+      background: var(--bg-dark);
+      min-height: 277mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      page-break-after: always;
+      margin: -20mm;
+      padding: 40mm 20mm;
+    }
+    .cover h1 {
+      font-size: 32pt;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 10pt;
+    }
+    .cover h2 {
+      font-size: 18pt;
+      color: var(--text-secondary);
+      font-weight: 400;
+      margin-bottom: 40pt;
+    }
+    .cover .author {
+      font-size: 14pt;
+      color: var(--primary);
+      margin-top: 50pt;
+    }
+    .cover .contact {
+      font-size: 10pt;
+      color: var(--text-muted);
+      margin-top: 6pt;
+    }
+    .cover .url {
+      font-size: 12pt;
+      color: var(--secondary);
+      margin-top: 40pt;
+    }
+    .toc {
+      background: var(--bg-card);
+      border-radius: 8px;
+      padding: 16pt;
+      margin: 16pt 0;
+      page-break-inside: avoid;
+    }
+    .toc h2 {
+      color: var(--primary);
+      margin-bottom: 10pt;
+      font-size: 14pt;
+    }
+    .toc ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .toc li {
+      padding: 3pt 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .toc li:last-child {
+      border-bottom: none;
+    }
+    .toc a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 18pt;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin: 20pt 0 10pt;
+      padding-bottom: 6pt;
+      border-bottom: 2pt solid var(--primary);
+    }
+    h2 {
+      font-size: 14pt;
+      font-weight: 700;
+      color: var(--secondary);
+      margin: 16pt 0 8pt;
+    }
+    h3 {
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--accent-orange);
+      margin: 12pt 0 6pt;
+    }
+    h4 {
+      font-size: 10pt;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 10pt 0 4pt;
+    }
+    p {
+      color: var(--text-secondary);
+      margin: 6pt 0;
+      text-align: justify;
+    }
+    ul, ol {
+      color: var(--text-secondary);
+      margin: 6pt 0 6pt 18pt;
+    }
+    li {
+      margin: 3pt 0;
+    }
+    strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      background: var(--bg-code);
+      padding: 1pt 3pt;
+      border-radius: 3pt;
+      font-size: 8pt;
+      color: var(--primary);
+    }
+    pre {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 4pt;
+      padding: 10pt;
+      margin: 8pt 0;
+      page-break-inside: avoid;
+    }
+    pre code {
+      background: transparent;
+      padding: 0;
+      font-size: 8pt;
+      color: var(--text-primary);
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    blockquote {
+      border-left: 3pt solid var(--accent-purple);
+      background: var(--bg-card);
+      padding: 8pt 12pt;
+      margin: 8pt 0;
+      color: var(--text-secondary);
+      font-style: italic;
+      border-radius: 0 4pt 4pt 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10pt 0;
+      page-break-inside: avoid;
+    }
+    th {
+      background: var(--bg-card);
+      color: var(--primary);
+      font-weight: 600;
+      padding: 6pt 8pt;
+      text-align: left;
+      border-bottom: 2pt solid var(--primary);
+      font-size: 9pt;
+    }
+    td {
+      padding: 4pt 8pt;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+      font-size: 9pt;
+    }
+    tr:hover td {
+      background: var(--bg-card);
+    }
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(0,204,51,0.1), rgba(0,180,230,0.1));
+      border-left: 3pt solid var(--primary);
+      padding: 8pt 12pt;
+      margin: 8pt 0;
+      border-radius: 0 4pt 4pt 0;
+    }
+    .info-box {
+      background: rgba(0,180,230,0.1);
+      border-left: 3pt solid var(--secondary);
+      padding: 8pt 12pt;
+      margin: 8pt 0;
+      border-radius: 0 4pt 4pt 0;
+    }
+    .warning-box {
+      background: rgba(230,0,51,0.1);
+      border-left: 3pt solid #e60033;
+      padding: 8pt 12pt;
+      margin: 8pt 0;
+      border-radius: 0 4pt 4pt 0;
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 4pt;
+      padding: 10pt;
+      margin: 8pt 0;
+      page-break-inside: avoid;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 16pt 0;
+    }
+    .page-break {
+      page-break-after: always;
+    }
+    .two-cols {
+      display: flex;
+      gap: 12pt;
+    }
+    .two-cols > div {
+      flex: 1;
+    }
+    .footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 8pt;
+      margin-top: 24pt;
+      padding-top: 8pt;
+      border-top: 1px solid var(--border);
+    }
+    .resource-link {
+      background: var(--bg-card);
+      border: 1px solid var(--primary);
+      border-radius: 4pt;
+      padding: 10pt 14pt;
+      margin: 8pt 0;
+      text-align: center;
+    }
+    .resource-link a {
+      color: var(--primary);
+      font-size: 12pt;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .resource-link p {
+      color: var(--text-muted);
+      font-size: 9pt;
+      margin-top: 4pt;
+    }
+  </style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <h1>Taller de IA para No Informáticos</h1>
+  <h2>Guía Completa 2026</h2>
+  <div class="author">Diego Saavedra García</div>
+  <div class="contact">dsaavedra88@gmail.com</div>
+  <div class="url">opencode.dev</div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="page-break"></div>
+<h1>Contenido</h1>
+<div class="toc">
+  <h2>Tabla de Contenidos</h2>
+  <ul>
+    <li><a href="#intro">1. Introducción</a></li>
+    <li><a href="#fundamentos">2. Fundamentos de IA</a></li>
+    <li><a href="#opencode">3. OpenCode</a></li>
+    <li><a href="#instalacion">4. Instalación y Configuración</a></li>
+    <li><a href="#perfiles">5. Perfiles y Agentes</a></li>
+    <li><a href="#mcp">6. MCP (Model Context Protocol)</a></li>
+    <li><a href="#skills">7. Skills</a></li>
+    <li><a href="#herramientas">8. Herramientas Complementarias</a></li>
+    <li><a href="#casos">9. Casos de Uso</a></li>
+    <li><a href="#labs">10. Labs Prácticos</a></li>
+    <li><a href="#buenas-practicas">11. Buenas Prácticas</a></li>
+    <li><a href="#recursos">12. Recursos y Próximos Pasos</a></li>
+  </ul>
+</div>
+
+<!-- SECTION 1: INTRODUCCIÓN -->
+<div class="page-break"></div>
+<h1 id="intro">1. Introducción</h1>
+
+<h2>¿Qué es este taller?</h2>
+<p>Este taller está diseñado para profesionales no informáticos que quieren usar herramientas de inteligencia artificial para mejorar su productividad. No necesitas saber programar para aprovechar el poder de la IA.</p>
+
+<h2>¿Qué aprenderás?</h2>
+<div class="highlight-box">
+  <strong>Al finalizar serás capaz de:</strong>
+  <ul>
+    <li>Usar OpenCode para tareas profesionales</li>
+    <li>Personalizar tu asistente con tu perfil</li>
+    <li>Instalar habilidades adicionales (Skills)</li>
+    <li>Conectar extensiones (MCP)</li>
+    <li>Crear agentes especializados</li>
+    <li>Elegir la mejor herramienta para cada trabajo</li>
+  </ul>
+</div>
+
+<h2>Estructura del Taller</h2>
+<div class="two-cols">
+  <div class="card">
+    <h3>📅 Hora 1: Fundamentos</h3>
+    <ul>
+      <li>Bienvenida e introducción</li>
+      <li>El ecosistema de IA en 2026</li>
+      <li>Instalación de OpenCode</li>
+      <li>Primera conversación con la IA</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>📅 Hora 2: Personalización</h3>
+    <ul>
+      <li>Perfiles personalizados</li>
+      <li>Skills y extensiones</li>
+      <li>Comparativa de herramientas</li>
+      <li>Cierre y siguientes pasos</li>
+    </ul>
+  </div>
+</div>
+
+<!-- SECTION 2: FUNDAMENTOS -->
+<h1 id="fundamentos">2. Fundamentos de IA</h1>
+
+<h2>¿Qué es la Inteligencia Artificial?</h2>
+<p>La Inteligencia Artificial (IA) es la capacidad de las máquinas para aprender y tomar decisiones similares a los humanos. En 2026, la IA generativa puede crear texto, imágenes, código y mucho más.</p>
+
+<h2>Tipos de IA que usarás</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Ejemplo</th>
+      <th>Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IA Conversacional</td>
+      <td>ChatGPT, Claude</td>
+      <td>Preguntas y respuestas</td>
+    </tr>
+    <tr>
+      <td>IA de Código</td>
+      <td>OpenCode, Copilot</td>
+      <td>Programación y automatización</td>
+    </tr>
+    <tr>
+      <td>IA de Análisis</td>
+      <td>NotebookLM</td>
+      <td>Investigación y resúmenes</td>
+    </tr>
+    <tr>
+      <td>IA Multimodal</td>
+      <td>Gemini</td>
+      <td>Texto, imágenes y audio</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>¿Por qué usar IA?</h2>
+<div class="info-box">
+  <strong>Estudios demuestran:</strong> El uso frecuente de IA incrementa la productividad con un odds ratio de 2.34. Los empleados que usan IA generativa ahorran en promedio 96.8 horas al año.
+</div>
+
+<!-- SECTION 3: OPENCODE -->
+<h1 id="opencode">3. OpenCode</h1>
+
+<h2>¿Qué es OpenCode?</h2>
+<p><strong>OpenCode</strong> es una herramienta de desarrollo con IA que funciona en tu computadora. A diferencia de otros asistentes, OpenCode puede:</p>
+<ul>
+  <li>Leer y modificar archivos de tu proyecto</li>
+  <li>Ejecutar comandos en tu terminal</li>
+  <li>Conectar con herramientas externas (MCP)</li>
+  <li>Adaptarse a tu forma de trabajar mediante perfiles</li>
+</ul>
+
+<h2>Ventajas de OpenCode</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Ventaja</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Gratuito</strong></td><td>De código abierto, sin costos de licenciamiento</td></tr>
+    <tr><td><strong>Sin límites</strong></td><td>Usa tu propia API key, sin restricciones de uso</td></tr>
+    <tr><td><strong>Privacidad</strong></td><td>Tus datos no se comparten con terceros</td></tr>
+    <tr><td><strong>Personalizable</strong></td><td>Perfiles, agentes y skills adaptables</td></tr>
+    <tr><td><strong>Flexible</strong></td><td>Funciona con múltiples proveedores de IA</td></tr>
+  </tbody>
+</table>
+
+<!-- SECTION 4: INSTALACIÓN -->
+<h1 id="instalacion">4. Instalación y Configuración</h1>
+
+<h2>Requisitos Previos</h2>
+<p>Antes de instalar, asegúrate de tener:</p>
+<ol>
+  <li><strong>Node.js 18+</strong> — Verifica con: <code>node --version</code></li>
+  <li><strong>Git</strong> — Para control de versiones</li>
+  <li><strong>Editor de texto</strong> — VS Code recomendado</li>
+  <li><strong>API Key</strong> — De OpenAI, Anthropic u otro proveedor</li>
+</ol>
+
+<h2>Instalación en Windows</h2>
+<pre><code># 1. Descarga Node.js desde nodejs.org
+# 2. Instala con valores por defecto
+# 3. Abre PowerShell y ejecuta:
+
+npm install -g opencode-ai</code></pre>
+
+<h2>Instalación en macOS</h2>
+<pre><code># Con Homebrew:
+brew install node
+npm install -g opencode-ai</code></pre>
+
+<h2>Instalación en Linux</h2>
+<pre><code>sudo apt install nodejs npm
+npm install -g opencode-ai</code></pre>
+
+<h2>Configuración Inicial</h2>
+<h3>Archivo opencode.json</h3>
+<pre><code>{
+  "provider": "openai",
+  "model": "gpt-4o",
+  "apiKey": "tu-api-key-aqui"
+}</code></pre>
+
+<!-- SECTION 5: PERFILES Y AGENTES -->
+<h1 id="perfiles">5. Perfiles y Agentes</h1>
+
+<h2>¿Qué son los Perfiles?</h2>
+<p>Los perfiles son configuraciones que definen cómo OpenCode se comporta. Cada perfil tiene un sistema de instrucciones, herramientas y patrones de proyecto.</p>
+
+<h2>Perfiles Incluidos</h2>
+<table>
+  <thead>
+    <tr><th>Perfil</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Developer</td><td>Programación general, código limpio</td></tr>
+    <tr><td>Educator</td><td>Enseñanza, explicaciones claras</td></tr>
+    <tr><td>Admin</td><td>Tareas administrativas, documentos</td></tr>
+    <tr><td>Marketing</td><td>Contenido, redes sociales</td></tr>
+    <tr><td>Researcher</td><td>Búsqueda, análisis, papers</td></tr>
+    <tr><td>Security</td><td>Auditorías, pentesting, CVE</td></tr>
+  </tbody>
+</table>
+
+<h2>Crear un Agente Personalizado</h2>
+<p>Un agente es un perfil especializado. Ejemplo:</p>
+<pre><code># Agente: Web Developer
+Sistema: Eres un desarrollador web especializado
+Herramientas: code, terminal, browser
+Patrón: Arquitectura limpia, tests primero</code></pre>
+
+<!-- SECTION 6: MCP -->
+<h1 id="mcp">6. MCP (Model Context Protocol)</h1>
+
+<h2>¿Qué es MCP?</h2>
+<p>MCP es un protocolo que permite a OpenCode conectarse con herramientas externas como bases de datos, APIs, y servicios.</p>
+
+<h2>MCPs Recomendados</h2>
+<table>
+  <thead>
+    <tr><th>MCP</th><th>Función</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Filesystem</td><td>Leer y escribir archivos</td></tr>
+    <tr><td>Git</td><td>Control de versiones</td></tr>
+    <tr><td>Search</td><td>Búsqueda en proyecto</td></tr>
+    <tr><td>Database</td><td>Consultas SQL</td></tr>
+    <tr><td>Web</td><td>Navegación web</td></tr>
+    <tr><td>Notion</td><td>Integración con notas</td></tr>
+    <tr><td>Slack</td><td>Mensajería team</td></tr>
+  </tbody>
+</table>
+
+<h2>Configurar un MCP</h2>
+<p>Archivo <code>mcp.json</code>:</p>
+<pre><code>{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git"]
+    }
+  }
+}</code></pre>
+
+<!-- SECTION 7: SKILLS -->
+<h1 id="skills">7. Skills</h1>
+
+<h2>¿Qué son las Skills?</h2>
+<p>Las skills son habilidades pre-configuradas que puedes agregar a OpenCode para tareas específicas.</p>
+
+<h2>Skills Recomendadas</h2>
+<ul>
+  <li><strong>Code Review</strong> — Revisión automática de código</li>
+  <li><strong>Testing</strong> — Generación de tests unitarios</li>
+  <li><strong>Docs</strong> — Documentación automática</li>
+  <li><strong>Security</strong> — Escaneo de vulnerabilidades</li>
+  <li><strong>Research</strong> — Búsqueda científica</li>
+</ul>
+
+<h2>Instalar una Skill</h2>
+<ol>
+  <li>Ve a la configuración de OpenCode</li>
+  <li>Selecciona "Skills"</li>
+  <li>Busca la skill que necesitas</li>
+  <li>Haz clic en "Instalar"</li>
+</ol>
+
+<!-- SECTION 8: HERRAMIENTAS COMPLEMENTARIAS -->
+<h1 id="herramientas">8. Herramientas Complementarias</h1>
+
+<h2>Comparativa</h2>
+<table>
+  <thead>
+    <tr><th>Herramienta</th><th>Mejor para</th><th>Limitación</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>OpenCode</td><td>Código y archivos</td><td>Requiere instalar</td></tr>
+    <tr><td>ChatGPT</td><td>Preguntas generales</td><td>No accede a archivos</td></tr>
+    <tr><td>Claude</td><td>Análisis profundo</td><td>API de pago</td></tr>
+    <tr><td>NotebookLM</td><td>Documentos PDF</td><td>Solo Google Docs</td></tr>
+    <tr><td>Copilot</td><td>Código en IDE</td><td>Solo VS Code</td></tr>
+  </tbody>
+</table>
+
+<h2>NotebookLM</h2>
+<div class="card">
+  <p>Herramienta de Google para analizar documentos y crear resúmenes.</p>
+  <strong>Úsala para:</strong>
+  <ul>
+    <li>Resumir PDFs largos</li>
+    <li>Crear guías de estudio</li>
+    <li>Analizar artículos</li>
+  </ul>
+</div>
+
+<!-- SECTION 9: CASOS DE USO -->
+<h1 id="casos">9. Casos de Uso por Profesión</h1>
+
+<h2>Para Educadores</h2>
+<div class="two-cols">
+  <div>
+    <ul>
+      <li>Crear planes de clase estructurados</li>
+      <li>Diseñar evaluaciones y exámenes</li>
+      <li>Resumir artículos académicos</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>Preparar materiales didácticos</li>
+      <li>Traducir contenido educativo</li>
+      <li>Crear presentaciones</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Para Administradores</h2>
+<div class="two-cols">
+  <div>
+    <ul>
+      <li>Redactar correos profesionales</li>
+      <li>Organizar información en tablas</li>
+      <li>Crear plantillas de documentos</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>Resumir reuniones largas</li>
+      <li>Preparar presentaciones</li>
+      <li>Automatizar tareas repetitivas</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Para Marketing</h2>
+<div class="two-cols">
+  <div>
+    <ul>
+      <li>Escribir posts para redes sociales</li>
+      <li>Crear contenido para blog</li>
+      <li>Analizar métricas de campañas</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>Generar ideas para campañas</li>
+      <li>Redactar descripciones de productos</li>
+      <li>Crear boletines informativos</li>
+    </ul>
+  </div>
+</div>
+
+<!-- SECTION 10: LABS -->
+<h1 id="labs">10. Labs Prácticos</h1>
+
+<h2>Lab 1: Instalación (15 min)</h2>
+<div class="card">
+  <h4>Objetivo</h4>
+  <p>Instalar y verificar OpenCode en tu computadora.</p>
+  <h4>Pasos</h4>
+  <ol>
+    <li>Verificar Node.js: <code>node --version</code></li>
+    <li>Instalar OpenCode: <code>npm install -g opencode-ai</code></li>
+    <li>Configurar API key en <code>opencode.json</code></li>
+    <li>Primera prueba: <code>opencode "Hola"</code></li>
+  </ol>
+</div>
+
+<h2>Lab 2: Perfil Personalizado (20 min)</h2>
+<div class="card">
+  <h4>Objetivo</h4>
+  <p>Crear tu archivo AGENTS.md personalizado.</p>
+  <h4>Pasos</h4>
+  <ol>
+    <li>Crear directorio: <code>mkdir -p ~/.config/opencode</code></li>
+    <li>Crear archivo <code>AGENTS.md</code></li>
+    <li>Definir tu rol y experiencia</li>
+    <li>Probar con una pregunta específica</li>
+  </ol>
+</div>
+
+<h2>Lab 3: Agentes Especializados (25 min)</h2>
+<div class="card">
+  <h4>Objetivo</h4>
+  <p>Crear un agente para tu profesión.</p>
+  <h4>Pasos</h4>
+  <ol>
+    <li>Diseñar el perfil del agente</li>
+    <li>Definir herramientas disponibles</li>
+    <li>Escribir instrucciones del sistema</li>
+    <li>Probar con un caso real</li>
+  </ol>
+</div>
+
+<h2>Lab 4: MCPs y Skills (30 min)</h2>
+<div class="card">
+  <h4>Objetivo</h4>
+  <p>Conectar extensiones y habilidades.</p>
+  <h4>Pasos</h4>
+  <ol>
+    <li>Instalar MCP de filesystem</li>
+    <li>Configurar MCP de git</li>
+    <li>Explorar skills disponibles</li>
+    <li>Instalar una skill útil</li>
+  </ol>
+</div>
+
+<h2>Lab 5: Proyecto Completo (40 min)</h2>
+<div class="card">
+  <h4>Objetivo</h4>
+  <p>Aplicar todo lo aprendido en un caso real.</p>
+  <h4>Pasos</h4>
+  <ol>
+    <li>Elegir un proyecto personal</li>
+    <li>Configurar entorno completo</li>
+    <li>Implementar con ayuda de OpenCode</li>
+    <li>Revisar y mejorar el código</li>
+  </ol>
+</div>
+
+<!-- SECTION 11: BUENAS PRÁCTICAS -->
+<h1 id="buenas-practicas">11. Buenas Prácticas</h1>
+
+<h2>Seguridad</h2>
+<div class="warning-box">
+  <ul>
+    <li>Nunca compartas tu API key</li>
+    <li>Verifica el código antes de ejecutarlo</li>
+    <li>No subas archivos sensibles a repos públicos</li>
+    <li>Usa variables de entorno para secretos</li>
+  </ul>
+</div>
+
+<h2>Eficacia</h2>
+<div class="highlight-box">
+  <ul>
+    <li><strong>Sé específico</strong> — Cuanto más contexto, mejor ayuda</li>
+    <li><strong>Proporciona contexto</strong> — Tu proyecto, tu objetivo</li>
+    <li><strong>Divide problemas</strong> — Problemas grandes en partes</li>
+    <li><strong>Guarda el historial</strong> — Para referencia futura</li>
+  </ul>
+</div>
+
+<h2>Privacidad</h2>
+<ul>
+  <li>Lee los términos de cada servicio</li>
+  <li>Entiende dónde se almacenan tus datos</li>
+  <li>Usa herramientas locales cuando sea posible</li>
+  <li>Mantén backups de tu trabajo</li>
+</ul>
+
+<!-- SECTION 12: RECURSOS -->
+<h1 id="recursos">12. Recursos y Próximos Pasos</h1>
+
+<h2>🌐 Este Taller en Línea</h2>
+<div class="resource-link">
+  <a href="https://statick88.github.io/taller-ia-no-informaticos/">statick88.github.io/taller-ia-no-informaticos</a>
+  <p>Accede a todas las presentaciones, materiales y labs en línea</p>
+</div>
+
+<h2>Recursos Oficiales</h2>
+<ul>
+  <li><strong>Documentación:</strong> opencode.dev/docs</li>
+  <li><strong>GitHub OpenCode:</strong> github.com/opencode-ai/opencode</li>
+  <li><strong>Discord:</strong> discord.gg/opencode</li>
+  <li><strong>Ejemplos:</strong> github.com/opencode-ai/examples</li>
+</ul>
+
+<h2>Para Seguir Aprendiendo</h2>
+<ol>
+  <li><strong>Practica diariamente</strong> — Usa OpenCode en tu trabajo</li>
+  <li><strong>Explora features</strong> — Lee la documentación completa</li>
+  <li><strong>Únete a la comunidad</strong> — Participa en Discord</li>
+  <li><strong>Comparte conocimiento</strong> — Enseña a tus colegas</li>
+  <li><strong>Contribuye</strong> — Reporta bugs y sugiere features</li>
+</ol>
+
+<hr>
+<div class="footer">
+  <p><strong>Taller de IA para No Informáticos</strong></p>
+  <p>Hecho con OpenCode | Diego Saavedra García | 2026</p>
+  <p>statick88.github.io/taller-ia-no-informaticos</p>
+</div>
+
+</body>
+</html>

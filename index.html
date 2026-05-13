@@ -3,440 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taller de IA para No Informáticos - Materiales 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <title>Taller de IA para No Informáticos</title>
   <style>
-    :root {
-      --primary: #00cc33;
-      --primary-dark: #00a828;
-      --secondary: #00b4e6;
-      --secondary-dark: #0099cc;
-      --accent-purple: #9333ea;
-      --accent-orange: #ff9500;
-      --accent-pink: #ec4899;
-      --bg-dark: #0a0a0f;
-      --bg-card: #12121a;
-      --bg-card-hover: #1a1a25;
-      --text-primary: #ffffff;
-      --text-secondary: #a0a0b0;
-      --text-muted: #606070;
-      --border: rgba(255, 255, 255, 0.08);
-      --glow-green: 0 0 60px rgba(0, 204, 51, 0.3);
-      --glow-blue: 0 0 60px rgba(0, 180, 230, 0.3);
-      --glow-purple: 0 0 60px rgba(147, 51, 234, 0.3);
-    }
-
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg-dark);
-      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0f;
+      color: #e0e0e0;
       min-height: 100vh;
-      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
-    .bg-effects {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      pointer-events: none; z-index: 0; overflow: hidden;
-    }
-    .bg-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.4; animation: float 20s ease-in-out infinite; }
-    .bg-orb-1 { width: 600px; height: 600px; background: var(--primary); top: -200px; right: -100px; animation-delay: 0s; }
-    .bg-orb-2 { width: 500px; height: 500px; background: var(--secondary); bottom: -150px; left: -100px; animation-delay: -7s; }
-    .bg-orb-3 { width: 300px; height: 300px; background: linear-gradient(135deg, var(--primary), var(--secondary)); top: 50%; left: 50%; transform: translate(-50%, -50%); animation-delay: -14s; opacity: 0.2; }
-
-    @keyframes float {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      25% { transform: translate(30px, -30px) scale(1.05); }
-      50% { transform: translate(-20px, 20px) scale(0.95); }
-      75% { transform: translate(-30px, -20px) scale(1.02); }
-    }
-
-    .grid-pattern {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-      background-size: 60px 60px;
-      pointer-events: none; z-index: 1;
-    }
-
-    .container {
-      position: relative; z-index: 10; max-width: 1100px;
-      margin: 0 auto; padding: 60px 24px;
-    }
-
-    .header { text-align: center; margin-bottom: 50px; }
-    .badge {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 8px 16px; background: rgba(0, 204, 51, 0.1);
-      border: 1px solid rgba(0, 204, 51, 0.3); border-radius: 100px;
-      font-size: 13px; font-weight: 500; color: var(--primary); margin-bottom: 20px;
-    }
-    .title { font-size: clamp(28px, 5vw, 48px); font-weight: 800; line-height: 1.1; margin-bottom: 16px; }
-    .title-highlight { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .subtitle { font-size: 16px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.6; }
-
-    .section { margin-bottom: 50px; }
+    .container { max-width: 820px; padding: 2rem; text-align: center; }
+    .emoji { font-size: 4rem; margin-bottom: 1rem; }
+    h1 { font-size: 2.5rem; color: #00cc33; margin-bottom: 0.5rem; }
+    .subtitle { font-size: 1.15rem; color: #888; margin-bottom: 1rem; line-height: 1.6; }
     .section-title {
-      display: flex; align-items: center; gap: 12px;
-      font-size: 20px; font-weight: 700; margin-bottom: 20px; color: var(--text-primary);
+      font-size: 1.3rem; font-weight: 700; color: #00b4e6;
+      margin: 2rem 0 0.5rem; text-align: left;
+      border-left: 4px solid #00b4e6; padding-left: 0.8rem;
     }
-    .section-title .icon { font-size: 24px; }
-    .section-line { flex: 1; height: 1px; background: linear-gradient(90deg, var(--border), transparent); }
-
-    .cards-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;
+    .section-title:first-of-type { margin-top: 0.5rem; }
+    .menu { display: grid; gap: 1.2rem; margin-top: 0.5rem; margin-bottom: 2rem; }
+    .card {
+      background: #12121a; border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px; padding: 1.6rem 1.8rem; text-decoration: none;
+      color: inherit; transition: all 0.2s ease; display: flex; align-items: center; gap: 1.2rem;
     }
-
-    .material-card {
-      position: relative; background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 16px; padding: 24px; text-decoration: none; color: inherit;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); overflow: hidden;
+    .card:hover { border-color: #00cc33; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,204,51,0.12); }
+    .card .icon { font-size: 2.2rem; min-width: 48px; text-align: center; }
+    .card .label { font-size: 1.1rem; font-weight: 600; color: #00b4e6; text-align: left; }
+    .card .desc { font-size: 0.9rem; color: #777; margin-top: 0.15rem; text-align: left; }
+    .footer { margin-top: 3.5rem; color: #444; font-size: 0.82rem; line-height: 1.8; }
+    .footer a { color: #00b4e6; text-decoration: none; }
+    .footer a:hover { color: #00cc33; }
+    .badge {
+      display: inline-block; background: #00cc3322; color: #00cc33;
+      padding: 0.15rem 0.55rem; border-radius: 6px; font-size: 0.75rem;
+      font-weight: 700; margin-left: 0.5rem; vertical-align: middle;
     }
-    .material-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; opacity: 0; transition: opacity 0.3s ease;
+    .highlight-card {
+      border-color: #00cc3344 !important;
+      background: linear-gradient(135deg, #00cc3308, #00b4e608) !important;
     }
-    .material-card:hover { transform: translateY(-4px); border-color: transparent; }
-
-    .material-card.labs::before { background: linear-gradient(90deg, var(--accent-orange), #ffcc00); }
-    .material-card.labs:hover { box-shadow: 0 0 40px rgba(255, 149, 0, 0.2); background: var(--bg-card-hover); }
-    .material-card.labs:hover::before { opacity: 1; }
-
-    .material-card.estructura::before { background: linear-gradient(90deg, var(--secondary), var(--accent-purple)); }
-    .material-card.estructura:hover { box-shadow: var(--glow-blue); background: var(--bg-card-hover); }
-    .material-card.estructura:hover::before { opacity: 1; }
-
-    .material-card.ejemplos::before { background: linear-gradient(90deg, var(--primary), var(--primary-dark)); }
-    .material-card.ejemplos:hover { box-shadow: var(--glow-green); background: var(--bg-card-hover); }
-    .material-card.ejemplos:hover::before { opacity: 1; }
-
-    .material-card.pdf::before { background: linear-gradient(90deg, var(--accent-pink), var(--accent-purple)); }
-    .material-card.pdf:hover { box-shadow: var(--glow-purple); background: var(--bg-card-hover); }
-    .material-card.pdf:hover::before { opacity: 1; }
-
-    .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-    .card-icon { font-size: 32px; }
-    .download-badge {
-      display: inline-flex; align-items: center; gap: 4px;
-      padding: 4px 10px; background: rgba(255, 255, 255, 0.08);
-      border-radius: 6px; font-size: 11px; font-weight: 600;
-      color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;
-    }
-    .material-card:hover .download-badge { background: rgba(255, 255, 255, 0.15); color: var(--text-secondary); }
-
-    .card-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--text-primary); }
-    .card-description { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px; }
-
-    .card-meta { display: flex; flex-wrap: wrap; gap: 6px; }
-    .meta-tag {
-      padding: 3px 8px; background: rgba(255, 255, 255, 0.05); border-radius: 4px;
-      font-size: 11px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace;
-    }
-
-    .card-links { display: flex; gap: 8px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
-    .card-link {
-      flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-      padding: 10px 16px; background: rgba(255, 255, 255, 0.05); border-radius: 8px;
-      font-size: 13px; font-weight: 500; color: var(--text-secondary); text-decoration: none;
-      transition: all 0.2s ease;
-    }
-    .card-link:hover { background: rgba(255, 255, 255, 0.1); color: var(--text-primary); }
-    .card-link.primary { background: rgba(0, 204, 51, 0.15); color: var(--primary); }
-    .card-link.primary:hover { background: rgba(0, 204, 51, 0.25); }
-
-    .presentations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
-    .pres-card {
-      position: relative; background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 16px; padding: 24px; text-decoration: none; color: inherit;
-      transition: all 0.3s ease;
-    }
-    .pres-card:hover { transform: translateY(-4px); background: var(--bg-card-hover); }
-    .pres-card.v1:hover { box-shadow: var(--glow-blue); border-color: var(--secondary); }
-    .pres-card.v2:hover { box-shadow: var(--glow-green); border-color: var(--primary); }
-    .pres-card.labs:hover { box-shadow: 0 0 40px rgba(255, 149, 0, 0.3); border-color: var(--accent-orange); }
-
-    .pres-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-    .pres-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;
-      text-transform: uppercase; letter-spacing: 0.5px;
-    }
-    .pres-card.v1 .pres-badge { background: rgba(0, 180, 230, 0.15); color: var(--secondary); }
-    .pres-card.v2 .pres-badge { background: rgba(0, 204, 51, 0.15); color: var(--primary); }
-    .pres-card.labs .pres-badge { background: rgba(255, 149, 0, 0.15); color: var(--accent-orange); }
-
-    .pres-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--text-primary); }
-    .pres-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
-    .pres-topics { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
-    .topic { padding: 3px 8px; background: rgba(255, 255, 255, 0.05); border-radius: 4px; font-size: 11px; color: var(--text-muted); }
-
-    .footer { margin-top: 60px; text-align: center; color: var(--text-muted); font-size: 13px; }
-    .footer a { color: var(--primary); text-decoration: none; }
-    .footer a:hover { color: var(--text-primary); }
-    .tech-stack { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
-    .tech-item { display: flex; align-items: center; gap: 6px; color: var(--text-muted); font-size: 12px; }
-
-    @media (max-width: 640px) {
-      .container { padding: 40px 16px; }
-      .cards-grid { grid-template-columns: 1fr; }
-      .presentations-grid { grid-template-columns: 1fr; }
-      .card-links { flex-direction: column; }
-    }
+    .highlight-label { color: #00cc33 !important; }
+    @media (min-width: 600px) { .menu { grid-template-columns: 1fr 1fr; } }
   </style>
 </head>
 <body>
-  <div class="bg-effects">
-    <div class="bg-orb bg-orb-1"></div>
-    <div class="bg-orb bg-orb-2"></div>
-    <div class="bg-orb bg-orb-3"></div>
-  </div>
-  <div class="grid-pattern"></div>
-
   <div class="container">
-    <header class="header">
-      <div class="badge">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-          <path d="M2 17l10 5 10-5"/>
-          <path d="M2 12l10 5 10-5"/>
-        </svg>
-        opencode.dev | 2026
-      </div>
-      <h1 class="title">Taller de <span class="title-highlight">IA</span> para No Informáticos</h1>
-      <p class="subtitle">Materiales completos del taller: labs prácticos, estructura OpenCode, ejemplos de agentes y presentaciones.</p>
-    </header>
+    <div class="emoji">🤖</div>
+    <h1>Taller de IA para No Informáticos</h1>
+    <p class="subtitle">
+      Guía práctica para profesionales no técnicos — Aprende a usar la IA
+      <span class="badge">GRATIS</span><span class="badge">2 h</span>
+    </p>
 
-    <!-- Nueva Sección: Materiales Descargables -->
-    <section class="section">
-      <h2 class="section-title">
-        <span class="icon">📦</span>
-        Materiales Descargables
-        <span class="section-line"></span>
-      </h2>
-      <div class="cards-grid">
-        
-        <!-- Labs Prácticos -->
-        <div class="material-card labs">
-          <div class="card-header">
-            <span class="card-icon">🔬</span>
-            <span class="download-badge">ZIP 17KB</span>
-          </div>
-          <h3 class="card-title">Labs Prácticos</h3>
-          <p class="card-description">5 ejercicios paso a paso para dominar OpenCode en 2 horas. Incluye templates para Educator, Admin y Marketing.</p>
-          <div class="card-meta">
-            <span class="meta-tag">Lab 1-5</span>
-            <span class="meta-tag">15-30 min c/u</span>
-            <span class="meta-tag">HTML + MD</span>
-          </div>
-          <div class="card-links">
-            <a href="materiales/labs/index.html" class="card-link">Ver Online</a>
-            <a href="materiales/labs-practicos.zip" class="card-link primary" download>Descargar ZIP</a>
-          </div>
+    <div class="section-title">📖 Documentación Adicional</div>
+    <div class="menu">
+      <a class="card highlight-card" href="libro/" target="_top">
+        <div class="icon">📖</div>
+        <div>
+          <div class="label highlight-label">Libro Electrónico</div>
+          <div class="desc">15 capítulos + 3 apéndices — Navegación completa</div>
         </div>
+      </a>
+      <a class="card" href="libro/Taller-de-IA-para-No-Informáticos.pdf" download target="_blank">
+        <div class="icon">📄</div>
+        <div><div class="label">Descargar PDF</div><div class="desc">Formato A4 profesional — imprimir o leer offline</div></div>
+      </a>
+      <a class="card" href="libro/Taller-de-IA-para-No-Informáticos.epub" download target="_blank">
+        <div class="icon">📱</div>
+        <div><div class="label">Descargar EPUB</div><div class="desc">Compatible con Kindle, Apple Books, Kobo</div></div>
+      </a>
+      <a class="card" href="https://github.com/statick88/taller-ia-no-informaticos" target="_blank">
+        <div class="icon">📂</div>
+        <div><div class="label">Repositorio</div><div class="desc">Código fuente y materiales del taller</div></div>
+      </a>
+    </div>
 
-        <!-- Estructura OpenCode -->
-        <div class="material-card estructura">
-          <div class="card-header">
-            <span class="card-icon">🏗️</span>
-            <span class="download-badge">ZIP 19KB</span>
-          </div>
-          <h3 class="card-title">Estructura OpenCode</h3>
-          <p class="card-description">Guía completa de arquitectura: opencode.json, AGENTS.md, mcp.json, SKILL.md, permisos y templates.</p>
-          <div class="card-meta">
-            <span class="meta-tag">894 líneas</span>
-            <span class="meta-tag">10 secciones</span>
-            <span class="meta-tag">HTML + MD</span>
-          </div>
-          <div class="card-links">
-            <a href="materiales/estructura/index.html" class="card-link">Ver Online</a>
-            <a href="materiales/estructura-opencode.zip" class="card-link primary" download>Descargar ZIP</a>
-          </div>
-        </div>
+    <div class="section-title">🎯 Recursos del Taller</div>
+    <div class="menu">
+      <a class="card" href="presentacion/index.html" target="_top">
+        <div class="icon">🎤</div>
+        <div><div class="label">Presentación</div><div class="desc">Slides interactivas del taller — Reveal.js</div></div>
+      </a>
+      <a class="card" href="propuesta.html" target="_top">
+        <div class="icon">📋</div>
+        <div><div class="label">Propuesta del Taller</div><div class="desc">Objetivos, metodología y planificación</div></div>
+      </a>
+      <a class="card" href="manual.html" target="_top">
+        <div class="icon">📘</div>
+        <div><div class="label">Manual del Participante</div><div class="desc">Guía completa para el taller presencial</div></div>
+      </a>
+      <a class="card" href="libro/perfiles.html" target="_top">
+        <div class="icon">🧪</div>
+        <div><div class="label">Prueba Agentes</div><div class="desc">Perfiles personalizados — Experimenta</div></div>
+      </a>
+    </div>
 
-        <!-- Ejemplos de Agentes -->
-        <div class="material-card ejemplos">
-          <div class="card-header">
-            <span class="card-icon">🤖</span>
-            <span class="download-badge">ZIP 22KB</span>
-          </div>
-          <h3 class="card-title">Ejemplos de Agentes</h3>
-          <p class="card-description">Templates de agentes para 12+ profesiones: Developer, Educator, Admin, Marketing, y más.</p>
-          <div class="card-meta">
-            <span class="meta-tag">970 líneas</span>
-            <span class="meta-tag">12 profesiones</span>
-            <span class="meta-tag">HTML + MD</span>
-          </div>
-          <div class="card-links">
-            <a href="materiales/ejemplos/index.html" class="card-link">Ver Online</a>
-            <a href="materiales/ejemplos-agentes.zip" class="card-link primary" download>Descargar ZIP</a>
-          </div>
-        </div>
-
-        <!-- PDF Ebook -->
-        <div class="material-card pdf">
-          <div class="card-header">
-            <span class="card-icon">📚</span>
-            <span class="download-badge">PDF 2.8MB</span>
-          </div>
-          <h3 class="card-title">PDF Completo del Taller</h3>
-          <p class="card-description">Ebook con todos los materiales combinados: manual, labs, estructura y ejemplos en un solo archivo.</p>
-          <div class="card-meta">
-            <span class="meta-tag">2.87 MB</span>
-            <span class="meta-tag">+6000 líneas</span>
-            <span class="meta-tag">Todos los temas</span>
-          </div>
-          <div class="card-links">
-            <a href="materiales/pdf/taller-ia-no-informaticos.pdf" class="card-link">Ver PDF</a>
-            <a href="materiales/pdf-taller.zip" class="card-link primary" download>Descargar ZIP</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Presentaciones -->
-    <section class="section">
-      <h2 class="section-title">
-        <span class="icon">🎯</span>
-        Presentaciones
-        <span class="section-line"></span>
-      </h2>
-      <div class="presentations-grid">
-        <a href="presentacion.html" class="pres-card v1">
-          <div class="pres-header">
-            <span class="pres-badge">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg>
-              Versión 1
-            </span>
-          </div>
-          <h3 class="pres-title">Fundamentos</h3>
-          <p class="pres-desc">Introducción a los conceptos básicos de IA, prompting efectivo y casos de uso prácticos.</p>
-          <div class="pres-topics">
-            <span class="topic">IA Generativa</span>
-            <span class="topic">Prompting</span>
-            <span class="topic">Casos de Uso</span>
-          </div>
-        </a>
-
-        <a href="presentacion-parte2.html" class="pres-card v2">
-          <div class="pres-header">
-            <span class="pres-badge">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg>
-              Versión 2
-            </span>
-          </div>
-          <h3 class="pres-title">OpenCode & Agentes</h3>
-          <p class="pres-desc">Configuración de OpenCode, perfiles, agentes, MCP y skills. Domina las herramientas del developer AI.</p>
-          <div class="pres-topics">
-            <span class="topic">OpenCode</span>
-            <span class="topic">Agentes</span>
-            <span class="topic">MCP</span>
-            <span class="topic">Skills</span>
-          </div>
-        </a>
-
-        <a href="presentacion-labs.html" class="pres-card labs">
-          <div class="pres-header">
-            <span class="pres-badge">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg>
-              Labs
-            </span>
-          </div>
-          <h3 class="pres-title">Labs Prácticos</h3>
-          <p class="pres-desc">5 ejercicios interactivos para practicar en tiempo real. Instalación, perfiles, agentes y MCPs.</p>
-          <div class="pres-topics">
-            <span class="topic">Lab 1-5</span>
-            <span class="topic">Paso a Paso</span>
-            <span class="topic">2 Horas</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Manual -->
-    <section class="section">
-      <h2 class="section-title">
-        <span class="icon">📖</span>
-        Documentación Adicional
-        <span class="section-line"></span>
-      </h2>
-      <div class="cards-grid">
-        <div class="material-card estructura">
-          <div class="card-header">
-            <span class="card-icon">📄</span>
-          </div>
-          <h3 class="card-title">Manual del Participante</h3>
-          <p class="card-description">Manual básico del taller con 12 casos de uso por profesión. Estructura learning by doing.</p>
-          <div class="card-meta">
-            <span class="meta-tag">661 líneas</span>
-            <span class="meta-tag">12 profesiones</span>
-          </div>
-          <div class="card-links">
-            <a href="manual.html" class="card-link">Ver Online</a>
-          </div>
-        </div>
-
-        <div class="material-card ejemplos">
-          <div class="card-header">
-            <span class="card-icon">📝</span>
-          </div>
-          <h3 class="card-title">Taller Completo v2</h3>
-          <p class="card-description">Contenido extenso de OpenCode para no informáticos. Instalación, configuración, agentes y más.</p>
-          <div class="card-meta">
-            <span class="meta-tag">1631 líneas</span>
-            <span class="meta-tag">9 secciones</span>
-          </div>
-          <div class="card-links">
-            <a href="opencode-taller.html" class="card-link">Ver Online</a>
-          </div>
-        </div>
-
-        <div class="material-card pdf">
-          <div class="card-header">
-            <span class="card-icon">📋</span>
-          </div>
-          <h3 class="card-title">Propuesta del Taller</h3>
-          <p class="card-description">Propuesta original del taller. Objetivos, metodología y estructura learning by doing.</p>
-          <div class="card-meta">
-            <span class="meta-tag">181 líneas</span>
-            <span class="meta-tag">Propuesta</span>
-          </div>
-          <div class="card-links">
-            <a href="propuesta.html" class="card-link">Ver Online</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p>Desarrollado con <a href="https://opencode.dev" target="_blank">OpenCode</a> para profesionales no técnicos</p>
-      <p style="margin-top: 8px; font-size: 12px;">Taller de IA para No Informáticos | Diego Saavedra García | 2026</p>
-      <div class="tech-stack">
-        <span class="tech-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-            <path d="M2 17l10 5 10-5" fill="none"/>
-          </svg>
-          RevealJS
-        </span>
-        <span class="tech-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-            <path d="M2 12l10 5 10-5"/>
-          </svg>
-          GitHub Pages
-        </span>
-        <span class="tech-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <path d="M14 2v6h6"/>
-          </svg>
-          Pandoc
-        </span>
-      </div>
-    </footer>
+    <div class="footer">
+      <p>Diego Saavedra García — CC BY-NC-SA 4.0</p>
+      <p><a href="https://github.com/statick88/taller-ia-no-informaticos">github.com/statick88/taller-ia-no-informaticos</a></p>
+      <p>Última actualización: 2026-05-12</p>
+    </div>
   </div>
 </body>
 </html>

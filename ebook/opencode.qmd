@@ -1,0 +1,69 @@
+---
+title: "OpenCode"
+subtitle: "Tu Asistente Personal de IA"
+---
+
+# OpenCode: Tu Asistente Personal
+
+## ¿Qué es OpenCode?
+
+**OpenCode** es una herramienta de desarrollo con IA que funciona en tu computadora. A diferencia de otros asistentes que solo funcionan en la web, OpenCode puede:
+
+- Leer y modificar archivos de tu proyecto
+- Ejecutar comandos en tu terminal
+- Conectar con herramientas externas (MCP)
+- Adaptarse a tu forma de trabajar mediante perfiles
+- Recordar conversaciones anteriores (memoria persistente)
+
+## Diferencia con ChatGPT o Claude
+
+| Característica | ChatGPT/Claude | OpenCode |
+|----------------|---------------|----------|
+| Acceso a archivos | ❌ No | ✅ Sí |
+| Ejecución de código | ❌ No | ✅ Sí |
+| Memoria persistente | Limitada | Completa |
+| Conexión a tu PC | ❌ No | ✅ Sí |
+| Integración con herramientas | Limitada | MCP extensible |
+| Personalización profunda | Mínima | Total |
+
+## Arquitectura de OpenCode
+
+```
+┌─────────────────────────────────────┐
+│         Agentes y Perfiles          │
+│   (Tu identidad y forma de trabajo)  │
+├─────────────────────────────────────┤
+│            Skills                    │
+│   (Habilidades pre-configuradas)     │
+├─────────────────────────────────────┤
+│             MCP                      │
+│   (Conexiones con herramientas)     │
+├─────────────────────────────────────┤
+│          Motor de IA                 │
+│   (OpenAI, Anthropic, etc.)         │
+└─────────────────────────────────────┘
+```
+
+## Conceptos clave
+
+### Perfiles (AGENTS.md)
+
+Los perfiles son configuraciones que definen cómo OpenCode se comporta. Cada perfil tiene un sistema de instrucciones, herramientas y patrones de proyecto.
+
+### Agentes
+
+Un agente es un perfil especializado que puede manejar tareas específicas. Ejemplo: `researcher` para investigación científica, `pentest` para seguridad.
+
+### Skills
+
+Las skills son habilidades pre-configuradas que puedes agregar a OpenCode para tareas específicas como revisión de código, testing, documentación, etc.
+
+### MCP (Model Context Protocol)
+
+Protocolo que permite a OpenCode conectarse con herramientas externas como bases de datos, APIs, servicios y más.
+
+## Ventajas sobre otras herramientas
+
+::: {.callout .callout-note}
+**Estudios demuestran** que el uso frecuente de IA incrementa la productividad con un odds ratio de 2.34. Los empleados que usan IA generativa ahorran en promedio 96.8 horas al año.
+:::
