@@ -30,88 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>'''
 
-LANDING_HTML = '''<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taller de IA para No Informáticos</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0a0a0f;
-      color: #e0e0e0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .container { max-width: 820px; padding: 2rem; text-align: center; }
-    .emoji { font-size: 4rem; margin-bottom: 1rem; }
-    h1 { font-size: 2.5rem; color: #00cc33; margin-bottom: 0.5rem; }
-    .subtitle { font-size: 1.15rem; color: #888; margin-bottom: 2.5rem; line-height: 1.6; }
-    .menu { display: grid; gap: 1.2rem; margin-top: 1rem; }
-    .card {
-      background: #12121a; border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 14px; padding: 1.6rem 1.8rem; text-decoration: none;
-      color: inherit; transition: all 0.2s ease; display: flex; align-items: center; gap: 1.2rem;
-    }
-    .card:hover { border-color: #00cc33; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,204,51,0.12); }
-    .card .icon { font-size: 2.2rem; min-width: 48px; text-align: center; }
-    .card .label { font-size: 1.1rem; font-weight: 600; color: #00b4e6; text-align: left; }
-    .card .desc { font-size: 0.9rem; color: #777; margin-top: 0.15rem; text-align: left; }
-    .footer { margin-top: 3.5rem; color: #444; font-size: 0.82rem; line-height: 1.8; }
-    .footer a { color: #00b4e6; text-decoration: none; }
-    .footer a:hover { color: #00cc33; }
-    .badge {
-      display: inline-block; background: #00cc3322; color: #00cc33;
-      padding: 0.15rem 0.55rem; border-radius: 6px; font-size: 0.75rem;
-      font-weight: 700; margin-left: 0.5rem; vertical-align: middle;
-    }
-    @media (min-width: 600px) { .menu { grid-template-columns: 1fr 1fr; } }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="emoji">🤖</div>
-    <h1>Taller de IA para No Informáticos</h1>
-    <p class="subtitle">
-      Guía práctica para profesionales no técnicos — Aprende a usar la IA
-      <span class="badge">GRATIS</span><span class="badge">2 h</span>
-    </p>
-    <div class="menu">
-      <a class="card" href="presentacion/index.html" target="_top">
-        <div class="icon">🎤</div>
-        <div><div class="label">Presentación</div><div class="desc">Slides interactivas del taller — Reveal.js</div></div>
-      </a>
-      <a class="card" href="libro/" target="_top">
-        <div class="icon">📖</div>
-        <div><div class="label">Libro Electrónico</div><div class="desc">15 capítulos + 3 apéndices — navegación completa</div></div>
-      </a>
-      <a class="card" href="libro/Taller-de-IA-para-No-Informáticos.pdf" download target="_blank">
-        <div class="icon">📄</div>
-        <div><div class="label">Descargar PDF</div><div class="desc">Formato A4 profesional — imprimir o leer offline</div></div>
-      </a>
-      <a class="card" href="libro/Taller-de-IA-para-No-Informáticos.epub" download target="_blank">
-        <div class="icon">📱</div>
-        <div><div class="label">Descargar EPUB</div><div class="desc">Compatible con Kindle, Apple Books, Kobo</div></div>
-      </a>
-      <a class="card" href="https://github.com/statick88/taller-ia-no-informaticos" target="_blank">
-        <div class="icon">📂</div>
-        <div><div class="label">Repositorio</div><div class="desc">Código fuente y materiales del taller</div></div>
-      </a>
-    </div>
-    <div class="footer">
-      <p>Diego Saavedra García — CC BY-NC-SA 4.0</p>
-      <p><a href="https://github.com/statick88/taller-ia-no-informaticos">github.com/statick88/taller-ia-no-informaticos</a></p>
-      <p>Última actualización: 2026-05-12</p>
-    </div>
-  </div>
-</body>
-</html>'''
-
 
 def run(cmd):
     print(f"\n  $ {cmd}")
@@ -158,7 +76,7 @@ if count == 0:
     print("  (ya procesado)")
 
 # 3. Crear libro/ y mover todo
-print("\n=== Reorganizando en librom/ ===")
+print("\n=== Reorganizando en libro/ ===")
 os.makedirs(LIBRO_DIR, exist_ok=True)
 
 for fp in glob.glob(os.path.join(BOOK_DIR, "*.html")):
@@ -182,7 +100,7 @@ for ext in ('*.pdf', '*.epub'):
         shutil.move(fp, LIBRO_DIR)
         print(f"  ✅ {os.path.basename(fp)} → libro/")
 
-# Limpiar _book/ raíz
+# Limpiar _book/ raíz (dejar solo libro/ y presentacion/)
 for f in list(os.listdir(BOOK_DIR)):
     if f in ('libro', 'presentacion'):
         continue
@@ -192,13 +110,16 @@ for f in list(os.listdir(BOOK_DIR)):
     else:
         os.remove(fp)
 
-# 4. Generar landing page raíz en _book/
-print("\n=== Generando landing page raíz ===")
-with open(os.path.join(BOOK_DIR, 'index.html'), 'w', encoding='utf-8') as f:
-    f.write(LANDING_HTML)
-print("  ✅ _book/index.html (landing)")
+# 4. Landing page desde repo + presentación
+print("\n=== Generando landing page raíz + presentación ===")
+landing_src = os.path.join(REPO_ROOT, 'index.html')
+landing_dst = os.path.join(BOOK_DIR, 'index.html')
+if os.path.exists(landing_src):
+    shutil.copy2(landing_src, landing_dst)
+    print("  ✅ _book/index.html (landing — copiada de index.html)")
+else:
+    print(f"  ⚠ {landing_src} no encontrado")
 
-# 5. Copiar presentación
 os.makedirs(PRESENTACION_DIR, exist_ok=True)
 src = os.path.join(REPO_ROOT, 'presentacion.html')
 dst = os.path.join(PRESENTACION_DIR, 'index.html')
@@ -208,7 +129,7 @@ if os.path.exists(src):
 else:
     print(f"  ⚠ presentacion.html no encontrado en {src}")
 
-# 6. Reporte
+# 5. Reporte
 print("\n" + "=" * 60)
 print("  ✅ BUILD COMPLETADO EXITOSAMENTE")
 print("=" * 60)

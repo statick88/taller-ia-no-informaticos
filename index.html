@@ -19,8 +19,14 @@
     .container { max-width: 820px; padding: 2rem; text-align: center; }
     .emoji { font-size: 4rem; margin-bottom: 1rem; }
     h1 { font-size: 2.5rem; color: #00cc33; margin-bottom: 0.5rem; }
-    .subtitle { font-size: 1.15rem; color: #888; margin-bottom: 2.5rem; line-height: 1.6; }
-    .menu { display: grid; gap: 1.2rem; margin-top: 1rem; }
+    .subtitle { font-size: 1.15rem; color: #888; margin-bottom: 1rem; line-height: 1.6; }
+    .section-title {
+      font-size: 1.3rem; font-weight: 700; color: #00b4e6;
+      margin: 2rem 0 0.5rem; text-align: left;
+      border-left: 4px solid #00b4e6; padding-left: 0.8rem;
+    }
+    .section-title:first-of-type { margin-top: 0.5rem; }
+    .menu { display: grid; gap: 1.2rem; margin-top: 0.5rem; margin-bottom: 2rem; }
     .card {
       background: #12121a; border: 1px solid rgba(255,255,255,0.07);
       border-radius: 14px; padding: 1.6rem 1.8rem; text-decoration: none;
@@ -38,6 +44,11 @@
       padding: 0.15rem 0.55rem; border-radius: 6px; font-size: 0.75rem;
       font-weight: 700; margin-left: 0.5rem; vertical-align: middle;
     }
+    .highlight-card {
+      border-color: #00cc3344 !important;
+      background: linear-gradient(135deg, #00cc3308, #00b4e608) !important;
+    }
+    .highlight-label { color: #00cc33 !important; }
     @media (min-width: 600px) { .menu { grid-template-columns: 1fr 1fr; } }
   </style>
 </head>
@@ -49,14 +60,15 @@
       Guía práctica para profesionales no técnicos — Aprende a usar la IA
       <span class="badge">GRATIS</span><span class="badge">2 h</span>
     </p>
+
+    <div class="section-title">📖 Documentación Adicional</div>
     <div class="menu">
-      <a class="card" href="presentacion/index.html" target="_top">
-        <div class="icon">🎤</div>
-        <div><div class="label">Presentación</div><div class="desc">Slides interactivas del taller — Reveal.js</div></div>
-      </a>
-      <a class="card" href="libro/" target="_top">
+      <a class="card highlight-card" href="libro/" target="_top">
         <div class="icon">📖</div>
-        <div><div class="label">Libro Electrónico</div><div class="desc">12 capítulos + 3 apéndices — navegación completa</div></div>
+        <div>
+          <div class="label highlight-label">Libro Electrónico</div>
+          <div class="desc">15 capítulos + 3 apéndices — Navegación completa</div>
+        </div>
       </a>
       <a class="card" href="libro/Taller-de-IA-para-No-Informáticos.pdf" download target="_blank">
         <div class="icon">📄</div>
@@ -66,11 +78,32 @@
         <div class="icon">📱</div>
         <div><div class="label">Descargar EPUB</div><div class="desc">Compatible con Kindle, Apple Books, Kobo</div></div>
       </a>
+      <a class="card" href="https://github.com/statick88/taller-ia-no-informaticos" target="_blank">
+        <div class="icon">📂</div>
+        <div><div class="label">Repositorio</div><div class="desc">Código fuente y materiales del taller</div></div>
+      </a>
+    </div>
+
+    <div class="section-title">🎯 Recursos del Taller</div>
+    <div class="menu">
+      <a class="card" href="presentacion/index.html" target="_top">
+        <div class="icon">🎤</div>
+        <div><div class="label">Presentación</div><div class="desc">Slides interactivas del taller — Reveal.js</div></div>
+      </a>
       <a class="card" href="propuesta.md" target="_blank">
         <div class="icon">📋</div>
         <div><div class="label">Propuesta del Taller</div><div class="desc">Objetivos, metodología y planificación</div></div>
       </a>
+      <a class="card" href="manual.html" target="_top">
+        <div class="icon">📘</div>
+        <div><div class="label">Manual del Participante</div><div class="desc">Guía completa para el taller presencial</div></div>
+      </a>
+      <a class="card" href="libro/perfiles.html" target="_top">
+        <div class="icon">🧪</div>
+        <div><div class="label">Prueba Agentes</div><div class="desc">Perfiles personalizados — Experimenta</div></div>
+      </a>
     </div>
+
     <div class="footer">
       <p>Diego Saavedra García — CC BY-NC-SA 4.0</p>
       <p><a href="https://github.com/statick88/taller-ia-no-informaticos">github.com/statick88/taller-ia-no-informaticos</a></p>
